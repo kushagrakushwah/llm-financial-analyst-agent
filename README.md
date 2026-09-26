@@ -229,8 +229,3 @@ The test suite covers:
 * Prompt formatting logic.
 * All FastAPI endpoints (`/api/health`, `/api/entities/schema`, `/api/extract-entities`, `/api/analyze`).
 
----
-
-## License
-
-MIT License. Authored by Kushagra Singh Kushwah.
