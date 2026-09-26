@@ -1,90 +1,101 @@
 # LLM Financial Analyst Agent with GLiNER
 
-[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.111%2B-009688.svg)](https://fastapi.tiangolo.com/)
-[![GLiNER](https://img.shields.io/badge/GLiNER-Zero--Shot%20NER-8A2BE2.svg)](https://github.com/urchade/GLiNER)
-[![Qwen2.5-7B](https://img.shields.io/badge/Qwen2.5-7B--Instruct-ff69b4.svg)](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
-[![GRPO](https://img.shields.io/badge/RL-GRPO%20Trained-orange.svg)](https://github.com/huggingface/trl)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-A two-stage, reinforcement-learning-trained financial auditing system that combines **GLiNER (Generalist and Lightweight Model for Named Entity Recognition)** with a **Qwen2.5-7B GRPO policy agent** for automated contract review, penalty detection, and cost-benefit analysis.
+A two-stage financial auditing pipeline combining GLiNER (Generalist and Lightweight Model for Named Entity Recognition) with a Qwen2.5-7B GRPO policy agent for automated contract review, penalty detection, and financial risk evaluation.
 
 ---
 
-## 📌 Executive Summary & Architecture
+## Overview
 
-Auditing financial agreements with large language models alone is computationally expensive, slow, and prone to hallucinated numbers or missed clauses. 
+Auditing legal and financial documents using a large language model alone presents several production bottlenecks:
+* High computational overhead and token latency when passing full documents.
+* Tendency of generative models to paraphrase or shift numbers instead of preserving exact source spans.
+* Inability of generative LLMs to natively provide character-level span offsets needed for audit trails.
 
-This project solves this by introducing a **two-tier hybrid architecture**:
-1. **Tier 1 (Deterministic Extraction via GLiNER):** A compact, bidirectional transformer extracts exact legal and numerical spans (`penalty_rate`, `liability_cap`, `contracting_party`, `monetary_amount`, `governing_law`) in sub-100ms with zero hallucinations.
-2. **Tier 2 (Reasoning & Policy via Qwen2.5-7B GRPO):** The reasoning agent receives the pre-extracted structured facts alongside the clause, evaluating financial exposure, compliance risk, and audit recommendations.
+This project introduces a hybrid pipeline that pairs a lightweight encoder-based model (GLiNER) with an autoregressive reasoning model (Qwen2.5-7B).
+
+1. **Information Extraction Layer (GLiNER):** A compact bidirectional encoder extracts exact financial entities, dates, liability caps, and penalty rates in sub-100ms with character-level span indices.
+2. **Reasoning Layer (Qwen2.5-7B trained with GRPO):** An instruction-tuned LLM receives the extracted factual spans alongside the text to produce actionable risk assessments and compliance reports.
 
 ```mermaid
 flowchart TD
-    Doc["Raw Financial Contract / PDF Text"] --> GL["1. GLiNER Financial Extractor"]
+    Doc["Raw Financial Agreement / Contract"] --> GL["Stage 1: GLiNER Entity Extractor"]
 
-    subgraph GLiNER_Tier["Tier 1: Deterministic Span Extraction (<100ms)"]
+    subgraph GLiNER_Layer["Stage 1: Deterministic Span Extraction (<100ms CPU)"]
         GL --> S1["penalty_rate: '2.5% per week of delay'"]
         GL --> S2["liability_cap: '$750,000 USD'"]
         GL --> S3["contracting_party: 'Contractor', 'Client'"]
         GL --> S4["governing_law: 'State of Delaware'"]
     end
 
-    GLiNER_Tier --> PromptBuilder["2. Prompt Context Builder & Shield"]
-    PromptBuilder --> LLM["3. Qwen2.5-7B (GRPO-Trained Agent)"]
-    LLM --> Verdict["4. Final Structured Audit Verdict & Risk Score"]
+    GLiNER_Layer --> PromptBuilder["Stage 2: Context Grounding & Prompt Builder"]
+    PromptBuilder --> LLM["Stage 3: Qwen2.5-7B (GRPO Policy Agent)"]
+    LLM --> Verdict["Stage 4: Structured Audit Finding & Exposure Verdict"]
 ```
 
 ---
 
-## 🧠 What is GLiNER and Why is it Used Here?
+## Technical Details: What is GLiNER?
 
-**GLiNER** (*Generalist and Lightweight Model for Named Entity Recognition*) is an encoder-based model (built on DeBERTa-v3) that formulates entity extraction as a bidirectional representation-matching task between text spans and arbitrary label embeddings.
+GLiNER (Generalist and Lightweight Named Entity Recognition) is an encoder architecture based on DeBERTa-v3 that frames entity extraction as a bidirectional representation-matching task.
 
-### Key Advantages in This Financial Pipeline:
-* **Arbitrary Labels at Runtime:** Unlike traditional spaCy/BERT NER that only extract fixed classes (e.g. `PERSON`, `ORG`), GLiNER extracts domain-specific contract entities on the fly (`penalty_rate`, `liability_cap`, `sla_target`).
-* **Exact Character Offsets:** Directly yields `[start, end]` character offsets in the contract text, enabling interactive UI highlighting and audit provenance.
-* **Cost & Latency Reduction:** Pre-filtering documents with GLiNER reduces downstream LLM prompt sizes by **60–80%**, saving massive token bandwidth.
+Unlike traditional token classification models (such as spaCy or standard BERT-NER) which rely on a fixed classification head and a predefined schema (e.g., `PERSON`, `ORG`, `LOC`), GLiNER takes candidate labels as inputs alongside the text:
+
+1. Text tokens and candidate label tokens are concatenated and jointly encoded.
+2. All possible span representations in the text are computed.
+3. A similarity score is calculated between each candidate span vector and each label representation vector via dot product.
+4. Spans exceeding the threshold are returned with their start and end character offsets.
+
+### Why Combine GLiNER with an LLM?
+
+* **Token Efficiency:** Pre-extracting legal and numerical entities allows the system to compress document context, reducing downstream prompt size by 60% to 80%.
+* **Elimination of Hallucinations:** Critical monetary numbers, penalty formulas, and dates are pulled directly from the text as exact string slices.
+* **Audit Trail Provenance:** Character offsets `[start, end]` allow UI dashboards to visually highlight the exact clause in the original contract.
 
 ---
 
-## 📂 Repository Structure
+## Project Structure
 
 ```text
 llm-financial-analyst-agent/
 ├── agent/
-│   ├── gliner_extractor.py     # Core GLiNER financial entity extractor & prompt formatter
-│   └── environment.py          # RL auditing environment with GLiNER entity grounding rewards
+│   ├── gliner_extractor.py      # Core extractor module and prompt formatter
+│   └── environment.py           # RL audit environment with entity grounding rewards
 ├── api/
-│   └── server.py               # FastAPI application with /api/extract-entities & /api/analyze
+│   └── server.py                # FastAPI endpoints for entity extraction and analysis
 ├── data/
-│   ├── financial_ner_train.json # Tokenized financial contract annotations for GLiNER fine-tuning
+│   ├── financial_ner_train.json # Tokenized training samples for financial entity fine-tuning
 │   └── financial_ner_eval.json  # Evaluation dataset
 ├── training/
-│   ├── train_gliner.py         # GLiNER fine-tuning pipeline (differential LR + negative sampling)
-│   └── train_grpo.py           # GRPO training loop for Qwen2.5-7B
+│   ├── train_gliner.py          # GLiNER fine-tuning script with differential learning rates
+│   └── train_grpo.py            # GRPO reinforcement learning loop for Qwen2.5-7B
 ├── tests/
-│   └── test_gliner.py          # Comprehensive pytest suite for extractor and API
-├── demo_gliner_audit.py        # Interactive CLI demo showcasing GLiNER extraction on contracts
-├── main.py                     # Server entrypoint
-├── requirements.txt            # Project dependencies
-└── README.md                   # Full documentation
+│   └── test_gliner.py           # Automated test suite for the extractor and API
+├── demo_gliner_audit.py         # Standalone CLI demonstration script
+├── main.py                      # Application entrypoint
+├── requirements.txt             # Pinned project dependencies
+└── README.md                    # Project documentation
 ```
 
 ---
 
-## 🚀 Quickstart & Installation
+## Installation
 
-### 1. Clone & Set Up Virtual Environment
+### Prerequisites
+* Python 3.10 to 3.12
+* PyTorch (CPU or CUDA)
 
 ```bash
 git clone https://github.com/kushagrakushwah/llm-financial-analyst-agent.git
 cd llm-financial-analyst-agent
 
-# Create and activate virtual environment
+# Set up virtual environment
 python -m venv .venv
-source .venv/bin/activate       # On Linux/macOS
-.\.venv\Scripts\Activate.ps1    # On Windows PowerShell
+
+# Activate on Linux/macOS:
+source .venv/bin/activate
+
+# Activate on Windows PowerShell:
+.\.venv\Scripts\Activate.ps1
 
 # Install dependencies
 pip install -r requirements.txt
@@ -92,26 +103,26 @@ pip install -r requirements.txt
 
 ---
 
-## ⚡ Running the Applications
+## Running the Project
 
-### 1. Run the Interactive Financial Audit Demo
-Run the standalone contract review demo to inspect entity extraction across three complex agreement scenarios:
+### 1. Interactive CLI Demonstration
+To test GLiNER on three contract scenarios (Vendor SLA, Overdue Invoicing, Software License):
 ```bash
 python demo_gliner_audit.py
 ```
 
-### 2. Launch the FastAPI Server
+### 2. Start the API Server
 ```bash
 python main.py
 ```
-The server will be available at `http://localhost:8001`. Access interactive Swagger docs at `http://localhost:8001/docs`.
+The server runs on `http://localhost:8001`. Interactive API documentation is available at `http://localhost:8001/docs`.
 
 ---
 
-## 📡 API Endpoints
+## API Reference
 
-### 1. `POST /api/extract-entities`
-*Ultra-fast, standalone entity extraction directly via GLiNER without invoking the heavy LLM.*
+### `POST /api/extract-entities`
+Performs lightweight, deterministic entity span extraction directly via GLiNER without loading or running the 7B LLM.
 
 **Request:**
 ```bash
@@ -154,31 +165,31 @@ curl -X POST "http://localhost:8001/api/extract-entities" \
 }
 ```
 
-### 2. `POST /api/analyze`
-*End-to-End Hybrid Audit: Extracts entities and produces a structured risk report.*
+### `POST /api/analyze`
+Executes the full hybrid audit: extracts entity spans, passes them as grounded context to the reasoning engine, and produces an exposure report.
 
 **Request:**
 ```bash
 curl -X POST "http://localhost:8001/api/analyze" \
      -H "Content-Type: application/json" \
      -d '{
-       "document": "Invoice #INV-2025-9941 is overdue by 45 days. Balances accrue 1.5% monthly late interest starting day 31.",
+       "document": "Invoice #INV-2025-9941 is overdue by 45 days. Accrues 1.5% monthly late interest starting day 31.",
        "task_type": "penalty_detection",
        "extract_entities": true
      }'
 ```
 
-### 3. `GET /api/entities/schema`
-*Returns the active financial schema and supported entity types.*
+### `GET /api/entities/schema`
+Returns the list of legal and financial entity labels supported by the extractor.
 
 ---
 
-## 🎯 Fine-Tuning GLiNER on Custom Financial Data
+## Fine-Tuning GLiNER
 
-While zero-shot GLiNER performs well generally, fine-tuning guarantees **90%+ F1 precision** on custom legal clauses, abbreviations, and numerical liability structures.
+While base zero-shot models recognize common generic entities, fine-tuning is required for domain-specific contract formulations such as multi-word delay penalties, grace periods, and liability caps.
 
-### 1. Data Format
-Annotations are formatted in tokenized JSON/JSONL:
+### 1. Data Schema
+Training data is stored in `data/financial_ner_train.json` in tokenized span format:
 ```json
 [
   {
@@ -191,25 +202,35 @@ Annotations are formatted in tokenized JSON/JSONL:
 ]
 ```
 
-### 2. Execute Training
+### 2. Training Process
+Run the fine-tuning script:
 ```bash
 python training/train_gliner.py
 ```
-This script:
-* Applies differential learning rates (`1e-5` for DeBERTa backbone, `1e-4` for projection head).
-* Enables negative entity sampling (`negatives=1.0`) so the model avoids false positives on unseen terms.
-* Automatically saves the resulting model checkpoint to `models/gliner_financial`.
+
+Key training parameters configured in `training/train_gliner.py`:
+* **Differential Learning Rates:** `1e-5` for the DeBERTa backbone (to avoid catastrophic forgetting) and `1e-4` for the projection head.
+* **Negative Sampling (`negatives=1.0`):** Samples unmentioned label classes during each training step so the model retains its zero-shot discrimination and suppresses false positives.
+* **Span Collator:** Uses `SpanDataCollator` to package token indices and span matrices.
+* **Output:** Saves the checkpoint to `models/gliner_financial`.
 
 ---
 
-## 🧪 Running the Test Suite
+## Testing
 
-Run the full pytest suite:
+Run the automated test suite with pytest:
 ```bash
 pytest tests/test_gliner.py -v
 ```
 
+The test suite covers:
+* Extractor initialization and label schema verification.
+* Span extraction correctness and offset integrity.
+* Prompt formatting logic.
+* All FastAPI endpoints (`/api/health`, `/api/entities/schema`, `/api/extract-entities`, `/api/analyze`).
+
 ---
 
-## 📜 License
-MIT License. Created by [Kushagra Singh Kushwah](https://github.com/kushagrakushwah).
+## License
+
+MIT License. Authored by Kushagra Singh Kushwah.
