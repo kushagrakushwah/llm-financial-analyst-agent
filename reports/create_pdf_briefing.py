@@ -26,13 +26,14 @@ def build_pdf():
 
     styles = getSampleStyleSheet()
 
+    # ALL text colors strictly pure black (#000000 / colors.black) - zero blue tint
     title_style = ParagraphStyle(
         'DocTitle',
         parent=styles['Heading1'],
         fontName='Helvetica-Bold',
         fontSize=19,
         leading=23,
-        textColor=colors.HexColor('#1a2a3a'),
+        textColor=colors.black,
         spaceAfter=4
     )
     subtitle_style = ParagraphStyle(
@@ -41,7 +42,7 @@ def build_pdf():
         fontName='Helvetica',
         fontSize=10,
         leading=14,
-        textColor=colors.HexColor('#4a5568'),
+        textColor=colors.black,
         spaceAfter=8
     )
     meta_style = ParagraphStyle(
@@ -50,7 +51,7 @@ def build_pdf():
         fontName='Helvetica-Bold',
         fontSize=8.5,
         leading=12,
-        textColor=colors.HexColor('#2b6cb0'),
+        textColor=colors.black,
         spaceAfter=6
     )
     h1_style = ParagraphStyle(
@@ -59,7 +60,7 @@ def build_pdf():
         fontName='Helvetica-Bold',
         fontSize=12,
         leading=16,
-        textColor=colors.HexColor('#1a365d'),
+        textColor=colors.black,
         spaceBefore=10,
         spaceAfter=4
     )
@@ -69,7 +70,7 @@ def build_pdf():
         fontName='Helvetica-Bold',
         fontSize=9.5,
         leading=13,
-        textColor=colors.HexColor('#2d3748'),
+        textColor=colors.black,
         spaceBefore=6,
         spaceAfter=3
     )
@@ -79,7 +80,7 @@ def build_pdf():
         fontName='Helvetica',
         fontSize=8.5,
         leading=12.5,
-        textColor=colors.HexColor('#2d3748'),
+        textColor=colors.black,
         spaceAfter=5
     )
     bullet_style = ParagraphStyle(
@@ -95,7 +96,7 @@ def build_pdf():
         fontName='Helvetica',
         fontSize=8.5,
         leading=12.5,
-        textColor=colors.HexColor('#1a365d')
+        textColor=colors.black
     )
     caption_style = ParagraphStyle(
         'Caption',
@@ -104,19 +105,19 @@ def build_pdf():
         fontSize=7.5,
         leading=10,
         alignment=1,
-        textColor=colors.HexColor('#718096'),
+        textColor=colors.black,
         spaceAfter=6
     )
 
     story = []
 
-    # Title & Metadata
+    # Title & Metadata (All Pure Black)
     story.append(Paragraph("Building a Two-Tier Financial Contract Auditor", title_style))
     story.append(Paragraph("How I paired an RL-trained Qwen2.5-7B agent with GLiNER for fast, deterministic contract extraction", subtitle_style))
     story.append(Paragraph("Author: Kushagra Singh Kushwah &nbsp;|&nbsp; Project: llm-financial-analyst-agent &nbsp;|&nbsp; Technical Report", meta_style))
-    story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor("#cbd5e0"), spaceBefore=4, spaceAfter=8))
+    story.append(HRFlowable(width="100%", thickness=1, color=colors.black, spaceBefore=4, spaceAfter=8))
 
-    # Section 1: The Context & Why I Changed My Approach
+    # Section 1: The Problem with Using Only a 7B LLM
     story.append(Paragraph("1. The Problem with Using Only a 7B LLM for Contract Review", h1_style))
     story.append(Paragraph(
         "In this project, my goal was to build an automated financial auditor that can review commercial contracts, flag late penalties, and calculate financial exposure. My initial approach was centered entirely around an autoregressive <b>Qwen2.5-7B</b> model, which I fine-tuned in an RL environment using <b>GRPO (Group Relative Policy Optimization)</b>.",
@@ -190,7 +191,7 @@ def build_pdf():
     story.append(Paragraph("• <b>Negative Label Sampling:</b> Configured <code>negatives=1.0</code> during training. This forces the model to contrast positive labels against randomly sampled irrelevant labels on every step, teaching it when <i>not</i> to fire and keeping false positives down.", bullet_style))
     story.append(Paragraph("• <b>Results:</b> Over 5 epochs, evaluation loss dropped from 24.9 down to <b>10.03</b>. When I tested it on a completely unseen contract clause, it correctly extracted a multi-token <code>penalty_rate</code> with <b>0.76 confidence</b>.", bullet_style))
 
-    # Section 5: Comparison Table
+    # Section 5: Comparison Table (Black Text & Neutral Grayscale)
     story.append(Spacer(1, 4))
     table_data = [
         ["Aspect", "Original Approach (7B LLM Only)", "Two-Tier Approach (GLiNER + Qwen)"],
@@ -201,13 +202,14 @@ def build_pdf():
     ]
     t = Table(table_data, colWidths=[105, 185, 235])
     t.setStyle(TableStyle([
-        ('BACKGROUND', (0,0), (-1,0), colors.HexColor('#2b6cb0')),
-        ('TEXTCOLOR', (0,0), (-1,0), colors.white),
+        ('BACKGROUND', (0,0), (-1,0), colors.HexColor('#e2e2e2')),
+        ('TEXTCOLOR', (0,0), (-1,0), colors.black),
         ('FONTNAME', (0,0), (-1,0), 'Helvetica-Bold'),
         ('FONTSIZE', (0,0), (-1,0), 8),
         ('BOTTOMPADDING', (0,0), (-1,0), 4),
-        ('BACKGROUND', (0,1), (-1,-1), colors.HexColor('#f7fafc')),
-        ('GRID', (0,0), (-1,-1), 0.5, colors.HexColor('#cbd5e0')),
+        ('BACKGROUND', (0,1), (-1,-1), colors.HexColor('#ffffff')),
+        ('TEXTCOLOR', (0,1), (-1,-1), colors.black),
+        ('GRID', (0,0), (-1,-1), 0.5, colors.HexColor('#333333')),
         ('FONTNAME', (0,1), (-1,-1), 'Helvetica'),
         ('FONTSIZE', (0,1), (-1,-1), 7.5),
         ('VALIGN', (0,0), (-1,-1), 'MIDDLE'),
@@ -217,7 +219,7 @@ def build_pdf():
     story.append(t)
     story.append(Spacer(1, 6))
 
-    # Section 6: Open Question / Doubt
+    # Section 6: Open Question / Doubt (Neutral border, pure black text)
     story.append(Paragraph("5. Open Question for Discussion", h1_style))
     story.append(Paragraph(
         "As I look at expanding this pipeline to handle more contract variations, here is an interesting design question I have been thinking through:",
@@ -237,8 +239,8 @@ def build_pdf():
     ]]
     dt = Table(doubt_box_data, colWidths=[525])
     dt.setStyle(TableStyle([
-        ('BACKGROUND', (0,0), (-1,-1), colors.HexColor('#edf2f7')),
-        ('BOX', (0,0), (-1,-1), 1, colors.HexColor('#4a5568')),
+        ('BACKGROUND', (0,0), (-1,-1), colors.HexColor('#f5f5f5')),
+        ('BOX', (0,0), (-1,-1), 1, colors.HexColor('#000000')),
         ('TOPPADDING', (0,0), (-1,-1), 6),
         ('BOTTOMPADDING', (0,0), (-1,-1), 6),
         ('LEFTPADDING', (0,0), (-1,-1), 8),
@@ -247,7 +249,7 @@ def build_pdf():
     story.append(dt)
 
     doc.build(story)
-    print(f"Successfully generated human-language PDF at: {pdf_path}")
+    print(f"Successfully generated 100% black-text PDF at: {pdf_path}")
 
 if __name__ == "__main__":
     build_pdf()

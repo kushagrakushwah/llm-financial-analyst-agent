@@ -7,15 +7,15 @@ ax.set_xlim(0, 10)
 ax.set_ylim(0, 4.5)
 ax.axis('off')
 
-# Colors
-bg_color = "#f8f9fa"
-box_border = "#2b2d42"
-box_fill1 = "#edf2f4"
-box_fill2 = "#e2eafc"
-box_fill3 = "#d7e3fc"
-box_fill4 = "#c1d3fe"
-box_fill5 = "#b6ccfe"
-text_color = "#1a1a2e"
+# Neutral grayscale colors (zero blue tint)
+box_border = "#000000"
+box_fill1 = "#f8f9fa"
+box_fill2 = "#f1f3f5"
+box_fill3 = "#e9ecef"
+box_fill4 = "#dee2e6"
+box_fill5 = "#f8f9fa"
+text_color = "#000000"
+subtext_color = "#222222"
 
 fig.patch.set_facecolor('white')
 
@@ -38,21 +38,21 @@ for b in boxes:
     ax.text(b["x"] + b["w"]/2, b["y"] + b["h"] - 0.35, b["title"],
             ha='center', va='center', fontsize=9.5, fontweight='bold', color=text_color)
     ax.text(b["x"] + b["w"]/2, b["y"] + (b["h"] - 0.5)/2, b["desc"],
-            ha='center', va='center', fontsize=7.5, color="#333333")
+            ha='center', va='center', fontsize=7.5, color=subtext_color)
 
-# Arrows
+# Arrows in solid black
 arrows = [(1.9, 2.4, 2.2, 2.4), (4.3, 2.4, 4.6, 2.4), (6.2, 2.4, 6.5, 2.4), (8.2, 2.4, 8.5, 2.4)]
 for x1, y1, x2, y2 in arrows:
     ax.annotate('', xy=(x2, y2), xytext=(x1, y1),
                 arrowprops=dict(facecolor=box_border, edgecolor=box_border, arrowstyle='->', lw=1.8))
 
-# Subtitle
+# Subtitle and titles in pure black
 ax.text(5.0, 4.1, "Two-Tier Hybrid Financial Contract Auditing Pipeline", ha='center', fontsize=12, fontweight='bold', color=text_color)
-ax.text(5.0, 3.8, "Fast Deterministic Information Extraction (GLiNER) + Deep Policy Reasoning (Qwen2.5-7B GRPO)", ha='center', fontsize=8.5, color="#555555")
+ax.text(5.0, 3.8, "Fast Deterministic Information Extraction (GLiNER) + Deep Policy Reasoning (Qwen2.5-7B GRPO)", ha='center', fontsize=8.5, color="#333333")
 
 plt.tight_layout()
 output_img = r"C:\Users\kusha\OneDrive\Music\Documents\Projects\llm-financial-analyst-agent\reports\hybrid_architecture_flowchart.png"
 import os
 os.makedirs(os.path.dirname(output_img), exist_ok=True)
 plt.savefig(output_img, bbox_inches='tight', dpi=300)
-print(f"Saved flowchart to {output_img}")
+print(f"Saved neutral-color flowchart to {output_img}")
