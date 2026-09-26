@@ -23,3 +23,4 @@ outputs/
 htmlcov/
 *.log
 runs/
+reports/
