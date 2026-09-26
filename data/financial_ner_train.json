@@ -1,0 +1,75 @@
+[
+  {
+    "tokenized_text": ["Vendor", "shall", "pay", "2%", "of", "contract", "value", "per", "week", "of", "delay", "beyond", "agreed", "delivery", "."],
+    "ner": [
+      [0, 1, "contracting_party"],
+      [3, 11, "penalty_rate"],
+      [11, 14, "penalty_condition"]
+    ]
+  },
+  {
+    "tokenized_text": ["In", "no", "event", "shall", "either", "party", "'s", "aggregate", "liability", "exceed", "$", "1,000,000", "USD", "under", "this", "Agreement", "."],
+    "ner": [
+      [10, 13, "liability_cap"],
+      [15, 16, "contract_type"]
+    ]
+  },
+  {
+    "tokenized_text": ["Invoice", "overdue", "by", "30", "days", "incurs", "a", "1.5%", "monthly", "late", "payment", "interest", "penalty", "."],
+    "ner": [
+      [3, 5, "grace_period"],
+      [7, 13, "penalty_rate"]
+    ]
+  },
+  {
+    "tokenized_text": ["Acme", "Corp", "agrees", "to", "pay", "Globex", "Consulting", "a", "fixed", "fee", "of", "$", "250,000", "payable", "in", "quarterly", "installments", "."],
+    "ner": [
+      [0, 2, "contracting_party"],
+      [5, 7, "contracting_party"],
+      [11, 13, "monetary_amount"],
+      [15, 17, "payment_terms"]
+    ]
+  },
+  {
+    "tokenized_text": ["Delivery", "missed", "by", "3", "weeks", ";", "SLA", "liquidated", "damages", "penalty", "is", "$", "5,000", "per", "day", "."],
+    "ner": [
+      [3, 5, "delay_duration"],
+      [6, 9, "penalty_condition"],
+      [11, 15, "penalty_rate"]
+    ]
+  },
+  {
+    "tokenized_text": ["This", "Agreement", "is", "effective", "as", "of", "October", "15", ",", "2025", "and", "shall", "terminate", "on", "October", "14", ",", "2027", "."],
+    "ner": [
+      [6, 10, "effective_date"],
+      [14, 18, "expiration_date"]
+    ]
+  },
+  {
+    "tokenized_text": ["Either", "party", "may", "terminate", "this", "contract", "upon", "giving", "60", "days", "written", "notice", "to", "the", "other", "."],
+    "ner": [
+      [8, 12, "termination_clause"]
+    ]
+  },
+  {
+    "tokenized_text": ["This", "Agreement", "shall", "be", "governed", "by", "and", "construed", "in", "accordance", "with", "the", "laws", "of", "the", "State", "of", "Delaware", "."],
+    "ner": [
+      [15, 18, "governing_law"]
+    ]
+  },
+  {
+    "tokenized_text": ["Client", "shall", "reimburse", "Service", "Provider", "for", "all", "documented", "expenses", "up", "to", "a", "maximum", "of", "$", "50,000", "."],
+    "ner": [
+      [0, 1, "contracting_party"],
+      [3, 5, "contracting_party"],
+      [14, 16, "liability_cap"]
+    ]
+  },
+  {
+    "tokenized_text": ["Failure", "to", "maintain", "99.9%", "uptime", "will", "result", "in", "a", "10%", "service", "credit", "rebate", "against", "next", "month", "'s", "fees", "."],
+    "ner": [
+      [3, 5, "sla_target"],
+      [9, 13, "penalty_rate"]
+    ]
+  }
+]

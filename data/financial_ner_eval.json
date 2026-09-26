@@ -1,0 +1,23 @@
+[
+  {
+    "tokenized_text": ["Supplier", "shall", "pay", "liquidated", "damages", "of", "1.0%", "per", "day", "for", "unexcused", "delay", "."],
+    "ner": [
+      [0, 1, "contracting_party"],
+      [3, 5, "penalty_condition"],
+      [6, 9, "penalty_rate"]
+    ]
+  },
+  {
+    "tokenized_text": ["The", "maximum", "cumulative", "liability", "shall", "not", "exceed", "$", "500,000", "USD", "under", "any", "circumstances", "."],
+    "ner": [
+      [7, 10, "liability_cap"]
+    ]
+  },
+  {
+    "tokenized_text": ["Contract", "commences", "on", "January", "1", ",", "2026", "and", "remains", "valid", "until", "December", "31", ",", "2028", "."],
+    "ner": [
+      [3, 7, "effective_date"],
+      [11, 15, "expiration_date"]
+    ]
+  }
+]

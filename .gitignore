@@ -1,0 +1,25 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Large Model Checkpoints & Weights (>100MB)
+models/
+outputs/
+*.bin
+*.pt
+*.pth
+*.safetensors
+
+# Testing & Logs
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+runs/
