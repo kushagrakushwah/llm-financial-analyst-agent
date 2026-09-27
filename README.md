@@ -269,49 +269,54 @@ All training checkpoints and evaluation runs produce machine-readable JSON trace
 
 ---
 
-### 3. Sample Code: Running Evals & Inspecting Traces
+### 3. Actual Recorded Log Samples
 
-#### Running the Benchmark Suite Programmatically
-```python
-from evaluation.benchmark_eval import main as run_benchmark
+Here are excerpts of the structured JSON telemetry recorded during fine-tuning and evaluation:
 
-# Executes comparative benchmarking across Heuristic, Zero-Shot, and Fine-Tuned models
-# Saves full trace telemetry to logs/eval_benchmark_results.json
-if __name__ == "__main__":
-    run_benchmark()
+#### Training Loss & Learning Rate Trace (`logs/training_trace.json`)
+```json
+{
+  "epoch": 5.0,
+  "global_step": 25,
+  "log_history": [
+    { "step": 1,  "epoch": 0.2, "loss": 34.78, "learning_rate": 0.0 },
+    { "step": 5,  "epoch": 1.0, "loss": 28.94, "eval_loss": 17.40, "learning_rate": 9.95e-5 },
+    { "step": 15, "epoch": 3.0, "loss": 14.12, "eval_loss": 12.85, "learning_rate": 6.89e-5 },
+    { "step": 25, "epoch": 5.0, "loss": 6.31,  "eval_loss": 10.03, "learning_rate": 1.58e-5 }
+  ]
+}
 ```
 
-#### Inspecting Loss Curves & Evaluation Traces
-```python
-import json
-
-# 1. Inspect Training Traces (Loss progression & Learning rates)
-with open("logs/training_trace.json", "r", encoding="utf-8") as f:
-    train_trace = json.load(f)
-
-print(f"Total Steps: {train_trace.get('global_step')}, Total Epochs: {train_trace.get('epoch')}")
-for entry in train_trace.get("log_history", []):
-    if "loss" in entry:
-        print(f"Epoch {entry['epoch']:.1f} | Step {entry['step']:>2} | Train Loss: {entry['loss']:.3f} | LR: {entry['learning_rate']:.2e}")
-    elif "eval_loss" in entry:
-        print(f"Epoch {entry['epoch']:.1f} | EVALUATION LOSS: {entry['eval_loss']:.3f}")
-
-# 2. Inspect Evaluation Traces (Per-model metrics and sample predictions)
-with open("logs/eval_benchmark_results.json", "r", encoding="utf-8") as f:
-    eval_results = json.load(f)
-
-for model in eval_results:
-    m = model["metrics"]
-    print(f"\nModel: {model['model_name']}")
-    print(f"  Precision: {m['precision']:.4f} | Recall: {m['recall']:.4f} | F1: {m['micro_f1']:.4f} | Latency: {m['avg_latency_ms']:.1f}ms")
-    
-    # Inspect first prediction trace
-    sample = model["traces"][0]
-    print(f"  Sample Text: \"{sample['text']}\"")
-    print(f"  Predictions: {sample['predicted_entities']}")
+#### Evaluation Prediction & Span Offset Trace (`logs/eval_benchmark_results.json`)
+```json
+{
+  "model_name": "Fine-Tuned GLiNER (Domain Specialized)",
+  "sample_index": 0,
+  "text": "Supplier shall pay liquidated damages of 1.0% per day for unexcused delay.",
+  "gold_entities": [
+    {
+      "label": "penalty_rate",
+      "text": "1.0% per day",
+      "char_start": 41,
+      "char_end": 53
+    }
+  ],
+  "predicted_entities": [
+    {
+      "label": "penalty_rate",
+      "text": "1.0% per day",
+      "score": 0.764,
+      "start": 41,
+      "end": 53
+    }
+  ],
+  "matched_count": 1,
+  "latency_ms": 74.20
+}
 ```
 
-Or run the CLI log analyzer:
+#### Run CLI Log Analysis
+To inspect the complete training progression and evaluation breakdown from your terminal:
 ```bash
 python evaluation/analyze_logs.py
 ```
