@@ -19,5 +19,39 @@
       [3, 7, "effective_date"],
       [11, 15, "expiration_date"]
     ]
+  },
+  {
+    "tokenized_text": ["Globex", "Corp", "agrees", "to", "remit", "$", "150,000", "within", "30", "days", "of", "invoice", "receipt", "."],
+    "ner": [
+      [0, 2, "contracting_party"],
+      [5, 7, "monetary_amount"],
+      [8, 10, "payment_terms"]
+    ]
+  },
+  {
+    "tokenized_text": ["A", "late", "fee", "penalty", "of", "2.0%", "monthly", "compounded", "interest", "applies", "to", "delinquent", "balances", "."],
+    "ner": [
+      [1, 4, "penalty_condition"],
+      [5, 9, "penalty_rate"]
+    ]
+  },
+  {
+    "tokenized_text": ["Either", "party", "may", "terminate", "this", "agreement", "with", "90", "days", "prior", "written", "notice", "."],
+    "ner": [
+      [7, 12, "termination_clause"]
+    ]
+  },
+  {
+    "tokenized_text": ["Contractor", "aggregate", "exposure", "is", "strictly", "capped", "at", "$", "2,000,000", "USD", "."],
+    "ner": [
+      [0, 1, "contracting_party"],
+      [7, 10, "liability_cap"]
+    ]
+  },
+  {
+    "tokenized_text": ["This", "charter", "is", "governed", "by", "the", "laws", "of", "the", "State", "of", "New", "York", "."],
+    "ner": [
+      [9, 13, "governing_law"]
+    ]
   }
 ]

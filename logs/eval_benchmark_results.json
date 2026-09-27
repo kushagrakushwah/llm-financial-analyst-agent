@@ -1,0 +1,1074 @@
+[
+  {
+    "model_name": "Heuristic (Regex Baseline)",
+    "metrics": {
+      "precision": 0.8333,
+      "recall": 0.3333,
+      "micro_f1": 0.4762,
+      "macro_f1": 0.3333,
+      "total_true_positives": 5,
+      "total_false_positives": 1,
+      "total_false_negatives": 10,
+      "avg_latency_ms": 0.09,
+      "p95_latency_ms": 0.59
+    },
+    "per_class_breakdown": {
+      "contracting_party": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3
+      },
+      "penalty_rate": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "penalty_condition": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "liability_cap": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 1
+      },
+      "monetary_amount": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0
+      },
+      "effective_date": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "expiration_date": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "termination_clause": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "governing_law": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "payment_terms": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      }
+    },
+    "traces": [
+      {
+        "sample_index": 0,
+        "text": "Supplier shall pay liquidated damages of 1.0% per day for unexcused delay.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "Supplier",
+            "char_start": 0,
+            "char_end": 8,
+            "token_span": [
+              0,
+              1
+            ]
+          },
+          {
+            "label": "penalty_condition",
+            "text": "liquidated damages",
+            "char_start": 19,
+            "char_end": 37,
+            "token_span": [
+              3,
+              5
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "1.0% per day",
+            "char_start": 41,
+            "char_end": 53,
+            "token_span": [
+              6,
+              9
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "text": "1.0% per day",
+            "label": "penalty_rate",
+            "score": 0.75,
+            "start": 41,
+            "end": 53
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 0.59
+      },
+      {
+        "sample_index": 1,
+        "text": "The maximum cumulative liability shall not exceed $ 500,000USD under any circumstances.",
+        "gold_entities": [
+          {
+            "label": "liability_cap",
+            "text": "$ 500,000USD",
+            "char_start": 50,
+            "char_end": 62,
+            "token_span": [
+              7,
+              10
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "text": "$ 500,000USD",
+            "label": "monetary_amount",
+            "score": 0.8,
+            "start": 50,
+            "end": 62
+          }
+        ],
+        "matched_count": 0,
+        "latency_ms": 0.02
+      },
+      {
+        "sample_index": 2,
+        "text": "Contract commences on January 1, 2026 and remains valid until December 31, 2028.",
+        "gold_entities": [
+          {
+            "label": "effective_date",
+            "text": "January 1, 2026",
+            "char_start": 22,
+            "char_end": 37,
+            "token_span": [
+              3,
+              7
+            ]
+          },
+          {
+            "label": "expiration_date",
+            "text": "December 31, 2028",
+            "char_start": 62,
+            "char_end": 79,
+            "token_span": [
+              11,
+              15
+            ]
+          }
+        ],
+        "predicted_entities": [],
+        "matched_count": 0,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 3,
+        "text": "Globex Corp agrees to remit $ 150,000 within 30 days of invoice receipt.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "Globex Corp",
+            "char_start": 0,
+            "char_end": 11,
+            "token_span": [
+              0,
+              2
+            ]
+          },
+          {
+            "label": "monetary_amount",
+            "text": "$ 150,000",
+            "char_start": 28,
+            "char_end": 37,
+            "token_span": [
+              5,
+              7
+            ]
+          },
+          {
+            "label": "payment_terms",
+            "text": "30 days",
+            "char_start": 45,
+            "char_end": 52,
+            "token_span": [
+              8,
+              10
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "text": "$ 150,000",
+            "label": "monetary_amount",
+            "score": 0.8,
+            "start": 28,
+            "end": 37
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 4,
+        "text": "A late fee penalty of 2.0% monthly compounded interest applies to delinquent balances.",
+        "gold_entities": [
+          {
+            "label": "penalty_condition",
+            "text": "late fee penalty",
+            "char_start": 2,
+            "char_end": 18,
+            "token_span": [
+              1,
+              4
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "2.0% monthly compounded interest",
+            "char_start": 22,
+            "char_end": 54,
+            "token_span": [
+              5,
+              9
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "text": "2.0% monthly",
+            "label": "penalty_rate",
+            "score": 0.75,
+            "start": 22,
+            "end": 34
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 5,
+        "text": "Either party may terminate this agreement with 90 days prior written notice.",
+        "gold_entities": [
+          {
+            "label": "termination_clause",
+            "text": "90 days prior written notice",
+            "char_start": 47,
+            "char_end": 75,
+            "token_span": [
+              7,
+              12
+            ]
+          }
+        ],
+        "predicted_entities": [],
+        "matched_count": 0,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 6,
+        "text": "Contractor aggregate exposure is strictly capped at $ 2,000,000USD.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "Contractor",
+            "char_start": 0,
+            "char_end": 10,
+            "token_span": [
+              0,
+              1
+            ]
+          },
+          {
+            "label": "liability_cap",
+            "text": "$ 2,000,000USD",
+            "char_start": 52,
+            "char_end": 66,
+            "token_span": [
+              7,
+              10
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "text": "$ 2,000,000USD",
+            "label": "liability_cap",
+            "score": 0.8,
+            "start": 52,
+            "end": 66
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 7,
+        "text": "This charter is governed by the laws of the State of New York.",
+        "gold_entities": [
+          {
+            "label": "governing_law",
+            "text": "State of New York",
+            "char_start": 44,
+            "char_end": 61,
+            "token_span": [
+              9,
+              13
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "text": "laws of the State of New York",
+            "label": "governing_law",
+            "score": 0.85,
+            "start": 32,
+            "end": 61
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 0.02
+      }
+    ]
+  },
+  {
+    "model_name": "Zero-Shot GLiNER (Base)",
+    "metrics": {
+      "precision": 0.6667,
+      "recall": 0.5333,
+      "micro_f1": 0.5926,
+      "macro_f1": 0.4024,
+      "total_true_positives": 8,
+      "total_false_positives": 4,
+      "total_false_negatives": 7,
+      "avg_latency_ms": 113.89,
+      "p95_latency_ms": 359.6
+    },
+    "per_class_breakdown": {
+      "contracting_party": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 0
+      },
+      "penalty_rate": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "penalty_condition": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "liability_cap": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "monetary_amount": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 0
+      },
+      "effective_date": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0
+      },
+      "expiration_date": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "termination_clause": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "governing_law": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "payment_terms": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      }
+    },
+    "traces": [
+      {
+        "sample_index": 0,
+        "text": "Supplier shall pay liquidated damages of 1.0% per day for unexcused delay.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "Supplier",
+            "char_start": 0,
+            "char_end": 8,
+            "token_span": [
+              0,
+              1
+            ]
+          },
+          {
+            "label": "penalty_condition",
+            "text": "liquidated damages",
+            "char_start": 19,
+            "char_end": 37,
+            "token_span": [
+              3,
+              5
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "1.0% per day",
+            "char_start": 41,
+            "char_end": 53,
+            "token_span": [
+              6,
+              9
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "text": "Supplier",
+            "label": "contracting_party",
+            "score": 0.8184733390808105
+          },
+          {
+            "start": 41,
+            "end": 45,
+            "text": "1.0%",
+            "label": "penalty_rate",
+            "score": 0.587791919708252
+          }
+        ],
+        "matched_count": 2,
+        "latency_ms": 359.6
+      },
+      {
+        "sample_index": 1,
+        "text": "The maximum cumulative liability shall not exceed $ 500,000USD under any circumstances.",
+        "gold_entities": [
+          {
+            "label": "liability_cap",
+            "text": "$ 500,000USD",
+            "char_start": 50,
+            "char_end": 62,
+            "token_span": [
+              7,
+              10
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 50,
+            "end": 62,
+            "text": "$ 500,000USD",
+            "label": "monetary_amount",
+            "score": 0.6753238439559937
+          }
+        ],
+        "matched_count": 0,
+        "latency_ms": 83.84
+      },
+      {
+        "sample_index": 2,
+        "text": "Contract commences on January 1, 2026 and remains valid until December 31, 2028.",
+        "gold_entities": [
+          {
+            "label": "effective_date",
+            "text": "January 1, 2026",
+            "char_start": 22,
+            "char_end": 37,
+            "token_span": [
+              3,
+              7
+            ]
+          },
+          {
+            "label": "expiration_date",
+            "text": "December 31, 2028",
+            "char_start": 62,
+            "char_end": 79,
+            "token_span": [
+              11,
+              15
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 22,
+            "end": 37,
+            "text": "January 1, 2026",
+            "label": "effective_date",
+            "score": 0.6779773235321045
+          },
+          {
+            "start": 62,
+            "end": 79,
+            "text": "December 31, 2028",
+            "label": "effective_date",
+            "score": 0.5111194252967834
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 74.69
+      },
+      {
+        "sample_index": 3,
+        "text": "Globex Corp agrees to remit $ 150,000 within 30 days of invoice receipt.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "Globex Corp",
+            "char_start": 0,
+            "char_end": 11,
+            "token_span": [
+              0,
+              2
+            ]
+          },
+          {
+            "label": "monetary_amount",
+            "text": "$ 150,000",
+            "char_start": 28,
+            "char_end": 37,
+            "token_span": [
+              5,
+              7
+            ]
+          },
+          {
+            "label": "payment_terms",
+            "text": "30 days",
+            "char_start": 45,
+            "char_end": 52,
+            "token_span": [
+              8,
+              10
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "text": "Globex Corp",
+            "label": "contracting_party",
+            "score": 0.7787324786186218
+          },
+          {
+            "start": 28,
+            "end": 37,
+            "text": "$ 150,000",
+            "label": "monetary_amount",
+            "score": 0.7761324644088745
+          }
+        ],
+        "matched_count": 2,
+        "latency_ms": 76.83
+      },
+      {
+        "sample_index": 4,
+        "text": "A late fee penalty of 2.0% monthly compounded interest applies to delinquent balances.",
+        "gold_entities": [
+          {
+            "label": "penalty_condition",
+            "text": "late fee penalty",
+            "char_start": 2,
+            "char_end": 18,
+            "token_span": [
+              1,
+              4
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "2.0% monthly compounded interest",
+            "char_start": 22,
+            "char_end": 54,
+            "token_span": [
+              5,
+              9
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 22,
+            "end": 26,
+            "text": "2.0%",
+            "label": "penalty_rate",
+            "score": 0.695590078830719
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 80.05
+      },
+      {
+        "sample_index": 5,
+        "text": "Either party may terminate this agreement with 90 days prior written notice.",
+        "gold_entities": [
+          {
+            "label": "termination_clause",
+            "text": "90 days prior written notice",
+            "char_start": 47,
+            "char_end": 75,
+            "token_span": [
+              7,
+              12
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "text": "Either party",
+            "label": "contracting_party",
+            "score": 0.5901058912277222
+          }
+        ],
+        "matched_count": 0,
+        "latency_ms": 79.36
+      },
+      {
+        "sample_index": 6,
+        "text": "Contractor aggregate exposure is strictly capped at $ 2,000,000USD.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "Contractor",
+            "char_start": 0,
+            "char_end": 10,
+            "token_span": [
+              0,
+              1
+            ]
+          },
+          {
+            "label": "liability_cap",
+            "text": "$ 2,000,000USD",
+            "char_start": 52,
+            "char_end": 66,
+            "token_span": [
+              7,
+              10
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "text": "Contractor",
+            "label": "contracting_party",
+            "score": 0.7402896881103516
+          },
+          {
+            "start": 52,
+            "end": 66,
+            "text": "$ 2,000,000USD",
+            "label": "monetary_amount",
+            "score": 0.7512391805648804
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 81.32
+      },
+      {
+        "sample_index": 7,
+        "text": "This charter is governed by the laws of the State of New York.",
+        "gold_entities": [
+          {
+            "label": "governing_law",
+            "text": "State of New York",
+            "char_start": 44,
+            "char_end": 61,
+            "token_span": [
+              9,
+              13
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 32,
+            "end": 61,
+            "text": "laws of the State of New York",
+            "label": "governing_law",
+            "score": 0.4798157513141632
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 75.43
+      }
+    ]
+  },
+  {
+    "model_name": "Fine-Tuned GLiNER (Domain Specialized)",
+    "metrics": {
+      "precision": 0.625,
+      "recall": 0.3333,
+      "micro_f1": 0.4348,
+      "macro_f1": 0.29,
+      "total_true_positives": 5,
+      "total_false_positives": 3,
+      "total_false_negatives": 10,
+      "avg_latency_ms": 76.1,
+      "p95_latency_ms": 85.92
+    },
+    "per_class_breakdown": {
+      "contracting_party": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 2
+      },
+      "penalty_rate": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "penalty_condition": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "liability_cap": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "monetary_amount": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "effective_date": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "expiration_date": {
+        "tp": 1,
+        "fp": 3,
+        "fn": 0
+      },
+      "termination_clause": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "governing_law": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "payment_terms": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      }
+    },
+    "traces": [
+      {
+        "sample_index": 0,
+        "text": "Supplier shall pay liquidated damages of 1.0% per day for unexcused delay.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "Supplier",
+            "char_start": 0,
+            "char_end": 8,
+            "token_span": [
+              0,
+              1
+            ]
+          },
+          {
+            "label": "penalty_condition",
+            "text": "liquidated damages",
+            "char_start": 19,
+            "char_end": 37,
+            "token_span": [
+              3,
+              5
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "1.0% per day",
+            "char_start": 41,
+            "char_end": 53,
+            "token_span": [
+              6,
+              9
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 41,
+            "end": 74,
+            "text": "1.0% per day for unexcused delay.",
+            "label": "penalty_rate",
+            "score": 0.6266481280326843
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 85.92
+      },
+      {
+        "sample_index": 1,
+        "text": "The maximum cumulative liability shall not exceed $ 500,000USD under any circumstances.",
+        "gold_entities": [
+          {
+            "label": "liability_cap",
+            "text": "$ 500,000USD",
+            "char_start": 50,
+            "char_end": 62,
+            "token_span": [
+              7,
+              10
+            ]
+          }
+        ],
+        "predicted_entities": [],
+        "matched_count": 0,
+        "latency_ms": 79.56
+      },
+      {
+        "sample_index": 2,
+        "text": "Contract commences on January 1, 2026 and remains valid until December 31, 2028.",
+        "gold_entities": [
+          {
+            "label": "effective_date",
+            "text": "January 1, 2026",
+            "char_start": 22,
+            "char_end": 37,
+            "token_span": [
+              3,
+              7
+            ]
+          },
+          {
+            "label": "expiration_date",
+            "text": "December 31, 2028",
+            "char_start": 62,
+            "char_end": 79,
+            "token_span": [
+              11,
+              15
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 22,
+            "end": 41,
+            "text": "January 1, 2026 and",
+            "label": "expiration_date",
+            "score": 0.7909058928489685
+          },
+          {
+            "start": 62,
+            "end": 80,
+            "text": "December 31, 2028.",
+            "label": "expiration_date",
+            "score": 0.8425440788269043
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 76.41
+      },
+      {
+        "sample_index": 3,
+        "text": "Globex Corp agrees to remit $ 150,000 within 30 days of invoice receipt.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "Globex Corp",
+            "char_start": 0,
+            "char_end": 11,
+            "token_span": [
+              0,
+              2
+            ]
+          },
+          {
+            "label": "monetary_amount",
+            "text": "$ 150,000",
+            "char_start": 28,
+            "char_end": 37,
+            "token_span": [
+              5,
+              7
+            ]
+          },
+          {
+            "label": "payment_terms",
+            "text": "30 days",
+            "char_start": 45,
+            "char_end": 52,
+            "token_span": [
+              8,
+              10
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 21,
+            "text": "Globex Corp agrees to",
+            "label": "contracting_party",
+            "score": 0.35368841886520386
+          },
+          {
+            "start": 45,
+            "end": 72,
+            "text": "30 days of invoice receipt.",
+            "label": "expiration_date",
+            "score": 0.46369150280952454
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 73.58
+      },
+      {
+        "sample_index": 4,
+        "text": "A late fee penalty of 2.0% monthly compounded interest applies to delinquent balances.",
+        "gold_entities": [
+          {
+            "label": "penalty_condition",
+            "text": "late fee penalty",
+            "char_start": 2,
+            "char_end": 18,
+            "token_span": [
+              1,
+              4
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "2.0% monthly compounded interest",
+            "char_start": 22,
+            "char_end": 54,
+            "token_span": [
+              5,
+              9
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 22,
+            "end": 86,
+            "text": "2.0% monthly compounded interest applies to delinquent balances.",
+            "label": "penalty_rate",
+            "score": 0.6015784740447998
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 76.8
+      },
+      {
+        "sample_index": 5,
+        "text": "Either party may terminate this agreement with 90 days prior written notice.",
+        "gold_entities": [
+          {
+            "label": "termination_clause",
+            "text": "90 days prior written notice",
+            "char_start": 47,
+            "char_end": 75,
+            "token_span": [
+              7,
+              12
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 47,
+            "end": 76,
+            "text": "90 days prior written notice.",
+            "label": "expiration_date",
+            "score": 0.8012121319770813
+          }
+        ],
+        "matched_count": 0,
+        "latency_ms": 71.9
+      },
+      {
+        "sample_index": 6,
+        "text": "Contractor aggregate exposure is strictly capped at $ 2,000,000USD.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "Contractor",
+            "char_start": 0,
+            "char_end": 10,
+            "token_span": [
+              0,
+              1
+            ]
+          },
+          {
+            "label": "liability_cap",
+            "text": "$ 2,000,000USD",
+            "char_start": 52,
+            "char_end": 66,
+            "token_span": [
+              7,
+              10
+            ]
+          }
+        ],
+        "predicted_entities": [],
+        "matched_count": 0,
+        "latency_ms": 73.71
+      },
+      {
+        "sample_index": 7,
+        "text": "This charter is governed by the laws of the State of New York.",
+        "gold_entities": [
+          {
+            "label": "governing_law",
+            "text": "State of New York",
+            "char_start": 44,
+            "char_end": 61,
+            "token_span": [
+              9,
+              13
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 44,
+            "end": 62,
+            "text": "State of New York.",
+            "label": "governing_law",
+            "score": 0.8141220211982727
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 70.92
+      }
+    ]
+  }
+]
