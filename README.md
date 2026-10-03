@@ -58,18 +58,20 @@ Unlike traditional token classification models (such as spaCy or standard BERT-N
 ```text
 llm-financial-analyst-agent/
 ├── agent/
-│   ├── gliner_extractor.py      # Core extractor module and prompt formatter
+│   ├── gliner_extractor.py      # Core extractor with auto-chunking & batch support
+│   ├── document_chunker.py      # Boundary-aware chunking & NMS span stitching
+│   ├── risk_engine.py           # Quantitative financial risk & governance rules engine
 │   └── environment.py           # RL audit environment with entity grounding rewards
 ├── api/
-│   └── server.py                # FastAPI endpoints for entity extraction, audit, and frontend static delivery
+│   └── server.py                # Production FastAPI server with CORS, telemetry & exports
 ├── frontend/
-│   └── index.html               # Professional, zero-emoji institutional auditing interface
+│   └── index.html               # Professional institutional auditing interface (zero emojis)
 ├── playground/
-│   └── index.html               # Standalone interactive GLiNER & TabPFN lab with architecture illustrations
+│   └── index.html               # Standalone interactive GLiNER & TabPFN lab
 ├── data/
-│   ├── financial_ner_train.json # Tokenized training samples for financial entity fine-tuning (162 clauses)
+│   ├── financial_ner_train.json # Tokenized training samples for fine-tuning (162 clauses)
 │   ├── financial_ner_eval.json  # In-domain evaluation dataset (30 clauses, 12 categories)
-│   └── cuad_realworld_eval.json # Real-world SEC Edgar contracts from Atticus Project CUAD (68 clauses)
+│   └── cuad_realworld_eval.json # Real-world SEC Edgar contracts from Atticus CUAD (68 clauses)
 ├── evaluation/
 │   ├── benchmark_eval.py        # In-domain benchmark (Baseline vs Zero-Shot vs Fine-Tuned)
 │   ├── benchmark_cuad_realworld.py # Out-of-distribution real SEC contract benchmark
@@ -87,7 +89,12 @@ llm-financial-analyst-agent/
 │   ├── train_gliner.py          # GLiNER fine-tuning script with differential learning rates
 │   └── train_grpo.py            # GRPO reinforcement learning loop for Qwen2.5-7B
 ├── tests/
-│   └── test_gliner.py           # Automated test suite for the extractor and API
+│   ├── test_gliner.py           # Core extractor and baseline API unit tests
+│   └── test_production_pipeline.py # Chunker, risk engine, batch, and CSV export tests
+├── cli_audit.py                 # Production CLI contract auditing and batch tool
+├── Dockerfile                   # Lean production container image
+├── docker-compose.yml           # Containerized orchestration configuration
+├── .env.example                 # Production environment variables template
 ├── demo_gliner_audit.py         # Standalone CLI demonstration script
 ├── main.py                      # Application entrypoint
 ├── requirements.txt             # Pinned project dependencies

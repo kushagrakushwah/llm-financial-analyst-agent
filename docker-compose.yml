@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  financial-analyst-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: financial_analyst_agent
+    restart: unless-stopped
+    ports:
+      - "8001:8001"
+    environment:
+      - PORT=8001
+      - USE_MOCK_LLM=true
+      - MODEL_PATH=Qwen/Qwen2.5-7B-Instruct
+      - GLINER_MODEL=models/gliner_financial
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

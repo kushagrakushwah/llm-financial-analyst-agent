@@ -621,7 +621,11 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
           Contract Clause Input
         </div>
-        <button class="pill-btn" onclick="clearInput()">Clear</button>
+        <div class="flex-row">
+          <input type="file" id="contractFileInput" accept=".txt,.json,.md" style="display:none;" onchange="handleContractUpload(event)">
+          <button class="pill-btn" onclick="document.getElementById('contractFileInput').click()">Upload File</button>
+          <button class="pill-btn" onclick="clearInput()">Clear</button>
+        </div>
       </div>
 
       <div class="panel-body">
@@ -726,6 +730,10 @@
 
           <!-- Tab 2: Entities Table -->
           <div id="tab-table" style="display:none;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
+              <span class="muted" style="font-size:0.75rem; font-family:var(--font-mono);">Verified character-level offsets.</span>
+              <button class="pill-btn" onclick="downloadCsv()">Download CSV</button>
+            </div>
             <div class="table-wrapper">
               <table>
                 <thead>
@@ -967,24 +975,40 @@ Execute 'Full Hybrid Audit' to synthesize risk assessment, penalty checks, and e
       try {
         let auditData = null;
         try {
-          const resp = await fetch("http://localhost:8001/api/analyze", {
+          const resp = await fetch("http://localhost:8001/api/audit-document", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ document: text, task_type, extract_entities: true, threshold }),
+            body: JSON.stringify({ document: text, task_type, threshold }),
             signal: AbortSignal.timeout(6000)
           });
           if (resp.ok) {
             auditData = await resp.json();
           }
         } catch (e) {
-          console.warn("API audit offline, synthesizing locally", e);
+          console.warn("API audit-document offline, trying legacy analyze", e);
+        }
+
+        if (!auditData) {
+          try {
+            const resp = await fetch("http://localhost:8001/api/analyze", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ document: text, task_type, extract_entities: true, threshold }),
+              signal: AbortSignal.timeout(6000)
+            });
+            if (resp.ok) {
+              auditData = await resp.json();
+            }
+          } catch (e) {
+            console.warn("API audit offline, synthesizing locally", e);
+          }
         }
 
         if (!auditData) {
           const simulatedEnts = simulateExtraction(text, threshold).entities;
           auditData = {
             task_type,
-            analysis: generateClientAuditReport(task_type, text, simulatedEnts),
+            llm_analysis: generateClientAuditReport(task_type, text, simulatedEnts),
             entities: simulatedEnts
           };
         }
@@ -993,7 +1017,18 @@ Execute 'Full Hybrid Audit' to synthesize risk assessment, penalty checks, and e
         document.getElementById("metricTime").textContent = `${elapsed} ms`;
 
         renderResults(text, auditData.entities || []);
-        document.getElementById("auditReportContent").textContent = auditData.analysis;
+
+        let displayText = auditData.llm_analysis || auditData.analysis || "";
+        if (auditData.scorecard) {
+          displayText = `GOVERNANCE SCORECARD: ${auditData.scorecard.governance_score}/100 [${auditData.scorecard.overall_risk_tier} RISK]\n` +
+                        `Liability Capped: ${auditData.scorecard.liability_capped ? 'YES' : 'NO (CRITICAL UNBOUNDED EXPOSURE)'}\n` +
+                        (auditData.scorecard.governing_jurisdiction ? `Jurisdiction: ${auditData.scorecard.governing_jurisdiction}\n` : '') +
+                        (auditData.scorecard.max_penalty_rate_annualized_pct ? `Annualized Penalty Rate: ${auditData.scorecard.max_penalty_rate_annualized_pct}%\n` : '') +
+                        `\nEXECUTIVE FINDINGS:\n` +
+                        auditData.scorecard.findings.map(f => `  [${f.severity}] ${f.title}: ${f.description}\n  -> Action: ${f.action_item || 'N/A'}`).join("\n\n") +
+                        `\n\nVERDICT:\n${auditData.scorecard.executive_verdict}`;
+        }
+        document.getElementById("auditReportContent").textContent = displayText;
         document.getElementById("rawJsonArea").value = JSON.stringify(auditData, null, 2);
         switchTab("audit");
       } catch (err) {
@@ -1002,6 +1037,61 @@ Execute 'Full Hybrid Audit' to synthesize risk assessment, penalty checks, and e
         btn.disabled = false;
         btn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg> Full Hybrid Audit`;
       }
+    }
+
+    async function downloadCsv() {
+      const text = document.getElementById("contractInput").value.trim();
+      if (!text) {
+        alert("Please load or enter contract text first.");
+        return;
+      }
+      const threshold = parseFloat(document.getElementById("thresholdSlider").value);
+      try {
+        const resp = await fetch("http://localhost:8001/api/export/csv", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ text, threshold })
+        });
+        if (resp.ok) {
+          const blob = await resp.blob();
+          const url = window.URL.createObjectURL(blob);
+          const a = document.createElement("a");
+          a.href = url;
+          a.download = "audited_contract_entities.csv";
+          document.body.appendChild(a);
+          a.click();
+          a.remove();
+          return;
+        }
+      } catch (e) {
+        console.warn("Backend CSV export failed, generating client CSV", e);
+      }
+
+      if (lastResult && lastResult.entities) {
+        let csvContent = "Entity Text,Label,Confidence,Start Offset,End Offset\n";
+        lastResult.entities.forEach(e => {
+          csvContent += `"${e.text.replace(/"/g, '""')}",${e.label},${e.score.toFixed(4)},${e.start},${e.end}\n`;
+        });
+        const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "audited_contract_entities.csv";
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+      }
+    }
+
+    function handleContractUpload(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        document.getElementById("contractInput").value = e.target.result;
+        clearResults();
+      };
+      reader.readAsText(file);
     }
 
     // Highlighting & Table Rendering

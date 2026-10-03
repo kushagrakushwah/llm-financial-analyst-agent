@@ -85,12 +85,24 @@ class FinancialEntityExtractor:
         labels: Optional[List[str]] = None,
         threshold: float = 0.45,
         flat_ner: bool = True,
+        chunk_long_text: bool = True,
     ) -> List[EntitySpan]:
         """
         Extracts entity spans from text with exact character offsets.
+        Automatically chunks documents exceeding 1200 characters to prevent
+        DeBERTa subword context truncation.
         """
         if not text or not text.strip():
             return []
+
+        # Route large contracts through boundary-aware sliding window chunker
+        if chunk_long_text and len(text) > 1200:
+            return self.extract_long_document(
+                text=text,
+                labels=labels,
+                threshold=threshold,
+                flat_ner=flat_ner,
+            )
 
         target_labels = labels or self.default_labels
         predictions = self.model.predict_entities(
@@ -106,6 +118,61 @@ class FinancialEntityExtractor:
                 end=int(ent["end"]),
             )
             for ent in predictions
+        ]
+
+    def extract_long_document(
+        self,
+        text: str,
+        labels: Optional[List[str]] = None,
+        threshold: float = 0.45,
+        flat_ner: bool = True,
+        chunk_chars: int = 1200,
+        overlap_chars: int = 200,
+    ) -> List[EntitySpan]:
+        """
+        Processes multi-page contracts using sliding window chunking and
+        reconciles spans with Non-Maximum Suppression (NMS).
+        """
+        from agent.document_chunker import DocumentChunker
+
+        chunker = DocumentChunker(max_chars=chunk_chars, overlap_chars=overlap_chars)
+        chunks = chunker.chunk(text)
+
+        target_labels = labels or self.default_labels
+        chunk_extractions = []
+
+        for ch in chunks:
+            preds = self.model.predict_entities(
+                ch.text, target_labels, threshold=threshold, flat_ner=flat_ner
+            )
+            chunk_extractions.append((ch, preds))
+
+        stitched = chunker.stitch_spans(text, chunk_extractions)
+
+        return [
+            EntitySpan(
+                text=ent["text"],
+                label=ent["label"],
+                score=float(ent["score"]),
+                start=int(ent["start"]),
+                end=int(ent["end"]),
+            )
+            for ent in stitched
+        ]
+
+    def extract_batch(
+        self,
+        texts: List[str],
+        labels: Optional[List[str]] = None,
+        threshold: float = 0.45,
+        flat_ner: bool = True,
+    ) -> List[List[EntitySpan]]:
+        """
+        Extracts entities across multiple contract clauses in a batch.
+        """
+        return [
+            self.extract(t, labels=labels, threshold=threshold, flat_ner=flat_ner)
+            for t in texts
         ]
 
     def format_for_llm_prompt(self, entities: List[EntitySpan]) -> str:
