@@ -2,6 +2,8 @@
 
 A two-stage financial auditing pipeline combining GLiNER (Generalist and Lightweight Model for Named Entity Recognition) with a Qwen2.5-7B GRPO policy agent for automated contract review, penalty detection, and financial risk evaluation.
 
+Live Demo: **[https://kushagrakushwah.github.io/llm-financial-analyst-agent/](https://kushagrakushwah.github.io/llm-financial-analyst-agent/)**
+
 ---
 
 ## Overview
