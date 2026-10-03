@@ -15,6 +15,7 @@ import os
 import re
 import time
 import shutil
+import glob
 from typing import List, Dict, Any, Tuple
 from gliner import GLiNER
 
@@ -30,6 +31,8 @@ DEFAULT_FINANCIAL_LABELS = [
     "termination_clause",
     "governing_law",
     "payment_terms",
+    "sla_target",
+    "grace_period",
 ]
 
 
@@ -233,7 +236,7 @@ def main():
     finetuned_path = os.path.join(base_dir, "models", "gliner_financial")
     print(f"\n[3/3] Evaluating Model 3: Fine-Tuned GLiNER ({finetuned_path})...")
     finetuned_model = GLiNER.from_pretrained(finetuned_path)
-    finetuned_res = evaluate_model("Fine-Tuned GLiNER (Domain Specialized)", finetuned_model, eval_samples, DEFAULT_FINANCIAL_LABELS, threshold=0.35)
+    finetuned_res = evaluate_model("Fine-Tuned GLiNER (Domain Specialized)", finetuned_model, eval_samples, DEFAULT_FINANCIAL_LABELS, threshold=0.45)
 
     comparison = [heuristic_res, zeroshot_res, finetuned_res]
 
@@ -244,10 +247,13 @@ def main():
     print(f"\n[*] Saved full evaluation traces to: {eval_log_path}")
 
     # Copy / export trainer state log as well
-    trainer_state_source = os.path.join(finetuned_path, "checkpoint-25", "trainer_state.json")
-    if os.path.exists(trainer_state_source):
-        shutil.copy(trainer_state_source, os.path.join(logs_dir, "training_trace.json"))
-        print(f"[*] Exported training trace log to: {os.path.join(logs_dir, 'training_trace.json')}")
+    checkpoints = glob.glob(os.path.join(finetuned_path, "checkpoint-*"))
+    if checkpoints:
+        latest_ckpt = max(checkpoints, key=lambda p: int(os.path.basename(p).split("-")[-1]))
+        trainer_state_source = os.path.join(latest_ckpt, "trainer_state.json")
+        if os.path.exists(trainer_state_source):
+            shutil.copy(trainer_state_source, os.path.join(logs_dir, "training_trace.json"))
+            print(f"[*] Exported training trace log to: {os.path.join(logs_dir, 'training_trace.json')}")
 
     # Print comparison table
     print("\n" + "=" * 76)

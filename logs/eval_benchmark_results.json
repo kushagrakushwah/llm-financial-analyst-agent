@@ -2,66 +2,76 @@
   {
     "model_name": "Heuristic (Regex Baseline)",
     "metrics": {
-      "precision": 0.8333,
-      "recall": 0.3333,
-      "micro_f1": 0.4762,
-      "macro_f1": 0.3333,
-      "total_true_positives": 5,
-      "total_false_positives": 1,
-      "total_false_negatives": 10,
-      "avg_latency_ms": 0.09,
-      "p95_latency_ms": 0.59
+      "precision": 0.55,
+      "recall": 0.1803,
+      "micro_f1": 0.2716,
+      "macro_f1": 0.1836,
+      "total_true_positives": 11,
+      "total_false_positives": 9,
+      "total_false_negatives": 50,
+      "avg_latency_ms": 0.04,
+      "p95_latency_ms": 0.09
     },
     "per_class_breakdown": {
       "contracting_party": {
         "tp": 0,
         "fp": 0,
-        "fn": 3
+        "fn": 15
       },
       "penalty_rate": {
-        "tp": 2,
-        "fp": 0,
-        "fn": 0
+        "tp": 6,
+        "fp": 2,
+        "fn": 3
       },
       "penalty_condition": {
         "tp": 0,
         "fp": 0,
-        "fn": 2
+        "fn": 8
       },
       "liability_cap": {
         "tp": 1,
         "fp": 0,
-        "fn": 1
+        "fn": 4
       },
       "monetary_amount": {
-        "tp": 1,
-        "fp": 1,
+        "tp": 2,
+        "fp": 7,
         "fn": 0
       },
       "effective_date": {
         "tp": 0,
         "fp": 0,
-        "fn": 1
+        "fn": 5
       },
       "expiration_date": {
         "tp": 0,
         "fp": 0,
-        "fn": 1
+        "fn": 3
       },
       "termination_clause": {
         "tp": 0,
         "fp": 0,
-        "fn": 1
+        "fn": 3
       },
       "governing_law": {
-        "tp": 1,
+        "tp": 2,
         "fp": 0,
-        "fn": 0
+        "fn": 1
       },
       "payment_terms": {
         "tp": 0,
         "fp": 0,
-        "fn": 1
+        "fn": 4
+      },
+      "sla_target": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "grace_period": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
       }
     },
     "traces": [
@@ -98,6 +108,16 @@
               6,
               9
             ]
+          },
+          {
+            "label": "penalty_condition",
+            "text": "unexcused delay",
+            "char_start": 58,
+            "char_end": 73,
+            "token_span": [
+              10,
+              12
+            ]
           }
         ],
         "predicted_entities": [
@@ -110,7 +130,7 @@
           }
         ],
         "matched_count": 1,
-        "latency_ms": 0.59
+        "latency_ms": 0.82
       },
       {
         "sample_index": 1,
@@ -137,7 +157,7 @@
           }
         ],
         "matched_count": 0,
-        "latency_ms": 0.02
+        "latency_ms": 0.03
       },
       {
         "sample_index": 2,
@@ -333,73 +353,841 @@
           }
         ],
         "matched_count": 1,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 8,
+        "text": "Penalty of 3% per week shall apply for every week of milestone delay beyond the approved schedule.",
+        "gold_entities": [
+          {
+            "label": "penalty_rate",
+            "text": "3% per week",
+            "char_start": 11,
+            "char_end": 22,
+            "token_span": [
+              2,
+              5
+            ]
+          },
+          {
+            "label": "penalty_condition",
+            "text": "milestone delay beyond the approved schedule",
+            "char_start": 53,
+            "char_end": 97,
+            "token_span": [
+              11,
+              17
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "text": "3% per week",
+            "label": "penalty_rate",
+            "score": 0.75,
+            "start": 11,
+            "end": 22
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 9,
+        "text": "Zebra Logistics and FastSupply Inc entered into a freight contract dated March 1, 2026.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "Zebra Logistics",
+            "char_start": 0,
+            "char_end": 15,
+            "token_span": [
+              0,
+              2
+            ]
+          },
+          {
+            "label": "contracting_party",
+            "text": "FastSupply Inc",
+            "char_start": 20,
+            "char_end": 34,
+            "token_span": [
+              3,
+              5
+            ]
+          },
+          {
+            "label": "effective_date",
+            "text": "March 1, 2026",
+            "char_start": 73,
+            "char_end": 86,
+            "token_span": [
+              11,
+              15
+            ]
+          }
+        ],
+        "predicted_entities": [],
+        "matched_count": 0,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 10,
+        "text": "The SLA requires 99.99% uptime; breach triggers $ 20,000 per incident compensation.",
+        "gold_entities": [
+          {
+            "label": "sla_target",
+            "text": "99.99%",
+            "char_start": 17,
+            "char_end": 23,
+            "token_span": [
+              3,
+              4
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "$ 20,000 per incident",
+            "char_start": 48,
+            "char_end": 69,
+            "token_span": [
+              8,
+              12
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "text": "$ 20,000",
+            "label": "monetary_amount",
+            "score": 0.8,
+            "start": 48,
+            "end": 56
+          },
+          {
+            "text": "99.99% ",
+            "label": "penalty_rate",
+            "score": 0.75,
+            "start": 17,
+            "end": 24
+          }
+        ],
+        "matched_count": 0,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 11,
+        "text": "Maximum liability for any single claim is limited to $ 350,000.",
+        "gold_entities": [
+          {
+            "label": "liability_cap",
+            "text": "$ 350,000",
+            "char_start": 53,
+            "char_end": 62,
+            "token_span": [
+              9,
+              11
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "text": "$ 350,000",
+            "label": "monetary_amount",
+            "score": 0.8,
+            "start": 53,
+            "end": 62
+          }
+        ],
+        "matched_count": 0,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 12,
+        "text": "Payment must be made in full within 45 days from the invoice date.",
+        "gold_entities": [
+          {
+            "label": "payment_terms",
+            "text": "45 days",
+            "char_start": 36,
+            "char_end": 43,
+            "token_span": [
+              7,
+              9
+            ]
+          }
+        ],
+        "predicted_entities": [],
+        "matched_count": 0,
+        "latency_ms": 0.0
+      },
+      {
+        "sample_index": 13,
+        "text": "RapiTech Inc shall provide services from February 1, 2026 to January 31, 2028.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "RapiTech Inc",
+            "char_start": 0,
+            "char_end": 12,
+            "token_span": [
+              0,
+              2
+            ]
+          },
+          {
+            "label": "effective_date",
+            "text": "February 1, 2026",
+            "char_start": 41,
+            "char_end": 57,
+            "token_span": [
+              6,
+              10
+            ]
+          },
+          {
+            "label": "expiration_date",
+            "text": "January 31, 2028",
+            "char_start": 61,
+            "char_end": 77,
+            "token_span": [
+              11,
+              15
+            ]
+          }
+        ],
+        "predicted_entities": [],
+        "matched_count": 0,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 14,
+        "text": "Each missed delivery deadline triggers a fixed penalty of $ 2,500 payable within 7 days.",
+        "gold_entities": [
+          {
+            "label": "penalty_condition",
+            "text": "missed delivery deadline",
+            "char_start": 5,
+            "char_end": 29,
+            "token_span": [
+              1,
+              4
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "$ 2,500",
+            "char_start": 58,
+            "char_end": 65,
+            "token_span": [
+              9,
+              11
+            ]
+          },
+          {
+            "label": "payment_terms",
+            "text": "7 days",
+            "char_start": 81,
+            "char_end": 87,
+            "token_span": [
+              13,
+              15
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "text": "$ 2,500",
+            "label": "monetary_amount",
+            "score": 0.8,
+            "start": 58,
+            "end": 65
+          }
+        ],
+        "matched_count": 0,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 15,
+        "text": "This Agreement shall be interpreted under the laws of Ontario, Canada.",
+        "gold_entities": [
+          {
+            "label": "governing_law",
+            "text": "Ontario, Canada",
+            "char_start": 54,
+            "char_end": 69,
+            "token_span": [
+              9,
+              12
+            ]
+          }
+        ],
+        "predicted_entities": [],
+        "matched_count": 0,
+        "latency_ms": 0.0
+      },
+      {
+        "sample_index": 16,
+        "text": "Either partner may exit the agreement by providing 120 days written notice to the other party.",
+        "gold_entities": [
+          {
+            "label": "termination_clause",
+            "text": "120 days written notice",
+            "char_start": 51,
+            "char_end": 74,
+            "token_span": [
+              8,
+              12
+            ]
+          }
+        ],
+        "predicted_entities": [],
+        "matched_count": 0,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 17,
+        "text": "Overdue amounts incur a penalty rate of 1.2% per month calculated on the outstanding balance.",
+        "gold_entities": [
+          {
+            "label": "penalty_condition",
+            "text": "penalty rate",
+            "char_start": 24,
+            "char_end": 36,
+            "token_span": [
+              4,
+              6
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "1.2% per month",
+            "char_start": 40,
+            "char_end": 54,
+            "token_span": [
+              7,
+              10
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "text": "1.2% per month",
+            "label": "penalty_rate",
+            "score": 0.75,
+            "start": 40,
+            "end": 54
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 0.09
+      },
+      {
+        "sample_index": 18,
+        "text": "InnoSoft Ltd and CloudBase Corp signed this SLA effective April 15, 2025.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "InnoSoft Ltd",
+            "char_start": 0,
+            "char_end": 12,
+            "token_span": [
+              0,
+              2
+            ]
+          },
+          {
+            "label": "contracting_party",
+            "text": "CloudBase Corp",
+            "char_start": 17,
+            "char_end": 31,
+            "token_span": [
+              3,
+              5
+            ]
+          },
+          {
+            "label": "effective_date",
+            "text": "April 15, 2025",
+            "char_start": 58,
+            "char_end": 72,
+            "token_span": [
+              9,
+              13
+            ]
+          }
+        ],
+        "predicted_entities": [],
+        "matched_count": 0,
         "latency_ms": 0.02
+      },
+      {
+        "sample_index": 19,
+        "text": "The ceiling on aggregate damages under this Agreement is $ 1,200,000.",
+        "gold_entities": [
+          {
+            "label": "liability_cap",
+            "text": "$ 1,200,000",
+            "char_start": 57,
+            "char_end": 68,
+            "token_span": [
+              9,
+              11
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "text": "$ 1,200,000",
+            "label": "monetary_amount",
+            "score": 0.8,
+            "start": 57,
+            "end": 68
+          }
+        ],
+        "matched_count": 0,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 20,
+        "text": "Service Provider guarantees 99.5% uptime; shortfall incurs a 2% monthly service credit.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "Service Provider",
+            "char_start": 0,
+            "char_end": 16,
+            "token_span": [
+              0,
+              2
+            ]
+          },
+          {
+            "label": "sla_target",
+            "text": "99.5%",
+            "char_start": 28,
+            "char_end": 33,
+            "token_span": [
+              3,
+              4
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "2% monthly service credit",
+            "char_start": 61,
+            "char_end": 86,
+            "token_span": [
+              9,
+              13
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "text": "99.5% ",
+            "label": "penalty_rate",
+            "score": 0.75,
+            "start": 28,
+            "end": 34
+          },
+          {
+            "text": "2% monthly",
+            "label": "penalty_rate",
+            "score": 0.75,
+            "start": 61,
+            "end": 71
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 21,
+        "text": "All fees are payable net 30 days from the date of invoice.",
+        "gold_entities": [
+          {
+            "label": "payment_terms",
+            "text": "30 days",
+            "char_start": 25,
+            "char_end": 32,
+            "token_span": [
+              5,
+              7
+            ]
+          }
+        ],
+        "predicted_entities": [],
+        "matched_count": 0,
+        "latency_ms": 0.0
+      },
+      {
+        "sample_index": 22,
+        "text": "TradeCo Inc shall pay PrimeBuild LLC $ 220,000 upon completion of each phase.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "TradeCo Inc",
+            "char_start": 0,
+            "char_end": 11,
+            "token_span": [
+              0,
+              2
+            ]
+          },
+          {
+            "label": "contracting_party",
+            "text": "PrimeBuild LLC",
+            "char_start": 22,
+            "char_end": 36,
+            "token_span": [
+              4,
+              6
+            ]
+          },
+          {
+            "label": "monetary_amount",
+            "text": "$ 220,000",
+            "char_start": 37,
+            "char_end": 46,
+            "token_span": [
+              6,
+              8
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "text": "$ 220,000",
+            "label": "monetary_amount",
+            "score": 0.8,
+            "start": 37,
+            "end": 46
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 23,
+        "text": "This contract is governed by the laws of the State of California.",
+        "gold_entities": [
+          {
+            "label": "governing_law",
+            "text": "State of California",
+            "char_start": 45,
+            "char_end": 64,
+            "token_span": [
+              9,
+              12
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "text": "laws of the State of California",
+            "label": "governing_law",
+            "score": 0.85,
+            "start": 33,
+            "end": 64
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 24,
+        "text": "The vendor shall be penalized $ 3,000 per day for each calendar day of late delivery.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "vendor",
+            "char_start": 4,
+            "char_end": 10,
+            "token_span": [
+              1,
+              2
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "$ 3,000 per day",
+            "char_start": 30,
+            "char_end": 45,
+            "token_span": [
+              5,
+              9
+            ]
+          },
+          {
+            "label": "penalty_condition",
+            "text": "late delivery",
+            "char_start": 71,
+            "char_end": 84,
+            "token_span": [
+              14,
+              16
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "text": "$ 3,000",
+            "label": "monetary_amount",
+            "score": 0.8,
+            "start": 30,
+            "end": 37
+          }
+        ],
+        "matched_count": 0,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 25,
+        "text": "StructCo and EliteBuild Ltd signed this Agreement on November 10, 2025.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "StructCo",
+            "char_start": 0,
+            "char_end": 8,
+            "token_span": [
+              0,
+              1
+            ]
+          },
+          {
+            "label": "contracting_party",
+            "text": "EliteBuild Ltd",
+            "char_start": 13,
+            "char_end": 27,
+            "token_span": [
+              2,
+              4
+            ]
+          },
+          {
+            "label": "effective_date",
+            "text": "November 10, 2025",
+            "char_start": 53,
+            "char_end": 70,
+            "token_span": [
+              8,
+              12
+            ]
+          }
+        ],
+        "predicted_entities": [],
+        "matched_count": 0,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 26,
+        "text": "The contract expires on July 31, 2027 and will not renew automatically.",
+        "gold_entities": [
+          {
+            "label": "expiration_date",
+            "text": "July 31, 2027",
+            "char_start": 24,
+            "char_end": 37,
+            "token_span": [
+              4,
+              8
+            ]
+          }
+        ],
+        "predicted_entities": [],
+        "matched_count": 0,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 27,
+        "text": "Client may terminate this SLA on 30 days notice if service levels are missed for two consecutive months.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "Client",
+            "char_start": 0,
+            "char_end": 6,
+            "token_span": [
+              0,
+              1
+            ]
+          },
+          {
+            "label": "termination_clause",
+            "text": "30 days notice",
+            "char_start": 33,
+            "char_end": 47,
+            "token_span": [
+              6,
+              9
+            ]
+          },
+          {
+            "label": "grace_period",
+            "text": "two consecutive months",
+            "char_start": 81,
+            "char_end": 103,
+            "token_span": [
+              15,
+              18
+            ]
+          }
+        ],
+        "predicted_entities": [],
+        "matched_count": 0,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 28,
+        "text": "Excess liability beyond $ 400,000 is waived by both parties under this Agreement.",
+        "gold_entities": [
+          {
+            "label": "liability_cap",
+            "text": "$ 400,000",
+            "char_start": 24,
+            "char_end": 33,
+            "token_span": [
+              3,
+              5
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "text": "$ 400,000",
+            "label": "monetary_amount",
+            "score": 0.8,
+            "start": 24,
+            "end": 33
+          }
+        ],
+        "matched_count": 0,
+        "latency_ms": 0.01
+      },
+      {
+        "sample_index": 29,
+        "text": "A performance penalty of 5% of contract value is payable if KPIs are missed for 3 consecutive months.",
+        "gold_entities": [
+          {
+            "label": "penalty_condition",
+            "text": "performance penalty",
+            "char_start": 2,
+            "char_end": 21,
+            "token_span": [
+              1,
+              3
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "5% of contract value",
+            "char_start": 25,
+            "char_end": 45,
+            "token_span": [
+              4,
+              8
+            ]
+          },
+          {
+            "label": "grace_period",
+            "text": "3 consecutive months",
+            "char_start": 80,
+            "char_end": 100,
+            "token_span": [
+              15,
+              18
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "text": "5% ",
+            "label": "penalty_rate",
+            "score": 0.75,
+            "start": 25,
+            "end": 28
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 0.01
       }
     ]
   },
   {
     "model_name": "Zero-Shot GLiNER (Base)",
     "metrics": {
-      "precision": 0.6667,
-      "recall": 0.5333,
-      "micro_f1": 0.5926,
-      "macro_f1": 0.4024,
-      "total_true_positives": 8,
-      "total_false_positives": 4,
-      "total_false_negatives": 7,
-      "avg_latency_ms": 113.89,
-      "p95_latency_ms": 359.6
+      "precision": 0.5962,
+      "recall": 0.5082,
+      "micro_f1": 0.5487,
+      "macro_f1": 0.3343,
+      "total_true_positives": 31,
+      "total_false_positives": 21,
+      "total_false_negatives": 30,
+      "avg_latency_ms": 146.87,
+      "p95_latency_ms": 239.8
     },
     "per_class_breakdown": {
       "contracting_party": {
-        "tp": 3,
-        "fp": 1,
-        "fn": 0
+        "tp": 14,
+        "fp": 4,
+        "fn": 1
       },
       "penalty_rate": {
-        "tp": 2,
-        "fp": 0,
-        "fn": 0
+        "tp": 6,
+        "fp": 2,
+        "fn": 3
       },
       "penalty_condition": {
         "tp": 0,
         "fp": 0,
-        "fn": 2
+        "fn": 8
       },
       "liability_cap": {
         "tp": 0,
         "fp": 0,
-        "fn": 2
+        "fn": 5
       },
       "monetary_amount": {
-        "tp": 1,
-        "fp": 2,
+        "tp": 2,
+        "fp": 11,
         "fn": 0
       },
       "effective_date": {
-        "tp": 1,
-        "fp": 1,
+        "tp": 5,
+        "fp": 2,
         "fn": 0
       },
       "expiration_date": {
-        "tp": 0,
+        "tp": 1,
         "fp": 0,
-        "fn": 1
+        "fn": 2
       },
       "termination_clause": {
         "tp": 0,
         "fp": 0,
-        "fn": 1
+        "fn": 3
       },
       "governing_law": {
-        "tp": 1,
-        "fp": 0,
+        "tp": 3,
+        "fp": 1,
         "fn": 0
       },
       "payment_terms": {
         "tp": 0,
+        "fp": 1,
+        "fn": 4
+      },
+      "sla_target": {
+        "tp": 0,
         "fp": 0,
-        "fn": 1
+        "fn": 2
+      },
+      "grace_period": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
       }
     },
     "traces": [
@@ -436,6 +1224,16 @@
               6,
               9
             ]
+          },
+          {
+            "label": "penalty_condition",
+            "text": "unexcused delay",
+            "char_start": 58,
+            "char_end": 73,
+            "token_span": [
+              10,
+              12
+            ]
           }
         ],
         "predicted_entities": [
@@ -444,18 +1242,18 @@
             "end": 8,
             "text": "Supplier",
             "label": "contracting_party",
-            "score": 0.8184733390808105
+            "score": 0.8380644917488098
           },
           {
             "start": 41,
             "end": 45,
             "text": "1.0%",
             "label": "penalty_rate",
-            "score": 0.587791919708252
+            "score": 0.49054965376853943
           }
         ],
         "matched_count": 2,
-        "latency_ms": 359.6
+        "latency_ms": 239.8
       },
       {
         "sample_index": 1,
@@ -478,11 +1276,11 @@
             "end": 62,
             "text": "$ 500,000USD",
             "label": "monetary_amount",
-            "score": 0.6753238439559937
+            "score": 0.6675951480865479
           }
         ],
         "matched_count": 0,
-        "latency_ms": 83.84
+        "latency_ms": 111.49
       },
       {
         "sample_index": 2,
@@ -515,18 +1313,18 @@
             "end": 37,
             "text": "January 1, 2026",
             "label": "effective_date",
-            "score": 0.6779773235321045
+            "score": 0.6358418464660645
           },
           {
             "start": 62,
             "end": 79,
             "text": "December 31, 2028",
             "label": "effective_date",
-            "score": 0.5111194252967834
+            "score": 0.4833309054374695
           }
         ],
         "matched_count": 1,
-        "latency_ms": 74.69
+        "latency_ms": 110.97
       },
       {
         "sample_index": 3,
@@ -569,18 +1367,18 @@
             "end": 11,
             "text": "Globex Corp",
             "label": "contracting_party",
-            "score": 0.7787324786186218
+            "score": 0.7652698755264282
           },
           {
             "start": 28,
             "end": 37,
             "text": "$ 150,000",
             "label": "monetary_amount",
-            "score": 0.7761324644088745
+            "score": 0.7799166440963745
           }
         ],
         "matched_count": 2,
-        "latency_ms": 76.83
+        "latency_ms": 103.77
       },
       {
         "sample_index": 4,
@@ -613,11 +1411,18 @@
             "end": 26,
             "text": "2.0%",
             "label": "penalty_rate",
-            "score": 0.695590078830719
+            "score": 0.574586808681488
+          },
+          {
+            "start": 27,
+            "end": 54,
+            "text": "monthly compounded interest",
+            "label": "monetary_amount",
+            "score": 0.3669669032096863
           }
         ],
         "matched_count": 1,
-        "latency_ms": 80.05
+        "latency_ms": 106.29
       },
       {
         "sample_index": 5,
@@ -640,11 +1445,11 @@
             "end": 12,
             "text": "Either party",
             "label": "contracting_party",
-            "score": 0.5901058912277222
+            "score": 0.6446048617362976
           }
         ],
         "matched_count": 0,
-        "latency_ms": 79.36
+        "latency_ms": 104.63
       },
       {
         "sample_index": 6,
@@ -677,18 +1482,18 @@
             "end": 10,
             "text": "Contractor",
             "label": "contracting_party",
-            "score": 0.7402896881103516
+            "score": 0.7545974850654602
           },
           {
             "start": 52,
             "end": 66,
             "text": "$ 2,000,000USD",
             "label": "monetary_amount",
-            "score": 0.7512391805648804
+            "score": 0.7520084977149963
           }
         ],
         "matched_count": 1,
-        "latency_ms": 81.32
+        "latency_ms": 101.04
       },
       {
         "sample_index": 7,
@@ -707,80 +1512,1033 @@
         ],
         "predicted_entities": [
           {
+            "start": 0,
+            "end": 12,
+            "text": "This charter",
+            "label": "governing_law",
+            "score": 0.3741167187690735
+          },
+          {
             "start": 32,
             "end": 61,
             "text": "laws of the State of New York",
             "label": "governing_law",
-            "score": 0.4798157513141632
+            "score": 0.5081895589828491
           }
         ],
         "matched_count": 1,
-        "latency_ms": 75.43
+        "latency_ms": 110.09
+      },
+      {
+        "sample_index": 8,
+        "text": "Penalty of 3% per week shall apply for every week of milestone delay beyond the approved schedule.",
+        "gold_entities": [
+          {
+            "label": "penalty_rate",
+            "text": "3% per week",
+            "char_start": 11,
+            "char_end": 22,
+            "token_span": [
+              2,
+              5
+            ]
+          },
+          {
+            "label": "penalty_condition",
+            "text": "milestone delay beyond the approved schedule",
+            "char_start": 53,
+            "char_end": 97,
+            "token_span": [
+              11,
+              17
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 11,
+            "end": 13,
+            "text": "3%",
+            "label": "penalty_rate",
+            "score": 0.4742904305458069
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 138.04
+      },
+      {
+        "sample_index": 9,
+        "text": "Zebra Logistics and FastSupply Inc entered into a freight contract dated March 1, 2026.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "Zebra Logistics",
+            "char_start": 0,
+            "char_end": 15,
+            "token_span": [
+              0,
+              2
+            ]
+          },
+          {
+            "label": "contracting_party",
+            "text": "FastSupply Inc",
+            "char_start": 20,
+            "char_end": 34,
+            "token_span": [
+              3,
+              5
+            ]
+          },
+          {
+            "label": "effective_date",
+            "text": "March 1, 2026",
+            "char_start": 73,
+            "char_end": 86,
+            "token_span": [
+              11,
+              15
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 34,
+            "text": "Zebra Logistics and FastSupply Inc",
+            "label": "contracting_party",
+            "score": 0.896980881690979
+          },
+          {
+            "start": 73,
+            "end": 86,
+            "text": "March 1, 2026",
+            "label": "effective_date",
+            "score": 0.7220805287361145
+          }
+        ],
+        "matched_count": 2,
+        "latency_ms": 162.76
+      },
+      {
+        "sample_index": 10,
+        "text": "The SLA requires 99.99% uptime; breach triggers $ 20,000 per incident compensation.",
+        "gold_entities": [
+          {
+            "label": "sla_target",
+            "text": "99.99%",
+            "char_start": 17,
+            "char_end": 23,
+            "token_span": [
+              3,
+              4
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "$ 20,000 per incident",
+            "char_start": 48,
+            "char_end": 69,
+            "token_span": [
+              8,
+              12
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 48,
+            "end": 56,
+            "text": "$ 20,000",
+            "label": "monetary_amount",
+            "score": 0.5607870817184448
+          }
+        ],
+        "matched_count": 0,
+        "latency_ms": 290.91
+      },
+      {
+        "sample_index": 11,
+        "text": "Maximum liability for any single claim is limited to $ 350,000.",
+        "gold_entities": [
+          {
+            "label": "liability_cap",
+            "text": "$ 350,000",
+            "char_start": 53,
+            "char_end": 62,
+            "token_span": [
+              9,
+              11
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 53,
+            "end": 62,
+            "text": "$ 350,000",
+            "label": "monetary_amount",
+            "score": 0.6439875960350037
+          }
+        ],
+        "matched_count": 0,
+        "latency_ms": 127.15
+      },
+      {
+        "sample_index": 12,
+        "text": "Payment must be made in full within 45 days from the invoice date.",
+        "gold_entities": [
+          {
+            "label": "payment_terms",
+            "text": "45 days",
+            "char_start": 36,
+            "char_end": 43,
+            "token_span": [
+              7,
+              9
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "Payment",
+            "label": "payment_terms",
+            "score": 0.35044214129447937
+          }
+        ],
+        "matched_count": 0,
+        "latency_ms": 141.97
+      },
+      {
+        "sample_index": 13,
+        "text": "RapiTech Inc shall provide services from February 1, 2026 to January 31, 2028.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "RapiTech Inc",
+            "char_start": 0,
+            "char_end": 12,
+            "token_span": [
+              0,
+              2
+            ]
+          },
+          {
+            "label": "effective_date",
+            "text": "February 1, 2026",
+            "char_start": 41,
+            "char_end": 57,
+            "token_span": [
+              6,
+              10
+            ]
+          },
+          {
+            "label": "expiration_date",
+            "text": "January 31, 2028",
+            "char_start": 61,
+            "char_end": 77,
+            "token_span": [
+              11,
+              15
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "text": "RapiTech Inc",
+            "label": "contracting_party",
+            "score": 0.6499648690223694
+          },
+          {
+            "start": 41,
+            "end": 57,
+            "text": "February 1, 2026",
+            "label": "effective_date",
+            "score": 0.6038109660148621
+          },
+          {
+            "start": 61,
+            "end": 77,
+            "text": "January 31, 2028",
+            "label": "effective_date",
+            "score": 0.6121734380722046
+          }
+        ],
+        "matched_count": 2,
+        "latency_ms": 172.54
+      },
+      {
+        "sample_index": 14,
+        "text": "Each missed delivery deadline triggers a fixed penalty of $ 2,500 payable within 7 days.",
+        "gold_entities": [
+          {
+            "label": "penalty_condition",
+            "text": "missed delivery deadline",
+            "char_start": 5,
+            "char_end": 29,
+            "token_span": [
+              1,
+              4
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "$ 2,500",
+            "char_start": 58,
+            "char_end": 65,
+            "token_span": [
+              9,
+              11
+            ]
+          },
+          {
+            "label": "payment_terms",
+            "text": "7 days",
+            "char_start": 81,
+            "char_end": 87,
+            "token_span": [
+              13,
+              15
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 58,
+            "end": 65,
+            "text": "$ 2,500",
+            "label": "monetary_amount",
+            "score": 0.6253539323806763
+          }
+        ],
+        "matched_count": 0,
+        "latency_ms": 155.62
+      },
+      {
+        "sample_index": 15,
+        "text": "This Agreement shall be interpreted under the laws of Ontario, Canada.",
+        "gold_entities": [
+          {
+            "label": "governing_law",
+            "text": "Ontario, Canada",
+            "char_start": 54,
+            "char_end": 69,
+            "token_span": [
+              9,
+              12
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 46,
+            "end": 61,
+            "text": "laws of Ontario",
+            "label": "governing_law",
+            "score": 0.3591768443584442
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 168.42
+      },
+      {
+        "sample_index": 16,
+        "text": "Either partner may exit the agreement by providing 120 days written notice to the other party.",
+        "gold_entities": [
+          {
+            "label": "termination_clause",
+            "text": "120 days written notice",
+            "char_start": 51,
+            "char_end": 74,
+            "token_span": [
+              8,
+              12
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 14,
+            "text": "Either partner",
+            "label": "contracting_party",
+            "score": 0.6422544717788696
+          },
+          {
+            "start": 82,
+            "end": 93,
+            "text": "other party",
+            "label": "contracting_party",
+            "score": 0.35531532764434814
+          }
+        ],
+        "matched_count": 0,
+        "latency_ms": 155.79
+      },
+      {
+        "sample_index": 17,
+        "text": "Overdue amounts incur a penalty rate of 1.2% per month calculated on the outstanding balance.",
+        "gold_entities": [
+          {
+            "label": "penalty_condition",
+            "text": "penalty rate",
+            "char_start": 24,
+            "char_end": 36,
+            "token_span": [
+              4,
+              6
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "1.2% per month",
+            "char_start": 40,
+            "char_end": 54,
+            "token_span": [
+              7,
+              10
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 15,
+            "text": "Overdue amounts",
+            "label": "monetary_amount",
+            "score": 0.6737940311431885
+          },
+          {
+            "start": 24,
+            "end": 36,
+            "text": "penalty rate",
+            "label": "penalty_rate",
+            "score": 0.6795661449432373
+          },
+          {
+            "start": 40,
+            "end": 44,
+            "text": "1.2%",
+            "label": "penalty_rate",
+            "score": 0.4500108063220978
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 119.24
+      },
+      {
+        "sample_index": 18,
+        "text": "InnoSoft Ltd and CloudBase Corp signed this SLA effective April 15, 2025.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "InnoSoft Ltd",
+            "char_start": 0,
+            "char_end": 12,
+            "token_span": [
+              0,
+              2
+            ]
+          },
+          {
+            "label": "contracting_party",
+            "text": "CloudBase Corp",
+            "char_start": 17,
+            "char_end": 31,
+            "token_span": [
+              3,
+              5
+            ]
+          },
+          {
+            "label": "effective_date",
+            "text": "April 15, 2025",
+            "char_start": 58,
+            "char_end": 72,
+            "token_span": [
+              9,
+              13
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "text": "InnoSoft Ltd",
+            "label": "contracting_party",
+            "score": 0.6124313473701477
+          },
+          {
+            "start": 17,
+            "end": 31,
+            "text": "CloudBase Corp",
+            "label": "contracting_party",
+            "score": 0.6457794308662415
+          },
+          {
+            "start": 58,
+            "end": 72,
+            "text": "April 15, 2025",
+            "label": "effective_date",
+            "score": 0.8308321237564087
+          }
+        ],
+        "matched_count": 3,
+        "latency_ms": 119.87
+      },
+      {
+        "sample_index": 19,
+        "text": "The ceiling on aggregate damages under this Agreement is $ 1,200,000.",
+        "gold_entities": [
+          {
+            "label": "liability_cap",
+            "text": "$ 1,200,000",
+            "char_start": 57,
+            "char_end": 68,
+            "token_span": [
+              9,
+              11
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 57,
+            "end": 68,
+            "text": "$ 1,200,000",
+            "label": "monetary_amount",
+            "score": 0.6766519546508789
+          }
+        ],
+        "matched_count": 0,
+        "latency_ms": 114.44
+      },
+      {
+        "sample_index": 20,
+        "text": "Service Provider guarantees 99.5% uptime; shortfall incurs a 2% monthly service credit.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "Service Provider",
+            "char_start": 0,
+            "char_end": 16,
+            "token_span": [
+              0,
+              2
+            ]
+          },
+          {
+            "label": "sla_target",
+            "text": "99.5%",
+            "char_start": 28,
+            "char_end": 33,
+            "token_span": [
+              3,
+              4
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "2% monthly service credit",
+            "char_start": 61,
+            "char_end": 86,
+            "token_span": [
+              9,
+              13
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "text": "Service Provider",
+            "label": "contracting_party",
+            "score": 0.5543273091316223
+          },
+          {
+            "start": 28,
+            "end": 33,
+            "text": "99.5%",
+            "label": "penalty_rate",
+            "score": 0.46680009365081787
+          },
+          {
+            "start": 61,
+            "end": 63,
+            "text": "2%",
+            "label": "penalty_rate",
+            "score": 0.5209896564483643
+          }
+        ],
+        "matched_count": 2,
+        "latency_ms": 181.1
+      },
+      {
+        "sample_index": 21,
+        "text": "All fees are payable net 30 days from the date of invoice.",
+        "gold_entities": [
+          {
+            "label": "payment_terms",
+            "text": "30 days",
+            "char_start": 25,
+            "char_end": 32,
+            "token_span": [
+              5,
+              7
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "text": "All fees",
+            "label": "monetary_amount",
+            "score": 0.45479968190193176
+          }
+        ],
+        "matched_count": 0,
+        "latency_ms": 171.27
+      },
+      {
+        "sample_index": 22,
+        "text": "TradeCo Inc shall pay PrimeBuild LLC $ 220,000 upon completion of each phase.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "TradeCo Inc",
+            "char_start": 0,
+            "char_end": 11,
+            "token_span": [
+              0,
+              2
+            ]
+          },
+          {
+            "label": "contracting_party",
+            "text": "PrimeBuild LLC",
+            "char_start": 22,
+            "char_end": 36,
+            "token_span": [
+              4,
+              6
+            ]
+          },
+          {
+            "label": "monetary_amount",
+            "text": "$ 220,000",
+            "char_start": 37,
+            "char_end": 46,
+            "token_span": [
+              6,
+              8
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "text": "TradeCo Inc",
+            "label": "contracting_party",
+            "score": 0.5880008935928345
+          },
+          {
+            "start": 22,
+            "end": 36,
+            "text": "PrimeBuild LLC",
+            "label": "contracting_party",
+            "score": 0.5386670827865601
+          },
+          {
+            "start": 37,
+            "end": 46,
+            "text": "$ 220,000",
+            "label": "monetary_amount",
+            "score": 0.5768328309059143
+          }
+        ],
+        "matched_count": 3,
+        "latency_ms": 148.84
+      },
+      {
+        "sample_index": 23,
+        "text": "This contract is governed by the laws of the State of California.",
+        "gold_entities": [
+          {
+            "label": "governing_law",
+            "text": "State of California",
+            "char_start": 45,
+            "char_end": 64,
+            "token_span": [
+              9,
+              12
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 33,
+            "end": 64,
+            "text": "laws of the State of California",
+            "label": "governing_law",
+            "score": 0.5978981256484985
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 156.28
+      },
+      {
+        "sample_index": 24,
+        "text": "The vendor shall be penalized $ 3,000 per day for each calendar day of late delivery.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "vendor",
+            "char_start": 4,
+            "char_end": 10,
+            "token_span": [
+              1,
+              2
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "$ 3,000 per day",
+            "char_start": 30,
+            "char_end": 45,
+            "token_span": [
+              5,
+              9
+            ]
+          },
+          {
+            "label": "penalty_condition",
+            "text": "late delivery",
+            "char_start": 71,
+            "char_end": 84,
+            "token_span": [
+              14,
+              16
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "text": "The vendor",
+            "label": "contracting_party",
+            "score": 0.7783436179161072
+          },
+          {
+            "start": 30,
+            "end": 37,
+            "text": "$ 3,000",
+            "label": "monetary_amount",
+            "score": 0.5350499153137207
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 154.13
+      },
+      {
+        "sample_index": 25,
+        "text": "StructCo and EliteBuild Ltd signed this Agreement on November 10, 2025.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "StructCo",
+            "char_start": 0,
+            "char_end": 8,
+            "token_span": [
+              0,
+              1
+            ]
+          },
+          {
+            "label": "contracting_party",
+            "text": "EliteBuild Ltd",
+            "char_start": 13,
+            "char_end": 27,
+            "token_span": [
+              2,
+              4
+            ]
+          },
+          {
+            "label": "effective_date",
+            "text": "November 10, 2025",
+            "char_start": 53,
+            "char_end": 70,
+            "token_span": [
+              8,
+              12
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "text": "StructCo",
+            "label": "contracting_party",
+            "score": 0.782438337802887
+          },
+          {
+            "start": 13,
+            "end": 27,
+            "text": "EliteBuild Ltd",
+            "label": "contracting_party",
+            "score": 0.722221314907074
+          },
+          {
+            "start": 53,
+            "end": 70,
+            "text": "November 10, 2025",
+            "label": "effective_date",
+            "score": 0.6730234026908875
+          }
+        ],
+        "matched_count": 3,
+        "latency_ms": 148.93
+      },
+      {
+        "sample_index": 26,
+        "text": "The contract expires on July 31, 2027 and will not renew automatically.",
+        "gold_entities": [
+          {
+            "label": "expiration_date",
+            "text": "July 31, 2027",
+            "char_start": 24,
+            "char_end": 37,
+            "token_span": [
+              4,
+              8
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 24,
+            "end": 37,
+            "text": "July 31, 2027",
+            "label": "expiration_date",
+            "score": 0.8026846647262573
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 113.59
+      },
+      {
+        "sample_index": 27,
+        "text": "Client may terminate this SLA on 30 days notice if service levels are missed for two consecutive months.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "Client",
+            "char_start": 0,
+            "char_end": 6,
+            "token_span": [
+              0,
+              1
+            ]
+          },
+          {
+            "label": "termination_clause",
+            "text": "30 days notice",
+            "char_start": 33,
+            "char_end": 47,
+            "token_span": [
+              6,
+              9
+            ]
+          },
+          {
+            "label": "grace_period",
+            "text": "two consecutive months",
+            "char_start": 81,
+            "char_end": 103,
+            "token_span": [
+              15,
+              18
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "Client",
+            "label": "contracting_party",
+            "score": 0.7667360901832581
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 123.7
+      },
+      {
+        "sample_index": 28,
+        "text": "Excess liability beyond $ 400,000 is waived by both parties under this Agreement.",
+        "gold_entities": [
+          {
+            "label": "liability_cap",
+            "text": "$ 400,000",
+            "char_start": 24,
+            "char_end": 33,
+            "token_span": [
+              3,
+              5
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 24,
+            "end": 33,
+            "text": "$ 400,000",
+            "label": "monetary_amount",
+            "score": 0.43873170018196106
+          },
+          {
+            "start": 47,
+            "end": 59,
+            "text": "both parties",
+            "label": "contracting_party",
+            "score": 0.436733603477478
+          }
+        ],
+        "matched_count": 0,
+        "latency_ms": 181.3
+      },
+      {
+        "sample_index": 29,
+        "text": "A performance penalty of 5% of contract value is payable if KPIs are missed for 3 consecutive months.",
+        "gold_entities": [
+          {
+            "label": "penalty_condition",
+            "text": "performance penalty",
+            "char_start": 2,
+            "char_end": 21,
+            "token_span": [
+              1,
+              3
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "5% of contract value",
+            "char_start": 25,
+            "char_end": 45,
+            "token_span": [
+              4,
+              8
+            ]
+          },
+          {
+            "label": "grace_period",
+            "text": "3 consecutive months",
+            "char_start": 80,
+            "char_end": 100,
+            "token_span": [
+              15,
+              18
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 25,
+            "end": 27,
+            "text": "5%",
+            "label": "penalty_rate",
+            "score": 0.45813918113708496
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 172.27
       }
     ]
   },
   {
     "model_name": "Fine-Tuned GLiNER (Domain Specialized)",
     "metrics": {
-      "precision": 0.625,
-      "recall": 0.3333,
-      "micro_f1": 0.4348,
-      "macro_f1": 0.29,
-      "total_true_positives": 5,
-      "total_false_positives": 3,
-      "total_false_negatives": 10,
-      "avg_latency_ms": 76.1,
-      "p95_latency_ms": 85.92
+      "precision": 0.8065,
+      "recall": 0.8197,
+      "micro_f1": 0.813,
+      "macro_f1": 0.7437,
+      "total_true_positives": 50,
+      "total_false_positives": 12,
+      "total_false_negatives": 11,
+      "avg_latency_ms": 118.91,
+      "p95_latency_ms": 213.7
     },
     "per_class_breakdown": {
       "contracting_party": {
-        "tp": 1,
+        "tp": 14,
+        "fp": 2,
+        "fn": 1
+      },
+      "penalty_rate": {
+        "tp": 7,
         "fp": 0,
         "fn": 2
       },
-      "penalty_rate": {
-        "tp": 2,
-        "fp": 0,
-        "fn": 0
-      },
       "penalty_condition": {
-        "tp": 0,
-        "fp": 0,
+        "tp": 6,
+        "fp": 2,
         "fn": 2
       },
       "liability_cap": {
-        "tp": 0,
+        "tp": 4,
         "fp": 0,
-        "fn": 2
+        "fn": 1
       },
       "monetary_amount": {
-        "tp": 0,
-        "fp": 0,
-        "fn": 1
-      },
-      "effective_date": {
-        "tp": 0,
-        "fp": 0,
-        "fn": 1
-      },
-      "expiration_date": {
-        "tp": 1,
+        "tp": 2,
         "fp": 3,
         "fn": 0
+      },
+      "effective_date": {
+        "tp": 5,
+        "fp": 1,
+        "fn": 0
+      },
+      "expiration_date": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 1
       },
       "termination_clause": {
         "tp": 0,
         "fp": 0,
-        "fn": 1
+        "fn": 3
       },
       "governing_law": {
-        "tp": 1,
+        "tp": 3,
         "fp": 0,
         "fn": 0
       },
       "payment_terms": {
-        "tp": 0,
+        "tp": 4,
+        "fp": 3,
+        "fn": 0
+      },
+      "sla_target": {
+        "tp": 2,
         "fp": 0,
+        "fn": 0
+      },
+      "grace_period": {
+        "tp": 1,
+        "fp": 1,
         "fn": 1
       }
     },
@@ -818,19 +2576,50 @@
               6,
               9
             ]
+          },
+          {
+            "label": "penalty_condition",
+            "text": "unexcused delay",
+            "char_start": 58,
+            "char_end": 73,
+            "token_span": [
+              10,
+              12
+            ]
           }
         ],
         "predicted_entities": [
           {
+            "start": 0,
+            "end": 14,
+            "text": "Supplier shall",
+            "label": "contracting_party",
+            "score": 1.0
+          },
+          {
+            "start": 19,
+            "end": 40,
+            "text": "liquidated damages of",
+            "label": "penalty_condition",
+            "score": 0.9670125842094421
+          },
+          {
             "start": 41,
-            "end": 74,
-            "text": "1.0% per day for unexcused delay.",
+            "end": 57,
+            "text": "1.0% per day for",
             "label": "penalty_rate",
-            "score": 0.6266481280326843
+            "score": 0.9981948733329773
+          },
+          {
+            "start": 58,
+            "end": 74,
+            "text": "unexcused delay.",
+            "label": "penalty_condition",
+            "score": 0.9479021430015564
           }
         ],
-        "matched_count": 1,
-        "latency_ms": 85.92
+        "matched_count": 4,
+        "latency_ms": 105.42
       },
       {
         "sample_index": 1,
@@ -847,9 +2636,17 @@
             ]
           }
         ],
-        "predicted_entities": [],
-        "matched_count": 0,
-        "latency_ms": 79.56
+        "predicted_entities": [
+          {
+            "start": 50,
+            "end": 68,
+            "text": "$ 500,000USD under",
+            "label": "liability_cap",
+            "score": 0.9994986057281494
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 109.7
       },
       {
         "sample_index": 2,
@@ -881,19 +2678,19 @@
             "start": 22,
             "end": 41,
             "text": "January 1, 2026 and",
-            "label": "expiration_date",
-            "score": 0.7909058928489685
+            "label": "effective_date",
+            "score": 0.9998873472213745
           },
           {
             "start": 62,
             "end": 80,
             "text": "December 31, 2028.",
             "label": "expiration_date",
-            "score": 0.8425440788269043
+            "score": 0.9981587529182434
           }
         ],
-        "matched_count": 1,
-        "latency_ms": 76.41
+        "matched_count": 2,
+        "latency_ms": 101.99
       },
       {
         "sample_index": 3,
@@ -933,21 +2730,28 @@
         "predicted_entities": [
           {
             "start": 0,
-            "end": 21,
-            "text": "Globex Corp agrees to",
+            "end": 18,
+            "text": "Globex Corp agrees",
             "label": "contracting_party",
-            "score": 0.35368841886520386
+            "score": 1.0
+          },
+          {
+            "start": 28,
+            "end": 44,
+            "text": "$ 150,000 within",
+            "label": "monetary_amount",
+            "score": 0.9993079900741577
           },
           {
             "start": 45,
-            "end": 72,
-            "text": "30 days of invoice receipt.",
-            "label": "expiration_date",
-            "score": 0.46369150280952454
+            "end": 55,
+            "text": "30 days of",
+            "label": "payment_terms",
+            "score": 0.9990954399108887
           }
         ],
-        "matched_count": 1,
-        "latency_ms": 73.58
+        "matched_count": 3,
+        "latency_ms": 107.86
       },
       {
         "sample_index": 4,
@@ -976,15 +2780,22 @@
         ],
         "predicted_entities": [
           {
+            "start": 2,
+            "end": 21,
+            "text": "late fee penalty of",
+            "label": "penalty_condition",
+            "score": 0.8808587193489075
+          },
+          {
             "start": 22,
-            "end": 86,
-            "text": "2.0% monthly compounded interest applies to delinquent balances.",
+            "end": 62,
+            "text": "2.0% monthly compounded interest applies",
             "label": "penalty_rate",
-            "score": 0.6015784740447998
+            "score": 0.8239351511001587
           }
         ],
-        "matched_count": 1,
-        "latency_ms": 76.8
+        "matched_count": 2,
+        "latency_ms": 105.08
       },
       {
         "sample_index": 5,
@@ -1003,15 +2814,15 @@
         ],
         "predicted_entities": [
           {
-            "start": 47,
-            "end": 76,
-            "text": "90 days prior written notice.",
-            "label": "expiration_date",
-            "score": 0.8012121319770813
+            "start": 0,
+            "end": 16,
+            "text": "Either party may",
+            "label": "contracting_party",
+            "score": 0.9999995231628418
           }
         ],
         "matched_count": 0,
-        "latency_ms": 71.9
+        "latency_ms": 98.83
       },
       {
         "sample_index": 6,
@@ -1038,9 +2849,24 @@
             ]
           }
         ],
-        "predicted_entities": [],
-        "matched_count": 0,
-        "latency_ms": 73.71
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 20,
+            "text": "Contractor aggregate",
+            "label": "contracting_party",
+            "score": 0.9999998807907104
+          },
+          {
+            "start": 52,
+            "end": 67,
+            "text": "$ 2,000,000USD.",
+            "label": "liability_cap",
+            "score": 0.9827473759651184
+          }
+        ],
+        "matched_count": 2,
+        "latency_ms": 103.73
       },
       {
         "sample_index": 7,
@@ -1063,11 +2889,1003 @@
             "end": 62,
             "text": "State of New York.",
             "label": "governing_law",
-            "score": 0.8141220211982727
+            "score": 0.9981436729431152
           }
         ],
         "matched_count": 1,
-        "latency_ms": 70.92
+        "latency_ms": 98.63
+      },
+      {
+        "sample_index": 8,
+        "text": "Penalty of 3% per week shall apply for every week of milestone delay beyond the approved schedule.",
+        "gold_entities": [
+          {
+            "label": "penalty_rate",
+            "text": "3% per week",
+            "char_start": 11,
+            "char_end": 22,
+            "token_span": [
+              2,
+              5
+            ]
+          },
+          {
+            "label": "penalty_condition",
+            "text": "milestone delay beyond the approved schedule",
+            "char_start": 53,
+            "char_end": 97,
+            "token_span": [
+              11,
+              17
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 11,
+            "end": 28,
+            "text": "3% per week shall",
+            "label": "penalty_rate",
+            "score": 0.9979615211486816
+          },
+          {
+            "start": 39,
+            "end": 75,
+            "text": "every week of milestone delay beyond",
+            "label": "grace_period",
+            "score": 0.7178739309310913
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 104.06
+      },
+      {
+        "sample_index": 9,
+        "text": "Zebra Logistics and FastSupply Inc entered into a freight contract dated March 1, 2026.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "Zebra Logistics",
+            "char_start": 0,
+            "char_end": 15,
+            "token_span": [
+              0,
+              2
+            ]
+          },
+          {
+            "label": "contracting_party",
+            "text": "FastSupply Inc",
+            "char_start": 20,
+            "char_end": 34,
+            "token_span": [
+              3,
+              5
+            ]
+          },
+          {
+            "label": "effective_date",
+            "text": "March 1, 2026",
+            "char_start": 73,
+            "char_end": 86,
+            "token_span": [
+              11,
+              15
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 19,
+            "text": "Zebra Logistics and",
+            "label": "contracting_party",
+            "score": 1.0
+          },
+          {
+            "start": 20,
+            "end": 42,
+            "text": "FastSupply Inc entered",
+            "label": "contracting_party",
+            "score": 1.0
+          },
+          {
+            "start": 73,
+            "end": 87,
+            "text": "March 1, 2026.",
+            "label": "effective_date",
+            "score": 0.9999104738235474
+          }
+        ],
+        "matched_count": 3,
+        "latency_ms": 111.0
+      },
+      {
+        "sample_index": 10,
+        "text": "The SLA requires 99.99% uptime; breach triggers $ 20,000 per incident compensation.",
+        "gold_entities": [
+          {
+            "label": "sla_target",
+            "text": "99.99%",
+            "char_start": 17,
+            "char_end": 23,
+            "token_span": [
+              3,
+              4
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "$ 20,000 per incident",
+            "char_start": 48,
+            "char_end": 69,
+            "token_span": [
+              8,
+              12
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 17,
+            "end": 30,
+            "text": "99.99% uptime",
+            "label": "sla_target",
+            "score": 0.9937471151351929
+          },
+          {
+            "start": 48,
+            "end": 83,
+            "text": "$ 20,000 per incident compensation.",
+            "label": "penalty_rate",
+            "score": 0.8130350708961487
+          }
+        ],
+        "matched_count": 2,
+        "latency_ms": 119.66
+      },
+      {
+        "sample_index": 11,
+        "text": "Maximum liability for any single claim is limited to $ 350,000.",
+        "gold_entities": [
+          {
+            "label": "liability_cap",
+            "text": "$ 350,000",
+            "char_start": 53,
+            "char_end": 62,
+            "token_span": [
+              9,
+              11
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 53,
+            "end": 63,
+            "text": "$ 350,000.",
+            "label": "liability_cap",
+            "score": 0.9999585151672363
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 124.16
+      },
+      {
+        "sample_index": 12,
+        "text": "Payment must be made in full within 45 days from the invoice date.",
+        "gold_entities": [
+          {
+            "label": "payment_terms",
+            "text": "45 days",
+            "char_start": 36,
+            "char_end": 43,
+            "token_span": [
+              7,
+              9
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 36,
+            "end": 48,
+            "text": "45 days from",
+            "label": "payment_terms",
+            "score": 0.9963575005531311
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 213.7
+      },
+      {
+        "sample_index": 13,
+        "text": "RapiTech Inc shall provide services from February 1, 2026 to January 31, 2028.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "RapiTech Inc",
+            "char_start": 0,
+            "char_end": 12,
+            "token_span": [
+              0,
+              2
+            ]
+          },
+          {
+            "label": "effective_date",
+            "text": "February 1, 2026",
+            "char_start": 41,
+            "char_end": 57,
+            "token_span": [
+              6,
+              10
+            ]
+          },
+          {
+            "label": "expiration_date",
+            "text": "January 31, 2028",
+            "char_start": 61,
+            "char_end": 77,
+            "token_span": [
+              11,
+              15
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "text": "RapiTech Inc shall",
+            "label": "contracting_party",
+            "score": 1.0
+          },
+          {
+            "start": 41,
+            "end": 60,
+            "text": "February 1, 2026 to",
+            "label": "effective_date",
+            "score": 0.9997932314872742
+          },
+          {
+            "start": 61,
+            "end": 78,
+            "text": "January 31, 2028.",
+            "label": "expiration_date",
+            "score": 0.9867098927497864
+          }
+        ],
+        "matched_count": 3,
+        "latency_ms": 110.47
+      },
+      {
+        "sample_index": 14,
+        "text": "Each missed delivery deadline triggers a fixed penalty of $ 2,500 payable within 7 days.",
+        "gold_entities": [
+          {
+            "label": "penalty_condition",
+            "text": "missed delivery deadline",
+            "char_start": 5,
+            "char_end": 29,
+            "token_span": [
+              1,
+              4
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "$ 2,500",
+            "char_start": 58,
+            "char_end": 65,
+            "token_span": [
+              9,
+              11
+            ]
+          },
+          {
+            "label": "payment_terms",
+            "text": "7 days",
+            "char_start": 81,
+            "char_end": 87,
+            "token_span": [
+              13,
+              15
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 41,
+            "end": 57,
+            "text": "fixed penalty of",
+            "label": "penalty_condition",
+            "score": 0.9613609910011292
+          },
+          {
+            "start": 58,
+            "end": 73,
+            "text": "$ 2,500 payable",
+            "label": "monetary_amount",
+            "score": 0.9981716871261597
+          },
+          {
+            "start": 81,
+            "end": 88,
+            "text": "7 days.",
+            "label": "payment_terms",
+            "score": 0.990825355052948
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 107.87
+      },
+      {
+        "sample_index": 15,
+        "text": "This Agreement shall be interpreted under the laws of Ontario, Canada.",
+        "gold_entities": [
+          {
+            "label": "governing_law",
+            "text": "Ontario, Canada",
+            "char_start": 54,
+            "char_end": 69,
+            "token_span": [
+              9,
+              12
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 54,
+            "end": 70,
+            "text": "Ontario, Canada.",
+            "label": "governing_law",
+            "score": 0.9992493987083435
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 102.77
+      },
+      {
+        "sample_index": 16,
+        "text": "Either partner may exit the agreement by providing 120 days written notice to the other party.",
+        "gold_entities": [
+          {
+            "label": "termination_clause",
+            "text": "120 days written notice",
+            "char_start": 51,
+            "char_end": 74,
+            "token_span": [
+              8,
+              12
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 7,
+            "end": 18,
+            "text": "partner may",
+            "label": "contracting_party",
+            "score": 0.9999991655349731
+          },
+          {
+            "start": 51,
+            "end": 77,
+            "text": "120 days written notice to",
+            "label": "payment_terms",
+            "score": 0.9834998846054077
+          }
+        ],
+        "matched_count": 0,
+        "latency_ms": 109.29
+      },
+      {
+        "sample_index": 17,
+        "text": "Overdue amounts incur a penalty rate of 1.2% per month calculated on the outstanding balance.",
+        "gold_entities": [
+          {
+            "label": "penalty_condition",
+            "text": "penalty rate",
+            "char_start": 24,
+            "char_end": 36,
+            "token_span": [
+              4,
+              6
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "1.2% per month",
+            "char_start": 40,
+            "char_end": 54,
+            "token_span": [
+              7,
+              10
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 24,
+            "end": 39,
+            "text": "penalty rate of",
+            "label": "penalty_condition",
+            "score": 0.9184274077415466
+          },
+          {
+            "start": 40,
+            "end": 65,
+            "text": "1.2% per month calculated",
+            "label": "penalty_rate",
+            "score": 0.9999250173568726
+          }
+        ],
+        "matched_count": 2,
+        "latency_ms": 113.49
+      },
+      {
+        "sample_index": 18,
+        "text": "InnoSoft Ltd and CloudBase Corp signed this SLA effective April 15, 2025.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "InnoSoft Ltd",
+            "char_start": 0,
+            "char_end": 12,
+            "token_span": [
+              0,
+              2
+            ]
+          },
+          {
+            "label": "contracting_party",
+            "text": "CloudBase Corp",
+            "char_start": 17,
+            "char_end": 31,
+            "token_span": [
+              3,
+              5
+            ]
+          },
+          {
+            "label": "effective_date",
+            "text": "April 15, 2025",
+            "char_start": 58,
+            "char_end": 72,
+            "token_span": [
+              9,
+              13
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "text": "InnoSoft Ltd and",
+            "label": "contracting_party",
+            "score": 1.0
+          },
+          {
+            "start": 17,
+            "end": 38,
+            "text": "CloudBase Corp signed",
+            "label": "contracting_party",
+            "score": 1.0
+          },
+          {
+            "start": 58,
+            "end": 73,
+            "text": "April 15, 2025.",
+            "label": "effective_date",
+            "score": 0.9997811913490295
+          }
+        ],
+        "matched_count": 3,
+        "latency_ms": 121.06
+      },
+      {
+        "sample_index": 19,
+        "text": "The ceiling on aggregate damages under this Agreement is $ 1,200,000.",
+        "gold_entities": [
+          {
+            "label": "liability_cap",
+            "text": "$ 1,200,000",
+            "char_start": 57,
+            "char_end": 68,
+            "token_span": [
+              9,
+              11
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 57,
+            "end": 69,
+            "text": "$ 1,200,000.",
+            "label": "liability_cap",
+            "score": 0.9981144666671753
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 127.16
+      },
+      {
+        "sample_index": 20,
+        "text": "Service Provider guarantees 99.5% uptime; shortfall incurs a 2% monthly service credit.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "Service Provider",
+            "char_start": 0,
+            "char_end": 16,
+            "token_span": [
+              0,
+              2
+            ]
+          },
+          {
+            "label": "sla_target",
+            "text": "99.5%",
+            "char_start": 28,
+            "char_end": 33,
+            "token_span": [
+              3,
+              4
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "2% monthly service credit",
+            "char_start": 61,
+            "char_end": 86,
+            "token_span": [
+              9,
+              13
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 27,
+            "text": "Service Provider guarantees",
+            "label": "contracting_party",
+            "score": 0.9999998807907104
+          },
+          {
+            "start": 28,
+            "end": 40,
+            "text": "99.5% uptime",
+            "label": "sla_target",
+            "score": 0.9936563372612
+          },
+          {
+            "start": 42,
+            "end": 58,
+            "text": "shortfall incurs",
+            "label": "penalty_condition",
+            "score": 0.7985103726387024
+          },
+          {
+            "start": 61,
+            "end": 87,
+            "text": "2% monthly service credit.",
+            "label": "penalty_rate",
+            "score": 0.9998064637184143
+          }
+        ],
+        "matched_count": 3,
+        "latency_ms": 150.85
+      },
+      {
+        "sample_index": 21,
+        "text": "All fees are payable net 30 days from the date of invoice.",
+        "gold_entities": [
+          {
+            "label": "payment_terms",
+            "text": "30 days",
+            "char_start": 25,
+            "char_end": 32,
+            "token_span": [
+              5,
+              7
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 25,
+            "end": 37,
+            "text": "30 days from",
+            "label": "payment_terms",
+            "score": 0.9996669292449951
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 118.43
+      },
+      {
+        "sample_index": 22,
+        "text": "TradeCo Inc shall pay PrimeBuild LLC $ 220,000 upon completion of each phase.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "TradeCo Inc",
+            "char_start": 0,
+            "char_end": 11,
+            "token_span": [
+              0,
+              2
+            ]
+          },
+          {
+            "label": "contracting_party",
+            "text": "PrimeBuild LLC",
+            "char_start": 22,
+            "char_end": 36,
+            "token_span": [
+              4,
+              6
+            ]
+          },
+          {
+            "label": "monetary_amount",
+            "text": "$ 220,000",
+            "char_start": 37,
+            "char_end": 46,
+            "token_span": [
+              6,
+              8
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 17,
+            "text": "TradeCo Inc shall",
+            "label": "contracting_party",
+            "score": 1.0
+          },
+          {
+            "start": 37,
+            "end": 51,
+            "text": "$ 220,000 upon",
+            "label": "monetary_amount",
+            "score": 0.9997100234031677
+          }
+        ],
+        "matched_count": 2,
+        "latency_ms": 105.34
+      },
+      {
+        "sample_index": 23,
+        "text": "This contract is governed by the laws of the State of California.",
+        "gold_entities": [
+          {
+            "label": "governing_law",
+            "text": "State of California",
+            "char_start": 45,
+            "char_end": 64,
+            "token_span": [
+              9,
+              12
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 45,
+            "end": 65,
+            "text": "State of California.",
+            "label": "governing_law",
+            "score": 0.9992024302482605
+          }
+        ],
+        "matched_count": 1,
+        "latency_ms": 98.89
+      },
+      {
+        "sample_index": 24,
+        "text": "The vendor shall be penalized $ 3,000 per day for each calendar day of late delivery.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "vendor",
+            "char_start": 4,
+            "char_end": 10,
+            "token_span": [
+              1,
+              2
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "$ 3,000 per day",
+            "char_start": 30,
+            "char_end": 45,
+            "token_span": [
+              5,
+              9
+            ]
+          },
+          {
+            "label": "penalty_condition",
+            "text": "late delivery",
+            "char_start": 71,
+            "char_end": 84,
+            "token_span": [
+              14,
+              16
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 4,
+            "end": 16,
+            "text": "vendor shall",
+            "label": "contracting_party",
+            "score": 1.0
+          },
+          {
+            "start": 30,
+            "end": 49,
+            "text": "$ 3,000 per day for",
+            "label": "monetary_amount",
+            "score": 0.9883968234062195
+          },
+          {
+            "start": 71,
+            "end": 85,
+            "text": "late delivery.",
+            "label": "penalty_condition",
+            "score": 0.9722999334335327
+          }
+        ],
+        "matched_count": 2,
+        "latency_ms": 109.7
+      },
+      {
+        "sample_index": 25,
+        "text": "StructCo and EliteBuild Ltd signed this Agreement on November 10, 2025.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "StructCo",
+            "char_start": 0,
+            "char_end": 8,
+            "token_span": [
+              0,
+              1
+            ]
+          },
+          {
+            "label": "contracting_party",
+            "text": "EliteBuild Ltd",
+            "char_start": 13,
+            "char_end": 27,
+            "token_span": [
+              2,
+              4
+            ]
+          },
+          {
+            "label": "effective_date",
+            "text": "November 10, 2025",
+            "char_start": 53,
+            "char_end": 70,
+            "token_span": [
+              8,
+              12
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "text": "StructCo and",
+            "label": "contracting_party",
+            "score": 1.0
+          },
+          {
+            "start": 13,
+            "end": 34,
+            "text": "EliteBuild Ltd signed",
+            "label": "contracting_party",
+            "score": 1.0
+          },
+          {
+            "start": 53,
+            "end": 71,
+            "text": "November 10, 2025.",
+            "label": "effective_date",
+            "score": 0.9976868629455566
+          }
+        ],
+        "matched_count": 3,
+        "latency_ms": 109.08
+      },
+      {
+        "sample_index": 26,
+        "text": "The contract expires on July 31, 2027 and will not renew automatically.",
+        "gold_entities": [
+          {
+            "label": "expiration_date",
+            "text": "July 31, 2027",
+            "char_start": 24,
+            "char_end": 37,
+            "token_span": [
+              4,
+              8
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 24,
+            "end": 41,
+            "text": "July 31, 2027 and",
+            "label": "effective_date",
+            "score": 0.9998489618301392
+          }
+        ],
+        "matched_count": 0,
+        "latency_ms": 107.02
+      },
+      {
+        "sample_index": 27,
+        "text": "Client may terminate this SLA on 30 days notice if service levels are missed for two consecutive months.",
+        "gold_entities": [
+          {
+            "label": "contracting_party",
+            "text": "Client",
+            "char_start": 0,
+            "char_end": 6,
+            "token_span": [
+              0,
+              1
+            ]
+          },
+          {
+            "label": "termination_clause",
+            "text": "30 days notice",
+            "char_start": 33,
+            "char_end": 47,
+            "token_span": [
+              6,
+              9
+            ]
+          },
+          {
+            "label": "grace_period",
+            "text": "two consecutive months",
+            "char_start": 81,
+            "char_end": 103,
+            "token_span": [
+              15,
+              18
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "text": "Client may",
+            "label": "contracting_party",
+            "score": 1.0
+          },
+          {
+            "start": 33,
+            "end": 50,
+            "text": "30 days notice if",
+            "label": "payment_terms",
+            "score": 0.6675315499305725
+          },
+          {
+            "start": 81,
+            "end": 104,
+            "text": "two consecutive months.",
+            "label": "grace_period",
+            "score": 0.9936936497688293
+          }
+        ],
+        "matched_count": 2,
+        "latency_ms": 221.77
+      },
+      {
+        "sample_index": 28,
+        "text": "Excess liability beyond $ 400,000 is waived by both parties under this Agreement.",
+        "gold_entities": [
+          {
+            "label": "liability_cap",
+            "text": "$ 400,000",
+            "char_start": 24,
+            "char_end": 33,
+            "token_span": [
+              3,
+              5
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 24,
+            "end": 36,
+            "text": "$ 400,000 is",
+            "label": "monetary_amount",
+            "score": 0.9993236064910889
+          }
+        ],
+        "matched_count": 0,
+        "latency_ms": 118.23
+      },
+      {
+        "sample_index": 29,
+        "text": "A performance penalty of 5% of contract value is payable if KPIs are missed for 3 consecutive months.",
+        "gold_entities": [
+          {
+            "label": "penalty_condition",
+            "text": "performance penalty",
+            "char_start": 2,
+            "char_end": 21,
+            "token_span": [
+              1,
+              3
+            ]
+          },
+          {
+            "label": "penalty_rate",
+            "text": "5% of contract value",
+            "char_start": 25,
+            "char_end": 45,
+            "token_span": [
+              4,
+              8
+            ]
+          },
+          {
+            "label": "grace_period",
+            "text": "3 consecutive months",
+            "char_start": 80,
+            "char_end": 100,
+            "token_span": [
+              15,
+              18
+            ]
+          }
+        ],
+        "predicted_entities": [
+          {
+            "start": 2,
+            "end": 24,
+            "text": "performance penalty of",
+            "label": "penalty_condition",
+            "score": 0.7274191379547119
+          },
+          {
+            "start": 25,
+            "end": 48,
+            "text": "5% of contract value is",
+            "label": "penalty_rate",
+            "score": 0.9967261552810669
+          },
+          {
+            "start": 80,
+            "end": 101,
+            "text": "3 consecutive months.",
+            "label": "payment_terms",
+            "score": 0.9991999268531799
+          }
+        ],
+        "matched_count": 2,
+        "latency_ms": 132.0
       }
     ]
   }

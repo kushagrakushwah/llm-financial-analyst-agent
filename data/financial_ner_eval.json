@@ -4,7 +4,8 @@
     "ner": [
       [0, 1, "contracting_party"],
       [3, 5, "penalty_condition"],
-      [6, 9, "penalty_rate"]
+      [6, 9, "penalty_rate"],
+      [10, 12, "penalty_condition"]
     ]
   },
   {
@@ -52,6 +53,161 @@
     "tokenized_text": ["This", "charter", "is", "governed", "by", "the", "laws", "of", "the", "State", "of", "New", "York", "."],
     "ner": [
       [9, 13, "governing_law"]
+    ]
+  },
+  {
+    "tokenized_text": ["Penalty", "of", "3%", "per", "week", "shall", "apply", "for", "every", "week", "of", "milestone", "delay", "beyond", "the", "approved", "schedule", "."],
+    "ner": [
+      [2, 5, "penalty_rate"],
+      [11, 17, "penalty_condition"]
+    ]
+  },
+  {
+    "tokenized_text": ["Zebra", "Logistics", "and", "FastSupply", "Inc", "entered", "into", "a", "freight", "contract", "dated", "March", "1", ",", "2026", "."],
+    "ner": [
+      [0, 2, "contracting_party"],
+      [3, 5, "contracting_party"],
+      [11, 15, "effective_date"]
+    ]
+  },
+  {
+    "tokenized_text": ["The", "SLA", "requires", "99.99%", "uptime", ";", "breach", "triggers", "$", "20,000", "per", "incident", "compensation", "."],
+    "ner": [
+      [3, 4, "sla_target"],
+      [8, 12, "penalty_rate"]
+    ]
+  },
+  {
+    "tokenized_text": ["Maximum", "liability", "for", "any", "single", "claim", "is", "limited", "to", "$", "350,000", "."],
+    "ner": [
+      [9, 11, "liability_cap"]
+    ]
+  },
+  {
+    "tokenized_text": ["Payment", "must", "be", "made", "in", "full", "within", "45", "days", "from", "the", "invoice", "date", "."],
+    "ner": [
+      [7, 9, "payment_terms"]
+    ]
+  },
+  {
+    "tokenized_text": ["RapiTech", "Inc", "shall", "provide", "services", "from", "February", "1", ",", "2026", "to", "January", "31", ",", "2028", "."],
+    "ner": [
+      [0, 2, "contracting_party"],
+      [6, 10, "effective_date"],
+      [11, 15, "expiration_date"]
+    ]
+  },
+  {
+    "tokenized_text": ["Each", "missed", "delivery", "deadline", "triggers", "a", "fixed", "penalty", "of", "$", "2,500", "payable", "within", "7", "days", "."],
+    "ner": [
+      [1, 4, "penalty_condition"],
+      [9, 11, "penalty_rate"],
+      [13, 15, "payment_terms"]
+    ]
+  },
+  {
+    "tokenized_text": ["This", "Agreement", "shall", "be", "interpreted", "under", "the", "laws", "of", "Ontario", ",", "Canada", "."],
+    "ner": [
+      [9, 12, "governing_law"]
+    ]
+  },
+  {
+    "tokenized_text": ["Either", "partner", "may", "exit", "the", "agreement", "by", "providing", "120", "days", "written", "notice", "to", "the", "other", "party", "."],
+    "ner": [
+      [8, 12, "termination_clause"]
+    ]
+  },
+  {
+    "tokenized_text": ["Overdue", "amounts", "incur", "a", "penalty", "rate", "of", "1.2%", "per", "month", "calculated", "on", "the", "outstanding", "balance", "."],
+    "ner": [
+      [4, 6, "penalty_condition"],
+      [7, 10, "penalty_rate"]
+    ]
+  },
+  {
+    "tokenized_text": ["InnoSoft", "Ltd", "and", "CloudBase", "Corp", "signed", "this", "SLA", "effective", "April", "15", ",", "2025", "."],
+    "ner": [
+      [0, 2, "contracting_party"],
+      [3, 5, "contracting_party"],
+      [9, 13, "effective_date"]
+    ]
+  },
+  {
+    "tokenized_text": ["The", "ceiling", "on", "aggregate", "damages", "under", "this", "Agreement", "is", "$", "1,200,000", "."],
+    "ner": [
+      [9, 11, "liability_cap"]
+    ]
+  },
+  {
+    "tokenized_text": ["Service", "Provider", "guarantees", "99.5%", "uptime", ";", "shortfall", "incurs", "a", "2%", "monthly", "service", "credit", "."],
+    "ner": [
+      [0, 2, "contracting_party"],
+      [3, 4, "sla_target"],
+      [9, 13, "penalty_rate"]
+    ]
+  },
+  {
+    "tokenized_text": ["All", "fees", "are", "payable", "net", "30", "days", "from", "the", "date", "of", "invoice", "."],
+    "ner": [
+      [5, 7, "payment_terms"]
+    ]
+  },
+  {
+    "tokenized_text": ["TradeCo", "Inc", "shall", "pay", "PrimeBuild", "LLC", "$", "220,000", "upon", "completion", "of", "each", "phase", "."],
+    "ner": [
+      [0, 2, "contracting_party"],
+      [4, 6, "contracting_party"],
+      [6, 8, "monetary_amount"]
+    ]
+  },
+  {
+    "tokenized_text": ["This", "contract", "is", "governed", "by", "the", "laws", "of", "the", "State", "of", "California", "."],
+    "ner": [
+      [9, 12, "governing_law"]
+    ]
+  },
+  {
+    "tokenized_text": ["The", "vendor", "shall", "be", "penalized", "$", "3,000", "per", "day", "for", "each", "calendar", "day", "of", "late", "delivery", "."],
+    "ner": [
+      [1, 2, "contracting_party"],
+      [5, 9, "penalty_rate"],
+      [14, 16, "penalty_condition"]
+    ]
+  },
+  {
+    "tokenized_text": ["StructCo", "and", "EliteBuild", "Ltd", "signed", "this", "Agreement", "on", "November", "10", ",", "2025", "."],
+    "ner": [
+      [0, 1, "contracting_party"],
+      [2, 4, "contracting_party"],
+      [8, 12, "effective_date"]
+    ]
+  },
+  {
+    "tokenized_text": ["The", "contract", "expires", "on", "July", "31", ",", "2027", "and", "will", "not", "renew", "automatically", "."],
+    "ner": [
+      [4, 8, "expiration_date"]
+    ]
+  },
+  {
+    "tokenized_text": ["Client", "may", "terminate", "this", "SLA", "on", "30", "days", "notice", "if", "service", "levels", "are", "missed", "for", "two", "consecutive", "months", "."],
+    "ner": [
+      [0, 1, "contracting_party"],
+      [6, 9, "termination_clause"],
+      [15, 18, "grace_period"]
+    ]
+  },
+  {
+    "tokenized_text": ["Excess", "liability", "beyond", "$", "400,000", "is", "waived", "by", "both", "parties", "under", "this", "Agreement", "."],
+    "ner": [
+      [3, 5, "liability_cap"]
+    ]
+  },
+  {
+    "tokenized_text": ["A", "performance", "penalty", "of", "5%", "of", "contract", "value", "is", "payable", "if", "KPIs", "are", "missed", "for", "3", "consecutive", "months", "."],
+    "ner": [
+      [1, 3, "penalty_condition"],
+      [4, 8, "penalty_rate"],
+      [15, 18, "grace_period"]
     ]
   }
 ]

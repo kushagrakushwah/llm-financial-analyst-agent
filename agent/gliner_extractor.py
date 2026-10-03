@@ -22,6 +22,8 @@ DEFAULT_FINANCIAL_LABELS = [
     "termination_clause",
     "governing_law",
     "payment_terms",
+    "sla_target",
+    "grace_period",
 ]
 
 

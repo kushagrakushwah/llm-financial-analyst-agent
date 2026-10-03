@@ -2,6 +2,9 @@
 Unit tests for GLiNER integration in LLM Financial Analyst Agent.
 """
 
+import os
+os.environ["USE_MOCK_LLM"] = "true"
+
 import pytest
 from fastapi.testclient import TestClient
 from agent.gliner_extractor import FinancialEntityExtractor, get_extractor

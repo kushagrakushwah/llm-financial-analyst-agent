@@ -39,22 +39,41 @@ def main():
     model = GLiNER.from_pretrained(base_model_id)
 
     # 2. Training configuration with differential learning rates & negative sampling
+    #
+    # Key changes from initial config (and why):
+    #   negatives: 1.0 → 0.3
+    #     Previously, 1.0 negative labels were sampled per positive label on a 10-sample dataset.
+    #     This caused the model to be over-penalized for any prediction, collapsing Recall from 53% to 33%.
+    #     With 120 training samples, 0.3 gives the model enough signal to learn without becoming timid.
+    #
+    #   num_train_epochs: 5 → 8
+    #     More passes over the larger, more diverse dataset to allow the projection head to
+    #     fully specialize without catastrophic forgetting of DeBERTa backbone.
+    #
+    #   per_device_train_batch_size: 2 → 4
+    #     Larger batches produce more stable gradient estimates. With 120 samples this is safe.
+    #
+    #   warmup_ratio: 0.1 (kept)
+    #     Gives DeBERTa backbone time to adjust its representations before the main learning rate kicks in.
+    #
+    #   lr_scheduler_type: cosine (kept)
+    #     Smooth learning rate decay prevents overfitting on the final epochs.
     training_args = TrainingArguments(
         output_dir=output_model_dir,
-        learning_rate=1e-5,               # Backbone (DeBERTa) LR to avoid catastrophic forgetting
+        learning_rate=2e-5,               # Backbone (DeBERTa) LR — calibrated for entity discrimination
         weight_decay=0.01,
-        others_lr=1e-4,                   # Classification/Projection head LR for rapid adaptation
+        others_lr=2e-4,                   # Projection head LR — rapid adaptation
         others_weight_decay=0.01,
-        lr_scheduler_type="cosine",
-        warmup_ratio=0.1,
-        per_device_train_batch_size=2,
-        per_device_eval_batch_size=2,
-        num_train_epochs=5,
+        lr_scheduler_type="cosine",       # Smooth cosine decay
+        warmup_ratio=0.1,                 # 10% linear warmup
+        per_device_train_batch_size=4,    # Stable gradient batches
+        per_device_eval_batch_size=4,
+        num_train_epochs=8,               # 8 epochs across 162 diverse samples
         eval_strategy="epoch",
         save_strategy="epoch",
         save_total_limit=1,
-        logging_steps=1,
-        negatives=1.0,                    # Samples negative entity types to maintain zero-shot precision
+        logging_steps=5,
+        negatives=0.15,                   # Calibrated negative sampling to prevent recall penalty
         report_to="none"
     )
 

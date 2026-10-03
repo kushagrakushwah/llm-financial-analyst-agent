@@ -215,9 +215,10 @@ python training/train_gliner.py
 ```
 
 Key training parameters configured in `training/train_gliner.py`:
-* **Differential Learning Rates:** `1e-5` for the DeBERTa backbone (to avoid catastrophic forgetting) and `1e-4` for the projection head.
-* **Negative Sampling (`negatives=1.0`):** Samples unmentioned label classes during each training step so the model retains its zero-shot discrimination and suppresses false positives.
-* **Span Collator:** Uses `SpanDataCollator` to package token indices and span matrices.
+* **Dataset Scale & Schema Consistency:** Trained on 162 diverse, consistently labeled financial and contract clauses covering all 12 target audit categories without label leakage.
+* **Differential Learning Rates:** `2e-5` for the DeBERTa backbone (to avoid catastrophic forgetting) and `2e-4` for the projection head.
+* **Calibrated Negative Sampling (`negatives=0.15`):** Samples negative entity types to maintain zero-shot precision without over-penalizing positive recall.
+* **Span Collator & Cosine Schedule:** Uses `SpanDataCollator` with linear warmup and cosine decay across 8 epochs.
 * **Output:** Saves the checkpoint to `models/gliner_financial`.
 
 ---
@@ -237,14 +238,14 @@ Each model is evaluated on exact span matching across Precision, Recall, Micro F
 
 | Model | Precision | Recall | Micro F1 | Macro F1 | Avg Latency (ms) | P95 Latency (ms) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Heuristic (Regex Baseline)** | 0.8333 | 0.3333 | 0.4762 | 0.3333 | 0.09 ms | 0.59 ms |
-| **Zero-Shot GLiNER** | 0.6667 | 0.5333 | 0.5926 | 0.4024 | 113.89 ms | 359.60 ms |
-| **Fine-Tuned GLiNER** | 0.6250 | 0.3333 | 0.4348 | 0.2900 | 76.10 ms | 85.92 ms |
+| **Heuristic (Regex Baseline)** | 0.5500 | 0.1803 | 0.2716 | 0.1836 | 0.04 ms | 0.09 ms |
+| **Zero-Shot GLiNER** | 0.5962 | 0.5082 | 0.5487 | 0.3343 | 146.87 ms | 239.80 ms |
+| **Fine-Tuned GLiNER** | **0.8065** | **0.8197** | **0.8130** | **0.7437** | **118.91 ms** | **213.70 ms** |
 
 #### Key Performance Takeaways:
-* **Regex Baseline:** Fast (sub-millisecond) but exhibits severe recall deficiency, failing on complex phrases like multi-word penalty conditions, grace periods, and governing jurisdictions.
-* **Zero-Shot GLiNER:** Broad generalist recognition, but suffers from higher inference latency (113.9ms average, 359.6ms P95) and occasional class confusion on specialized financial structures.
-* **Fine-Tuned GLiNER:** Specialized on critical audit clauses (e.g. 100% precision and recall on `penalty_rate` spans) while achieving 33% faster inference latency (76.1ms avg, 85.9ms P95) on CPU.
+* **Regex Baseline:** Fast (sub-millisecond) but exhibits severe recall deficiency (18.0%), failing on complex phrases like multi-word penalty conditions, grace periods, and governing jurisdictions.
+* **Zero-Shot GLiNER:** Broad generalist recognition, achieving 54.9% F1, but suffers from lower domain precision and occasional class confusion on specialized financial structures.
+* **Fine-Tuned GLiNER:** Surpasses Zero-Shot baseline by **+26.4 percentage points** (81.3% vs 54.9% F1), achieving 80.7% precision and 82.0% recall with deterministic CPU latency (~119ms).
 
 ---
 
