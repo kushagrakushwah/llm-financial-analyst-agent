@@ -1,6 +1,8 @@
 import os
 from typing import List, Optional
 from fastapi import FastAPI, HTTPException
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 import torch
@@ -212,3 +214,28 @@ def _synthesize_audit_report(task_type: str, document: str, entities: List[Entit
 
     findings.append("• Audit Recommendation: Ensure liquidated damages provisions are capped against total contract value.")
     return "\n".join(findings)
+
+
+# ---------------------------------------------------------------------------
+# Frontend Static App Delivery
+# ---------------------------------------------------------------------------
+
+FRONTEND_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "frontend")
+
+if os.path.exists(FRONTEND_DIR):
+    @app.get("/")
+    def serve_root():
+        index_path = os.path.join(FRONTEND_DIR, "index.html")
+        if os.path.exists(index_path):
+            return FileResponse(index_path)
+        return {"status": "ok", "message": "Financial Analyst Agent API Running"}
+
+    @app.get("/app")
+    def serve_app():
+        index_path = os.path.join(FRONTEND_DIR, "index.html")
+        if os.path.exists(index_path):
+            return FileResponse(index_path)
+        return {"status": "ok", "message": "Financial Analyst Agent API Running"}
+
+    app.mount("/static", StaticFiles(directory=FRONTEND_DIR), name="static")
+

@@ -1,0 +1,886 @@
+[
+  {
+    "contract": "TRICITYBANKSHARESCORP_05_15_1998-EX-10-OUTSOURCING AGREEMENT",
+    "clause": "MARSHALL & ILSLEY CORPORATION acting through its division M&I DATA SERVICES",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "M&I",
+        "start": 58,
+        "end": 61
+      }
+    ],
+    "cuad_category": "Parties"
+  },
+  {
+    "contract": "TRICITYBANKSHARESCORP_05_15_1998-EX-10-OUTSOURCING AGREEMENT",
+    "clause": "This Outsourcing Agreement (\"Agreement\") is made as of the 16th day of February, 1998, by and between Tri City National Bank, a Wisconsin corporation (including its Affiliates, \"Customer\") and Marshall & Ilsley Corporation, a Wisconsin corporation, acting through its division, M&I Data Services (\"M&I\").",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "Tri City National Bank",
+        "start": 102,
+        "end": 124
+      }
+    ],
+    "cuad_category": "Parties"
+  },
+  {
+    "contract": "TRICITYBANKSHARESCORP_05_15_1998-EX-10-OUTSOURCING AGREEMENT",
+    "clause": "MODIFICATION OR TERMINATION OF SERVICES   10.1 Modifications to Services      10.2 Partial Termination by M&I     10.3 Partial Termination by Customer     10.4 Development of Custom Software\n\n\n\n\n\n11.",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "Customer",
+        "start": 142,
+        "end": 150
+      }
+    ],
+    "cuad_category": "Parties"
+  },
+  {
+    "contract": "TRICITYBANKSHARESCORP_05_15_1998-EX-10-OUTSOURCING AGREEMENT",
+    "clause": "L.  \"Effective Date\" shall mean February 16, 1998.",
+    "entities": [
+      {
+        "label": "effective_date",
+        "text": "\"Effective Date\" shall mean February 16, 1998",
+        "start": 4,
+        "end": 49
+      }
+    ],
+    "cuad_category": "Effective Date"
+  },
+  {
+    "contract": "TRICITYBANKSHARESCORP_05_15_1998-EX-10-OUTSOURCING AGREEMENT",
+    "clause": "X.   \"Term\" shall mean the period commencing on the Effective Date and terminating on the eighth anniversary of the Commencement Date, unless the Agreement is extended in accordance with its provisions.",
+    "entities": [
+      {
+        "label": "expiration_date",
+        "text": "\"Term\" shall mean the period commencing on the Effective Date and terminating on the eighth anniversary of the Commencement Date, unless the Agreement is extended in accordance with its provisions.",
+        "start": 5,
+        "end": 202
+      }
+    ],
+    "cuad_category": "Expiration Date"
+  },
+  {
+    "contract": "TRICITYBANKSHARESCORP_05_15_1998-EX-10-OUTSOURCING AGREEMENT",
+    "clause": "22.1 Governing Law.  The validity, construction and interpretation of this Agreement and the rights and duties of the parties hereto shall be governed by the internal laws of the State of Wisconsin, excluding its principles of conflict of laws.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "The validity, construction and interpretation of this Agreement and the rights and duties of the parties hereto shall be governed by the internal laws of the State of Wisconsin, excluding its principles of conflict of laws.",
+        "start": 21,
+        "end": 244
+      }
+    ],
+    "cuad_category": "Governing Law"
+  },
+  {
+    "contract": "TRICITYBANKSHARESCORP_05_15_1998-EX-10-OUTSOURCING AGREEMENT",
+    "clause": "10.2 Partial Termination by M&I.  M&I may, at any time, withdraw any of the Services (other than the Core Services) upon providing ninety (90) days' prior written notice to Customer.  M&I may also terminate any of the Services immediately upon any final regulatory, legislative, or judicial",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "M&I may, at any time, withdraw any of the Services (other than the Core Services) upon providing ninety (90) days' prior written notice to Customer.",
+        "start": 34,
+        "end": 182
+      }
+    ],
+    "cuad_category": "Termination For Convenience"
+  },
+  {
+    "contract": "TRICITYBANKSHARESCORP_05_15_1998-EX-10-OUTSOURCING AGREEMENT",
+    "clause": "13.4 Limitation of Liability.  Notwithstanding any provision in this Agreement, M&I's total liability under this Agreement shall not exceed payments made to M&I by Customer under this Agreement during the three (3) months prior to the event.  No lawsuit or other action may be brought by either party hereto, or on any claim or controversy based upon or arising in any way out of this Agreement be brought, after one (1) year from the date on which the cause of action arose; provided, however, the foregoing limitation shall not apply to the collection of any amounts due under this Agreement.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Notwithstanding any provision in this Agreement, M&I's total liability under this Agreement shall not exceed payments made to M&I by Customer under this Agreement during the three (3) months prior to the event.",
+        "start": 31,
+        "end": 241
+      }
+    ],
+    "cuad_category": "Cap On Liability"
+  },
+  {
+    "contract": "TRICITYBANKSHARESCORP_05_15_1998-EX-10-OUTSOURCING AGREEMENT",
+    "clause": "13.5 Liquidated Damages.  Customer acknowledges that M&I shall suffer a material adverse impact on its business if this Agreement is terminated pursuant to Sections 11.1 or 11.2(A) and that the resulting damages may not be susceptible of precise determination.  Customer acknowledges that the Termination for Convenience Fee and the Termination for Cause Fee are each a reasonable approximation of such damages and shall be deemed to be liquidated damages and not a penalty.",
+    "entities": [
+      {
+        "label": "penalty_condition",
+        "text": "Customer acknowledges that the Termination for Convenience Fee and the Termination for Cause Fee are each a reasonable approximation of such damages and shall be deemed to be liquidated damages and not a penalty.",
+        "start": 262,
+        "end": 474
+      }
+    ],
+    "cuad_category": "Liquidated Damages"
+  },
+  {
+    "contract": "BLUEHILLSBANCORP,INC_05_20_2014-EX-1.1-AGENCY AGREEMENT",
+    "clause": "Blue Hills Bancorp, Inc. (the \"Holding Company\"), a newly formed Maryland corporation, Hyde Park Bancorp, MHC, a Massachusetts\u00ad chartered mutual holding company (the \"MHC\"), Hyde Park Bancorp, Inc., a Massachusetts corporation (the \"Mid\u00adTier\"), and Blue Hills Bank, a Massachusetts\u00adchartered stock savings bank (the \"Bank\" and together with the Holding Company, the MHC and the Mid\u00adTier, the \"Blue Hills Parties\"), hereby confirm their agreement with Keefe, Bruyette & Woods, Inc. (the \"Agent\") as follows:",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "MHC",
+        "start": 106,
+        "end": 109
+      }
+    ],
+    "cuad_category": "Parties"
+  },
+  {
+    "contract": "BLUEHILLSBANCORP,INC_05_20_2014-EX-1.1-AGENCY AGREEMENT",
+    "clause": "Keefe, Bruyette & Woods, Inc. 10 South Wacker Drive Investment Banking, Suite 3400 Chicago, Illinois 60606",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "Bruyette & Woods, Inc.",
+        "start": 7,
+        "end": 29
+      }
+    ],
+    "cuad_category": "Parties"
+  },
+  {
+    "contract": "BLUEHILLSBANCORP,INC_05_20_2014-EX-1.1-AGENCY AGREEMENT",
+    "clause": "Blue Hills Bancorp, Inc. up to 24,150,000 Shares (subject to increase up to 27,772,500 shares)",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "Blue Hills Bancorp, Inc.",
+        "start": 0,
+        "end": 24
+      }
+    ],
+    "cuad_category": "Parties"
+  },
+  {
+    "contract": "BLUEHILLSBANCORP,INC_05_20_2014-EX-1.1-AGENCY AGREEMENT",
+    "clause": "Section 16. Governing Law and Construction. This Agreement shall be governed by and construed in accordance with the laws of the State of New York without regard to principles of conflicts of law.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement shall be governed by and construed in accordance with the laws of the State of New York without regard to principles of conflicts of law.",
+        "start": 44,
+        "end": 196
+      }
+    ],
+    "cuad_category": "Governing Law"
+  },
+  {
+    "contract": "GarrettMotionInc_20181001_8-K_EX-2.4_11364532_EX-2.4_Intellectual Property Agreement",
+    "clause": "SCHEDULE A - SpinCo Patents SCHEDULE B - SpinCo IDs SCHEDULE C - SpinCo Trademarks SCHEDULE D - SpinCo Domain Names SCHEDULE E - Registered SpinCo Copyrights SCHEDULE F - R&D Projects SCHEDULE G - Honeywell Content iii",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "SpinCo",
+        "start": 13,
+        "end": 19
+      }
+    ],
+    "cuad_category": "Parties"
+  },
+  {
+    "contract": "GarrettMotionInc_20181001_8-K_EX-2.4_11364532_EX-2.4_Intellectual Property Agreement",
+    "clause": "Section 3.01. License Grants 4 Section 3.02. Other Covenants 5 Section 3.03. Honeywell Content 6",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "Honeywell",
+        "start": 77,
+        "end": 86
+      }
+    ],
+    "cuad_category": "Parties"
+  },
+  {
+    "contract": "GarrettMotionInc_20181001_8-K_EX-2.4_11364532_EX-2.4_Intellectual Property Agreement",
+    "clause": "(a) This Agreement may be executed in one or more counterparts, all of which counterparts shall be considered one and the same agreement, and shall become effective when one or more counterparts have been signed by each Party and delivered to the other Party. This Agreement may be executed by facsimile or PDF signature and scanned and exchanged by electronic mail, and such facsimile or PDF signature or scanned and exchanged copies shall constitute an original for all purposes.",
+    "entities": [
+      {
+        "label": "effective_date",
+        "text": "This Agreement may be executed in one or more counterparts, all of which counterparts shall be considered one and the same agreement, and shall become effective when one or more counterparts have been signed by each Party and delivered to the other Party.",
+        "start": 4,
+        "end": 259
+      }
+    ],
+    "cuad_category": "Effective Date"
+  },
+  {
+    "contract": "GarrettMotionInc_20181001_8-K_EX-2.4_11364532_EX-2.4_Intellectual Property Agreement",
+    "clause": "Section 9.02. Termination prior to the Distribution. This Agreement may be terminated by Honeywell at any time, in its sole discretion, prior to the Distribution; provided, however, that this Agreement shall automatically terminate upon the termination of the Separation Agreement in accordance with its terms.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "This Agreement may be terminated by Honeywell at any time, in its sole discretion, prior to the Distribution; provided, however, that this Agreement shall automatically terminate upon the termination of the Separation Agreement in accordance with its terms.",
+        "start": 53,
+        "end": 310
+      }
+    ],
+    "cuad_category": "Termination For Convenience"
+  },
+  {
+    "contract": "TheglobeComInc_19990503_S-1A_EX-10.20_5416126_EX-10.20_Co-Branding Agreement",
+    "clause": "This Co-Branding Agreement (the \"Agreement\") is entered into as of  March ___, 1999 (the \"Effective Date\") by and between theglobe.com, Inc., with its principal place of business at 31 West 21st Street, New York, NY  10010 (\"theglobe\"), and The Boxlot Company, with its principal place of business at 12626 High Bluff Drive, Suite 370, San Diego, CA  92130 (\"Boxlot\").",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "The Boxlot Company",
+        "start": 241,
+        "end": 259
+      }
+    ],
+    "cuad_category": "Parties"
+  },
+  {
+    "contract": "TheglobeComInc_19990503_S-1A_EX-10.20_5416126_EX-10.20_Co-Branding Agreement",
+    "clause": "(g) \"Launch Date\" means the first date on which the Service is made publicly available.",
+    "entities": [
+      {
+        "label": "expiration_date",
+        "text": "\"Launch Date\" means the first date on which the Service is made publicly available.",
+        "start": 4,
+        "end": 87
+      }
+    ],
+    "cuad_category": "Expiration Date"
+  },
+  {
+    "contract": "TheglobeComInc_19990503_S-1A_EX-10.20_5416126_EX-10.20_Co-Branding Agreement",
+    "clause": "8.1  Term.  This Agreement will become effective on the Effective Date and will continue in effect for 2 years following the Launch Date.",
+    "entities": [
+      {
+        "label": "expiration_date",
+        "text": "This Agreement will become effective on the Effective Date and will continue in effect for 2 years following the Launch Date.",
+        "start": 12,
+        "end": 137
+      }
+    ],
+    "cuad_category": "Expiration Date"
+  },
+  {
+    "contract": "TheglobeComInc_19990503_S-1A_EX-10.20_5416126_EX-10.20_Co-Branding Agreement",
+    "clause": "EXCEPT IN THE EVENT OF A CLAIM UNDER SECTION 10 OR FAILURE TO PAY UNDER SECTION 6, IN NO EVENT SHALL EITHER PARTY BE LIABLE TO THE",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "EXCEPT IN THE EVENT OF A CLAIM UNDER SECTION 10 OR FAILURE TO PAY UNDER SECTION 6, IN NO EVENT SHALL EITHER PARTY BE LIABLE TO THE",
+        "start": 0,
+        "end": 130
+      }
+    ],
+    "cuad_category": "Cap On Liability"
+  },
+  {
+    "contract": "TheglobeComInc_19990503_S-1A_EX-10.20_5416126_EX-10.20_Co-Branding Agreement",
+    "clause": "11.  LIABILITY LIMITS.  NEITHER PARTY SHALL BE LIABLE FOR LOST PROFITS OR SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES (HOWEVER ARISING, INCLUDING",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "NEITHER PARTY SHALL BE LIABLE FOR LOST PROFITS OR SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES (HOWEVER ARISING, INCLUDING",
+        "start": 24,
+        "end": 146
+      }
+    ],
+    "cuad_category": "Cap On Liability"
+  },
+  {
+    "contract": "TheglobeComInc_19990503_S-1A_EX-10.20_5416126_EX-10.20_Co-Branding Agreement",
+    "clause": "NEGLIGENCE) ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT, EVEN IF THE PARTIES ARE AWARE OF THE POSSIBILITY OF SUCH DAMAGES.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "NEGLIGENCE) ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT, EVEN IF THE PARTIES ARE AWARE OF THE POSSIBILITY OF SUCH DAMAGES.",
+        "start": 0,
+        "end": 130
+      }
+    ],
+    "cuad_category": "Cap On Liability"
+  },
+  {
+    "contract": "TheglobeComInc_19990503_S-1A_EX-10.20_5416126_EX-10.20_Co-Branding Agreement",
+    "clause": "OTHER PARTY IN AN AMOUNT GREATER THAN THE AMOUNT BOXLOT ACTUALLY PAYS TO THEGLOBE HEREUNDER.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "OTHER PARTY IN AN AMOUNT GREATER THAN THE AMOUNT BOXLOT ACTUALLY PAYS TO THEGLOBE HEREUNDER.",
+        "start": 0,
+        "end": 92
+      }
+    ],
+    "cuad_category": "Cap On Liability"
+  },
+  {
+    "contract": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement",
+    "clause": "This Co-Branding Agreement (this \"Agreement\"), dated as of June 8, 1999, is made by and between Snap Technologies, Inc. a California corporation having its principal place of business at 111 Townsend St., San Francisco, CA 94107 (\"Snap\"), and, United Airlines, Inc., a Delaware corporation having its principal place of business at 1200 E. Algonquin Road, Elk Grove Township, IL 60007 (\"Sponsor\").",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "Sponsor",
+        "start": 387,
+        "end": 394
+      }
+    ],
+    "cuad_category": "Parties"
+  },
+  {
+    "contract": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement",
+    "clause": "4.1   TERM. The Term shall commence on the date of this Agreement and, unless earlier terminated or extended as provided below, shall end as of December 31, 2000.",
+    "entities": [
+      {
+        "label": "effective_date",
+        "text": "The Term shall commence on the date of this Agreement and, unless earlier terminated or extended as provided below, shall end as of December 31, 2000.",
+        "start": 12,
+        "end": 162
+      }
+    ],
+    "cuad_category": "Effective Date"
+  },
+  {
+    "contract": "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement",
+    "clause": "8.4   CHOICE OF LAW; FORUM SELECTION. This Agreement shall be governed by, and construed in accordance with, the laws of the State of California without reference to its choice of law rules. Sponsor hereby irrevocably consents to personal jurisdiction and venue in the state and federal courts located in San Francisco, California with respect to any actions, claims or proceedings arising out of or in connection with this Agreement.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement shall be governed by, and construed in accordance with, the laws of the State of California without reference to its choice of law rules.",
+        "start": 38,
+        "end": 190
+      }
+    ],
+    "cuad_category": "Governing Law"
+  },
+  {
+    "contract": "HC2HOLDINGS,INC_05_14_2020-EX-10.1-COOPERATION AGREEMENT",
+    "clause": "This Agreement will terminate upon the earlier of: (i) the conclusion of the Standstill Period or (ii) delivery of written notice by one Party to the other Party of a material breach of this Agreement by the breaching Party that is uncured after ten (10) calendar days of notice of such breach. Upon such termination, this Agreement shall have no further force and effect.",
+    "entities": [
+      {
+        "label": "expiration_date",
+        "text": "This Agreement will terminate upon the earlier of: (i) the conclusion of the Standstill Period or (ii) delivery of written notice by one Party to the other Party of a material breach of this Agreement by the breaching Party that is uncured after ten (10) calendar days of notice of such breach.",
+        "start": 0,
+        "end": 294
+      }
+    ],
+    "cuad_category": "Expiration Date"
+  },
+  {
+    "contract": "TRANSMONTAIGNEPARTNERSLLC_03_13_2020-EX-10.9-SERVICES AGREEMENT",
+    "clause": "This SERVICES AGREEMENT is entered into on, and effective as of, August __, 2019 (the \"Effective Date\") among TransMontaigne Management Company, LLC, a Delaware limited liability company (\"EmployeeCo\") and TLP Management Services, LLC, a Delaware limited liability company (the \"Operating Company\"). The above-named entities are sometimes referred to in this Agreement (as defined herein) each as a \"Party\" and collectively as the \"Parties.\"",
+    "entities": [
+      {
+        "label": "effective_date",
+        "text": "August __, 2019",
+        "start": 65,
+        "end": 80
+      }
+    ],
+    "cuad_category": "Agreement Date"
+  },
+  {
+    "contract": "TRANSMONTAIGNEPARTNERSLLC_03_13_2020-EX-10.9-SERVICES AGREEMENT",
+    "clause": "2.3 Termination of Agreement. This Agreement shall remain in effect until terminated by the Parties. This Agreement may be terminated by (a) the written agreement of the Parties or (b) by either Party upon 5 days written notice to the other Party. All payment obligations hereunder shall survive the termination of this Agreement in accordance with their respective terms.",
+    "entities": [
+      {
+        "label": "expiration_date",
+        "text": "This Agreement shall remain in effect until terminated by the Parties.",
+        "start": 30,
+        "end": 100
+      }
+    ],
+    "cuad_category": "Expiration Date"
+  },
+  {
+    "contract": "TRANSMONTAIGNEPARTNERSLLC_03_13_2020-EX-10.9-SERVICES AGREEMENT",
+    "clause": "2.1 Choice of Law; Submission to Jurisdiction. This Agreement shall be subject to and governed by the laws of the State of Colorado, excluding any conflicts-of-law rule or principle that might refer the construction or interpretation of this Agreement to the laws of another state. Each Party hereby submits to the jurisdiction of the state and federal courts in the State of Colorado and to venue in Denver, Colorado.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement shall be subject to and governed by the laws of the State of Colorado, excluding any conflicts-of-law rule or principle that might refer the construction or interpretation of this Agreement to the laws of another state.",
+        "start": 47,
+        "end": 281
+      }
+    ],
+    "cuad_category": "Governing Law"
+  },
+  {
+    "contract": "COOLTECHNOLOGIES,INC_10_25_2017-EX-10.71-Strategic Alliance Agreement",
+    "clause": "This Agreement shall be automatically renewed for successive one year periods unless either party gives written notice of termination to the other party at least thirty (30) days prior to the date of expiration. Notwithstanding the foregoing, this Agreement shall be earlier terminated (x) by mutual agreement of the parties, or (y) at any time upon sixty (60) days advance written notice to the other party.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "This Agreement shall be automatically renewed for successive one year periods unless either party gives written notice of termination to the other party at least thirty (30) days prior to the date of expiration.",
+        "start": 0,
+        "end": 211
+      }
+    ],
+    "cuad_category": "Notice Period To Terminate Renewal"
+  },
+  {
+    "contract": "COOLTECHNOLOGIES,INC_10_25_2017-EX-10.71-Strategic Alliance Agreement",
+    "clause": "Governing Law: This Agreement shall be governed by and construed in accordance with the laws of the State of Missouri. Without giving effect to its choice of law principles.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement shall be governed by and construed in accordance with the laws of the State of Missouri.",
+        "start": 15,
+        "end": 118
+      }
+    ],
+    "cuad_category": "Governing Law"
+  },
+  {
+    "contract": "COOLTECHNOLOGIES,INC_10_25_2017-EX-10.71-Strategic Alliance Agreement",
+    "clause": "Notwithstanding the foregoing, this Agreement shall be earlier terminated (x) by mutual agreement of the parties, or (y) at any time upon sixty (60) days advance written notice to the other party. Time is of the essence in this Agreement.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "Notwithstanding the foregoing, this Agreement shall be earlier terminated (x) by mutual agreement of the parties, or (y) at any time upon sixty (60) days advance written notice to the other party.",
+        "start": 0,
+        "end": 196
+      }
+    ],
+    "cuad_category": "Termination For Convenience"
+  },
+  {
+    "contract": "Monsanto Company - SECOND A_R EXCLUSIVE AGENCY AND MARKETING AGREEMENT ",
+    "clause": "THE SCOTTS COMPANY LLC  Effective as of September 30, 1998",
+    "entities": [
+      {
+        "label": "effective_date",
+        "text": "September 30, 1998",
+        "start": 40,
+        "end": 58
+      }
+    ],
+    "cuad_category": "Effective Date"
+  },
+  {
+    "contract": "Monsanto Company - SECOND A_R EXCLUSIVE AGENCY AND MARKETING AGREEMENT ",
+    "clause": "Section 10.1 Terms. This Agreement shall commence as of the Effective Date and shall continue unless and until terminated as provided herein.",
+    "entities": [
+      {
+        "label": "expiration_date",
+        "text": "This Agreement shall commence as of the Effective Date and shall continue unless and until terminated as provided herein.",
+        "start": 20,
+        "end": 141
+      }
+    ],
+    "cuad_category": "Expiration Date"
+  },
+  {
+    "contract": "Monsanto Company - SECOND A_R EXCLUSIVE AGENCY AND MARKETING AGREEMENT ",
+    "clause": "(ii) If Monsanto does not contest the occurrence of the alleged Brand Decline Event by submitting such alleged Brand Decline Event to resolution through",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "If Monsanto does not contest the occurrence of the alleged Brand Decline Event by submitting such alleged Brand Decline Event to resolution through",
+        "start": 5,
+        "end": 152
+      }
+    ],
+    "cuad_category": "Cap On Liability"
+  },
+  {
+    "contract": "Monsanto Company - SECOND A_R EXCLUSIVE AGENCY AND MARKETING AGREEMENT ",
+    "clause": "to Section 10.4(c) and the Agent shall waive its right to exercise any other remedies otherwise available at law or in equity.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "to Section 10.4(c) and the Agent shall waive its right to exercise any other remedies otherwise available at law or in equity.",
+        "start": 0,
+        "end": 126
+      }
+    ],
+    "cuad_category": "Cap On Liability"
+  },
+  {
+    "contract": "Monsanto Company - SECOND A_R EXCLUSIVE AGENCY AND MARKETING AGREEMENT ",
+    "clause": "(f) Exclusive Remedy. The payment of a Termination Fee to the Agent under Section 10.4(c) shall be deemed to constitute the exclusive remedy for any damages resulting out of the termination of this Agreement by Monsanto or the successor to the Roundup Business pursuant",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "The payment of a Termination Fee to the Agent under Section 10.4(c) shall be deemed to constitute the exclusive remedy for any damages resulting out of the termination of this Agreement by Monsanto or the successor to the Roundup Business pursuant",
+        "start": 22,
+        "end": 269
+      }
+    ],
+    "cuad_category": "Cap On Liability"
+  },
+  {
+    "contract": "Monsanto Company - SECOND A_R EXCLUSIVE AGENCY AND MARKETING AGREEMENT ",
+    "clause": "(c) Payment of Termination Fee. Except for termination of this Agreement by Monsanto upon any Event of Default, a Termination Fee (as specified in Section 10.4.(d)) shall only be paid either by Monsanto or by the successor to the Roundup Business, as the case may be, upon the following terms and conditions:",
+    "entities": [
+      {
+        "label": "penalty_condition",
+        "text": "Except for termination of this Agreement by Monsanto upon any Event of Default, a Termination Fee (as specified in Section 10.4.(d)) shall only be paid either by Monsanto or by the successor to the Roundup Business, as the case may be, upon the following terms and conditions:",
+        "start": 32,
+        "end": 308
+      }
+    ],
+    "cuad_category": "Liquidated Damages"
+  },
+  {
+    "contract": "Monsanto Company - SECOND A_R EXCLUSIVE AGENCY AND MARKETING AGREEMENT ",
+    "clause": "(c) Termination Fee. Upon termination of this Agreement by the Agent pursuant to Section 10.5(a), Monsanto shall pay to the Agent the Termination Fee applicable pursuant to the Table set forth in Section 10.4(d).",
+    "entities": [
+      {
+        "label": "penalty_condition",
+        "text": "Upon termination of this Agreement by the Agent pursuant to Section 10.5(a), Monsanto shall pay to the Agent the Termination Fee applicable pursuant to the Table set forth in Section 10.4(d).",
+        "start": 21,
+        "end": 212
+      }
+    ],
+    "cuad_category": "Liquidated Damages"
+  },
+  {
+    "contract": "ALLIANCEBANCORPINCOFPENNSYLVANIA_10_18_2006-EX-1.2-AGENCY AGREEMENT",
+    "clause": "SECTION 13. GOVERNING LAW AND TIME. This Agreement shall be governed by and construed in accordance with the laws of the State of New York applicable to agreements made and to be performed in said State without regard to the conflicts of laws provisions thereof. Unless otherwise noted, specified times of day refer to Eastern time.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement shall be governed by and construed in accordance with the laws of the State of New York applicable to agreements made and to be performed in said State without regard to the conflicts of laws provisions thereof.",
+        "start": 36,
+        "end": 262
+      }
+    ],
+    "cuad_category": "Governing Law"
+  },
+  {
+    "contract": "ElPolloLocoHoldingsInc_20200306_10-K_EX-10.16_12041700_EX-10.16_Development Agreement",
+    "clause": "4.1. This Agreement shall commence on the date specified in Exhibit \"B\". Unless terminated pursuant to Section 10 or 11 below, it shall expire upon the earlier of the date specified in Exhibit \"B\" or upon the opening of the last El Pollo Loco\u00ae Restaurant listed in the Development Schedule.",
+    "entities": [
+      {
+        "label": "effective_date",
+        "text": "This Agreement shall commence on the date specified in Exhibit \"B\".",
+        "start": 5,
+        "end": 72
+      }
+    ],
+    "cuad_category": "Effective Date"
+  },
+  {
+    "contract": "ElPolloLocoHoldingsInc_20200306_10-K_EX-10.16_12041700_EX-10.16_Development Agreement",
+    "clause": "a. Franchisor may terminate or modify any rights that Developer may have with respect to protected exclusive rights in the Territory, as granted under Section 1.1 above, effective ten (10) days after delivery of written notice thereof to Developer.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "Franchisor may terminate or modify any rights that Developer may have with respect to protected exclusive rights in the Territory, as granted under Section 1.1 above, effective ten (10) days after delivery of written notice thereof to Developer.",
+        "start": 3,
+        "end": 248
+      }
+    ],
+    "cuad_category": "Termination For Convenience"
+  },
+  {
+    "contract": "ElPolloLocoHoldingsInc_20200306_10-K_EX-10.16_12041700_EX-10.16_Development Agreement",
+    "clause": "10.1. This Agreement shall terminate immediately upon El Pollo Loco's receipt of Developer's notice to terminate. In such event, the Development Fee shall be forfeited to Franchisor in consideration of the rights granted in the Territory up to the time of termination. Notwithstanding any provision to the contrary contained herein, unless earlier terminated by either party, this Agreement shall expire on ______, 20___, and all rights of Developer herein shall cease and all unapplied or unused Development Fees paid pursuant to Section 3 hereof shall be forfeited to Franchisor.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "This Agreement shall terminate immediately upon El Pollo Loco's receipt of Developer's notice to terminate.",
+        "start": 6,
+        "end": 113
+      }
+    ],
+    "cuad_category": "Termination For Convenience"
+  },
+  {
+    "contract": "BellringBrandsInc_20190920_S-1_EX-10.12_11817081_EX-10.12_Manufacturing Agreement2",
+    "clause": "This Amendment No. 1 (the \"Amendment\"), entered into by and between Stremick's Heritage Foods, LLC (\"Heritage\") Premier Nutrition Corporation (\"Premier\") is effective as of June 11, 2018 (\"Amendment Effective Date\") and amends that certain Manufacturing Agreement between Heritage and Premier dated July 1, 2017 (\"Agreement\"). Heritage and Premier are each referred to herein as a \"Party\" and collectively as the \"Parties.\"",
+    "entities": [
+      {
+        "label": "effective_date",
+        "text": "June 11, 2018",
+        "start": 173,
+        "end": 186
+      }
+    ],
+    "cuad_category": "Agreement Date"
+  },
+  {
+    "contract": "IdeanomicsInc_20160330_10-K_EX-10.26_9512211_EX-10.26_Content License Agreement",
+    "clause": "THIS CONTENT LICENSE AGREEMENT (this \"Agreement\"), dated as of December 21, 2015 (the \"Effective Date\"), is entered into between Beijing Sun Seven Stars Culture Development Limited, a P.R.C. company with an address at Eastern Fangzheng Road, Southern Dongying Village, Hancunhe Town, Fangshan District, Beijing City, P.R.C. (\"Licensor\"), and YOU ON DEMAND HOLDINGS, INC., a Nevada corporation with an address at 375 Greenwich Street, Suite 516, New York, New York 10013 (\"Licensee\").",
+    "entities": [
+      {
+        "label": "effective_date",
+        "text": "December 21, 2015",
+        "start": 63,
+        "end": 80
+      }
+    ],
+    "cuad_category": "Agreement Date"
+  },
+  {
+    "contract": "IdeanomicsInc_20160330_10-K_EX-10.26_9512211_EX-10.26_Content License Agreement",
+    "clause": "(a) The Term of this Agreement (the \"Term\") shall commence on the Effective Date listed above and continue for twenty (20) years, unless sooner terminated as provided in Section 7(b) [Term and Termination].",
+    "entities": [
+      {
+        "label": "expiration_date",
+        "text": "The Term of this Agreement (the \"Term\") shall commence on the Effective Date listed above and continue for twenty (20) years, unless sooner terminated as provided in Section 7(b) [Term and Termination].",
+        "start": 4,
+        "end": 206
+      }
+    ],
+    "cuad_category": "Expiration Date"
+  },
+  {
+    "contract": "IdeanomicsInc_20160330_10-K_EX-10.26_9512211_EX-10.26_Content License Agreement",
+    "clause": "(a) Governing Law. This Agreement shall be governed by and construed in all respects in accordance with the laws of the State of New York, without giving effect to any conflicts of laws principles.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement shall be governed by and construed in all respects in accordance with the laws of the State of New York, without giving effect to any conflicts of laws principles.",
+        "start": 19,
+        "end": 197
+      }
+    ],
+    "cuad_category": "Governing Law"
+  },
+  {
+    "contract": "BIOAMBERINC_04_10_2013-EX-10.34-DEVELOPMENT AGREEMENT (1)",
+    "clause": "This Development Agreement (\"Development Agreement\") is entered into on April 15 , 2010 (\"EffectiveDate\") by and between Cargill,  Incorporated through its Bio Technology Development Center, having its principal place of business at 15407 McGinty Road West, Wayzata,  Minnesota 55391 USA (\"Cargill\") and Bioamber S.A.S., having a place of business at Route de Bazancourt, F-51110, Pomacle France (\"Bioamber\").  Bioamber and Cargill shall be referred to individually as \"Party\" and collectively as \"Parties\", as required by text.",
+    "entities": [
+      {
+        "label": "effective_date",
+        "text": "April 15 , 2010",
+        "start": 72,
+        "end": 87
+      }
+    ],
+    "cuad_category": "Agreement Date"
+  },
+  {
+    "contract": "BIOAMBERINC_04_10_2013-EX-10.34-DEVELOPMENT AGREEMENT (1)",
+    "clause": "13.2 Governing Law. This Development Agreement shall be governed by and construed in accordance with the laws of the State of Minnesota,  United States of America, disregarding its conflicts of law rules.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Development Agreement shall be governed by and construed in accordance with the laws of the State of Minnesota,  United States of America, disregarding its conflicts of law rules.",
+        "start": 20,
+        "end": 204
+      }
+    ],
+    "cuad_category": "Governing Law"
+  },
+  {
+    "contract": "ACCELERATEDTECHNOLOGIESHOLDINGCORP_04_24_2003-EX-10.13-JOINT VENTURE AGREEMENT",
+    "clause": "8.   Term of Joint Venture. The Joint Venture shall commence on the 1st of      March, 2003, and shall be effective until February 28, 2004 unless extended      by written agreement of the Joint Venturers not less than thirty (30) days      prior to scheduled termination.",
+    "entities": [
+      {
+        "label": "effective_date",
+        "text": "The Joint Venture shall commence on the 1st of      March, 2003,",
+        "start": 28,
+        "end": 92
+      }
+    ],
+    "cuad_category": "Effective Date"
+  },
+  {
+    "contract": "PrudentialBancorpInc_20170606_8-K_EX-10.4_10474434_EX-10.4_Endorsement Agreement",
+    "clause": "This Agreement sets forth the entire Agreement of the parties hereto, and any and all prior agreements, to the extent inconsistent herewith, are hereby superseded. This Agreement will be governed by the laws of the State of Pennsylvania.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement sets forth the entire Agreement of the parties hereto, and any and all prior agreements, to the extent inconsistent herewith, are hereby superseded. This Agreement will be governed by the laws of the State of Pennsylvania.",
+        "start": 0,
+        "end": 237
+      }
+    ],
+    "cuad_category": "Governing Law"
+  },
+  {
+    "contract": "PrudentialBancorpInc_20170606_8-K_EX-10.4_10474434_EX-10.4_Endorsement Agreement",
+    "clause": "This Agreement may be terminated at any time while the Employee is living by written notice thereof by either the Employer or the Employee to the other; and, in any event, this Agreement will terminate upon termination of the Employee's employment. ARTICLE VII \"Plan Management\"",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "This Agreement may be terminated at any time while the Employee is living by written notice thereof by either the Employer or the Employee to the other; and, in any event, this Agreement will terminate upon termination of the Employee's employment.",
+        "start": 0,
+        "end": 248
+      }
+    ],
+    "cuad_category": "Termination For Convenience"
+  },
+  {
+    "contract": "SEASPINEHOLDINGSCORP_10_10_2018-EX-10.1-SUPPLY AGREEMENT",
+    "clause": "4.1. Initial Term. The initial term of this Agreement (the \"Initial Term\") shall commence on the Effective Date and shall end on the date that payment is due for Minimum Payment Period 7, pursuant to Section 2.4 hereof and as set forth in Attachment B hereof, unless earlier terminated as provided herein.",
+    "entities": [
+      {
+        "label": "expiration_date",
+        "text": "The initial term of this Agreement (the \"Initial Term\") shall commence on the Effective Date and shall end on the date that payment is due for Minimum Payment Period 7, pursuant to Section 2.4 hereof and as set forth in Attachment B hereof, unless earlier terminated as provided herein.",
+        "start": 19,
+        "end": 305
+      }
+    ],
+    "cuad_category": "Expiration Date"
+  },
+  {
+    "contract": "SEASPINEHOLDINGSCORP_10_10_2018-EX-10.1-SUPPLY AGREEMENT",
+    "clause": "12.3. Governing Law. This Agreement shall be construed and enforced in accordance with the laws of the State of New Jersey.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement shall be construed and enforced in accordance with the laws of the State of New Jersey.",
+        "start": 21,
+        "end": 123
+      }
+    ],
+    "cuad_category": "Governing Law"
+  },
+  {
+    "contract": "SEASPINEHOLDINGSCORP_10_10_2018-EX-10.1-SUPPLY AGREEMENT",
+    "clause": "9.1. Limitation of Liability. NEITHER PARTY SHALL BE LIABLE TO THE OTHER FOR ANY SPECIAL, CONSEQUENTIAL, INCIDENTAL, OR INDIRECT DAMAGES ARISING FROM OR RELATING TO ANY BREACH OF THIS AGREEMENT, REGARDLESS OF ANY NOTICE OF THE POSSIBILITY OF SUCH DAMAGES. NOTWITHSTANDING THE FOREGOING, NOTHING IN THIS SECTION IS INTENDED TO LIMIT OR RESTRICT THE DAMAGES AVAILABLE FOR BREACHES OF SECTION 3.1 (GRANT OF RIGHTS), SECTION 5 (CONFIDENTIALITY PROVISIONS), OR SECTIONS 8.1 AND 8.2 (OWNERSHIP AND LICENSE). 10. INDEMNIFICATION.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "NEITHER PARTY SHALL BE LIABLE TO THE OTHER FOR ANY SPECIAL, CONSEQUENTIAL, INCIDENTAL, OR INDIRECT DAMAGES ARISING FROM OR RELATING TO ANY BREACH OF THIS AGREEMENT, REGARDLESS OF ANY NOTICE OF THE POSSIBILITY OF SUCH DAMAGES.",
+        "start": 30,
+        "end": 255
+      }
+    ],
+    "cuad_category": "Cap On Liability"
+  },
+  {
+    "contract": "SEASPINEHOLDINGSCORP_10_10_2018-EX-10.1-SUPPLY AGREEMENT",
+    "clause": "Integra may offset all costs and expenses covered under (i) above against the Fees as provided in Section 2.2 (c) as its sole and exclusive remedy for the recovery of such costs and expenses.\n\n10.2.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Integra may offset all costs and expenses covered under (i) above against the Fees as provided in Section 2.2 (c) as its sole and exclusive remedy for the recovery of such costs and expenses.",
+        "start": 0,
+        "end": 191
+      }
+    ],
+    "cuad_category": "Cap On Liability"
+  },
+  {
+    "contract": "BERKELEYLIGHTS,INC_06_26_2020-EX-10.12-COLLABORATION AGREEMENT",
+    "clause": "1.87 \"Intended End of Term\" means the later of (a) the seventh (7th) anniversary of the Effective Date and (b) the date determined to be the \"Intended End of Term\" under Section 7.2.2(d) (Effects of Tolling).",
+    "entities": [
+      {
+        "label": "expiration_date",
+        "text": "\"Intended End of Term\" means the later of (a) the seventh (7th) anniversary of the Effective Date and (b) the date determined to be the \"Intended End of Term\" under Section 7.2.2(d) (Effects of Tolling).",
+        "start": 5,
+        "end": 208
+      }
+    ],
+    "cuad_category": "Expiration Date"
+  },
+  {
+    "contract": "BERKELEYLIGHTS,INC_06_26_2020-EX-10.12-COLLABORATION AGREEMENT",
+    "clause": "4.1.9 Ginkgo may elect, at any time in its sole discretion, to terminate the Software License Agreement that comprises part of the BLI Terms and Conditions and, upon such termination, Ginkgo's right to use such underlying Software shall terminate; and",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "4.1.9 Ginkgo may elect, at any time in its sole discretion, to terminate the Software License Agreement that comprises part of the BLI Terms and Conditions and, upon such termination, Ginkgo's right to use such underlying Software shall term",
+        "start": 0,
+        "end": 241
+      }
+    ],
+    "cuad_category": "Termination For Convenience"
+  },
+  {
+    "contract": "BERKELEYLIGHTS,INC_06_26_2020-EX-10.12-COLLABORATION AGREEMENT",
+    "clause": "In the event that a Party solicits and then hires an employee of the other Party in violation of this Section 14.4 (Non-Solicit), the hiring Party shall, [***], within [***] ([***]) days of such hire, pay the other Party an amount equal to the [***] cash compensation actually paid to the individual Page 66 of 85",
+    "entities": [
+      {
+        "label": "penalty_condition",
+        "text": "In the event that a Party solicits and then hires an employee of the other Party in violation of this Section 14.4 (Non-Solicit), the hiring Party shall, [***], within [***] ([***]) days of such hire, pay the other Party an amount equal to the [***] cash compensation actually paid to the individual",
+        "start": 0,
+        "end": 299
+      }
+    ],
+    "cuad_category": "Liquidated Damages"
+  },
+  {
+    "contract": "UnionDentalHoldingsInc_20050204_8-KA_EX-10_3345577_EX-10_Affiliate Agreement",
+    "clause": "a. Term. This Agreement  shall become  effective on the Effective Date      and shall  continue in effect until  either  Party  informs the other Party      with thirty (30) day prior written notice of termination of this Agreement.",
+    "entities": [
+      {
+        "label": "expiration_date",
+        "text": "This Agreement  shall become  effective on the Effective Date      and shall  continue in effect until  either  Party  informs the other Party      with thirty (30) day prior written notice of termination of this Agreement.",
+        "start": 9,
+        "end": 232
+      }
+    ],
+    "cuad_category": "Expiration Date"
+  },
+  {
+    "contract": "SPHERE3DCORP_06_24_2020-EX-10.12-CONSULTING AGREEMENT",
+    "clause": "(a) In the case that the company would not like to extend the terms of agreement for an additional month. The company must notify the consultant within 5 days of the conclusion of the 12 month term. Without notification the contract will automatically extend for an additional month of service.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "In the case that the company would not like to extend the terms of agreement for an additional month. The company must notify the consultant within 5 days of the conclusion of the 12 month term.",
+        "start": 4,
+        "end": 198
+      }
+    ],
+    "cuad_category": "Notice Period To Terminate Renewal"
+  },
+  {
+    "contract": "ENTERPRISEPRODUCTSPARTNERSLP_07_08_1998-EX-10.3-TRANSPORTATION CONTRACT",
+    "clause": "4.   This contract shall be for a term of one year commencing on the date first above written; thereafter, it shall automatically continue until terminated by either party upon not less than thirty (30) days prior written notice to the other party.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "This contract shall be for a term of one year commencing on the date first above written; thereafter, it shall automatically continue until terminated by either party upon not less than thirty (30) days prior written notice to the other party.",
+        "start": 5,
+        "end": 248
+      }
+    ],
+    "cuad_category": "Notice Period To Terminate Renewal"
+  },
+  {
+    "contract": "TEARDROPGOLFCO_10_23_1996-EX-10.12-ENDORSEMENT AGREEMENT",
+    "clause": "using the Ogle Endorsement, the name \"Brett Ogle,\" or any facsimile thereof, for any promotional or advertising purposes in accordance with the terms set forth in Paragraph 5 above. In addition, TPC agrees that Consolidated Artists shall be entitled to the Retainer Fee prorated to the effective date of termination as well any Tournament Bonuses, Money List Bonuses and any Royalty Compensation earned by Consolidated Artists prior to the effective date of termination.",
+    "entities": [
+      {
+        "label": "penalty_condition",
+        "text": "In addition, TPC agrees that Consolidated Artists shall be entitled to the Retainer Fee prorated to the effective date of termination as well any Tournament Bonuses, Money List Bonuses and any Royalty Compensation earned by Consolidated Artists prior to the effective date of termination.",
+        "start": 182,
+        "end": 470
+      }
+    ],
+    "cuad_category": "Liquidated Damages"
+  },
+  {
+    "contract": "BLUEFLYINC_03_27_2002-EX-10.27-e-business Hosting Agreement",
+    "clause": "IBM will give       Customer a credit equal to the amount Customer paid IBM for the applicable       Materials or for use of the applicable Base Components up to a maximum of       twelve (12) months of applicable charges. This is IBM's entire obligation       to Customer with regard to any claim of infringement.",
+    "entities": [
+      {
+        "label": "penalty_condition",
+        "text": "IBM will give       Customer a credit equal to the amount Customer paid IBM for the applicable       Materials or for use of the applicable Base Components up to a maximum of       twelve (12) months of applicable charges.",
+        "start": 0,
+        "end": 222
+      }
+    ],
+    "cuad_category": "Liquidated Damages"
+  },
+  {
+    "contract": "ZtoExpressCaymanInc_20160930_F-1_EX-10.10_9752871_EX-10.10_Transportation Agreement",
+    "clause": "Party B shall pay one-month freight as liquidated damages in case of termination of the Agreement without consent. Within the contract period, Party B shall not charge the freight difference if Party A rents same-level vehicles.",
+    "entities": [
+      {
+        "label": "penalty_condition",
+        "text": "Party B shall pay one-month freight as liquidated damages in case of termination of the Agreement without consent.",
+        "start": 0,
+        "end": 114
+      }
+    ],
+    "cuad_category": "Liquidated Damages"
+  },
+  {
+    "contract": "SUNTRONCORP_05_17_2006-EX-10.22-MAINTENANCE AGREEMENT",
+    "clause": "The payment of such amount is intended to constitute liquidated damages to the Agent and the Lenders and shall not be deemed to constitute a forfeiture or penalty. Upon receipt by the Agent, such amount may, in the sole discretion of the Agent, be applied to the Obligations when and as due; provided, however, that such amount, if so applied, may not be reborrowed by any Borrower under the Financing Agreement.",
+    "entities": [
+      {
+        "label": "penalty_condition",
+        "text": "The payment of such amount is intended to constitute liquidated damages to the Agent and the Lenders and shall not be deemed to constitute a forfeiture or penalty.",
+        "start": 0,
+        "end": 163
+      }
+    ],
+    "cuad_category": "Liquidated Damages"
+  }
+]

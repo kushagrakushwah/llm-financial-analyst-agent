@@ -17,10 +17,12 @@ outputs/
 *.pth
 *.safetensors
 
+# Large raw dataset dumps (>10MB)
+data/cuad/
+
 # Testing & Logs
 .pytest_cache/
 .coverage
 htmlcov/
 *.log
 runs/
-reports/

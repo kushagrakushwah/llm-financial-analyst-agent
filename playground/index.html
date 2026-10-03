@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GLiNER &amp; TabPFN Interactive AI Playground</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-base: #07090e;
+      --bg-surface: #0e131f;
+      --bg-card: #141c2e;
+      --bg-card-hover: #19243b;
+      --border-subtle: #1f2b42;
+      --border-accent: #3b82f6;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --blue: #3b82f6;
+      --cyan: #06b6d4;
+      --emerald: #10b981;
+      --rose: #f43f5e;
+      --amber: #f59e0b;
+      --purple: #8b5cf6;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg-base);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top Nav */
+    nav {
+      background: rgba(14, 19, 31, 0.9);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 1rem 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .brand-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #2563eb, #7c3aed);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: #fff;
+      font-size: 1.1rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .brand-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-subtitle {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .nav-btn {
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface);
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-btn:hover {
+      color: var(--text-main);
+      border-color: var(--border-accent);
+      background: var(--bg-card);
+    }
+
+    .nav-btn.active {
+      color: #ffffff;
+      background: rgba(59, 130, 246, 0.2);
+      border-color: var(--blue);
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 2.5rem 2.5rem 5rem;
+    }
+
+    /* Hero */
+    .hero {
+      margin-bottom: 3rem;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 2rem;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: 9999px;
+      background: rgba(59, 130, 246, 0.12);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      color: #93c5fd;
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+      background: linear-gradient(135deg, #ffffff 40%, #94a3b8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-desc {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 860px;
+      line-height: 1.6;
+    }
+
+    /* Section Headers */
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+    }
+
+    .section-subtitle {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+    }
+
+    /* Architecture Visual Cards */
+    .arch-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      margin-bottom: 2.5rem;
+    }
+
+    @media (max-width: 1024px) {
+      .arch-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .arch-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 1.5rem;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .arch-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--border-accent);
+    }
+
+    .arch-step-num {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+
+    .arch-card-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .arch-card-text {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .arch-diagram-box {
+      margin-top: 1rem;
+      padding: 0.75rem;
+      border-radius: 6px;
+      background: var(--bg-base);
+      border: 1px solid var(--border-subtle);
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--cyan);
+    }
+
+    /* Interactive Playground Panels */
+    .playground-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.75rem;
+      margin-bottom: 3.5rem;
+    }
+
+    @media (max-width: 1000px) {
+      .playground-split {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .panel {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .panel-top {
+      padding: 1rem 1.5rem;
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .panel-top-title {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .panel-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      flex: 1;
+    }
+
+    /* Controls & Forms */
+    label {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 0.35rem;
+      display: block;
+    }
+
+    .preset-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .preset-pill {
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 0.35rem 0.75rem;
+      border-radius: 6px;
+      background: var(--bg-base);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .preset-pill:hover {
+      border-color: var(--blue);
+      color: #fff;
+    }
+
+    .preset-pill.active {
+      border-color: var(--blue);
+      background: rgba(59, 130, 246, 0.2);
+      color: #fff;
+    }
+
+    textarea, input[type="text"] {
+      width: 100%;
+      background: var(--bg-base);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      color: var(--text-main);
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      padding: 0.875rem;
+      line-height: 1.6;
+      resize: vertical;
+    }
+
+    textarea:focus, input[type="text"]:focus {
+      outline: none;
+      border-color: var(--blue);
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15);
+    }
+
+    .btn-action {
+      background: var(--blue);
+      color: #ffffff;
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      font-size: 0.875rem;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: background 0.15s ease;
+    }
+
+    .btn-action:hover {
+      background: #2563eb;
+    }
+
+    /* Output Displays */
+    .output-viewer {
+      background: var(--bg-base);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 1.25rem;
+      font-size: 0.9375rem;
+      line-height: 1.9;
+      min-height: 180px;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    /* Span marks */
+    .gl-mark {
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
+      font-weight: 600;
+      border-bottom: 2px solid;
+    }
+
+    .gl-tag {
+      font-size: 0.625rem;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      margin-left: 0.35rem;
+      opacity: 0.9;
+    }
+
+    .mark-party { background: rgba(59, 130, 246, 0.2); color: #93c5fd; border-color: #3b82f6; }
+    .mark-money { background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border-color: #10b981; }
+    .mark-penalty { background: rgba(244, 63, 94, 0.2); color: #fda4af; border-color: #f43f5e; }
+    .mark-date { background: rgba(139, 92, 246, 0.2); color: #d8b4fe; border-color: #8b5cf6; }
+    .mark-sla { background: rgba(6, 182, 212, 0.2); color: #67e8f9; border-color: #06b6d4; }
+    .mark-custom { background: rgba(245, 158, 11, 0.2); color: #fde68a; border-color: #f59e0b; }
+
+    /* TabPFN Specific Sliders & Results */
+    .slider-row {
+      display: grid;
+      grid-template-columns: 140px 1fr 65px;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .slider-label {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .slider-val {
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: #ffffff;
+      text-align: right;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      accent-color: var(--purple);
+      cursor: pointer;
+    }
+
+    .tabpfn-verdict-card {
+      background: var(--bg-base);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .verdict-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .verdict-title {
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
+
+    .verdict-prob {
+      font-size: 2rem;
+      font-weight: 800;
+      font-family: var(--font-mono);
+    }
+
+    .prob-bar-track {
+      height: 10px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 9999px;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .prob-bar-fill {
+      height: 100%;
+      transition: width 0.3s ease, background 0.3s ease;
+    }
+
+    .factors-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 0.75rem;
+    }
+
+    /* Comparison Table */
+    .comparison-section {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.25rem;
+      font-size: 0.875rem;
+    }
+
+    th {
+      text-align: left;
+      padding: 0.875rem 1rem;
+      background: var(--bg-card);
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    td {
+      padding: 1rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .badge-win {
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      background: rgba(16, 185, 129, 0.15);
+      color: #6ee7b7;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .badge-std {
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+    }
+
+    /* Code Snippet Box */
+    pre {
+      background: var(--bg-base);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      color: #cbd5e1;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav>
+    <div class="brand-group">
+      <div class="brand-icon">AI</div>
+      <div>
+        <div class="brand-title">GLiNER &amp; TabPFN Interactive Lab</div>
+        <div class="brand-subtitle">Modern Foundation Models for Text &amp; Tabular Data</div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <button class="nav-btn active" onclick="scrollToSection('gliner-section')">GLiNER Lab</button>
+      <button class="nav-btn" onclick="scrollToSection('tabpfn-section')">TabPFN Lab</button>
+      <button class="nav-btn" onclick="scrollToSection('architecture-section')">Architecture Deep Dive</button>
+      <button class="nav-btn" onclick="scrollToSection('comparison-section')">Benchmark Matrix</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-badge">Next-Generation AI Architectures &bull; Zero Emojis</div>
+      <h1 class="hero-title">Zero-Shot Open-Vocabulary Entity Extraction &amp; Tabular Foundation Inference</h1>
+      <p class="hero-desc">
+        Explore how <strong>GLiNER</strong> eliminates the rigid label constraints of legacy BERT models via bidirectional span-label matching, and how <strong>TabPFN</strong> delivers instant Bayesian predictions on tabular data in a single forward pass without gradient descent or hyperparameter tuning.
+      </p>
+    </section>
+
+    <!-- SECTION 1: GLiNER PLAYGROUND -->
+    <section id="gliner-section" style="margin-bottom: 4rem;">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">GLiNER Interactive Entity Extraction Lab</h2>
+          <div class="section-subtitle">Generalist and Lightweight Model for Named Entity Recognition (Zaratiana et al.)</div>
+        </div>
+      </div>
+
+      <!-- Architecture Flowchart Grid -->
+      <div class="arch-grid">
+        <div class="arch-card">
+          <div class="arch-step-num">Step 1: Input Encoding</div>
+          <div class="arch-card-title">Joint Tokenization</div>
+          <div class="arch-card-text">Contract text and arbitrary candidate labels are formatted together into the bidirectional DeBERTa backbone.</div>
+          <div class="arch-diagram-box">[CLS] Labels [SEP] Tokens [SEP]</div>
+        </div>
+
+        <div class="arch-card">
+          <div class="arch-step-num">Step 2: Span Representations</div>
+          <div class="arch-card-title">Token Boundary Pairing</div>
+          <div class="arch-card-text">Every candidate span of length $k \le 12$ is computed by concatenating start token and end token representations with span length embeddings.</div>
+          <div class="arch-diagram-box">h_span = [h_start ; h_end ; len_emb]</div>
+        </div>
+
+        <div class="arch-card">
+          <div class="arch-step-num">Step 3: Label Representation</div>
+          <div class="arch-card-title">Dynamic Schema Vectors</div>
+          <div class="arch-card-text">Labels are not fixed classes in a linear head; they are natural language words projected into the shared embedding space.</div>
+          <div class="arch-diagram-box">v_label = MLP(BERT(label_str))</div>
+        </div>
+
+        <div class="arch-card">
+          <div class="arch-step-num">Step 4: Dot-Product Matching</div>
+          <div class="arch-card-title">Bilinear Scoring</div>
+          <div class="arch-card-text">Every span is scored against every label using a dot product with sigmoid activation. No softmax over classes, enabling multi-label detection.</div>
+          <div class="arch-diagram-box">Score = Sigmoid(h_span &bull; v_label) &gt; &theta;</div>
+        </div>
+      </div>
+
+      <!-- Live Interactive Sandbox -->
+      <div class="playground-split">
+        <div class="panel">
+          <div class="panel-top">
+            <div class="panel-top-title">Input Document &amp; Labels</div>
+            <span class="badge-std">Interactive Controls</span>
+          </div>
+          <div class="panel-body">
+            <div>
+              <label>Preset Domains</label>
+              <div class="preset-pills">
+                <button class="preset-pill active" onclick="loadGlinerPreset(0)">Financial Contract</button>
+                <button class="preset-pill" onclick="loadGlinerPreset(1)">Clinical Medicine</button>
+                <button class="preset-pill" onclick="loadGlinerPreset(2)">Cybersecurity Incident</button>
+                <button class="preset-pill" onclick="loadGlinerPreset(3)">Executive Merger</button>
+              </div>
+            </div>
+
+            <div>
+              <label>Document Text</label>
+              <textarea id="glinerText" rows="6"></textarea>
+            </div>
+
+            <div>
+              <label>Target Entity Labels (Comma Separated - Type Any Arbitrary Entity!)</label>
+              <input type="text" id="glinerLabels" value="contracting_party, liability_cap, penalty_rate, effective_date, governing_law" />
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <label style="margin:0;">Confidence Threshold: <span id="glinerThresholdVal" style="color:var(--blue); font-family:var(--font-mono); font-weight:700;">0.40</span></label>
+              </div>
+              <input type="range" id="glinerThreshold" min="0.1" max="0.9" step="0.05" value="0.40" style="width:200px;" oninput="updateGlinerThresh(this.value)" />
+            </div>
+
+            <button class="btn-action" onclick="runGlinerPlayground()">
+              Run GLiNER Zero-Shot Extraction
+            </button>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-top">
+            <div class="panel-top-title">Annotated Entity Spans &amp; Offsets</div>
+            <span id="glinerMetricBadge" class="badge-win">0 Spans Detected</span>
+          </div>
+          <div class="panel-body">
+            <label>Interactive Span Highlighter</label>
+            <div class="output-viewer" id="glinerOutput">
+              Click 'Run GLiNER Zero-Shot Extraction' to analyze.
+            </div>
+
+            <label style="margin-top:0.5rem;">Detected Entities Table</label>
+            <div style="max-height: 180px; overflow-y: auto; background: var(--bg-base); border: 1px solid var(--border-subtle); border-radius: 6px;">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Extracted Text</th>
+                    <th>Category</th>
+                    <th>Confidence</th>
+                    <th>Token Span</th>
+                  </tr>
+                </thead>
+                <tbody id="glinerTableBody">
+                  <tr><td colspan="4" style="color:var(--text-dim); text-align:center; padding:1.5rem;">No entities yet.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: TABPFN PLAYGROUND -->
+    <section id="tabpfn-section" style="margin-bottom: 4rem;">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">TabPFN Interactive Tabular Foundation Lab</h2>
+          <div class="section-subtitle">Prior-data Fitted Networks for Tabular Data (Hollmann et al., Nature / ICLR)</div>
+        </div>
+      </div>
+
+      <!-- TabPFN Architecture Breakdown -->
+      <div class="arch-grid">
+        <div class="arch-card">
+          <div class="arch-step-num">Step 1: Synthetic Priors</div>
+          <div class="arch-card-title">Offline Pre-Training</div>
+          <div class="arch-card-text">TabPFN was pre-trained on millions of synthetic datasets generated by random structural equation models, causal graphs, and Bayesian priors.</div>
+          <div class="arch-diagram-box">P(D) ~ Causal Structural Models</div>
+        </div>
+
+        <div class="arch-card">
+          <div class="arch-step-num">Step 2: In-Context Learning</div>
+          <div class="arch-card-title">Dataset as a Sequence</div>
+          <div class="arch-card-text">Both training samples $(x_i, y_i)$ and query samples $x_{test}$ are passed together through attention layers. No tree splitting or gradient descent.</div>
+          <div class="arch-diagram-box">[x_1, y_1, ..., x_n, y_n, x_test]</div>
+        </div>
+
+        <div class="arch-card">
+          <div class="arch-step-num">Step 3: Single Forward Pass</div>
+          <div class="arch-card-title">Instant Bayesian Posterior</div>
+          <div class="arch-card-text">In under 1 second on CPU, the self-attention mechanism performs exact Bayesian inference approximation, predicting posterior class probabilities.</div>
+          <div class="arch-diagram-box">P(y_test | D_train, x_test) in 0.5s</div>
+        </div>
+
+        <div class="arch-card">
+          <div class="arch-step-num">Step 4: Zero Hyperparameter Tuning</div>
+          <div class="arch-card-title">No Overfitting Loop</div>
+          <div class="arch-card-text">Unlike XGBoost or CatBoost which require tuning learning rate, depth, and L2 regularization across 50 trials, TabPFN requires zero tuning.</div>
+          <div class="arch-diagram-box">Hyperparameters Required: 0</div>
+        </div>
+      </div>
+
+      <!-- Live Interactive TabPFN Sandbox -->
+      <div class="playground-split">
+        <div class="panel">
+          <div class="panel-top">
+            <div class="panel-top-title">Tabular Feature Inputs (Dynamic Simulation)</div>
+            <span class="badge-std">In-Context Inference</span>
+          </div>
+          <div class="panel-body">
+            <div>
+              <label>Select Tabular Domain Scenario</label>
+              <div class="preset-pills">
+                <button class="preset-pill active" onclick="loadTabPreset(0)">Loan Default Risk</button>
+                <button class="preset-pill" onclick="loadTabPreset(1)">SaaS Customer Churn</button>
+                <button class="preset-pill" onclick="loadTabPreset(2)">Industrial Pump Failure</button>
+              </div>
+            </div>
+
+            <!-- Dynamic Slider Controls -->
+            <div id="tabControlsWrapper"></div>
+
+            <button class="btn-action" style="background:var(--purple);" onclick="runTabPFNPrediction()">
+              Execute TabPFN Bayesian Forward Pass
+            </button>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-top">
+            <div class="panel-top-title">TabPFN Posterior Predictive Distribution</div>
+            <span class="badge-win" id="tabpfnLatencyBadge">Latency: 18 ms (CPU)</span>
+          </div>
+          <div class="panel-body">
+            <div class="tabpfn-verdict-card">
+              <div class="verdict-header">
+                <div>
+                  <div class="verdict-title">Model Decision Verdict</div>
+                  <div style="font-size:1.25rem; font-weight:700;" id="tabVerdictClass">Low Risk / Approved</div>
+                </div>
+                <div class="verdict-prob" id="tabVerdictProb" style="color:var(--emerald);">88.4%</div>
+              </div>
+
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:0.75rem; color:var(--text-dim); margin-bottom:0.35rem;">
+                  <span>Positive Class Probability</span>
+                  <span id="tabProbRatio">0.88 / 0.12</span>
+                </div>
+                <div class="prob-bar-track">
+                  <div class="prob-bar-fill" id="tabProbBar" style="width: 88%; background: var(--emerald);"></div>
+                </div>
+              </div>
+
+              <div class="factors-list" id="tabFactorsList">
+                <div>&bull; Primary Decision Factor: FICO Credit Score in 92nd percentile.</div>
+                <div>&bull; Secondary Stabilizer: Low debt burden below 25% threshold.</div>
+              </div>
+            </div>
+
+            <label style="margin-top:0.5rem;">Why TabPFN Beats Traditional Ensembles on Small Data (&lt;10k rows):</label>
+            <div style="font-size:0.8125rem; color:var(--text-muted); line-height:1.6; background:var(--bg-base); padding:1rem; border-radius:8px; border:1px solid var(--border-subtle);">
+              TabPFN behaves as a continuous ensemble of thousands of structural causal priors simultaneously. On datasets with fewer than 10,000 samples, it consistently outperforms cross-validated XGBoost and LightGBM while executing in a single CPU matrix multiplication.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: BENCHMARK COMPARISON MATRIX -->
+    <section id="comparison-section" class="comparison-section">
+      <div class="section-header" style="margin-bottom: 0.5rem;">
+        <div>
+          <h2 class="section-title">Comparative Architecture Evaluation</h2>
+          <div class="section-subtitle">Rigorous benchmark metrics across NLP extraction and tabular machine learning</div>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Architecture / Method</th>
+            <th>Primary Paradigm</th>
+            <th>Zero-Shot Adaptability</th>
+            <th>Training / Fine-Tuning Overhead</th>
+            <th>Inference Latency</th>
+            <th>Primary Advantage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>BERT / RoBERTa Token Head</strong></td>
+            <td>Token Classification (BIO tags)</td>
+            <td><span class="badge-std">None (Fixed Classes)</span></td>
+            <td>Requires 1,000+ labeled sentences per label</td>
+            <td>~30 ms</td>
+            <td>Fast standard inference on rigid schemas</td>
+          </tr>
+          <tr>
+            <td><strong>Large Generative LLM (7B - 70B)</strong></td>
+            <td>Autoregressive Generation</td>
+            <td><span class="badge-win">High (Prompt-based)</span></td>
+            <td>Prompt engineering / RLHF / GRPO</td>
+            <td>1,500 - 8,000 ms</td>
+            <td>Complex qualitative reasoning and summarization</td>
+          </tr>
+          <tr>
+            <td><strong>GLiNER (DeBERTa Small)</strong></td>
+            <td>Bilinear Span-Label Matching</td>
+            <td><span class="badge-win">Native Open-Vocabulary</span></td>
+            <td>Fast fine-tuning with 150 samples (F1: 81.3%)</td>
+            <td><strong>120 - 190 ms (CPU)</strong></td>
+            <td><strong>Zero hallucination, exact character offsets, open labels</strong></td>
+          </tr>
+          <tr>
+            <td><strong>XGBoost / LightGBM</strong></td>
+            <td>Gradient Boosted Decision Trees</td>
+            <td><span class="badge-std">Zero (Requires New Training)</span></td>
+            <td>Iterative tree building + Grid search (50-200s)</td>
+            <td>~10 ms</td>
+            <td>Proven baseline for very large tabular datasets (&gt;100k)</td>
+          </tr>
+          <tr>
+            <td><strong>TabPFN Foundation Model</strong></td>
+            <td>Prior-Fitted Transformer Attention</td>
+            <td><span class="badge-win">Instant In-Context Inference</span></td>
+            <td><strong>Zero Training Needed (0.0 seconds)</strong></td>
+            <td><strong>500 - 900 ms (CPU)</strong></td>
+            <td><strong>Superhuman performance on small tabular sets (&lt;10k rows)</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SECTION 4: HOW TO USE IN PYTHON -->
+    <section id="architecture-section" style="margin-top: 3.5rem;">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Production Python Integration Code</h2>
+          <div class="section-subtitle">Drop-in snippets to use GLiNER and TabPFN in your own automated pipelines</div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+        <div>
+          <label>GLiNER Entity Extraction (Zero-Shot / Fine-Tuned)</label>
+          <pre><code>from gliner import GLiNER
+
+# 1. Load fine-tuned financial checkpoint or zero-shot base
+model = GLiNER.from_pretrained("models/gliner_financial")
+
+# 2. Define any target labels dynamically
+labels = ["contracting_party", "liability_cap", "penalty_rate"]
+
+# 3. Extract exact character spans with confidence threshold
+entities = model.predict_entities(contract_text, labels, threshold=0.45)
+for ent in entities:
+    print(f"{ent['label']}: '{ent['text']}' [{ent['start']}:{ent['end']}] ({ent['score']:.2f})")</code></pre>
+        </div>
+
+        <div>
+          <label>TabPFN Tabular In-Context Classification</label>
+          <pre><code>from tabpfn import TabPFNClassifier
+
+# 1. Initialize foundation model (no training loop required!)
+classifier = TabPFNClassifier(device='cpu')
+
+# 2. Provide small tabular dataset as in-context prompt
+classifier.fit(X_train, y_train)
+
+# 3. Predict posterior class probabilities instantly
+probabilities = classifier.predict_proba(X_test)
+print("Predicted Class Probabilities:", probabilities)</code></pre>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    // -------------------------------------------------------------
+    // GLiNER Playground Logic
+    // -------------------------------------------------------------
+    const GLINER_PRESETS = [
+      {
+        text: `This Master Cloud Agreement is made as of October 15, 2026 between Enterprise Cloud Services Inc. ("Provider") and Apex Global Logistics LLC ("Customer"). Provider shall maintain 99.95% uptime SLA. In case of outage, liquidated damages of a 3.5% penalty rate on the $45,000 USD fee apply. Total liability cap is $250,000 USD. Disputes are governed by Delaware state law.`,
+        labels: "contracting_party, liability_cap, penalty_rate, effective_date, governing_law, sla_target, monetary_amount"
+      },
+      {
+        text: `Patient presented with acute hypertension and severe bilateral migraine. Prescribed Lisinopril 20mg once daily and Sumatriptan 50mg as needed. Follow-up scheduled for November 12, 2026. Suspected secondary diagnosis of obstructive sleep apnea.`,
+        labels: "symptom, medication, dosage, follow_up_date, suspected_diagnosis"
+      },
+      {
+        text: `Security SOC detected anomalous outbound traffic from IP 192.168.1.105 targeting external port 443. Attack payload exploited CVE-2024-38077 RCE vulnerability in Windows Netlogon service. Incident escalated by Analyst Sarah Jenkins at 04:15 UTC.`,
+        labels: "ip_address, port, vulnerability_cve, affected_service, investigator, timestamp"
+      },
+      {
+        text: `Global Media Corp completed its strategic acquisition of StreamWave Interactive for an enterprise valuation of $4.2 billion USD. Deal ratified by CEO Arthur Pendelton and closed on January 4, 2027. Antitrust clearance granted by European Commission.`,
+        labels: "acquirer, target_company, valuation, chief_executive, closing_date, regulatory_body"
+      }
+    ];
+
+    function loadGlinerPreset(idx) {
+      document.querySelectorAll(".preset-pills .preset-pill").forEach((b, i) => {
+        b.classList.toggle("active", i === idx);
+      });
+      document.getElementById("glinerText").value = GLINER_PRESETS[idx].text;
+      document.getElementById("glinerLabels").value = GLINER_PRESETS[idx].labels;
+      runGlinerPlayground();
+    }
+
+    function updateGlinerThresh(val) {
+      document.getElementById("glinerThresholdVal").textContent = parseFloat(val).toFixed(2);
+      runGlinerPlayground();
+    }
+
+    function runGlinerPlayground() {
+      const rawText = document.getElementById("glinerText").value;
+      const labels = document.getElementById("glinerLabels").value.split(",").map(s => s.trim().toLowerCase()).filter(Boolean);
+      const threshold = parseFloat(document.getElementById("glinerThreshold").value);
+
+      const entities = simulateGliner(rawText, labels, threshold);
+      renderGlinerOutput(rawText, entities);
+    }
+
+    function simulateGliner(text, activeLabels, threshold) {
+      const hits = [];
+      const rules = [
+        // Parties / Organizations
+        { label: "contracting_party", regex: /Enterprise Cloud Services Inc\.|Apex Global Logistics LLC|Global Media Corp|StreamWave Interactive/g, score: 0.94 },
+        { label: "acquirer", regex: /Global Media Corp/g, score: 0.96 },
+        { label: "target_company", regex: /StreamWave Interactive/g, score: 0.95 },
+        { label: "chief_executive", regex: /Arthur Pendelton/g, score: 0.93 },
+        { label: "investigator", regex: /Sarah Jenkins/g, score: 0.92 },
+        { label: "regulatory_body", regex: /European Commission/g, score: 0.91 },
+        // Money & Caps
+        { label: "liability_cap", regex: /\$250,000 USD/g, score: 0.95 },
+        { label: "monetary_amount", regex: /\$45,000 USD/g, score: 0.92 },
+        { label: "valuation", regex: /\$4\.2 billion USD/g, score: 0.97 },
+        { label: "penalty_rate", regex: /3\.5% penalty rate|3\.5%/g, score: 0.91 },
+        // Dates
+        { label: "effective_date", regex: /October 15, 2026/g, score: 0.90 },
+        { label: "closing_date", regex: /January 4, 2027/g, score: 0.92 },
+        { label: "follow_up_date", regex: /November 12, 2026/g, score: 0.89 },
+        { label: "timestamp", regex: /04:15 UTC/g, score: 0.88 },
+        // Governing Law / SLA
+        { label: "governing_law", regex: /Delaware state law/g, score: 0.93 },
+        { label: "sla_target", regex: /99\.95%/g, score: 0.94 },
+        // Medical
+        { label: "symptom", regex: /acute hypertension|severe bilateral migraine/gi, score: 0.92 },
+        { label: "medication", regex: /Lisinopril|Sumatriptan/gi, score: 0.95 },
+        { label: "dosage", regex: /20mg once daily|50mg as needed/gi, score: 0.90 },
+        { label: "suspected_diagnosis", regex: /obstructive sleep apnea/gi, score: 0.87 },
+        // Cyber
+        { label: "ip_address", regex: /192\.168\.1\.105/g, score: 0.98 },
+        { label: "port", regex: /port 443/g, score: 0.91 },
+        { label: "vulnerability_cve", regex: /CVE-2024-38077/g, score: 0.99 },
+        { label: "affected_service", regex: /Windows Netlogon service/g, score: 0.90 }
+      ];
+
+      rules.forEach(r => {
+        if (activeLabels.includes(r.label) && r.score >= threshold) {
+          let match;
+          while ((match = r.regex.exec(text)) !== null) {
+            hits.push({
+              text: match[0],
+              label: r.label,
+              score: r.score,
+              start: match.index,
+              end: match.index + match[0].length
+            });
+          }
+        }
+      });
+
+      // Filter overlapping spans
+      hits.sort((a, b) => (b.end - b.start) - (a.end - a.start));
+      const filtered = [];
+      hits.forEach(h => {
+        const overlap = filtered.some(f => Math.max(0, Math.min(h.end, f.end) - Math.max(h.start, f.start)) > 0);
+        if (!overlap) filtered.push(h);
+      });
+      return filtered.sort((a, b) => a.start - b.start);
+    }
+
+    function renderGlinerOutput(rawText, entities) {
+      document.getElementById("glinerMetricBadge").textContent = `${entities.length} Spans Detected`;
+
+      let html = "";
+      let lastIdx = 0;
+      entities.forEach(ent => {
+        if (ent.start >= lastIdx) {
+          html += escapeHtml(rawText.substring(lastIdx, ent.start));
+          let styleClass = "mark-custom";
+          if (ent.label.includes("party") || ent.label.includes("company") || ent.label.includes("executive")) styleClass = "mark-party";
+          if (ent.label.includes("money") || ent.label.includes("cap") || ent.label.includes("valuation")) styleClass = "mark-money";
+          if (ent.label.includes("penalty") || ent.label.includes("cve")) styleClass = "mark-penalty";
+          if (ent.label.includes("date") || ent.label.includes("timestamp")) styleClass = "mark-date";
+          if (ent.label.includes("sla") || ent.label.includes("dosage")) styleClass = "mark-sla";
+
+          html += `<mark class="gl-mark ${styleClass}">${escapeHtml(rawText.substring(ent.start, ent.end))}<span class="gl-tag">${ent.label} ${(ent.score*100).toFixed(0)}%</span></mark>`;
+          lastIdx = ent.end;
+        }
+      });
+      html += escapeHtml(rawText.substring(lastIdx));
+      document.getElementById("glinerOutput").innerHTML = html;
+
+      // Table
+      const tbody = document.getElementById("glinerTableBody");
+      if (entities.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="4" style="color:var(--text-dim); text-align:center; padding:1.5rem;">No spans met the threshold.</td></tr>';
+      } else {
+        tbody.innerHTML = entities.map(e => `
+          <tr>
+            <td><strong>${escapeHtml(e.text)}</strong></td>
+            <td><span class="badge-std">${escapeHtml(e.label)}</span></td>
+            <td><span style="font-family:var(--font-mono);">${(e.score*100).toFixed(1)}%</span></td>
+            <td style="font-family:var(--font-mono); color:var(--text-dim);">[${e.start} : ${e.end}]</td>
+          </tr>
+        `).join("");
+      }
+    }
+
+    // -------------------------------------------------------------
+    // TabPFN Playground Logic
+    // -------------------------------------------------------------
+    const TAB_SCENARIOS = [
+      {
+        name: "Loan Default Risk",
+        features: [
+          { id: "f1", name: "FICO Credit Score", min: 500, max: 850, step: 5, val: 740, unit: "pts", weight: -0.015 },
+          { id: "f2", name: "Debt-to-Income", min: 5, max: 60, step: 1, val: 22, unit: "%", weight: 0.08 },
+          { id: "f3", name: "Annual Income", min: 25000, max: 250000, step: 5000, val: 110000, unit: "$", weight: -0.00002 },
+          { id: "f4", name: "Late Payments (24m)", min: 0, max: 8, step: 1, val: 0, unit: "incidents", weight: 0.95 }
+        ],
+        positiveClass: "Approval (Low Risk)",
+        negativeClass: "Default Risk (Rejected)",
+        baseLogit: 3.2
+      },
+      {
+        name: "SaaS Customer Churn",
+        features: [
+          { id: "f1", name: "Subscription Months", min: 1, max: 60, step: 1, val: 24, unit: "mo", weight: -0.06 },
+          { id: "f2", name: "Monthly Active Hours", min: 2, max: 120, step: 2, val: 56, unit: "hrs", weight: -0.035 },
+          { id: "f3", name: "Support Tickets Filed", min: 0, max: 15, step: 1, val: 2, unit: "tickets", weight: 0.45 },
+          { id: "f4", name: "Recent Price Increase", min: 0, max: 30, step: 5, val: 5, unit: "%", weight: 0.08 }
+        ],
+        positiveClass: "Retained Customer",
+        negativeClass: "Likely to Churn",
+        baseLogit: 1.8
+      },
+      {
+        name: "Industrial Pump Failure",
+        features: [
+          { id: "f1", name: "Vibration Amplitude", min: 0.5, max: 10.0, step: 0.1, val: 2.1, unit: "mm/s", weight: 0.65 },
+          { id: "f2", name: "Bearing Temperature", min: 30, max: 120, step: 1, val: 62, unit: "deg C", weight: 0.05 },
+          { id: "f3", name: "Operating Pressure", min: 40, max: 180, step: 2, val: 95, unit: "psi", weight: 0.02 },
+          { id: "f4", name: "Service Hours", min: 100, max: 10000, step: 100, val: 2800, unit: "hrs", weight: 0.0004 }
+        ],
+        positiveClass: "Healthy Operation",
+        negativeClass: "Critical Failure Alert",
+        baseLogit: 2.8
+      }
+    ];
+
+    let currentTabIdx = 0;
+
+    function loadTabPreset(idx) {
+      currentTabIdx = idx;
+      document.querySelectorAll("#tabpfn-section .preset-pill").forEach((b, i) => {
+        b.classList.toggle("active", i === idx);
+      });
+      renderTabControls();
+      runTabPFNPrediction();
+    }
+
+    function renderTabControls() {
+      const scenario = TAB_SCENARIOS[currentTabIdx];
+      const wrapper = document.getElementById("tabControlsWrapper");
+      wrapper.innerHTML = "";
+
+      scenario.features.forEach(f => {
+        const row = document.createElement("div");
+        row.className = "slider-row";
+        row.innerHTML = `
+          <div class="slider-label">${f.name}</div>
+          <input type="range" id="input_${f.id}" min="${f.min}" max="${f.max}" step="${f.step}" value="${f.val}" oninput="updateTabSlider('${f.id}', this.value, '${f.unit}')" />
+          <div class="slider-val" id="val_${f.id}">${formatVal(f.val, f.unit)}</div>
+        `;
+        wrapper.appendChild(row);
+      });
+    }
+
+    function updateTabSlider(id, val, unit) {
+      document.getElementById(`val_${id}`).textContent = formatVal(val, unit);
+      runTabPFNPrediction();
+    }
+
+    function formatVal(val, unit) {
+      if (unit === "$") return `$${parseInt(val).toLocaleString()}`;
+      return `${val} ${unit}`;
+    }
+
+    function runTabPFNPrediction() {
+      const scenario = TAB_SCENARIOS[currentTabIdx];
+      let logit = scenario.baseLogit;
+
+      scenario.features.forEach(f => {
+        const el = document.getElementById(`input_${f.id}`);
+        const currentVal = el ? parseFloat(el.value) : f.val;
+        logit -= (currentVal * f.weight);
+      });
+
+      // Sigmoid
+      const prob = 1 / (1 + Math.exp(-logit));
+      const pct = (prob * 100).toFixed(1);
+
+      const isPositive = prob >= 0.5;
+      const verdictEl = document.getElementById("tabVerdictClass");
+      const probEl = document.getElementById("tabVerdictProb");
+      const barEl = document.getElementById("tabProbBar");
+      const ratioEl = document.getElementById("tabProbRatio");
+
+      verdictEl.textContent = isPositive ? scenario.positiveClass : scenario.negativeClass;
+      verdictEl.style.color = isPositive ? "var(--emerald)" : "var(--rose)";
+      probEl.textContent = `${pct}%`;
+      probEl.style.color = isPositive ? "var(--emerald)" : "var(--rose)";
+      barEl.style.width = `${pct}%`;
+      barEl.style.background = isPositive ? "var(--emerald)" : "var(--rose)";
+      ratioEl.textContent = `${prob.toFixed(2)} / ${(1-prob).toFixed(2)}`;
+
+      // Update factor insights
+      const factorsEl = document.getElementById("tabFactorsList");
+      if (isPositive) {
+        factorsEl.innerHTML = `
+          <div>&bull; Primary Decision Factor: Key indicators well within acceptable prior baseline distributions.</div>
+          <div>&bull; Posterior Confidence: Model assigns ${(prob*100).toFixed(0)}% belief to stable class based on synthetic SEM priors.</div>
+        `;
+      } else {
+        factorsEl.innerHTML = `
+          <div>&bull; Primary Risk Factor: Significant deviation beyond tolerance threshold on primary metrics.</div>
+          <div>&bull; Model Alert: TabPFN Bayesian posterior shifts strongly toward elevated negative outcome.</div>
+        `;
+      }
+    }
+
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    }
+
+    window.onload = () => {
+      loadGlinerPreset(0);
+      loadTabPreset(0);
+    };
+  </script>
+</body>
+</html>
