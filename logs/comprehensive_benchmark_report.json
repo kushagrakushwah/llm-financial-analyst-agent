@@ -1,0 +1,1280 @@
+{
+  "dataset_1_in_domain": [
+    {
+      "model_name": "Heuristic Baseline (Regex)",
+      "precision": 0.6207,
+      "recall": 0.2951,
+      "micro_f1": 0.4,
+      "macro_f1": 0.3263,
+      "total_gold": 61,
+      "total_tp": 18,
+      "total_fp": 11,
+      "total_fn": 43,
+      "avg_latency_ms": 0.04,
+      "p50_latency_ms": 0.01,
+      "p95_latency_ms": 0.02,
+      "throughput_clauses_sec": 27525.5,
+      "class_breakdown": {
+        "contracting_party": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 15
+        },
+        "penalty_rate": {
+          "tp": 6,
+          "fp": 2,
+          "fn": 3
+        },
+        "penalty_condition": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 8
+        },
+        "liability_cap": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 3
+        },
+        "monetary_amount": {
+          "tp": 2,
+          "fp": 6,
+          "fn": 0
+        },
+        "effective_date": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 3
+        },
+        "expiration_date": {
+          "tp": 3,
+          "fp": 3,
+          "fn": 0
+        },
+        "termination_clause": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 3
+        },
+        "governing_law": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "payment_terms": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 4
+        },
+        "sla_target": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        },
+        "grace_period": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        }
+      }
+    },
+    {
+      "model_name": "Zero-Shot GLiNER (Base)",
+      "precision": 0.6383,
+      "recall": 0.4918,
+      "micro_f1": 0.5556,
+      "macro_f1": 0.3333,
+      "total_gold": 61,
+      "total_tp": 30,
+      "total_fp": 17,
+      "total_fn": 31,
+      "avg_latency_ms": 75.86,
+      "p50_latency_ms": 68.88,
+      "p95_latency_ms": 144.32,
+      "throughput_clauses_sec": 13.2,
+      "class_breakdown": {
+        "contracting_party": {
+          "tp": 14,
+          "fp": 3,
+          "fn": 1
+        },
+        "penalty_rate": {
+          "tp": 6,
+          "fp": 2,
+          "fn": 3
+        },
+        "penalty_condition": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 8
+        },
+        "liability_cap": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 5
+        },
+        "monetary_amount": {
+          "tp": 2,
+          "fp": 10,
+          "fn": 0
+        },
+        "effective_date": {
+          "tp": 5,
+          "fp": 2,
+          "fn": 0
+        },
+        "expiration_date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2
+        },
+        "termination_clause": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 3
+        },
+        "governing_law": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 1
+        },
+        "payment_terms": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 4
+        },
+        "sla_target": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        },
+        "grace_period": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        }
+      }
+    },
+    {
+      "model_name": "Fine-Tuned GLiNER v1",
+      "precision": 0.7692,
+      "recall": 0.8197,
+      "micro_f1": 0.7937,
+      "macro_f1": 0.7344,
+      "total_gold": 61,
+      "total_tp": 50,
+      "total_fp": 15,
+      "total_fn": 11,
+      "avg_latency_ms": 84.65,
+      "p50_latency_ms": 81.24,
+      "p95_latency_ms": 101.64,
+      "throughput_clauses_sec": 11.8,
+      "class_breakdown": {
+        "contracting_party": {
+          "tp": 14,
+          "fp": 3,
+          "fn": 1
+        },
+        "penalty_rate": {
+          "tp": 7,
+          "fp": 0,
+          "fn": 2
+        },
+        "penalty_condition": {
+          "tp": 6,
+          "fp": 4,
+          "fn": 2
+        },
+        "liability_cap": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 1
+        },
+        "monetary_amount": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 0
+        },
+        "effective_date": {
+          "tp": 5,
+          "fp": 1,
+          "fn": 0
+        },
+        "expiration_date": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 1
+        },
+        "termination_clause": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 3
+        },
+        "governing_law": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        },
+        "payment_terms": {
+          "tp": 4,
+          "fp": 3,
+          "fn": 0
+        },
+        "sla_target": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "grace_period": {
+          "tp": 1,
+          "fp": 1,
+          "fn": 1
+        }
+      }
+    },
+    {
+      "model_name": "Upgraded GLiNER v2 (Internet)",
+      "precision": 0.7692,
+      "recall": 0.6557,
+      "micro_f1": 0.708,
+      "macro_f1": 0.5158,
+      "total_gold": 61,
+      "total_tp": 40,
+      "total_fp": 12,
+      "total_fn": 21,
+      "avg_latency_ms": 91.22,
+      "p50_latency_ms": 86.85,
+      "p95_latency_ms": 140.99,
+      "throughput_clauses_sec": 11.0,
+      "class_breakdown": {
+        "contracting_party": {
+          "tp": 14,
+          "fp": 2,
+          "fn": 1
+        },
+        "penalty_rate": {
+          "tp": 6,
+          "fp": 3,
+          "fn": 3
+        },
+        "penalty_condition": {
+          "tp": 7,
+          "fp": 4,
+          "fn": 1
+        },
+        "liability_cap": {
+          "tp": 5,
+          "fp": 2,
+          "fn": 0
+        },
+        "monetary_amount": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        },
+        "effective_date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 4
+        },
+        "expiration_date": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2
+        },
+        "termination_clause": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 1
+        },
+        "governing_law": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 3
+        },
+        "payment_terms": {
+          "tp": 3,
+          "fp": 1,
+          "fn": 1
+        },
+        "sla_target": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        "grace_period": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        }
+      }
+    }
+  ],
+  "dataset_2_sec_commercial": [
+    {
+      "model_name": "Heuristic Baseline (Regex)",
+      "precision": 0.617,
+      "recall": 0.1611,
+      "micro_f1": 0.2555,
+      "macro_f1": 0.2473,
+      "total_gold": 180,
+      "total_tp": 29,
+      "total_fp": 18,
+      "total_fn": 151,
+      "avg_latency_ms": 0.05,
+      "p50_latency_ms": 0.04,
+      "p95_latency_ms": 0.07,
+      "throughput_clauses_sec": 22213.8,
+      "class_breakdown": {
+        "contracting_party": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 70
+        },
+        "penalty_rate": {
+          "tp": 12,
+          "fp": 6,
+          "fn": 16
+        },
+        "penalty_condition": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 3
+        },
+        "liability_cap": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 16
+        },
+        "monetary_amount": {
+          "tp": 2,
+          "fp": 6,
+          "fn": 4
+        },
+        "effective_date": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 12
+        },
+        "expiration_date": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 10
+        },
+        "termination_clause": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 20
+        },
+        "governing_law": {
+          "tp": 9,
+          "fp": 4,
+          "fn": 0
+        },
+        "payment_terms": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "sla_target": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grace_period": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "model_name": "Zero-Shot GLiNER (Base)",
+      "precision": 0.1752,
+      "recall": 0.3056,
+      "micro_f1": 0.2227,
+      "macro_f1": 0.1558,
+      "total_gold": 180,
+      "total_tp": 55,
+      "total_fp": 259,
+      "total_fn": 125,
+      "avg_latency_ms": 142.83,
+      "p50_latency_ms": 140.47,
+      "p95_latency_ms": 198.12,
+      "throughput_clauses_sec": 7.0,
+      "class_breakdown": {
+        "contracting_party": {
+          "tp": 41,
+          "fp": 194,
+          "fn": 29
+        },
+        "penalty_rate": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 28
+        },
+        "penalty_condition": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 3
+        },
+        "liability_cap": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 18
+        },
+        "monetary_amount": {
+          "tp": 4,
+          "fp": 50,
+          "fn": 2
+        },
+        "effective_date": {
+          "tp": 6,
+          "fp": 6,
+          "fn": 10
+        },
+        "expiration_date": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 10
+        },
+        "termination_clause": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 20
+        },
+        "governing_law": {
+          "tp": 4,
+          "fp": 1,
+          "fn": 5
+        },
+        "payment_terms": {
+          "tp": 0,
+          "fp": 4,
+          "fn": 0
+        },
+        "sla_target": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 0
+        },
+        "grace_period": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "model_name": "Fine-Tuned GLiNER v1",
+      "precision": 0.1796,
+      "recall": 0.4,
+      "micro_f1": 0.2478,
+      "macro_f1": 0.2103,
+      "total_gold": 180,
+      "total_tp": 72,
+      "total_fp": 329,
+      "total_fn": 108,
+      "avg_latency_ms": 153.89,
+      "p50_latency_ms": 147.66,
+      "p95_latency_ms": 212.56,
+      "throughput_clauses_sec": 6.5,
+      "class_breakdown": {
+        "contracting_party": {
+          "tp": 47,
+          "fp": 226,
+          "fn": 23
+        },
+        "penalty_rate": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 28
+        },
+        "penalty_condition": {
+          "tp": 0,
+          "fp": 18,
+          "fn": 3
+        },
+        "liability_cap": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 17
+        },
+        "monetary_amount": {
+          "tp": 3,
+          "fp": 29,
+          "fn": 3
+        },
+        "effective_date": {
+          "tp": 10,
+          "fp": 17,
+          "fn": 6
+        },
+        "expiration_date": {
+          "tp": 1,
+          "fp": 12,
+          "fn": 9
+        },
+        "termination_clause": {
+          "tp": 1,
+          "fp": 3,
+          "fn": 19
+        },
+        "governing_law": {
+          "tp": 9,
+          "fp": 7,
+          "fn": 0
+        },
+        "payment_terms": {
+          "tp": 0,
+          "fp": 14,
+          "fn": 0
+        },
+        "sla_target": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 0
+        },
+        "grace_period": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "model_name": "Upgraded GLiNER v2 (Internet)",
+      "precision": 0.0667,
+      "recall": 0.0056,
+      "micro_f1": 0.0103,
+      "macro_f1": 0.0556,
+      "total_gold": 180,
+      "total_tp": 1,
+      "total_fp": 14,
+      "total_fn": 179,
+      "avg_latency_ms": 147.36,
+      "p50_latency_ms": 144.73,
+      "p95_latency_ms": 201.32,
+      "throughput_clauses_sec": 6.8,
+      "class_breakdown": {
+        "contracting_party": {
+          "tp": 0,
+          "fp": 14,
+          "fn": 70
+        },
+        "penalty_rate": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 28
+        },
+        "penalty_condition": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2
+        },
+        "liability_cap": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 18
+        },
+        "monetary_amount": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "effective_date": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 16
+        },
+        "expiration_date": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 10
+        },
+        "termination_clause": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 20
+        },
+        "governing_law": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "payment_terms": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "sla_target": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grace_period": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    }
+  ],
+  "dataset_3_high_risk_liability": [
+    {
+      "model_name": "Heuristic Baseline (Regex)",
+      "precision": 0.7826,
+      "recall": 0.1978,
+      "micro_f1": 0.3158,
+      "macro_f1": 0.2081,
+      "total_gold": 91,
+      "total_tp": 18,
+      "total_fp": 5,
+      "total_fn": 73,
+      "avg_latency_ms": 0.04,
+      "p50_latency_ms": 0.03,
+      "p95_latency_ms": 0.06,
+      "throughput_clauses_sec": 27837.7,
+      "class_breakdown": {
+        "contracting_party": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "penalty_rate": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 1
+        },
+        "penalty_condition": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 8
+        },
+        "liability_cap": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 46
+        },
+        "monetary_amount": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 9
+        },
+        "effective_date": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "expiration_date": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "termination_clause": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "governing_law": {
+          "tp": 16,
+          "fp": 2,
+          "fn": 0
+        },
+        "payment_terms": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "sla_target": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grace_period": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "model_name": "Zero-Shot GLiNER (Base)",
+      "precision": 0.0447,
+      "recall": 0.0879,
+      "micro_f1": 0.0593,
+      "macro_f1": 0.0811,
+      "total_gold": 91,
+      "total_tp": 8,
+      "total_fp": 171,
+      "total_fn": 83,
+      "avg_latency_ms": 124.33,
+      "p50_latency_ms": 120.99,
+      "p95_latency_ms": 172.31,
+      "throughput_clauses_sec": 8.0,
+      "class_breakdown": {
+        "contracting_party": {
+          "tp": 0,
+          "fp": 130,
+          "fn": 0
+        },
+        "penalty_rate": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        "penalty_condition": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 8
+        },
+        "liability_cap": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 46
+        },
+        "monetary_amount": {
+          "tp": 4,
+          "fp": 23,
+          "fn": 7
+        },
+        "effective_date": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        },
+        "expiration_date": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "termination_clause": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 9
+        },
+        "governing_law": {
+          "tp": 4,
+          "fp": 9,
+          "fn": 12
+        },
+        "payment_terms": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 0
+        },
+        "sla_target": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grace_period": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "model_name": "Fine-Tuned GLiNER v1",
+      "precision": 0.1053,
+      "recall": 0.2637,
+      "micro_f1": 0.1505,
+      "macro_f1": 0.2288,
+      "total_gold": 91,
+      "total_tp": 24,
+      "total_fp": 204,
+      "total_fn": 67,
+      "avg_latency_ms": 155.06,
+      "p50_latency_ms": 144.92,
+      "p95_latency_ms": 234.02,
+      "throughput_clauses_sec": 6.4,
+      "class_breakdown": {
+        "contracting_party": {
+          "tp": 0,
+          "fp": 151,
+          "fn": 0
+        },
+        "penalty_rate": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        "penalty_condition": {
+          "tp": 2,
+          "fp": 15,
+          "fn": 6
+        },
+        "liability_cap": {
+          "tp": 3,
+          "fp": 2,
+          "fn": 43
+        },
+        "monetary_amount": {
+          "tp": 3,
+          "fp": 4,
+          "fn": 8
+        },
+        "effective_date": {
+          "tp": 0,
+          "fp": 13,
+          "fn": 0
+        },
+        "expiration_date": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "termination_clause": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "governing_law": {
+          "tp": 16,
+          "fp": 10,
+          "fn": 0
+        },
+        "payment_terms": {
+          "tp": 0,
+          "fp": 8,
+          "fn": 0
+        },
+        "sla_target": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        },
+        "grace_period": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "model_name": "Upgraded GLiNER v2 (Internet)",
+      "precision": 0.0,
+      "recall": 0.0,
+      "micro_f1": 0.0,
+      "macro_f1": 0.0,
+      "total_gold": 91,
+      "total_tp": 0,
+      "total_fp": 46,
+      "total_fn": 91,
+      "avg_latency_ms": 198.09,
+      "p50_latency_ms": 197.59,
+      "p95_latency_ms": 284.39,
+      "throughput_clauses_sec": 5.0,
+      "class_breakdown": {
+        "contracting_party": {
+          "tp": 0,
+          "fp": 43,
+          "fn": 0
+        },
+        "penalty_rate": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        "penalty_condition": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 8
+        },
+        "liability_cap": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 46
+        },
+        "monetary_amount": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 11
+        },
+        "effective_date": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "expiration_date": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "termination_clause": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "governing_law": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 16
+        },
+        "payment_terms": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "sla_target": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grace_period": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    }
+  ],
+  "dataset_4_adversarial": [
+    {
+      "model_name": "Heuristic Baseline (Regex)",
+      "total_clauses": 50,
+      "clean_clauses": 49,
+      "clean_clause_rate": 0.98,
+      "total_hallucinations": 2,
+      "mean_hallucination_confidence": 0.75,
+      "avg_latency_ms": 0.02
+    },
+    {
+      "model_name": "Zero-Shot GLiNER (Base)",
+      "total_clauses": 50,
+      "clean_clauses": 38,
+      "clean_clause_rate": 0.76,
+      "total_hallucinations": 13,
+      "mean_hallucination_confidence": 0.5493,
+      "avg_latency_ms": 128.11
+    },
+    {
+      "model_name": "Fine-Tuned GLiNER v1",
+      "total_clauses": 50,
+      "clean_clauses": 19,
+      "clean_clause_rate": 0.38,
+      "total_hallucinations": 52,
+      "mean_hallucination_confidence": 0.8627,
+      "avg_latency_ms": 122.83
+    },
+    {
+      "model_name": "Upgraded GLiNER v2 (Internet)",
+      "total_clauses": 50,
+      "clean_clauses": 38,
+      "clean_clause_rate": 0.76,
+      "total_hallucinations": 13,
+      "mean_hallucination_confidence": 0.7541,
+      "avg_latency_ms": 131.8
+    }
+  ],
+  "dataset_5_contractner_test": [
+    {
+      "model_name": "Heuristic Baseline (Regex)",
+      "precision": 0.8056,
+      "recall": 0.2417,
+      "micro_f1": 0.3718,
+      "macro_f1": 0.2307,
+      "total_gold": 360,
+      "total_tp": 87,
+      "total_fp": 21,
+      "total_fn": 273,
+      "avg_latency_ms": 0.11,
+      "p50_latency_ms": 0.07,
+      "p95_latency_ms": 0.36,
+      "throughput_clauses_sec": 9522.1,
+      "class_breakdown": {
+        "contracting_party": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 62
+        },
+        "penalty_rate": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 24
+        },
+        "penalty_condition": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "liability_cap": {
+          "tp": 0,
+          "fp": 6,
+          "fn": 0
+        },
+        "monetary_amount": {
+          "tp": 64,
+          "fp": 2,
+          "fn": 28
+        },
+        "effective_date": {
+          "tp": 9,
+          "fp": 1,
+          "fn": 17
+        },
+        "expiration_date": {
+          "tp": 2,
+          "fp": 10,
+          "fn": 16
+        },
+        "termination_clause": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 12
+        },
+        "governing_law": {
+          "tp": 12,
+          "fp": 2,
+          "fn": 114
+        },
+        "payment_terms": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "sla_target": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grace_period": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "model_name": "Zero-Shot GLiNER (Base)",
+      "precision": 0.3369,
+      "recall": 0.4333,
+      "micro_f1": 0.3791,
+      "macro_f1": 0.2558,
+      "total_gold": 360,
+      "total_tp": 156,
+      "total_fp": 307,
+      "total_fn": 204,
+      "avg_latency_ms": 303.0,
+      "p50_latency_ms": 265.66,
+      "p95_latency_ms": 595.23,
+      "throughput_clauses_sec": 3.3,
+      "class_breakdown": {
+        "contracting_party": {
+          "tp": 32,
+          "fp": 158,
+          "fn": 30
+        },
+        "penalty_rate": {
+          "tp": 1,
+          "fp": 3,
+          "fn": 23
+        },
+        "penalty_condition": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "liability_cap": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "monetary_amount": {
+          "tp": 66,
+          "fp": 88,
+          "fn": 26
+        },
+        "effective_date": {
+          "tp": 18,
+          "fp": 28,
+          "fn": 8
+        },
+        "expiration_date": {
+          "tp": 0,
+          "fp": 5,
+          "fn": 18
+        },
+        "termination_clause": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 12
+        },
+        "governing_law": {
+          "tp": 39,
+          "fp": 17,
+          "fn": 87
+        },
+        "payment_terms": {
+          "tp": 0,
+          "fp": 7,
+          "fn": 0
+        },
+        "sla_target": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grace_period": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "model_name": "Fine-Tuned GLiNER v1",
+      "precision": 0.257,
+      "recall": 0.5361,
+      "micro_f1": 0.3474,
+      "macro_f1": 0.3308,
+      "total_gold": 360,
+      "total_tp": 193,
+      "total_fp": 558,
+      "total_fn": 167,
+      "avg_latency_ms": 298.09,
+      "p50_latency_ms": 260.02,
+      "p95_latency_ms": 591.06,
+      "throughput_clauses_sec": 3.4,
+      "class_breakdown": {
+        "contracting_party": {
+          "tp": 59,
+          "fp": 428,
+          "fn": 3
+        },
+        "penalty_rate": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 21
+        },
+        "penalty_condition": {
+          "tp": 0,
+          "fp": 4,
+          "fn": 0
+        },
+        "liability_cap": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "monetary_amount": {
+          "tp": 69,
+          "fp": 22,
+          "fn": 23
+        },
+        "effective_date": {
+          "tp": 26,
+          "fp": 36,
+          "fn": 0
+        },
+        "expiration_date": {
+          "tp": 2,
+          "fp": 9,
+          "fn": 16
+        },
+        "termination_clause": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 12
+        },
+        "governing_law": {
+          "tp": 34,
+          "fp": 12,
+          "fn": 92
+        },
+        "payment_terms": {
+          "tp": 0,
+          "fp": 34,
+          "fn": 0
+        },
+        "sla_target": {
+          "tp": 0,
+          "fp": 9,
+          "fn": 0
+        },
+        "grace_period": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      }
+    },
+    {
+      "model_name": "Upgraded GLiNER v2 (Internet)",
+      "precision": 0.0909,
+      "recall": 0.0028,
+      "micro_f1": 0.0054,
+      "macro_f1": 0.0039,
+      "total_gold": 360,
+      "total_tp": 1,
+      "total_fp": 10,
+      "total_fn": 359,
+      "avg_latency_ms": 292.08,
+      "p50_latency_ms": 251.42,
+      "p95_latency_ms": 587.5,
+      "throughput_clauses_sec": 3.4,
+      "class_breakdown": {
+        "contracting_party": {
+          "tp": 1,
+          "fp": 10,
+          "fn": 61
+        },
+        "penalty_rate": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 24
+        },
+        "penalty_condition": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "liability_cap": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "monetary_amount": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 92
+        },
+        "effective_date": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 26
+        },
+        "expiration_date": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 18
+        },
+        "termination_clause": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 12
+        },
+        "governing_law": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 126
+        },
+        "payment_terms": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "sla_target": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "grace_period": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    }
+  ]
+}

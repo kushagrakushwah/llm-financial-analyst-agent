@@ -1,0 +1,1199 @@
+[
+  {
+    "contract": "EhaveInc_20190515_20-F_EX-4.44_11678816_EX-4.44_License Agreement_ Reseller Agreement",
+    "clause": "LIMITATION OF LIABILITY (a) Consequential Damages Subject to Section 17(c), in no event shall either Party be liable to the other for any consequential, incidental, exemplary or punitive damages even if advised in advance of the possibility of such damages. Further, subject to Section 17(c), neither Party shall not be liable to the other Party for any lost revenue, lost profit or lost savings.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Subject to Section 17(c), in no event shall either Party be liable to the other for any consequential, incidental, exemplary or punitive damages even if advised in advance of the possibility of such damages.",
+        "start": 50,
+        "end": 257,
+        "cuad_category": "Cap On Liability"
+      },
+      {
+        "label": "liability_cap",
+        "text": "Further, subject to Section 17(c), neither Party shall not be liable to the other Party for any lost revenue, lost profit or lost savings.",
+        "start": 258,
+        "end": 396,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "EhaveInc_20190515_20-F_EX-4.44_11678816_EX-4.44_License Agreement_ Reseller Agreement",
+    "clause": "Further, subject to Section 17(c), neither Party shall not be liable to the other Party for any lost revenue, lost profit or lost savings. (b) Limitation of Direct Damages Subject to Section 17(c), in no event shall either Party's liability under this Agreement exceed the aggregate of all amounts paid under this Agreement and amounts that have accrued but not yet been paid in the twelve (12) months preceding the event giving rise to the claim.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Further, subject to Section 17(c), neither Party shall not be liable to the other Party for any lost revenue, lost profit or lost savings.",
+        "start": 0,
+        "end": 138,
+        "cuad_category": "Cap On Liability"
+      },
+      {
+        "label": "liability_cap",
+        "text": "Subject to Section 17(c), in no event shall either Party's liability under this Agreement exceed the aggregate of all amounts paid under this Agreement and amounts that have accrued but not yet been paid in the twelve (12) months preceding the event giving rise to the claim.",
+        "start": 172,
+        "end": 447,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "EhaveInc_20190515_20-F_EX-4.44_11678816_EX-4.44_License Agreement_ Reseller Agreement",
+    "clause": "(b) Limitation of Direct Damages Subject to Section 17(c), in no event shall either Party's liability under this Agreement exceed the aggregate of all amounts paid under this Agreement and amounts that have accrued but not yet been paid in the twelve (12) months preceding the event giving rise to the claim.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Subject to Section 17(c), in no event shall either Party's liability under this Agreement exceed the aggregate of all amounts paid under this Agreement and amounts that have accrued but not yet been paid in the twelve (12) months preceding the event giving rise to the claim.",
+        "start": 33,
+        "end": 308,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "VirtuosoSurgicalInc_20191227_1-A_EX1A-6 MAT CTRCT_11933379_EX1A-6 MAT CTRCT_License Agreement",
+    "clause": "9.12 Governing Law: This Agreement shall be construed, and legal relations between the parties hereto shall be determined, in accordance with the laws of the State of Maryland applicable to contracts solely executed and wholly to be performed within the State of Maryland without giving effect to the principles of conflicts of laws. Any disputes between the parties to the Agreement shall be brought in the state or federal courts of Maryland.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement shall be construed, and legal relations between the parties hereto shall be determined, in accordance with the laws of the State of Maryland applicable to contracts solely executed and wholly to be performed within the State of Maryland without giving effect to the principles of conflicts of laws.",
+        "start": 20,
+        "end": 333,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "VirtuosoSurgicalInc_20191227_1-A_EX1A-6 MAT CTRCT_11933379_EX1A-6 MAT CTRCT_License Agreement",
+    "clause": "4.2 Minimum Annual Royalties: Company shall pay to JHU minimum annual royalties as set forth in Exhibit A. These minimum annual royalties shall be due within thirty (30) days of each anniversary of the EFFECTIVE DATE beginning with the first anniversary.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "Company shall pay to JHU minimum annual royalties as set forth in Exhibit A.",
+        "start": 30,
+        "end": 106,
+        "cuad_category": "Revenue/Profit Sharing"
+      },
+      {
+        "label": "monetary_amount",
+        "text": "Company shall pay to JHU minimum annual royalties as set forth in Exhibit A.",
+        "start": 30,
+        "end": 106,
+        "cuad_category": "Minimum Commitment"
+      }
+    ],
+    "primary_category": "Minimum Commitment"
+  },
+  {
+    "contract": "VirtuosoSurgicalInc_20191227_1-A_EX1A-6 MAT CTRCT_11933379_EX1A-6 MAT CTRCT_License Agreement",
+    "clause": "MINIMUM ANNUAL ROYALTIES 3.1 The minimum annual royalties pursuant to the Agreement are: 1st anniversary of the EFFECTIVE DATE and each subsequent anniversary of the EFFECTIVE DATE during the term: Three-thousand dollars ($3000) 3.2 Earned Royalties payable for each calendar year are creditable on a non-cumulative basis against MINIMUM ANNUAL ROYALTIES for that year only.",
+    "entities": [
+      {
+        "label": "monetary_amount",
+        "text": "The minimum annual royalties pursuant to the Agreement are: 1st anniversary of the EFFECTIVE DATE and each subsequent anniversary of the EFFECTIVE DATE during the term: Three-thousand dollars ($3000)",
+        "start": 29,
+        "end": 228,
+        "cuad_category": "Minimum Commitment"
+      }
+    ],
+    "primary_category": "Minimum Commitment"
+  },
+  {
+    "contract": "VirtuosoSurgicalInc_20191227_1-A_EX1A-6 MAT CTRCT_11933379_EX1A-6 MAT CTRCT_License Agreement",
+    "clause": "LIQUIDITY EVENT 4.1 COMPANY will pay JHU a fee equal one percent (1%) of the Aggregate Consideration received by the COMPANY, or the total amount received by stockholders of COMPANY, upon the occurrence of a Liquidity Event. Such fee shall be paid after only the first to occur of either a Liquidation Event or an Initial Public Offering.",
+    "entities": [
+      {
+        "label": "penalty_condition",
+        "text": "COMPANY will pay JHU a fee equal one percent (1%) of the Aggregate Consideration received by the COMPANY, or the total amount received by stockholders of COMPANY, upon the occurrence of a Liquidity Event.",
+        "start": 20,
+        "end": 224,
+        "cuad_category": "Liquidated Damages"
+      }
+    ],
+    "primary_category": "Liquidated Damages"
+  },
+  {
+    "contract": "ROCKYMOUNTAINCHOCOLATEFACTORY,INC_12_23_2019-EX-10.2-STRATEGIC ALLIANCE AGREEMENT",
+    "clause": "This Joinder Agreement and the rights of the parties hereto shall be governed by and construed in accordance with the laws of the State of New York applicable to contracts made and to be performed therein. Executed and dated this day of .",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Joinder Agreement and the rights of the parties hereto shall be governed by and construed in accordance with the laws of the State of New York applicable to contracts made and to be performed therein.",
+        "start": 0,
+        "end": 205,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "InnerscopeHearingTechnologiesInc_20181109_8-K_EX-10.6_11419704_EX-10.6_Distributor Agreement",
+    "clause": "In addition, Erchonia may require reasonable minimum purchasing requirements for each run of private labeled products.",
+    "entities": [
+      {
+        "label": "monetary_amount",
+        "text": "In addition, Erchonia may require reasonable minimum purchasing requirements for each run of private labeled products.",
+        "start": 0,
+        "end": 118,
+        "cuad_category": "Minimum Commitment"
+      }
+    ],
+    "primary_category": "Minimum Commitment"
+  },
+  {
+    "contract": "BIOFRONTERAAG_04_29_2019-EX-4.17-SUPPLY AGREEMENT",
+    "clause": "Supplier will use commercially reasonable efforts to deliver Product to CUTANEA with minimum expiry dating remaining of [***]% of the approved shelf-life. 2.5.4 CUTANEA's purchase orders shall designate the desired quantities of Products, delivery dates and destinations.",
+    "entities": [
+      {
+        "label": "monetary_amount",
+        "text": "Supplier will use commercially reasonable efforts to deliver Product to CUTANEA with minimum expiry dating remaining of [***]% of the approved shelf-life.",
+        "start": 0,
+        "end": 154,
+        "cuad_category": "Minimum Commitment"
+      }
+    ],
+    "primary_category": "Minimum Commitment"
+  },
+  {
+    "contract": "BIOFRONTERAAG_04_29_2019-EX-4.17-SUPPLY AGREEMENT",
+    "clause": "Neither party shall be liable to the other party for any direct, indirect, consequential, incidental, special, punitive or exemplary damages arising out of or relating to the suspension or termination of any of its obligations or duties under this Agreement by reason of the occurrence of Force Majeure. 8.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Neither party shall be liable to the other party for any direct, indirect, consequential, incidental, special, punitive or exemplary damages arising out of or relating to the suspension or termination of any of its obligations or duties under this Agreement by reason of the occurrence of Force Majeure.",
+        "start": 0,
+        "end": 303,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "BIOFRONTERAAG_04_29_2019-EX-4.17-SUPPLY AGREEMENT",
+    "clause": "THIS LIMITATION OF LIABILITY WILL APPLY EVEN IF A PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, AND NOTWITHSTANDING ANY FAILURE OF ESSENTIAL PURPOSE OF ANY LIMITED REMEDY PROVIDED HEREIN. 5.8 Debarment.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "THIS LIMITATION OF LIABILITY WILL APPLY EVEN IF A PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, AND NOTWITHSTANDING ANY FAILURE OF ESSENTIAL PURPOSE OF ANY LIMITED REMEDY PROVIDED HEREIN.",
+        "start": 0,
+        "end": 200,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "BIOPURECORP_06_30_1999-EX-10.13-AGENCY AGREEMENT",
+    "clause": "In no event will the Company be liable for incidental or consequential damages. All claims by the Customer and/or Agent under this Paragraph 2.6 must be submitted in accordance with the Company's published bulletins concerning such claims, as such bulletins may be amended by the Company from time to time and furnished to the Agent.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "In no event will the Company be liable for incidental or consequential damages.",
+        "start": 0,
+        "end": 79,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "BIOPURECORP_06_30_1999-EX-10.13-AGENCY AGREEMENT",
+    "clause": "In no       way should the Agent be liable for incidental or consequential damages.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "In no       way should the Agent be liable for incidental or consequential damages.",
+        "start": 0,
+        "end": 83,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "BIOPURECORP_06_30_1999-EX-10.13-AGENCY AGREEMENT",
+    "clause": "The Customer's exclusive remedy for a breach of any of the foregoing warranties will be the replacement, at the delivery point thereof, freight prepaid, of any Product furnished hereunder that fails to meet the foregoing standards. In no event will the Company be liable for incidental or consequential damages.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "In no event will the Company be liable for incidental or consequential damages.",
+        "start": 232,
+        "end": 311,
+        "cuad_category": "Cap On Liability"
+      },
+      {
+        "label": "liability_cap",
+        "text": "The Customer's exclusive remedy for a breach of any of the foregoing warranties will be the replacement, at the delivery point thereof, freight prepaid, of any Product furnished hereunder that fails to meet the foregoing standards.",
+        "start": 0,
+        "end": 231,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "LejuHoldingsLtd_20140121_DRS (on F-1)_EX-10.26_8473102_EX-10.26_Content License Agreement2",
+    "clause": "This Termination Agreement shall be governed by the laws of the PRC, without regard to conflicts of law principles.   4.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Termination Agreement shall be governed by the laws of the PRC, without regard to conflicts of law principles.",
+        "start": 0,
+        "end": 115,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "UAGHINC_04_14_2004-EX-10.18-MAINTENANCE AGREEMENT",
+    "clause": "Notwithstanding the foregoing, either party may terminate this Agreement at any time without liability by providing one hundred eighty (180) days written notice to the other party.   SECTION 2  DESCRIPTION OF SERVICES AND FEES   2.1.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "Notwithstanding the foregoing, either party may terminate this Agreement at any time without liability by providing one hundred eighty (180) days written notice to the other party.",
+        "start": 0,
+        "end": 180,
+        "cuad_category": "Termination For Convenience"
+      }
+    ],
+    "primary_category": "Termination For Convenience"
+  },
+  {
+    "contract": "VitalibisInc_20180316_8-K_EX-10.2_11100168_EX-10.2_Hosting Agreement",
+    "clause": "Regardless of the term, Licensee can terminate Agreement with at least one hundred eighty (180) days written notice with no further obligation.\n\n 5\n\nSource: VITALIBIS, INC., 8-K, 3/16/2018\n\n\n\n\n\n\n\n  10.2 Termination for Breach.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "Regardless of the term, Licensee can terminate Agreement with at least one hundred eighty (180) days written notice with no further obligation.",
+        "start": 0,
+        "end": 143,
+        "cuad_category": "Termination For Convenience"
+      }
+    ],
+    "primary_category": "Termination For Convenience"
+  },
+  {
+    "contract": "VitalibisInc_20180316_8-K_EX-10.2_11100168_EX-10.2_Hosting Agreement",
+    "clause": "TO THE MAXIMUM EXTENT PERMITTED BY LAW, VOTOCAST'S AGGREGATE LIABILITY ARISING FROM OR RELATING TO THIS AGREEMENT OR THE USE OR INABILITY TO USE THE SERVICES SHALL BE LIMITED TO THE AMOUNT OF ALL FEES ACTUALLY RECEIVED BY VOTOCAST FROM LICENSEE UNDER THIS AGREEMENT. THIS LIMITATION APPLIES TO ALL CAUSES OF ACTION IN THE AGGREGATE, INCLUDING, WITHOUT LIMITATION, TO BREACH OF CONTRACT, BREACH OF WARRANTY, NEGLIGENCE.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "TO THE MAXIMUM EXTENT PERMITTED BY LAW, VOTOCAST'S AGGREGATE LIABILITY ARISING FROM OR RELATING TO THIS AGREEMENT OR THE USE OR INABILITY TO USE THE SERVICES SHALL BE LIMITED TO THE AMOUNT OF ALL FEES ACTUALLY RECEIVED BY VOTOCAST FROM LICENSEE UNDER THIS AGREEMENT.",
+        "start": 0,
+        "end": 266,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "VitalibisInc_20180316_8-K_EX-10.2_11100168_EX-10.2_Hosting Agreement",
+    "clause": "The sole remedy for any breach of Section 6.1 (d) and (e) shall be the provisions in Section 7.1.   6.2 VOTOCAST'S Warranties.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "The sole remedy for any breach of Section 6.1 (d) and (e) shall be the provisions in Section 7.1.",
+        "start": 0,
+        "end": 97,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "VitalibisInc_20180316_8-K_EX-10.2_11100168_EX-10.2_Hosting Agreement",
+    "clause": "VOTOCAST SHALL HAVE NO LIABILITY WITH RESPECT TO VOTOCAST'S OBLIGATIONS UNDER THIS AGREEMENT OR OTHERWISE FOR ANY CONSEQUENTIAL, EXEMPLARY, SPECIAL. INCIDENTAL, OR PUNITIVE DAMAGES OF ANY KIND (INCLUDING, WITHOUT LIMITATION, LOSS OF PROFITS, REVENUE. BUSINESS, OR DATA), EVEN IF VOTOCAST HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.   8.2 Limitation.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "VOTOCAST SHALL HAVE NO LIABILITY WITH RESPECT TO VOTOCAST'S OBLIGATIONS UNDER THIS AGREEMENT OR OTHERWISE FOR ANY CONSEQUENTIAL, EXEMPLARY, SPECIAL. INCIDENTAL, OR PUNITIVE DAMAGES OF ANY KIND (INCLUDING, WITHOUT LIMITATION, LOSS OF PROFITS, REVENUE. BUSINESS, OR DATA), EVEN IF VOTOCAST HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
+        "start": 0,
+        "end": 340,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "VitalibisInc_20180316_8-K_EX-10.2_11100168_EX-10.2_Hosting Agreement",
+    "clause": "The sole remedy for any breach of Section 6.2 (e) shall be the provisions in Section 7.2.   6.3 Disclaimer of Warranty.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "The sole remedy for any breach of Section 6.2 (e) shall be the provisions in Section 7.2.",
+        "start": 0,
+        "end": 89,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "VitalibisInc_20180316_8-K_EX-10.2_11100168_EX-10.2_Hosting Agreement",
+    "clause": "If any such action occurs and results in an employee accepting employment with the other Party, the Party with whom the employee accepts employment agrees to pay to the other Party as liquidated damages, an amount equal to two times that particular individual's annual salary and bonus.\n\n 7\n\nSource: VITALIBIS, INC., 8-K, 3/16/2018\n\n\n\n\n\n\n\n  11.15 Execution and Authority.",
+    "entities": [
+      {
+        "label": "penalty_condition",
+        "text": "If any such action occurs and results in an employee accepting employment with the other Party, the Party with whom the employee accepts employment agrees to pay to the other Party as liquidated damages, an amount equal to two times that particular individual's annual salary and bonus.",
+        "start": 0,
+        "end": 286,
+        "cuad_category": "Liquidated Damages"
+      }
+    ],
+    "primary_category": "Liquidated Damages"
+  },
+  {
+    "contract": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement1",
+    "clause": "APPLICABLE LAW   17.1 Choice of Law   This Agreement shall be interpreted and construed under the laws of the State of New York. In the event of any conflict of law, the laws of New York shall prevail, without regard to the application of such state's conflict of law rules.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement shall be interpreted and construed under the laws of the State of New York.",
+        "start": 38,
+        "end": 128,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement1",
+    "clause": "The parties hereto consider this liquidated damages provision to be a reasonable, good faith pre-estimate of those damages.   11.4.4 The liquidated damages provision only covers our damages from the loss of cash flow from the Royalty Fees.",
+    "entities": [
+      {
+        "label": "penalty_condition",
+        "text": "The parties hereto consider this liquidated damages provision to be a reasonable, good faith pre-estimate of those damages.",
+        "start": 0,
+        "end": 123,
+        "cuad_category": "Liquidated Damages"
+      }
+    ],
+    "primary_category": "Liquidated Damages"
+  },
+  {
+    "contract": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement1",
+    "clause": "You and each of your principals agree that the liquidated damages provision does not give us an adequate remedy at law for any default under, or for the enforcement of, any provision of this Agreement other than the Royalty Fee sections.",
+    "entities": [
+      {
+        "label": "penalty_condition",
+        "text": "You and each of your principals agree that the liquidated damages provision does not give us an adequate remedy at law for any default under, or for the enforcement of, any provision of this Agreement other than the Royalty Fee sections.",
+        "start": 0,
+        "end": 237,
+        "cuad_category": "Liquidated Damages"
+      }
+    ],
+    "primary_category": "Liquidated Damages"
+  },
+  {
+    "contract": "BNLFINANCIALCORP_03_30_2007-EX-10.8-OUTSOURCING AGREEMENT",
+    "clause": "This Agreement and performance hereunder shall be governed by the laws of the State of Oklahoma without regard to conflict of laws. Subject to the requirement for arbitration under paragraph 16(C), VIP and BNL hereby agree on behalf of themselves and any person claiming by or through them that jurisdiction and venue for any litigation arising from or relating to this Agreement shall be in the appropriate federal or state court located in Austin, Texas, or in Oklahoma City, Oklahoma, and that any arbitration shall be conducted in the location selected pursuant to paragraph 16(C)(1).",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement and performance hereunder shall be governed by the laws of the State of Oklahoma without regard to conflict of laws.",
+        "start": 0,
+        "end": 131,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "BNLFINANCIALCORP_03_30_2007-EX-10.8-OUTSOURCING AGREEMENT",
+    "clause": "The minimum monthly fee shall not be less than five thousand dollars ($5,000) per month (as applicable, \"Minimum Fee\").     B.",
+    "entities": [
+      {
+        "label": "monetary_amount",
+        "text": "The minimum monthly fee shall not be less than five thousand dollars ($5,000) per month (as applicable, \"Minimum Fee\").",
+        "start": 0,
+        "end": 119,
+        "cuad_category": "Minimum Commitment"
+      }
+    ],
+    "primary_category": "Minimum Commitment"
+  },
+  {
+    "contract": "BNLFINANCIALCORP_03_30_2007-EX-10.8-OUTSOURCING AGREEMENT",
+    "clause": "Any claim of action of any kind which one party to this Agreement may have against the other party relating to or arising out of this Agreement must be commenced within two (2) years from the date such claim or cause of action shall have first accrued. N.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Any claim of action of any kind which one party to this Agreement may have against the other party relating to or arising out of this Agreement must be commenced within two (2) years from the date such claim or cause of action shall have first accrued.",
+        "start": 0,
+        "end": 252,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "TELKOMSALTD_01_30_2003-EX-10-LICENCE AND MAINTENANCE AGREEMENT",
+    "clause": "6   Governing Law -This AGREEMENT shall be governed by and construed under the   Laws of the Republic of South Africa.   1 5.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This AGREEMENT shall be governed by and construed under the   Laws of the Republic of South Africa.",
+        "start": 19,
+        "end": 118,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "TELKOMSALTD_01_30_2003-EX-10-LICENCE AND MAINTENANCE AGREEMENT",
+    "clause": "7    The Maintenance Services may be terminated by TELKOM in writing at   any time upon 3 (three) months prior written notice. Subject to any   accrued rights and obligations, SAP AFRICA shall be entitled to   terminate the provision of Maintenance Services in respect of the   SOFTWARE or any modules thereof in the event of:",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "The Maintenance Services may be terminated by TELKOM in writing at   any time upon 3 (three) months prior written notice.",
+        "start": 5,
+        "end": 126,
+        "cuad_category": "Termination For Convenience"
+      }
+    ],
+    "primary_category": "Termination For Convenience"
+  },
+  {
+    "contract": "TRUENORTHENERGYCORP_02_08_2007-EX-10.1-DEVELOPMENT AGREEMENT",
+    "clause": "Company shall pay 11.67% of the Drilling Costs of the Initial Well, regardless of whether the Initial Well is successfully drilled to the Objective Zone.",
+    "entities": [
+      {
+        "label": "monetary_amount",
+        "text": "Company shall pay 11.67% of the Drilling Costs of the Initial Well, regardless of whether the Initial Well is successfully drilled to the Objective Zone",
+        "start": 0,
+        "end": 152,
+        "cuad_category": "Minimum Commitment"
+      }
+    ],
+    "primary_category": "Minimum Commitment"
+  },
+  {
+    "contract": "GentechHoldingsInc_20190808_1-A_EX1A-6 MAT CTRCT_11776814_EX1A-6 MAT CTRCT_Distributor Agreement",
+    "clause": "This Agreement is a contract under the laws of the State of Florida and for all purposes shall be governed by and construed in accordance with the substantive laws of the State of Florida, without regard to its principles of conflicts of laws provisions. (c) Disputes.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement is a contract under the laws of the State of Florida and for all purposes shall be governed by and construed in accordance with the substantive laws of the State of Florida, without regard to its principles of conflicts of laws provisions.",
+        "start": 0,
+        "end": 254,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "GentechHoldingsInc_20190808_1-A_EX1A-6 MAT CTRCT_11776814_EX1A-6 MAT CTRCT_Distributor Agreement",
+    "clause": "(b) Limitation of Liability.IN NO EVENT SHALL EITHER PARTY BE LIABLE TO THE OTHER FOR ANY SPECIAL, INDIRECT, EXEMPLARY OR CONSEQUENTIAL DAMAGES ARISING OUT OF THIS AGREEMENT OR PURCHASE OR USE OF THE PRODUCTS. 10.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "IN NO EVENT SHALL EITHER PARTY BE LIABLE TO THE OTHER FOR ANY SPECIAL, INDIRECT, EXEMPLARY OR CONSEQUENTIAL DAMAGES ARISING OUT OF THIS AGREEMENT OR PURCHASE OR USE OF THE PRODUCTS.",
+        "start": 28,
+        "end": 209,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "ADMA BioManufacturing, LLC -  Amendment #3 to Manufacturing Agreement ",
+    "clause": "All claims by Sanofi Pasteur for breach or default under this Agreement shall be brought within [***] year after the cause of action comes into existence or otherwise shall be waived. This limitation of liability will not apply for damages that result from the gross negligence or the willful misconduct of a Party.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "All claims by Sanofi Pasteur for breach or default under this Agreement shall be brought within [***] year after the cause of action comes into existence or otherwise shall be waived.",
+        "start": 0,
+        "end": 183,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "OFGBANCORP_03_28_2007-EX-10.23-OUTSOURCING AGREEMENT",
+    "clause": "Customer may elect to terminate this Agreement for any reason upon six months written notice to Metavante, provided Customer shall pay Metavante the \"Termination Fee\" defined and computed in accordance with the table below. The \"Termination Fee\" shall be paid prior to the Effective Date of Termination of the Agreement, as applicable.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "Customer may elect to terminate this Agreement for any reason upon six months written notice to Metavante, provided Customer shall pay Metavante the \"Termination Fee\" defined and computed in accordance with the table below.",
+        "start": 0,
+        "end": 223,
+        "cuad_category": "Termination For Convenience"
+      },
+      {
+        "label": "penalty_condition",
+        "text": "Customer may elect to terminate this Agreement for any reason upon six months written notice to Metavante, provided Customer shall pay Metavante the \"Termination Fee\" defined and computed in accordance with the table below.",
+        "start": 0,
+        "end": 223,
+        "cuad_category": "Liquidated Damages"
+      }
+    ],
+    "primary_category": "Termination For Convenience"
+  },
+  {
+    "contract": "OFGBANCORP_03_28_2007-EX-10.23-OUTSOURCING AGREEMENT",
+    "clause": "Customer shall pay the Monthly Base Fee in advance on the first day of the calendar month in which the Services are to be performed. Any and all other amounts payable under this Agreement shall be due thirty (30) days following the date of invoice, unless otherwise provided in the Services and Charges Schedule.",
+    "entities": [
+      {
+        "label": "monetary_amount",
+        "text": "Customer shall pay the Monthly Base Fee in advance on the first day of the calendar month in which the Services are to be performed.",
+        "start": 0,
+        "end": 132,
+        "cuad_category": "Minimum Commitment"
+      }
+    ],
+    "primary_category": "Minimum Commitment"
+  },
+  {
+    "contract": "OFGBANCORP_03_28_2007-EX-10.23-OUTSOURCING AGREEMENT",
+    "clause": "Notwithstanding any other provision of this Agreement, Metavante's maximum liability with respect to any Professional Services performed shall be limited to the value of the Professional Services engagement giving rise to the claim for Damages.\n\n4.3.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Notwithstanding any other provision of this Agreement, Metavante's maximum liability with respect to any Professional Services performed shall be limited to the value of the Professional Services engagement giving rise to the claim for Damages.",
+        "start": 0,
+        "end": 244,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "OFGBANCORP_03_28_2007-EX-10.23-OUTSOURCING AGREEMENT",
+    "clause": "Metavante's sole responsibility, and Customer's sole remedy, shall be to provide, at Metavante's expense, a conforming replacement card to the appropriate cardholder(s).\n\n(iii) Settlement Account.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Metavante's sole responsibility, and Customer's sole remedy, shall be to provide, at Metavante's expense, a conforming replacement card to the appropriate cardholder(s).",
+        "start": 0,
+        "end": 169,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "DUOSTECHNOLOGIESGROUP,INC_04_21_2009-EX-10.1-STRATEGIC ALLIANCE AGREEMENT",
+    "clause": "This Agreement shall be governed by and interpreted under the laws of the State of Florida, USA,.  The state and federal courts in the jurisdiction in which Palm City, Florida is located shall have non- exclusive jurisdiction for the purposes of  adjudicating any controversy or claim between the parties concerning any breach or alleged breach of this Agreement or performance or  nonperformance of any obligation under this Agreement, save that the parties agree that any dispute or claim concerning either clause 8  Confidentiality or clause 5 Intellectual Property may be raised in any appropriate jurisdiction where the breach or alleged breach has occurred.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement shall be governed by and interpreted under the laws of the State of Florida, USA,.",
+        "start": 0,
+        "end": 97,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "DUOSTECHNOLOGIESGROUP,INC_04_21_2009-EX-10.1-STRATEGIC ALLIANCE AGREEMENT",
+    "clause": "EXCEPT IN CONNECTION WITH A BREACH BY EITHER PARTY OF SECTION 8, EACH PARTY'S LIABILITY FOR DAMAGES HEREUNDER (OTHER THAN IN RESPECT OF ANY CLAIM FOR MONIES DUE)  SHALL NOT EXCEED \u00a3200,000.     10.3 Indemnification by Rubicon.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "EXCEPT IN CONNECTION WITH A BREACH BY EITHER PARTY OF SECTION 8, EACH PARTY'S LIABILITY FOR DAMAGES HEREUNDER (OTHER THAN IN RESPECT OF ANY CLAIM FOR MONIES DUE)  SHALL NOT EXCEED \u00a3200,000.",
+        "start": 0,
+        "end": 189,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "OLDAPIWIND-DOWNLTD_01_08_2016-EX-1.3-AGENCY AGREEMENT1",
+    "clause": "Governing Law This Agreement shall be governed by and construed in accordance with the laws of the Province of Ontario and the federal laws of Canada applicable in the Province of Ontario. 21.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement shall be governed by and construed in accordance with the laws of the Province of Ontario and the federal laws of Canada applicable in the Province of Ontario.",
+        "start": 14,
+        "end": 188,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "MusclepharmCorp_20170208_10-KA_EX-10.38_9893581_EX-10.38_Co-Branding Agreement",
+    "clause": "Governing Law:   This Agreement has been executed and delivered in Los Angeles County in the State of California, and its interpretation, validity and performance shall be construed and enforced in accordance with the laws of the State of California. The exclusive venue for any proceeding to interpret, construe or enforce this Agreement in accordance with Section 22 below shall be Los Angeles County, California.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement has been executed and delivered in Los Angeles County in the State of California, and its interpretation, validity and performance shall be construed and enforced in accordance with the laws of the State of California.",
+        "start": 17,
+        "end": 250,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "MusclepharmCorp_20170208_10-KA_EX-10.38_9893581_EX-10.38_Co-Branding Agreement",
+    "clause": "Endorser shall also supply MusclePharm with at least fifty (50) signed items for each Contract Year, on the Licensed Products or on other items to be mutually agreed upon by the parties hereto, to be used by MusclePharm in connection with the promotion of the Products and/or Licensed Products.\n\n\n\nSource: MUSCLEPHARM CORP, 10-K/A, 2/8/2017\n\n\n\n\n\n\n\n  (i) Representations and Warranties.",
+    "entities": [
+      {
+        "label": "monetary_amount",
+        "text": "Endorser shall also supply MusclePharm with at least fifty (50) signed items for each Contract Year, on the Licensed Products or on other items to be mutually agreed upon by the parties hereto, to be used by MusclePharm in connection with the promotion of the Products and/or Licensed Products.",
+        "start": 0,
+        "end": 294,
+        "cuad_category": "Minimum Commitment"
+      }
+    ],
+    "primary_category": "Minimum Commitment"
+  },
+  {
+    "contract": "MusclepharmCorp_20170208_10-KA_EX-10.38_9893581_EX-10.38_Co-Branding Agreement",
+    "clause": "In no event shall the AS Parties' indemnification obligations to MusclePharm hereunder exceed the after-tax value of the Cash Consideration received by Lender under this Agreement.   (b) By MusclePharm.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "In no event shall the AS Parties' indemnification obligations to MusclePharm hereunder exceed the after-tax value of the Cash Consideration received by Lender under this Agreement.",
+        "start": 0,
+        "end": 180,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "PAXMEDICA,INC_07_02_2020-EX-10.12-Master Service Agreement",
+    "clause": "12.7 This Agreement shall be governed by the laws of the State of Connecticut, U.S.A. without regard to conflict of law principles. Confidential Page 5 of 7 Initials: CL MD Version Jan16_v1",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement shall be governed by the laws of the State of Connecticut, U.S.A. without regard to conflict of law principles.",
+        "start": 5,
+        "end": 131,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "PAXMEDICA,INC_07_02_2020-EX-10.12-Master Service Agreement",
+    "clause": "Neither Party shall be liable to the other Party in respect of any indirect loses or damaged, pure economic nature, loss of profits or income howsoever arising. 5.6.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Neither Party shall be liable to the other Party in respect of any indirect loses or damaged, pure economic nature, loss of profits or income howsoever arising.",
+        "start": 0,
+        "end": 160,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "PAXMEDICA,INC_07_02_2020-EX-10.12-Master Service Agreement",
+    "clause": "12.5 Any action of any kind by either party arising out of this Agreement must be commenced within five (5) years from the date the right, claim, demand, or cause of action shall first arise. 12.6 This Agreement contains the complete and exclusive understanding of the parties with respect to the subject matter hereof.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Any action of any kind by either party arising out of this Agreement must be commenced within five (5) years from the date the right, claim, demand, or cause of action shall first arise.",
+        "start": 5,
+        "end": 191,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "StaarSurgicalCompany_20180801_10-Q_EX-10.37_11289449_EX-10.37_Distributor Agreement",
+    "clause": "Governing Law and Dispute Resolution 25.1 This Agreement, which is in English, shall be governed by and construed in accordance with the laws of the State of California without regard to the conflicts of laws principles thereof. The parties hereby expressly disclaim and exclude any applicable provisions of the United Nations Convention for the International Sales of Goods.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement, which is in English, shall be governed by and construed in accordance with the laws of the State of California without regard to the conflicts of laws principles thereof.",
+        "start": 42,
+        "end": 228,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "StaarSurgicalCompany_20180801_10-Q_EX-10.37_11289449_EX-10.37_Distributor Agreement",
+    "clause": "14.3 Notwithstanding the provisions of Section 3 above, either party shall have the right to terminate this Agreement, without cause, upon no less than ninety (90) days' prior written notice to the other party.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "Notwithstanding the provisions of Section 3 above, either party shall have the right to terminate this Agreement, without cause, upon no less than ninety (90) days' prior written notice to the other party.",
+        "start": 5,
+        "end": 210,
+        "cuad_category": "Termination For Convenience"
+      }
+    ],
+    "primary_category": "Termination For Convenience"
+  },
+  {
+    "contract": "StaarSurgicalCompany_20180801_10-Q_EX-10.37_11289449_EX-10.37_Distributor Agreement",
+    "clause": "Failure of Distributor to purchase the Minimum Purchase Quantities for any Contract Year, shall be considered a material breach of this Agreement. 8.",
+    "entities": [
+      {
+        "label": "monetary_amount",
+        "text": "Failure of Distributor to purchase the Minimum Purchase Quantities for any Contract Year, shall be considered a material breach of this Agreement.",
+        "start": 0,
+        "end": 146,
+        "cuad_category": "Minimum Commitment"
+      }
+    ],
+    "primary_category": "Minimum Commitment"
+  },
+  {
+    "contract": "StaarSurgicalCompany_20180801_10-Q_EX-10.37_11289449_EX-10.37_Distributor Agreement",
+    "clause": "Without limiting the above, and to the maximum extent permitted by applicable law, Distributor's sole remedy in contract or in tort (including in negligence) and STAAR's liability shall be limited to the repair or replacement of any Product which is returned to and found to be defective or non-conforming by STAAR. 9.2 Distributor shall not make any representation or warranty as to the Products except for the warranty stated in Section 9.1 above.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Without limiting the above, and to the maximum extent permitted by applicable law, Distributor's sole remedy in contract or in tort (including in negligence) and STAAR's liability shall be limited to the repair or replacement of any Product which is returned to and found to be defective or non-conforming by STAAR.",
+        "start": 0,
+        "end": 315,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "StaarSurgicalCompany_20180801_10-Q_EX-10.37_11289449_EX-10.37_Distributor Agreement",
+    "clause": "To the maximum extent permitted by applicable law, the exclusive remedy for breach of the Warranty shall be, at STAAR's option, the repair or replacement, at STAAR's expense, of the non-conforming Product; provided that Distributor notifies STAAR of the non-conformity and returns the non-conforming Product within the Warranty Period. Products may only be returned by Distributor when accompanied by a return material authorization number issued by STAAR.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "To the maximum extent permitted by applicable law, the exclusive remedy for breach of the Warranty shall be, at STAAR's option, the repair or replacement, at STAAR's expense, of the non-conforming Product; provided that Distributor notifies STAAR of the non-conformity and returns the non-conforming Product within the Warranty Period.",
+        "start": 0,
+        "end": 335,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "EmeraldHealthBioceuticalsInc_20200218_1-A_EX1A-6 MAT CTRCT_11987205_EX1A-6 MAT CTRCT_Development Agreement",
+    "clause": "6.2 Termination EHS or EHN, on the one hand, and Dr. Murray, on the other, may terminate any Services Term of this Agreement by delivering 60 days written notice to the other party. Notwithstanding the foregoing, EHS or EHN may immediately terminate the Services Term without notice should Dr.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "EHS or EHN, on the one hand, and Dr. Murray, on the other, may terminate any Services Term of this Agreement by delivering 60 days written notice to the other party.",
+        "start": 16,
+        "end": 181,
+        "cuad_category": "Termination For Convenience"
+      }
+    ],
+    "primary_category": "Termination For Convenience"
+  },
+  {
+    "contract": "DRIVENDELIVERIES,INC_05_22_2020-EX-10.4-CONSULTING AGREEMENT",
+    "clause": "IN NO EVENT SHALL COMPANY'S AGGREGATE LIABILITY ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT EXCEED THE AMOUNTS PAID BY COMPANY TO CONSULTANT UNDER THIS AGREEMENT FOR THE SERVICES, DELIVERABLES OR INVENTION GIVING RISE TO SUCH LIABILITY. 11.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "IN NO EVENT SHALL COMPANY'S AGGREGATE LIABILITY ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT EXCEED THE AMOUNTS PAID BY COMPANY TO CONSULTANT UNDER THIS AGREEMENT FOR THE SERVICES, DELIVERABLES OR INVENTION GIVING RISE TO SUCH LIABILITY.",
+        "start": 0,
+        "end": 244,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "ClickstreamCorp_20200330_1-A_EX1A-6 MAT CTRCT_12089935_EX1A-6 MAT CTRCT_Development Agreement",
+    "clause": "Client has the unilateral right to cancel this agreement at any time within a 7-day notice period. Further, Developer can only cancel due to lack of payment.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "Client has the unilateral right to cancel this agreement at any time within a 7-day notice period.",
+        "start": 0,
+        "end": 98,
+        "cuad_category": "Termination For Convenience"
+      }
+    ],
+    "primary_category": "Termination For Convenience"
+  },
+  {
+    "contract": "NEOMEDIATECHNOLOGIESINC_12_15_2005-EX-16.1-DISTRIBUTOR AGREEMENT",
+    "clause": "For the avoidance of          doubt, PPG SHANGHAI hereby declares and represents that PPG SHANGHAI is          not responsible for any damage to the Products after they have been          taken away from PPG SHANGHAI's warehouse and caused by DISTRIBUTOR or          its transport agent.\n\n11.2     It is PPG SHANGHAI's responsibility to ensure that mis-delivery of          Product is kept to the minimum.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "For the avoidance of          doubt, PPG SHANGHAI hereby declares and represents that PPG SHANGHAI is          not responsible for any damage to the Products after they have been          taken away from PPG SHANGHAI's warehouse and caused by DISTRIBUTOR or          its transport agent.",
+        "start": 0,
+        "end": 287,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "LejuHoldingsLtd_20140121_DRS (on F-1)_EX-10.26_8473102_EX-10.26_Content License Agreement1",
+    "clause": "This Agreement and any dispute or claim arising out of or in connection with it or its subject matter shall be governed by, and construed in accordance with, the laws of the People's Republic of China (without regard to its conflicts of laws rules that would mandate the application of the laws of another jurisdiction).   10.12.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement and any dispute or claim arising out of or in connection with it or its subject matter shall be governed by, and construed in accordance with, the laws of the People's Republic of China (without regard to its conflicts of laws rules that would mandate the application of the laws of another jurisdiction).",
+        "start": 0,
+        "end": 320,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "VISIUMTECHNOLOGIES,INC_10_20_2004-EX-10.20-DISTRIBUTOR AGREEMENT",
+    "clause": "REPAIR OR REPLACEMENT BY WLI AS PROVIDED IN THIS LIMITED WARRANTY IS YOUR EXCLUSIVE REMEDY UNDER THIS LIMITED WARRANTY. WLI SHALL NOT BE LIABLE FOR ANY SPECIAL, INCIDENTAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "REPAIR OR REPLACEMENT BY WLI AS PROVIDED IN THIS LIMITED WARRANTY IS YOUR EXCLUSIVE REMEDY UNDER THIS LIMITED WARRANTY.",
+        "start": 0,
+        "end": 119,
+        "cuad_category": "Cap On Liability"
+      },
+      {
+        "label": "liability_cap",
+        "text": "WLI SHALL NOT BE LIABLE FOR ANY SPECIAL, INCIDENTAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES.",
+        "start": 120,
+        "end": 208,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "VISIUMTECHNOLOGIES,INC_10_20_2004-EX-10.20-DISTRIBUTOR AGREEMENT",
+    "clause": "Under no circumstances shall WLI be liable to Power2Ship or to any other person or entity for any incidental, special or consequential damages whether arising out of breach of warranty, breach of contract or otherwise even if WLI has been advised of the possibility of such claims or demands.\n\n11.3.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Under no circumstances shall WLI be liable to Power2Ship or to any other person or entity for any incidental, special or consequential damages whether arising out of breach of warranty, breach of contract or otherwise even if WLI has been advised of the possibility of such claims or demands.",
+        "start": 0,
+        "end": 292,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "VISIUMTECHNOLOGIES,INC_10_20_2004-EX-10.20-DISTRIBUTOR AGREEMENT",
+    "clause": "WLI SHALL NOT BE LIABLE FOR ANY SPECIAL, INCIDENTAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES. WLI DISCLAIMS ALL OTHER WARRANTIES, WHETHER EXPRESS, IMPLIED, OR STATUTORY INCLUDING BUT NOT LIMITED TO, ALL IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR ANY WARRANTY ARISING OUT OF ANY PROPOSAL, SPECIFICATION OR SAMPLE. ANY SOFTWARE PROVIDED WITH THE EQUIPMENT IS PROVIDED UNDER A SEPARATE SOFTWARE LICENSE AGREEMENT.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "WLI SHALL NOT BE LIABLE FOR ANY SPECIAL, INCIDENTAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES.",
+        "start": 0,
+        "end": 88,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "CybergyHoldingsInc_20140520_10-Q_EX-10.27_8605784_EX-10.27_Affiliate Agreement",
+    "clause": "Company's liability shall not exceed the fees that MA has paid under this Agreement. MA agrees that the pricing for the services would be substantially higher but for these limitations.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Company's liability shall not exceed the fees that MA has paid under this Agreement.",
+        "start": 0,
+        "end": 84,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "CybergyHoldingsInc_20140520_10-Q_EX-10.27_8605784_EX-10.27_Affiliate Agreement",
+    "clause": "Company is not liable for incidental, special or consequential damages for any reason (including loss of data or other business or property damage), even if foreseeable or if MA or Customer has advised of such a claim. Company's liability shall not exceed the fees that MA has paid under this Agreement.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Company's liability shall not exceed the fees that MA has paid under this Agreement.",
+        "start": 219,
+        "end": 303,
+        "cuad_category": "Cap On Liability"
+      },
+      {
+        "label": "liability_cap",
+        "text": "Company is not liable for incidental, special or consequential damages for any reason (including loss of data or other business or property damage), even if foreseeable or if MA or Customer has advised of such a claim.",
+        "start": 0,
+        "end": 218,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "CybergyHoldingsInc_20140520_10-Q_EX-10.27_8605784_EX-10.27_Affiliate Agreement",
+    "clause": "The foregoing states the entire liability of Company with respect to infringement of intellectual property rights.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "The foregoing states the entire liability of Company with respect to infringement of intellectual property rights.",
+        "start": 0,
+        "end": 114,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "WestPharmaceuticalServicesInc_20200116_8-K_EX-10.1_11947529_EX-10.1_Supply Agreement",
+    "clause": "This Agreement between EM and Buyer shall be governed by the laws of Belgium (excluding its rules on conflict of laws). Neither the Uniform Law on the International Sale of Goods ('ULIS'), nor the United Nations Convention on Contracts for the International Sale of Goods 1980 ('CISG') shall apply.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement between EM and Buyer shall be governed by the laws of Belgium (excluding its rules on conflict of laws).",
+        "start": 0,
+        "end": 119,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "WestPharmaceuticalServicesInc_20200116_8-K_EX-10.1_11947529_EX-10.1_Supply Agreement",
+    "clause": "IN NO EVENT SHALL SELLER BE LIABLE FOR SPECIAL, INCIDENTAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES. Any cause of action that Buyer may have against Seller and which may arise in connection with the transaction(s) specified herein must be commenced within two (2) years after the cause of action has accrued.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "IN NO EVENT SHALL SELLER BE LIABLE FOR SPECIAL, INCIDENTAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES.",
+        "start": 0,
+        "end": 95,
+        "cuad_category": "Cap On Liability"
+      },
+      {
+        "label": "liability_cap",
+        "text": "Any cause of action that Buyer may have against Seller and which may arise in connection with the transaction(s) specified herein must be commenced within two (2) years after the cause of action has accrued.",
+        "start": 96,
+        "end": 303,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "WestPharmaceuticalServicesInc_20200116_8-K_EX-10.1_11947529_EX-10.1_Supply Agreement",
+    "clause": "Any cause of action that Buyer may have against Seller and which may arise in connection with the transaction(s) specified herein must be commenced within two (2) years after the cause of action has accrued.\n\n10.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Any cause of action that Buyer may have against Seller and which may arise in connection with the transaction(s) specified herein must be commenced within two (2) years after the cause of action has accrued.",
+        "start": 0,
+        "end": 207,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "WestPharmaceuticalServicesInc_20200116_8-K_EX-10.1_11947529_EX-10.1_Supply Agreement",
+    "clause": "Claims by Buyer are waived unless made in writing within 150 days from date of (non-) delivery. Buyer shall indemnity and hold EM harmless in respect of all claims for which Buyer is liable.\n\n15.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Claims by Buyer are waived unless made in writing within 150 days from date of (non-) delivery.",
+        "start": 0,
+        "end": 95,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "WestPharmaceuticalServicesInc_20200116_8-K_EX-10.1_11947529_EX-10.1_Supply Agreement",
+    "clause": "EM's maximum liability for all claims for any reason is the sales price of the product involved and EM shall not be liable for indirect or consequential damage. Claims by Buyer are waived unless made in writing within 150 days from date of (non-) delivery.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Claims by Buyer are waived unless made in writing within 150 days from date of (non-) delivery.",
+        "start": 161,
+        "end": 256,
+        "cuad_category": "Cap On Liability"
+      },
+      {
+        "label": "liability_cap",
+        "text": "EM's maximum liability for all claims for any reason is the sales price of the product involved and EM shall not be liable for indirect or consequential damage.",
+        "start": 0,
+        "end": 160,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "PANDIONTHERAPEUTICSHOLDCOLLC_05_22_2020-EX-10.17-CONSULTING AGREEMENT",
+    "clause": "The Consultant may terminate the Consultation Period at any time upon thirty (30) days' written notice.\n\n5.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "The Consultant may terminate the Consultation Period at any time upon thirty (30) days' written notice.",
+        "start": 0,
+        "end": 103,
+        "cuad_category": "Termination For Convenience"
+      }
+    ],
+    "primary_category": "Termination For Convenience"
+  },
+  {
+    "contract": "EUROPEANMICROHOLDINGSINC_03_06_1998-EX-10.6-DISTRIBUTOR AGREEMENT",
+    "clause": "This Agreement will be governed by and interpreted in      accordance with the local laws of the State of Washington, U.S.A., without      regard to its conflicts of law provisions and not including the provisions      of the 1980 U.N. Convention in Contracts for the International Sale of      Goods. Distributor irrevocably consents, and submits to the jurisdiction of      the Federal and State courts of and located in King County, in the State of      Washington, U.S.A.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement will be governed by and interpreted in      accordance with the local laws of the State of Washington, U.S.A., without      regard to its conflicts of law provisions and not including the provisions      of the 1980 U.N. Convention in Contracts for the International Sale of      Goods.",
+        "start": 0,
+        "end": 301,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "EUROPEANMICROHOLDINGSINC_03_06_1998-EX-10.6-DISTRIBUTOR AGREEMENT",
+    "clause": "Therefore,      the parties have agreed upon the above payment of liquidated damages in      lieu of WGT's claim for actual damages from such breach.\n\n5.4  Termination by Distributor.",
+    "entities": [
+      {
+        "label": "penalty_condition",
+        "text": "Therefore,      the parties have agreed upon the above payment of liquidated damages in      lieu of WGT's claim for actual damages from such breach.",
+        "start": 0,
+        "end": 149,
+        "cuad_category": "Liquidated Damages"
+      }
+    ],
+    "primary_category": "Liquidated Damages"
+  },
+  {
+    "contract": "EUROPEANMICROHOLDINGSINC_03_06_1998-EX-10.6-DISTRIBUTOR AGREEMENT",
+    "clause": "Distributor shall pay WGT fifty percent (50%) of the unpaid      balance of cumulative Guaranteed Minimum Purchase amounts as liquidated      damages. The parties acknowledge and agree that it would be difficult or      impossible to calculate WGT's actual damages arising from Distributor's      failure to timely pay all of the Guaranteed Minimum Purchases. Therefore,      the parties have agreed upon the above payment of liquidated damages in      lieu of WGT's claim for actual damages from such breach.",
+    "entities": [
+      {
+        "label": "penalty_condition",
+        "text": "Therefore,      the parties have agreed upon the above payment of liquidated damages in      lieu of WGT's claim for actual damages from such breach.",
+        "start": 360,
+        "end": 509,
+        "cuad_category": "Liquidated Damages"
+      },
+      {
+        "label": "penalty_condition",
+        "text": "Distributor shall pay WGT fifty percent (50%) of the unpaid      balance of cumulative Guaranteed Minimum Purchase amounts as liquidated      damages.",
+        "start": 0,
+        "end": 150,
+        "cuad_category": "Liquidated Damages"
+      }
+    ],
+    "primary_category": "Liquidated Damages"
+  },
+  {
+    "contract": "BizzingoInc_20120322_8-K_EX-10.17_7504499_EX-10.17_Endorsement Agreement",
+    "clause": "Theismann shall have the right to terminate this Agreement at any time upon thirty (30) days' written notice to Bizzingo, such  termination to become effective at the conclusion of such 30-day period.\n\n6\n\nSource: BIZZINGO, INC., 8-K, 3/22/2012\n\n\n\n\n\n   12.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "Theismann shall have the right to terminate this Agreement at any time upon thirty (30) days' written notice to Bizzingo, such  termination to become effective at the conclusion of such 30-day period.",
+        "start": 0,
+        "end": 200,
+        "cuad_category": "Termination For Convenience"
+      }
+    ],
+    "primary_category": "Termination For Convenience"
+  },
+  {
+    "contract": "KitovPharmaLtd_20190326_20-F_EX-4.15_11584449_EX-4.15_Manufacturing Agreement",
+    "clause": "10 Governing Law; Venue 10.1 This Agreement shall be interpreted and enforced exclusively under the laws of the State of Israel, without regard to the conflict of laws provisions thereof. 10.2 The Parties submit to the exclusive jurisdiction of the competent courts of Tel-Aviv in any dispute related to this Agreement without giving effect to choice of law rules.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement shall be interpreted and enforced exclusively under the laws of the State of Israel, without regard to the conflict of laws provisions thereof.",
+        "start": 29,
+        "end": 187,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "BLACKSTONEGSOLONG-SHORTCREDITINCOMEFUND_05_11_2020-EX-99.(K)(1)-SERVICE AGREEMENT",
+    "clause": "In no\n\n\n\n\n\nevent will Agent be liable for special, indirect, incidental, consequential or punitive losses or damages of any kind whatsoever (including but not limited to lost profits), even if Agent has been advised of the possibility of such losses or damages and regardless of the form of action. Any liability of Agent will be limited in the aggregate to an amount equal to twenty four (24) times the monthly administrative fee to be paid by Client as set forth in Exhibit B hereto.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Any liability of Agent will be limited in the aggregate to an amount equal to twenty four (24) times the monthly administrative fee to be paid by Client as set forth in Exhibit B hereto.",
+        "start": 299,
+        "end": 485,
+        "cuad_category": "Cap On Liability"
+      },
+      {
+        "label": "liability_cap",
+        "text": "In no\n\n\n\n\n\nevent will Agent be liable for special, indirect, incidental, consequential or punitive losses or damages of any kind whatsoever (including but not limited to lost profits), even if Agent has been advised of the possibility of such losses or damages and regardless of the form of action.",
+        "start": 0,
+        "end": 298,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "PHLVARIABLEINSURANCECOCT_08_17_2009-EX-10.1-STRATEGIC ALLIANCE AGREEMENT",
+    "clause": "Each Investors Capital  Party acknowledges that none of the PHL Parties or their Affiliates shall be deemed to have guaranteed the  profitability of the GIE or any volume of sales, and no indemnification shall arise based on an assertion of such a  guarantee of profitability of the GIE or volume of sales.\n\n  12.02 Indemnification by the ICC.\n\n  12.02.1 Indemnification.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Each Investors Capital  Party acknowledges that none of the PHL Parties or their Affiliates shall be deemed to have guaranteed the  profitability of the GIE or any volume of sales, and no indemnification shall arise based on an assertion of such a  guarantee of profitability of the GIE or volume of sales.",
+        "start": 0,
+        "end": 306,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "PHLVARIABLEINSURANCECOCT_08_17_2009-EX-10.1-STRATEGIC ALLIANCE AGREEMENT",
+    "clause": "Each PHL Party acknowledges that neither ICAS nor any of its Affiliates shall be  deemed to have guaranteed the profitability of the GIE or any volume of sales, and no indemnification shall arise in  connection with profitability of the GIE or volume of sales.\n\n\n\n12.03 Inter-Party Claims.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Each PHL Party acknowledges that neither ICAS nor any of its Affiliates shall be  deemed to have guaranteed the profitability of the GIE or any volume of sales, and no indemnification shall arise in  connection with profitability of the GIE or volume of sales.",
+        "start": 0,
+        "end": 260,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "SimplicityEsportsGamingCompany_20181130_8-K_EX-10.1_11444071_EX-10.1_Franchise Agreement",
+    "clause": "Franchisee or third party sub -franchisees shall be under an obligation to set up at least 6 (six) Smaaash Centres during the first Contract Year or any other time period as may be provided by Franchisor. The Smaaash Centres shall be established and operated in the Territory using the assumed trade name 'Smaaash'or any other trade name that the Franchisor may designate.",
+    "entities": [
+      {
+        "label": "monetary_amount",
+        "text": "Franchisee or third party sub -franchisees shall be under an obligation to set up at least 6 (six) Smaaash Centres during the first Contract Year or any other time period as may be provided by Franchisor.",
+        "start": 0,
+        "end": 204,
+        "cuad_category": "Minimum Commitment"
+      }
+    ],
+    "primary_category": "Minimum Commitment"
+  },
+  {
+    "contract": "RemarkHoldingsInc_20081114_10-Q_EX-10.24_2895649_EX-10.24_Content License Agreement",
+    "clause": "Additionally, the Affinities shall collectively contain at least sixteen thousand (16,000) Articles written in simplified Chinese characters, with an average and median number of words per Article of no less than one thousand (1,000) simplified Chinese characters.   (ii) Delivery.",
+    "entities": [
+      {
+        "label": "monetary_amount",
+        "text": "Additionally, the Affinities shall collectively contain at least sixteen thousand (16,000) Articles written in simplified Chinese characters, with an average and median number of words per Article of no less than one thousand (1,000) simplified Chinese characters.",
+        "start": 0,
+        "end": 264,
+        "cuad_category": "Minimum Commitment"
+      }
+    ],
+    "primary_category": "Minimum Commitment"
+  }
+]

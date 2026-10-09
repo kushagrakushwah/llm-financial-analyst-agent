@@ -62,7 +62,7 @@ async def add_process_time_header(request: Request, call_next):
 
 
 MODEL_PATH = os.getenv("MODEL_PATH", "Qwen/Qwen2.5-7B-Instruct")
-USE_MOCK_LLM = os.getenv("USE_MOCK_LLM", "auto").lower()
+USE_MOCK_LLM = os.getenv("USE_MOCK_LLM", "true" if not torch.cuda.is_available() else "auto").lower()
 
 _pipe = None
 
@@ -272,6 +272,8 @@ def extract_hierarchical(req: HierarchicalExtractRequest):
         doc_type=req.document_type,
         threshold=req.threshold,
         fallback_threshold=req.fallback_threshold,
+        enable_dynamic_fallback=req.enable_dynamic_fallback,
+        llm_pipeline=_pipe,
     )
 
 

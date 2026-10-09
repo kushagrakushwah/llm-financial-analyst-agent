@@ -1,0 +1,1962 @@
+[
+  {
+    "contract": "TRICITYBANKSHARESCORP_05_15_1998-EX-10-OUTSOURCING AGREEMENT",
+    "clause": "MODIFICATION OR TERMINATION OF SERVICES   10.1 Modifications to Services      10.2 Partial Termination by M&I     10.3 Partial Termination by Customer     10.4 Development of Custom Software\n\n\n\n\n\n11.",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "Customer",
+        "start": 142,
+        "end": 150,
+        "cuad_category": "Parties"
+      }
+    ],
+    "primary_category": "Parties"
+  },
+  {
+    "contract": "BLUEHILLSBANCORP,INC_05_20_2014-EX-1.1-AGENCY AGREEMENT",
+    "clause": "It is expressly agreed that the Agent shall not be liable for any loss, liability, claim, damage or expense or be required to contribute any amount pursuant to Section 9(b) or this Section 10 which in the aggregate exceeds the amount paid (excluding reimbursable expenses) to the Agent under this Agreement. It is understood that the above stated limitation on the Agent's liability is essential to the Agent and that the Agent would not have entered into this Agreement if such limitation had not been agreed to by the parties to this Agreement.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "It is expressly agreed that the Agent shall not be liable for any loss, liability, claim, damage or expense or be required to contribute any amount pursuant to Section 9(b) or this Section 10 which in the aggregate exceeds the amount paid (excluding reimbursable expenses) to the Agent under this Agreement.",
+        "start": 0,
+        "end": 307,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "HC2HOLDINGS,INC_05_14_2020-EX-10.1-COOPERATION AGREEMENT",
+    "clause": "Exhibit 10.1 COOPERATION AGREEMENT This Cooperation Agreement (this \"Agreement\"), dated as of May 13, 2020, is by and among MG Capital Management Ltd., a Cayman Islands company limited by shares (\"MG Capital\"), Percy Rockdale LLC, a Michigan limited liability company (\"Percy Rockdale\"), Rio Royal LLC, a Michigan limited liability company (\"Rio Royal\", and together with MG Capital and Percy Rockdale, the \"MG Capital Parties\") and HC2 Holdings, Inc., a Delaware corporation (the \"Company\").",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "\"Rio Royal\", and together with MG Capital and Percy Rockdale, the \"MG Capital Parties\"",
+        "start": 341,
+        "end": 427,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "MG Capital",
+        "start": 124,
+        "end": 134,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Company",
+        "start": 482,
+        "end": 489,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "MG Capital Parties",
+        "start": 408,
+        "end": 426,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Percy Rockdale",
+        "start": 211,
+        "end": 225,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "MG Capital Management Ltd.",
+        "start": 124,
+        "end": 150,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "HC2 Holdings, Inc.",
+        "start": 433,
+        "end": 451,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Rio Royal LLC",
+        "start": 288,
+        "end": 301,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Percy Rockdale LLC",
+        "start": 211,
+        "end": 229,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "effective_date",
+        "text": "May 13, 2020",
+        "start": 94,
+        "end": 106,
+        "cuad_category": "Agreement Date"
+      }
+    ],
+    "primary_category": "Parties"
+  },
+  {
+    "contract": "HC2HOLDINGS,INC_05_14_2020-EX-10.1-COOPERATION AGREEMENT",
+    "clause": "This Agreement will terminate upon the earlier of: (i) the conclusion of the Standstill Period or (ii) delivery of written notice by one Party to the other Party of a material breach of this Agreement by the breaching Party that is uncured after ten (10) calendar days of notice of such breach. Upon such termination, this Agreement shall have no further force and effect.",
+    "entities": [
+      {
+        "label": "expiration_date",
+        "text": "This Agreement will terminate upon the earlier of: (i) the conclusion of the Standstill Period or (ii) delivery of written notice by one Party to the other Party of a material breach of this Agreement by the breaching Party that is uncured after ten (10) calendar days of notice of such breach.",
+        "start": 0,
+        "end": 294,
+        "cuad_category": "Expiration Date"
+      }
+    ],
+    "primary_category": "Expiration Date"
+  },
+  {
+    "contract": "COOLTECHNOLOGIES,INC_10_25_2017-EX-10.71-Strategic Alliance Agreement",
+    "clause": "This Agreement shall be effective as of the date first set forth above and, shall expire on the later of (i) five (5) years from the date hereof, or (ii) with respect to any projects identified in any contract for which VET TECH is billing the client directly, upon the completion of COOL TECH's Services and receipt of payment by COOL TECH from VET TECH for said services. This Agreement shall be automatically renewed for successive one year periods unless either party gives written notice of termination to the other party at least thirty (30) days prior to the date of expiration.",
+    "entities": [
+      {
+        "label": "expiration_date",
+        "text": "This Agreement shall be effective as of the date first set forth above and, shall expire on the later of (i) five (5) years from the date hereof, or (ii) with respect to any projects identified in any contract for which VET TECH is billing the client directly, upon the completion of COOL TECH's Services and receipt of payment by COOL TECH from VET TECH for said services.",
+        "start": 0,
+        "end": 373,
+        "cuad_category": "Expiration Date"
+      },
+      {
+        "label": "termination_clause",
+        "text": "This Agreement shall be automatically renewed for successive one year periods unless either party gives written notice of termination to the other party at least thirty (30) days prior to the date of expiration.",
+        "start": 374,
+        "end": 585,
+        "cuad_category": "Notice Period To Terminate Renewal"
+      }
+    ],
+    "primary_category": "Expiration Date"
+  },
+  {
+    "contract": "COOLTECHNOLOGIES,INC_10_25_2017-EX-10.71-Strategic Alliance Agreement",
+    "clause": "This Agreement shall be automatically renewed for successive one year periods unless either party gives written notice of termination to the other party at least thirty (30) days prior to the date of expiration. Notwithstanding the foregoing, this Agreement shall be earlier terminated (x) by mutual agreement of the parties, or (y) at any time upon sixty (60) days advance written notice to the other party.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "This Agreement shall be automatically renewed for successive one year periods unless either party gives written notice of termination to the other party at least thirty (30) days prior to the date of expiration.",
+        "start": 0,
+        "end": 211,
+        "cuad_category": "Notice Period To Terminate Renewal"
+      },
+      {
+        "label": "termination_clause",
+        "text": "Notwithstanding the foregoing, this Agreement shall be earlier terminated (x) by mutual agreement of the parties, or (y) at any time upon sixty (60) days advance written notice to the other party.",
+        "start": 212,
+        "end": 408,
+        "cuad_category": "Termination For Convenience"
+      }
+    ],
+    "primary_category": "Notice Period To Terminate Renewal"
+  },
+  {
+    "contract": "COOLTECHNOLOGIES,INC_10_25_2017-EX-10.71-Strategic Alliance Agreement",
+    "clause": "Governing Law: This Agreement shall be governed by and construed in accordance with the laws of the State of Missouri. Without giving effect to its choice of law principles.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement shall be governed by and construed in accordance with the laws of the State of Missouri.",
+        "start": 15,
+        "end": 118,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "COOLTECHNOLOGIES,INC_10_25_2017-EX-10.71-Strategic Alliance Agreement",
+    "clause": "Notwithstanding the foregoing, this Agreement shall be earlier terminated (x) by mutual agreement of the parties, or (y) at any time upon sixty (60) days advance written notice to the other party. Time is of the essence in this Agreement.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "Notwithstanding the foregoing, this Agreement shall be earlier terminated (x) by mutual agreement of the parties, or (y) at any time upon sixty (60) days advance written notice to the other party.",
+        "start": 0,
+        "end": 196,
+        "cuad_category": "Termination For Convenience"
+      }
+    ],
+    "primary_category": "Termination For Convenience"
+  },
+  {
+    "contract": "ALLIANCEBANCORPINCOFPENNSYLVANIA_10_18_2006-EX-1.2-AGENCY AGREEMENT",
+    "clause": "of Pennsylvania, a federal stock holding company in formation (the \"Company\"), and Greater Delaware Valley Savings Bank d/b/a Alliance Bank, a Pennsylvania-chartered stock savings bank (the \"Bank\"), hereby confirm their agreement with Sandler O'Neill & Partners, L.P.",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "Sandler O'Neill",
+        "start": 235,
+        "end": 250,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Greater Delaware Valley Savings Bank d/b/a Alliance Bank",
+        "start": 83,
+        "end": 139,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Sandler O'Neill & Partners, L.P.",
+        "start": 235,
+        "end": 267,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Bank",
+        "start": 115,
+        "end": 119,
+        "cuad_category": "Parties"
+      }
+    ],
+    "primary_category": "Parties"
+  },
+  {
+    "contract": "ALLIANCEBANCORPINCOFPENNSYLVANIA_10_18_2006-EX-1.2-AGENCY AGREEMENT",
+    "clause": "(\"Sandler O'Neill\" or the \"Agent\") with respect to the offer and sale by the Company of up to 2,445,223 shares (subject to increase to up to 2,812,006 shares in the event of an increase in the pro forma market value of the Company's common stock) of the Company's common stock, par value $.01 per share (the \"Common Stock\"). The shares of Common Stock to be sold by the Company in the Offerings (as defined below) are hereinafter called the \"Securities.\"",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "Agent",
+        "start": 27,
+        "end": 32,
+        "cuad_category": "Parties"
+      }
+    ],
+    "primary_category": "Parties"
+  },
+  {
+    "contract": "ALLIANCEBANCORPINCOFPENNSYLVANIA_10_18_2006-EX-1.2-AGENCY AGREEMENT",
+    "clause": "919 Third Avenue, 6  Floor New York, New York 10022\n\nLadies and Gentlemen:\n\nGreater Delaware Valley Holdings, A Mutual Company, a Pennsylvania-chartered mutual holding company (the \"PA MHC\"), Alliance Mutual Holding Company, a federal mutual savings and loan holding company in formation (the \"Federal MHC\"), Alliance Bancorp, Inc.",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "Alliance Mutual Holding Company",
+        "start": 192,
+        "end": 223,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "PA MHC",
+        "start": 182,
+        "end": 188,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Federal MHC",
+        "start": 294,
+        "end": 305,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Greater Delaware Valley Holdings",
+        "start": 76,
+        "end": 108,
+        "cuad_category": "Parties"
+      }
+    ],
+    "primary_category": "Parties"
+  },
+  {
+    "contract": "ALLIANCEBANCORPINCOFPENNSYLVANIA_10_18_2006-EX-1.2-AGENCY AGREEMENT",
+    "clause": "of Pennsylvania, a federal stock holding company in formation (the \"Company\"), and Greater Delaware Valley Savings Bank d/b/a Alliance Bank, a Pennsylvania-chartered stock savings bank (the \"Bank\"), hereby confirm their agreement with Sandler O'Neill & Partners, L.P. (\"Sandler O'Neill\" or the \"Agent\") with respect to the offer and sale by the Company of up to 2,445,223 shares (subject to increase to up to 2,812,006 shares in the event of an increase in the pro forma market value of the Company's common stock) of the Company's common stock, par value $.01 per share (the \"Common Stock\"). The shares of Common Stock to be sold by the Company in the Offerings (as defined below) are hereinafter called the \"Securities.\"",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "Sandler O'Neill",
+        "start": 235,
+        "end": 250,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Agent",
+        "start": 295,
+        "end": 300,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Greater Delaware Valley Savings Bank d/b/a Alliance Bank",
+        "start": 83,
+        "end": 139,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Sandler O'Neill & Partners, L.P.",
+        "start": 235,
+        "end": 267,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Bank",
+        "start": 115,
+        "end": 119,
+        "cuad_category": "Parties"
+      }
+    ],
+    "primary_category": "Parties"
+  },
+  {
+    "contract": "XpresspaGroupInc_20190401_10-K_EX-10.28_11599457_EX-10.28_Marketing Agreement",
+    "clause": "Exhibit 10.28 PRODUCT SALE AND MARKETING AGREEMENT THIS PRODUCT SALE AND MARKETING AGREEMENT (this \"Agreement\") is made this 12th day of November, 2018 (the \"Effective Date\"), by and between Calm.com, Inc., a Delaware corporation, having offices at 140 2nd Street, 3rd Floor, San Francisco, California 94105 (\"Calm\") and XpresSpa Group, Inc., a Delaware corporation, having offices at 780 Third Avenue, 12th Floor, New York, New York 10017 (\"XSPA\").",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "Calm",
+        "start": 191,
+        "end": 195,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "XSPA",
+        "start": 442,
+        "end": 446,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Calm.com, Inc.,",
+        "start": 191,
+        "end": 206,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "XpresSpa Group, Inc.",
+        "start": 321,
+        "end": 341,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "effective_date",
+        "text": "12th day of November, 2018",
+        "start": 125,
+        "end": 151,
+        "cuad_category": "Agreement Date"
+      },
+      {
+        "label": "effective_date",
+        "text": "12th day of November, 2018",
+        "start": 125,
+        "end": 151,
+        "cuad_category": "Effective Date"
+      }
+    ],
+    "primary_category": "Parties"
+  },
+  {
+    "contract": "XpresspaGroupInc_20190401_10-K_EX-10.28_11599457_EX-10.28_Marketing Agreement",
+    "clause": "Following the Initial Term, this Agreement shall automatically renew for successive terms of six (6) months (each a \"Renewal Term\", and together with the Initial Term, the \"Term\") unless written notice is given by either Party no later than thirty (30) days in advance of the expiration of the Initial Term or the applicable Renewal Term. 2.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "Following the Initial Term, this Agreement shall automatically renew for successive terms of six (6) months (each a \"Renewal Term\", and together with the Initial Term, the \"Term\") unless written notice is given by either Party no later than thirty (30) days in advance of the expiration of the Initial Term or the applicable Renewal Term.",
+        "start": 0,
+        "end": 338,
+        "cuad_category": "Notice Period To Terminate Renewal"
+      }
+    ],
+    "primary_category": "Notice Period To Terminate Renewal"
+  },
+  {
+    "contract": "XpresspaGroupInc_20190401_10-K_EX-10.28_11599457_EX-10.28_Marketing Agreement",
+    "clause": "XSPA shall pay to Calm on a monthly basis an amount equal to (i) fifty percent (50%) of the Retail Price for all Products sold in the Stores in the Territory during the applicable month minus (ii) fifty percent (50%) of any commission actually paid or payable to XSPA employee(s) or contractor(s) attributable to sales of such Products during such month; provided that in no event shall such commission be greater than fifteen percent (15%) of the Retail Price for the applicable Product. 8.02.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "XSPA shall pay to Calm on a monthly basis an amount equal to (i) fifty percent (50%) of the Retail Price for all Products sold in the Stores in the Territory during the applicable month minus (ii) fifty percent (50%) of any commission actually paid or payable to XSPA employee(s) or contractor(s) attributable to sales of such Products during such month; provided that in no event shall such commission be greater than fifteen percent (15%) of the Retail Price for the applicable Product.",
+        "start": 0,
+        "end": 488,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "XpresspaGroupInc_20190401_10-K_EX-10.28_11599457_EX-10.28_Marketing Agreement",
+    "clause": "Calm shall pay to XSPA on a monthly basis a retail commission of $20.00 for each sale of Calm digital product subscriptions (excluding, for the avoidance of doubt, any free trial subscriptions) that result from XSPA's distribution of Inserts and a customer's use of the unique promotional discount code set forth therein in accordance with the terms and conditions set forth herein (it being understood that XSPA shall ensure fifty percent (50%) of each such commission shall be distributed to the applicable Store's retail employees or contractors via a pool or other format as mutually agreed to by the Parties). Calm shall prepare and maintain complete and accurate books and records covering all transactions relating to this Agreement.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "Calm shall pay to XSPA on a monthly basis a retail commission of $20.00 for each sale of Calm digital product subscriptions (excluding, for the avoidance of doubt, any free trial subscriptions) that result from XSPA's distribution of Inserts and a customer's use of the unique promotional discount code set forth therein in accordance with the terms and conditions set forth herein (it being understood that XSPA shall ensure fifty percent (50%) of each such commission shall be distributed to the applicable Store's retail employees or contractors via a pool or other format as mutually agreed to by the Parties).",
+        "start": 0,
+        "end": 614,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "XpresspaGroupInc_20190401_10-K_EX-10.28_11599457_EX-10.28_Marketing Agreement",
+    "clause": "EXCEPT WITH RESPECT TO EACH PARTY'S INDEMNIFICATION OBLIGATIONS UNDER THIS AGREEMENT, (A) UNDER NO CIRCUMSTANCE AND UNDER NO LEGAL THEORY (TORT, CONTRACT, OR OTHERWISE), SHALL EITHER PARTY BE LIABLE TO THE OTHER PARTY FOR ANY LOST PROFITS, LOSS OF OPPORTUNITY OR OTHER SPECIAL, PUNITIVE, INDIRECT, OR CONSEQUENTIAL DAMAGES SUFFERED BY THE OTHER PARTY ARISING IN CONNECTION WITH THIS AGREEMENT; AND (B) THE MAXIMUM LIABILITY OF EACH PARTY IN ANY WAY RELATED TO THIS AGREEMENT SHALL NOT EXCEED $2,000,000.00 (EXCLUDING ANY AMOUNTS DUE AND PAYABLE PURSUANT TO SECTION \u200b8 HEREUNDER).\n\n12\n\nSource: XPRESSPA GROUP, INC., 10-K, 4/1/2019\n\n\n\n\n\n11.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "EXCEPT WITH RESPECT TO EACH PARTY'S INDEMNIFICATION OBLIGATIONS UNDER THIS AGREEMENT, (A) UNDER NO CIRCUMSTANCE AND UNDER NO LEGAL THEORY (TORT, CONTRACT, OR OTHERWISE), SHALL EITHER PARTY BE LIABLE TO THE OTHER PARTY FOR ANY LOST PROFITS, LOSS OF OPPORTUNITY OR OTHER SPECIAL, PUNITIVE, INDIRECT, OR CONSEQUENTIAL DAMAGES SUFFERED BY THE OTHER PARTY ARISING IN CONNECTION WITH THIS AGREEMENT; AND (B) THE MAXIMUM LIABILITY OF EACH PARTY IN ANY WAY RELATED TO THIS AGREEMENT SHALL NOT EXCEED $2,000,000.00 (EXCLUDING ANY AMOUNTS DUE AND PAYABLE PURSUANT TO SECTION \u200b8 HEREUNDER).",
+        "start": 0,
+        "end": 579,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "ElPolloLocoHoldingsInc_20200306_10-K_EX-10.16_12041700_EX-10.16_Development Agreement",
+    "clause": "This Agreement, after review by Developer and El Pollo Loco, was accepted in the state in which Franchisor's then-current headquarters (currently the State of California) is located and shall be governed by and construed in accordance with the laws of such state, except that the provisions in Section 20.1 covering competition following the expiration, termination or assignment of this Agreement shall be governed by the laws of the state in which the breach occurs. THE PARTIES AGREE THAT ANY ACTION BROUGHT BY EITHER PARTY AGAINST EACH OTHER IN ANY COURT, WHETHER FEDERAL OR STATE, WILL BE BROUGHT WITHIN THE STATE IN WHICH FRANCHISOR'S HEADQUARTERS (CURRENTLY THE STATE OF CALIFORNIA) IS THEN LOCATED.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement, after review by Developer and El Pollo Loco, was accepted in the state in which Franchisor's then-current headquarters (currently the State of California) is located and shall be governed by and construed in accordance with the laws of such state, except that the provisions in Section 20.1 covering competition following the expiration, termination or assignment of this Agreement shall be governed by the laws of the state in which the breach occurs.",
+        "start": 0,
+        "end": 468,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "SEASPINEHOLDINGSCORP_10_10_2018-EX-10.1-SUPPLY AGREEMENT",
+    "clause": "Subject to Section 2.2(c), for so long as the Agreement has not been converted to a non-exclusive arrangement under the provisions of Section 3.2, Integra shall pay PcoMed a Fee of ***% of Net Sales of all Treated Integra Product Sold by Integra or its Affiliates. Subject to Section 2.2(c), for so long as Integra's Rights under the Agreement have been converted to a non-exclusive arrangement under the provisions of Section 3.2, Integra shall pay PcoMed a Fee of ***% of Net Sales of all Treated Integra Product Sold by Integra or its Affiliates. The Fee rate payable shall be determined based on whether this Agreement is exclusive or non-exclusive at the time of Integra's Sale of the Treated Integra Product, not at the time of PcoMed's production of the Treated Integra Product.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "Subject to Section 2.2(c), for so long as the Agreement has not been converted to a non-exclusive arrangement under the provisions of Section 3.2, Integra shall pay PcoMed a Fee of ***% of Net Sales of all Treated Integra Product Sold by Integra or its Affiliates.",
+        "start": 0,
+        "end": 264,
+        "cuad_category": "Revenue/Profit Sharing"
+      },
+      {
+        "label": "penalty_rate",
+        "text": "Subject to Section 2.2(c), for so long as Integra's Rights under the Agreement have been converted to a non-exclusive arrangement under the provisions of Section 3.2, Integra shall pay PcoMed a Fee of ***% of Net Sales of all Treated Integra Product Sold by Integra or its Affiliates.",
+        "start": 265,
+        "end": 549,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "SEASPINEHOLDINGSCORP_10_10_2018-EX-10.1-SUPPLY AGREEMENT",
+    "clause": "Subject to Section 2.2(c), for so long as Integra's rights under the Agreement have been converted to a non-exclusive arrangement under the provisions of Section 3.2, Integra shall pay PcoMed a Fee of ***% of Net Sales of all Partially Treated Integra Product Sold by Integra or its Affiliates. The Fee rate payable shall be determined based on whether this Agreement is exclusive or non-exclusive at the time of Integra's Sale of Partially Treated Integra Product, not at the time of PcoMed's production of the Partially Treated Integra Product.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "Subject to Section 2.2(c), for so long as Integra's rights under the Agreement have been converted to a non-exclusive arrangement under the provisions of Section 3.2, Integra shall pay PcoMed a Fee of ***% of Net Sales of all Partially Treated Integra Product Sold by Integra or its Affiliates.",
+        "start": 0,
+        "end": 294,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "SEASPINEHOLDINGSCORP_10_10_2018-EX-10.1-SUPPLY AGREEMENT",
+    "clause": "Subject to Section 2.2(c), for so long as Integra's Rights under the Agreement have been converted to a non-exclusive arrangement under the provisions of Section 3.2, Integra shall pay PcoMed a Fee of ***% of Net Sales of all Treated Integra Product Sold by Integra or its Affiliates. The Fee rate payable shall be determined based on whether this Agreement is exclusive or non-exclusive at the time of Integra's Sale of the Treated Integra Product, not at the time of PcoMed's production of the Treated Integra Product.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "Subject to Section 2.2(c), for so long as Integra's Rights under the Agreement have been converted to a non-exclusive arrangement under the provisions of Section 3.2, Integra shall pay PcoMed a Fee of ***% of Net Sales of all Treated Integra Product Sold by Integra or its Affiliates.",
+        "start": 0,
+        "end": 284,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "SEASPINEHOLDINGSCORP_10_10_2018-EX-10.1-SUPPLY AGREEMENT",
+    "clause": "Integra may offset all costs and expenses covered under (i) above against the Fees as provided in Section 2.2 (c) as its sole and exclusive remedy for the recovery of such costs and expenses.\n\n10.2.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Integra may offset all costs and expenses covered under (i) above against the Fees as provided in Section 2.2 (c) as its sole and exclusive remedy for the recovery of such costs and expenses.",
+        "start": 0,
+        "end": 191,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "BERKELEYLIGHTS,INC_06_26_2020-EX-10.12-COLLABORATION AGREEMENT",
+    "clause": "With respect to each Contract Year, by no later than [***], Ginkgo shall have incurred (including all credits and offsets permitted under this Agreement) at least, in the aggregate since the beginning of the Term, the Minimum Cumulative Purchase Commitment amount for such Contract Year. The Minimum Cumulative Purchase Commitments for each of Contract Years [***] are binding commitments.",
+    "entities": [
+      {
+        "label": "monetary_amount",
+        "text": "With respect to each Contract Year, by no later than [***], Ginkgo shall have incurred (including all credits and offsets permitted under this Agreement) at least, in the aggregate since the beginning of the Term, the Minimum Cumulative Purchase Commitment amount for such Contract Year.",
+        "start": 0,
+        "end": 287,
+        "cuad_category": "Minimum Commitment"
+      },
+      {
+        "label": "monetary_amount",
+        "text": "The Minimum Cumulative Purchase Commitments for each of Contract Years [***] are binding commitments.",
+        "start": 288,
+        "end": 389,
+        "cuad_category": "Minimum Commitment"
+      }
+    ],
+    "primary_category": "Minimum Commitment"
+  },
+  {
+    "contract": "BERKELEYLIGHTS,INC_06_26_2020-EX-10.12-COLLABORATION AGREEMENT",
+    "clause": "If BLI has Substantially Completed at least [***] ([***]) [***] Workflows within the first [***] ([***]) Contract Years, then the Minimum Cumulative Purchase Commitment as of the Contract Year (which may include a portion of a full Contract Year) that is the last Contract Year during the Term pursuant to the terms of this Agreement shall change from $109 million (as currently reflected in Table 7.2.2) to $150 million.",
+    "entities": [
+      {
+        "label": "monetary_amount",
+        "text": "If BLI has Substantially Completed at least [***] ([***]) [***] Workflows within the first [***] ([***]) Contract Years, then the Minimum Cumulative Purchase Commitment as of the Contract Year (which may include a portion of a full Contract Year) that is the last Contract Year during the Term pursuant to the terms of this Agreement shall change from $109 million (as currently reflected in Table 7.2.2) to $150 million.",
+        "start": 0,
+        "end": 421,
+        "cuad_category": "Minimum Commitment"
+      }
+    ],
+    "primary_category": "Minimum Commitment"
+  },
+  {
+    "contract": "ENTERPRISEPRODUCTSPARTNERSLP_07_08_1998-EX-10.3-TRANSPORTATION CONTRACT",
+    "clause": "A claim must be filed with Carrier within     thirty (30) days from the date the shipment in question was delivered, and     (i) contain facts sufficient to identify the shipment (or shipments)     involved (ii) assert the grounds for Carrier's liability for alleged loss,     damage, injury, or delay, and (iii) request payment of a specified or     determinable amount of money. (c) Documents not constituting claims.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "A claim must be filed with Carrier within     thirty (30) days from the date the shipment in question was delivered, and     (i) contain facts sufficient to identify the shipment (or shipments)     involved (ii) assert the grounds for Carrier's liability for alleged loss,     damage, injury, or delay, and (iii) request payment of a specified or     determinable amount of money.",
+        "start": 0,
+        "end": 380,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "HerImports_20161018_8-KA_EX-10.14_9765707_EX-10.14_Maintenance Agreement",
+    "clause": "Exhibit 10.14   SOFTWARE MAINTENANCE AGREEMENT   This Software Maintenance Agreement (the \"Agreement\") is entered into as of October 13, 2016, between Leader Act Ltd HK (\"LEADER\"), a Nevada Corporation, (hereinafter referred to as \"Leader\"), and EZJR, Inc.",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "EZJR",
+        "start": 246,
+        "end": 250,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "LEADER",
+        "start": 171,
+        "end": 177,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "EZJR, Inc.",
+        "start": 246,
+        "end": 256,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Leader Act Ltd",
+        "start": 151,
+        "end": 165,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "effective_date",
+        "text": "October 13, 2016",
+        "start": 125,
+        "end": 141,
+        "cuad_category": "Agreement Date"
+      }
+    ],
+    "primary_category": "Parties"
+  },
+  {
+    "contract": "HerImports_20161018_8-KA_EX-10.14_9765707_EX-10.14_Maintenance Agreement",
+    "clause": "Exhibit 10.14   SOFTWARE MAINTENANCE AGREEMENT   This Software Maintenance Agreement (the \"Agreement\") is entered into as of October 13, 2016, between Leader Act Ltd HK (\"LEADER\"), a Nevada Corporation, (hereinafter referred to as \"Leader\"), and EZJR, Inc. a Nevada corporation, (hereinafter referred to as \"EZJR\").",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "EZJR",
+        "start": 246,
+        "end": 250,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "LEADER",
+        "start": 171,
+        "end": 177,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "EZJR, Inc.",
+        "start": 246,
+        "end": 256,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Leader Act Ltd",
+        "start": 151,
+        "end": 165,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "effective_date",
+        "text": "October 13, 2016",
+        "start": 125,
+        "end": 141,
+        "cuad_category": "Agreement Date"
+      }
+    ],
+    "primary_category": "Parties"
+  },
+  {
+    "contract": "HerImports_20161018_8-KA_EX-10.14_9765707_EX-10.14_Maintenance Agreement",
+    "clause": "Subject to all other terms and conditions set forth herein, as of the date of this agreement, LEADER maintain the software for an additional five years.   2.",
+    "entities": [
+      {
+        "label": "expiration_date",
+        "text": "Subject to all other terms and conditions set forth herein, as of the date of this agreement, LEADER maintain the software for an additional five years.",
+        "start": 0,
+        "end": 152,
+        "cuad_category": "Expiration Date"
+      }
+    ],
+    "primary_category": "Expiration Date"
+  },
+  {
+    "contract": "HerImports_20161018_8-KA_EX-10.14_9765707_EX-10.14_Maintenance Agreement",
+    "clause": "This Agreement and any matters arising out of or related to this Agreement will be governed by the laws of the State of Nevada. If any action is brought among the parties with respect to this Agreement or otherwise, by way of a claim or counterclaim, the parties agree that in any such action, and on all issues, the parties irrevocably waive their right to a trial by jury.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement and any matters arising out of or related to this Agreement will be governed by the laws of the State of Nevada.",
+        "start": 0,
+        "end": 127,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "ALAMOGORDOFINANCIALCORP_12_16_1999-EX-1-AGENCY AGREEMENT",
+    "clause": "the Agent will be paid a fee                not to exceed 5.5% of the aggregate  Purchase Price of the Shares                sold by them.  the Agent will pass onto selected  broker-dealers,",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "the Agent will be paid a fee                not to exceed 5.5% of the aggregate  Purchase Price of the Shares                sold by them.",
+        "start": 0,
+        "end": 138,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "StampscomInc_20001114_10-Q_EX-10.47_2631630_EX-10.47_Co-Branding Agreement",
+    "clause": "IN NO EVENT WILL EITHER PARTY BE LIABLE FOR\n\nSource: STAMPS.COM INC, 10-Q, 11/14/2000\n\n\n\n\n\nCONSEQUENTIAL, INCIDENTAL, SPECIAL, INDIRECT, OR EXEMPLARY DAMAGES ARISING OUT OF THIS AGREEMENT, EVEN IF A PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, AND UNDER ANY CAUSE OF ACTION, INCLUDING NEGLIGENCE. THESE LIMITATIONS SHALL APPLY NOTWITHSTANDING ANY FAILURE OF ESSENTIAL PURPOSE OF ANY LIMITED REMEDY.\n\n15.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "IN NO EVENT WILL EITHER PARTY BE LIABLE FOR\n\nSource: STAMPS.COM INC, 10-Q, 11/14/2000\n\n\n\n\n\nCONSEQUENTIAL, INCIDENTAL, SPECIAL, INDIRECT, OR EXEMPLARY DAMAGES ARISING OUT OF THIS AGREEMENT, EVEN IF A PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, AND UNDER ANY CAUSE OF ACTION, INCLUDING NEGLIGENCE. THESE LIMITATIONS SHALL APPLY NOTWITHSTANDING ANY FAILURE OF ESSENTIAL PURPOSE OF ANY LIMITED REMEDY.",
+        "start": 0,
+        "end": 412,
+        "cuad_category": "Cap On Liability"
+      },
+      {
+        "label": "liability_cap",
+        "text": "CONSEQUENTIAL, INCIDENTAL, SPECIAL, INDIRECT, OR EXEMPLARY DAMAGES ARISING OUT OF THIS AGREEMENT, EVEN IF A PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, AND UNDER ANY CAUSE OF ACTION, INCLUDING NEGLIGENCE. THESE LIMITATIONS SHALL APPLY NOTWITHSTANDING ANY FAILURE OF ESSENTIAL PURPOSE OF ANY LIMITED REMEDY.",
+        "start": 91,
+        "end": 412,
+        "cuad_category": "Cap On Liability"
+      },
+      {
+        "label": "liability_cap",
+        "text": "IN NO EVENT WILL EITHER PARTY BE LIABLE FOR",
+        "start": 0,
+        "end": 43,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "InvendaCorp_20000828_S-1A_EX-10.2_2588206_EX-10.2_Co-Branding Agreement",
+    "clause": "Revenue generated by the parties      from such activities shall not be shared but rather shall be retained by      the respective party to whom the Sponsorship tile(s) are allocated.\n\nd)   Excite@Home will not serve advertising on the Co-Branded Application for      any \"Application Provider Named Competitor,\" as specified in EXHIBIT E.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "Revenue generated by the parties      from such activities shall not be shared but rather shall be retained by      the respective party to whom the Sponsorship tile(s) are allocated.",
+        "start": 0,
+        "end": 183,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "WebmdHealthCorp_20050908_S-1A_EX-10.7_1027007_EX-10.7_Content License Agreement",
+    "clause": "WEBMD'S AGGREGATE LIABILITY FOR ALL DAMAGES, LOSSES AND CAUSES OF ACTION IN ANY WAY RELATED TO THIS AGREEMENT OR THE CONTENT, WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE) OR OTHERWISE, EITHER JOINTLY OR SEVERALLY, SHALL NOT EXCEED FIFTY DOLLARS ($50). THIS SECTION REFLECTS AN ALLOCATION OF RISK BETWEEN THE PARTIES, IS NOT A PENALTY, AND SHALL BE EXCLUSIVE.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "WEBMD'S AGGREGATE LIABILITY FOR ALL DAMAGES, LOSSES AND CAUSES OF ACTION IN ANY WAY RELATED TO THIS AGREEMENT OR THE CONTENT, WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE) OR OTHERWISE, EITHER JOINTLY OR SEVERALLY, SHALL NOT EXCEED FIFTY DOLLARS ($50).",
+        "start": 0,
+        "end": 255,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "SANDRIDGEENERGYINC_08_06_2009-EX-10.6-OPERATIONS AND MAINTENANCE AGREEMENT",
+    "clause": "IN FURTHERANCE OF THE FOREGOING, EACH PARTY RELEASES THE OTHER PARTY AND  WAIVES ANY RIGHT OF RECOVERY FOR SPECIAL, INDIRECT, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES SUFFERED BY SUCH PARTY  REGARDLESS OF WHETHER ANY SUCH DAMAGES ARE CAUSED BY THE OTHER PARTY'S NEGLIGENCE (AND REGARDLESS OF WHETHER SUCH  NEGLIGENCE IS SOLE, JOINT, CONCURRENT, ACTIVE, PASSIVE, OR GROSS NEGLIGENCE), FAULT, OR LIABILITY WITHOUT FAULT.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "IN FURTHERANCE OF THE FOREGOING, EACH PARTY RELEASES THE OTHER PARTY AND  WAIVES ANY RIGHT OF RECOVERY FOR SPECIAL, INDIRECT, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES SUFFERED BY SUCH PARTY  REGARDLESS OF WHETHER ANY SUCH DAMAGES ARE CAUSED BY THE OTHER PARTY'S NEGLIGENCE (AND REGARDLESS OF WHETHER SUCH  NEGLIGENCE IS SOLE, JOINT, CONCURRENT, ACTIVE, PASSIVE, OR GROSS NEGLIGENCE), FAULT, OR LIABILITY WITHOUT FAULT.",
+        "start": 0,
+        "end": 423,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "ON4COMMUNICATIONSINC_07_02_2009-EX-10.1-PROMOTION AGREEMENT",
+    "clause": "(\"Sponsor\") a Canada corporation, 5935 Airport Rd, Suite 405, Mississauga, Ontario, Canada L4V 1W5.",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "Sponsor",
+        "start": 2,
+        "end": 9,
+        "cuad_category": "Parties"
+      }
+    ],
+    "primary_category": "Parties"
+  },
+  {
+    "contract": "ON4COMMUNICATIONSINC_07_02_2009-EX-10.1-PROMOTION AGREEMENT",
+    "clause": "925 West Georgia Street  Suite 1820  Vancouver, British Columbia  Canada V6C 3L2  Facsimile: 604-632-1730      PROMOTION AGREEMENT  (the \"Agreement\")    This agreement (the \"Agreement\") is made between Charity Tunes Inc., a British Columbia corporation with registered office located at  Suite 1800, 925 West Georgia Street, Vancouver, British Columbia, Canada V6C 3L2 (\"Charity Tunes\") and ConAgra Foods Canada  Inc.",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "Charity Tunes",
+        "start": 202,
+        "end": 215,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Charity Tunes Inc.",
+        "start": 202,
+        "end": 220,
+        "cuad_category": "Parties"
+      }
+    ],
+    "primary_category": "Parties"
+  },
+  {
+    "contract": "GluMobileInc_20070319_S-1A_EX-10.09_436630_EX-10.09_Content License Agreement1",
+    "clause": "If Licensee fails to reach the Market Penetration Targets Fox shall in its sole discretion have the right to terminate Licensee's exclusivity under this Agreement. In the event of termination of Licensee's exclusivity for Licensee's failure to achieve the Market Penetration Targets, Fox shall not distribute the Wireless Products which have been developed by Licensee prior to such termination, without first obtaining a license from Licensee on terms to be mutually agreed in each party's reasonable discretion, for the exploitation of the Licensee Materials.",
+    "entities": [
+      {
+        "label": "monetary_amount",
+        "text": "Licensee fails to reach the Market Penetration Targets Fox shall in its sole discretion have the right to terminate Licensee's exclusivity under this Agreement.",
+        "start": 3,
+        "end": 163,
+        "cuad_category": "Minimum Commitment"
+      }
+    ],
+    "primary_category": "Minimum Commitment"
+  },
+  {
+    "contract": "HfEnterprisesInc_20191223_S-1_EX-10.22_11931299_EX-10.22_Development Agreement",
+    "clause": "Exhibit 10.22   OUTSOURCE TECHNOLOGY DEVELOPMENT AGREEMENT   This Outsource Technology Development Agreement (this \"Agreement\") is entered into and effective as of this 1s t day of March, 2018 (the \"Effective Date\") by and between Document Security Systems, Inc., a corporation organized and existing under the laws of the State of New York (\"DSS\"), and HotApp International Ltd., a corporation organized and existing under the laws of Hong Kong (\"Developer\").",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "Developer",
+        "start": 448,
+        "end": 457,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "HotApp International Ltd.",
+        "start": 354,
+        "end": 379,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "DSS",
+        "start": 343,
+        "end": 346,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Document Security Systems, Inc.",
+        "start": 231,
+        "end": 262,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "effective_date",
+        "text": "1s t day of March, 2018",
+        "start": 169,
+        "end": 192,
+        "cuad_category": "Agreement Date"
+      },
+      {
+        "label": "effective_date",
+        "text": "1s t day of March, 2018",
+        "start": 169,
+        "end": 192,
+        "cuad_category": "Effective Date"
+      }
+    ],
+    "primary_category": "Parties"
+  },
+  {
+    "contract": "HfEnterprisesInc_20191223_S-1_EX-10.22_11931299_EX-10.22_Development Agreement",
+    "clause": "The initial term of this Agreement shall commence on the Effective Date, and shall continue thereafter for a period of twelve (12) months (the \"Initial Term\"). The Initial Term shall automatically renew for one-month periods thereafter unless either party provides 30- days advance notice of termination, unless earlier terminated pursuant to Section 2.2 hereof.",
+    "entities": [
+      {
+        "label": "expiration_date",
+        "text": "The initial term of this Agreement shall commence on the Effective Date, and shall continue thereafter for a period of twelve (12) months (the \"Initial Term\").",
+        "start": 0,
+        "end": 159,
+        "cuad_category": "Expiration Date"
+      },
+      {
+        "label": "termination_clause",
+        "text": "The Initial Term shall automatically renew for one-month periods thereafter unless either party provides 30- days advance notice of termination, unless earlier terminated pursuant to Section 2.2 hereof.",
+        "start": 160,
+        "end": 362,
+        "cuad_category": "Notice Period To Terminate Renewal"
+      }
+    ],
+    "primary_category": "Expiration Date"
+  },
+  {
+    "contract": "HfEnterprisesInc_20191223_S-1_EX-10.22_11931299_EX-10.22_Development Agreement",
+    "clause": "The Initial Term shall automatically renew for one-month periods thereafter unless either party provides 30- days advance notice of termination, unless earlier terminated pursuant to Section 2.2 hereof. For purposes hereof, the Initial Term, together with any extension or renewal terms, shall hereinafter be collectively referred to as the \"Term\".",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "The Initial Term shall automatically renew for one-month periods thereafter unless either party provides 30- days advance notice of termination, unless earlier terminated pursuant to Section 2.2 hereof.",
+        "start": 0,
+        "end": 202,
+        "cuad_category": "Notice Period To Terminate Renewal"
+      }
+    ],
+    "primary_category": "Notice Period To Terminate Renewal"
+  },
+  {
+    "contract": "HfEnterprisesInc_20191223_S-1_EX-10.22_11931299_EX-10.22_Development Agreement",
+    "clause": "This Agreement shall be governed in accordance with the laws of the State of New York without regard to conflict of laws principles. It is hereby irrevocably agreed that legal jurisdiction and venue for any proceeding arising out of this Agreement shall be in the state or federal courts located in the County of Monroe, State of New York, United States.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement shall be governed in accordance with the laws of the State of New York without regard to conflict of laws principles.",
+        "start": 0,
+        "end": 132,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "HfEnterprisesInc_20191223_S-1_EX-10.22_11931299_EX-10.22_Development Agreement",
+    "clause": "Either party may terminate this Agreement prior to expiration of the Term: (i) upon thirty (30) days prior written notice, or (ii) immediately upon written notice to the other party if: (a) the other party declares or a petition is filed in any court for insolvency or bankruptcy and such petition is not dismissed in thirty (30) days; (b) the other party reorganizes under the relevant bankruptcy act or any similar statute in such party's jurisdiction of incorporation; (c) the other party consents to the appointment of a trustee in bankruptcy or a receiver or similar entity; or (d) the Developer breaches DSS's Technology or Intellectual Property rights contained herein.   2.2.2.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "Either party may terminate this Agreement prior to expiration of the Term: (i) upon thirty (30) days prior written notice, or (ii) immediately upon written notice to the other party if: (a) the other party declares or a petition is filed in any court for insolvency or bankruptcy and such petition is not dismissed in thirty (30) days; (b) the other party reorganizes under the relevant bankruptcy act or any similar statute in such party's jurisdiction of incorporation; (c) the other party consents to the appointment of a trustee in bankruptcy or a receiver or similar entity; or (d) the Developer breaches DSS's Technology or Intellectual Property rights contained herein.",
+        "start": 0,
+        "end": 676,
+        "cuad_category": "Termination For Convenience"
+      }
+    ],
+    "primary_category": "Termination For Convenience"
+  },
+  {
+    "contract": "ICORECONNECTINC_10_13_2010-EX-7.1-Strategic Alliance Agreement",
+    "clause": "TERM   This Agreement shall commence on the Effective Date of this Agreement and shall remain in effect for a period of 5 years (\"Initial Term\"). Thereafter, this Agreement shall be renewed automatically on a five (5) year basis, unless one party notifies the other of its desire to terminate this Agreement at least sixty 90 days prior to the expiration of the Initial Term or then current renewal term, as applicable, or unless a new Agreement is signed between the USA MCO and IMedicor which will then invalidate this Agreement.",
+    "entities": [
+      {
+        "label": "expiration_date",
+        "text": "This Agreement shall commence on the Effective Date of this Agreement and shall remain in effect for a period of 5 years (\"Initial Term\").",
+        "start": 7,
+        "end": 145,
+        "cuad_category": "Expiration Date"
+      },
+      {
+        "label": "termination_clause",
+        "text": "Thereafter, this Agreement shall be renewed automatically on a five (5) year basis, unless one party notifies the other of its desire to terminate this Agreement at least sixty 90 days prior to the expiration of the Initial Term or then current renewal term, as applicable, or unless a new Agreement is signed between the USA MCO and IMedicor which will then invalidate this Agreement.",
+        "start": 146,
+        "end": 531,
+        "cuad_category": "Notice Period To Terminate Renewal"
+      }
+    ],
+    "primary_category": "Expiration Date"
+  },
+  {
+    "contract": "ICORECONNECTINC_10_13_2010-EX-7.1-Strategic Alliance Agreement",
+    "clause": "Thereafter, this Agreement shall be renewed automatically on a five (5) year basis, unless one party notifies the other of its desire to terminate this Agreement at least sixty 90 days prior to the expiration of the Initial Term or then current renewal term, as applicable, or unless a new Agreement is signed between the USA MCO and IMedicor which will then invalidate this Agreement.\n\nIn such an instance, all compensation will continue for a extended period of five years from the date of termination for all subscriptions tagged as USA MCO.\n\n\n\n\n\n\n\n    4.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "Thereafter, this Agreement shall be renewed automatically on a five (5) year basis, unless one party notifies the other of its desire to terminate this Agreement at least sixty 90 days prior to the expiration of the Initial Term or then current renewal term, as applicable, or unless a new Agreement is signed between the USA MCO and IMedicor which will then invalidate this Agreement.",
+        "start": 0,
+        "end": 385,
+        "cuad_category": "Notice Period To Terminate Renewal"
+      }
+    ],
+    "primary_category": "Notice Period To Terminate Renewal"
+  },
+  {
+    "contract": "ICORECONNECTINC_10_13_2010-EX-7.1-Strategic Alliance Agreement",
+    "clause": "\u25cfIMedicor will provide a warrant to purchase 2 million shares of common stock to USA MCO to offset any up-front marketing expense incurred by USA MCO in this project. The value of the Warrants will be determined by the average 10 day closing price of iMedicor stock eliminating the two lowest days and the two highest days for the period as of the day before the actual execution of the final agreement.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "IMedicor will provide a warrant to purchase 2 million shares of common stock to USA MCO to offset any up-front marketing expense incurred by USA MCO in this project.",
+        "start": 1,
+        "end": 166,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "ICORECONNECTINC_10_13_2010-EX-7.1-Strategic Alliance Agreement",
+    "clause": "\u25cfUSA MCO will have the option to take all or part of its revenue share in equity up to a maximum of 4.9% ownership in iMedicor on a fully diluted basis. For the purposes of this proposal, fully diluted means all issued and outstanding stock warrants priced at 15 times the average 5 day closing price at the day previous to reconciliation of revenues, which will be the 20th of the month for the prior calendar month.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "USA MCO will have the option to take all or part of its revenue share in equity up to a maximum of 4.9% ownership in iMedicor on a fully diluted basis.",
+        "start": 1,
+        "end": 152,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "ICORECONNECTINC_10_13_2010-EX-7.1-Strategic Alliance Agreement",
+    "clause": "\u25cfIn addition to the subscription fees, iMedicor would offer a 17% revenue share (cash payout only) through revenues generated with its ClearLobby program. Clearlobby represents the Pharma / Medical Device marketing division inside iMedicor that will expose physicians and other providers within the USA MCO provider network to new products and services in a non-invasive, opt-in manner.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "In addition to the subscription fees, iMedicor would offer a 17% revenue share (cash payout only) through revenues generated with its ClearLobby program.",
+        "start": 1,
+        "end": 154,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "ICORECONNECTINC_10_13_2010-EX-7.1-Strategic Alliance Agreement",
+    "clause": "All revenue sharing opportunities will be calculated for all parties after any credit card or other third party processing fees are deducted from the gross sale. \u25cfUSA MCO will be responsible for the marketing and initial / ongoing communication to their network highlighting the features of iMedicor, the value proposition, and their support of the project.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "All revenue sharing opportunities will be calculated for all parties after any credit card or other third party processing fees are deducted from the gross sale.",
+        "start": 0,
+        "end": 161,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "ICORECONNECTINC_10_13_2010-EX-7.1-Strategic Alliance Agreement",
+    "clause": "USA MCO would receive one third of the monthly subscription price, per month, per subscriber (approximately $6.65). All revenue sharing opportunities will be calculated for all parties after any credit card or other third party processing fees are deducted from the gross sale.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "All revenue sharing opportunities will be calculated for all parties after any credit card or other third party processing fees are deducted from the gross sale.",
+        "start": 116,
+        "end": 277,
+        "cuad_category": "Revenue/Profit Sharing"
+      },
+      {
+        "label": "penalty_rate",
+        "text": "USA MCO would receive one third of the monthly subscription price, per month, per subscriber (approximately $6.65).",
+        "start": 0,
+        "end": 115,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "ArtaraTherapeuticsInc_20200110_8-K_EX-10.5_11943350_EX-10.5_License Agreement",
+    "clause": "located at 1 Little West 12t h Street, New York, NY 10014 (\"ArTara\"), and The University of Iowa, located at c/o Division of Sponsored Programs, 2 Gilmore Hall, Iowa City, IA 52242 (\"University\").",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "University",
+        "start": 78,
+        "end": 88,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "The University of Iowa",
+        "start": 74,
+        "end": 96,
+        "cuad_category": "Parties"
+      }
+    ],
+    "primary_category": "Parties"
+  },
+  {
+    "contract": "ArtaraTherapeuticsInc_20200110_8-K_EX-10.5_11943350_EX-10.5_License Agreement",
+    "clause": "SPONSORED RESEARCH AND LICENSE AGREEMENT This Sponsored Research and License Agreement (this \"Agreement\") is entered into on November 28, 2018 (the \"Effective Date\"), by and between ArTara, Inc. located at 1 Little West 12t h Street, New York, NY 10014 (\"ArTara\"), and The University of Iowa, located at c/o Division of Sponsored Programs, 2 Gilmore Hall, Iowa City, IA 52242 (\"University\").",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "University",
+        "start": 273,
+        "end": 283,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "ArTara, Inc.",
+        "start": 182,
+        "end": 194,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "The University of Iowa",
+        "start": 269,
+        "end": 291,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "ArTara",
+        "start": 182,
+        "end": 188,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "effective_date",
+        "text": "November 28, 2018",
+        "start": 125,
+        "end": 142,
+        "cuad_category": "Agreement Date"
+      },
+      {
+        "label": "effective_date",
+        "text": "November 28, 2018",
+        "start": 125,
+        "end": 142,
+        "cuad_category": "Effective Date"
+      }
+    ],
+    "primary_category": "Parties"
+  },
+  {
+    "contract": "ArtaraTherapeuticsInc_20200110_8-K_EX-10.5_11943350_EX-10.5_License Agreement",
+    "clause": "SPONSORED RESEARCH AND LICENSE AGREEMENT This Sponsored Research and License Agreement (this \"Agreement\") is entered into on November 28, 2018 (the \"Effective Date\"), by and between ArTara, Inc.",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "ArTara, Inc.",
+        "start": 182,
+        "end": 194,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "ArTara",
+        "start": 182,
+        "end": 188,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "effective_date",
+        "text": "November 28, 2018",
+        "start": 125,
+        "end": 142,
+        "cuad_category": "Agreement Date"
+      },
+      {
+        "label": "effective_date",
+        "text": "November 28, 2018",
+        "start": 125,
+        "end": 142,
+        "cuad_category": "Effective Date"
+      }
+    ],
+    "primary_category": "Parties"
+  },
+  {
+    "contract": "ArtaraTherapeuticsInc_20200110_8-K_EX-10.5_11943350_EX-10.5_License Agreement",
+    "clause": "This Agreement shall be governed by the laws of the State of Iowa. 9.5 Assignment.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement shall be governed by the laws of the State of Iowa.",
+        "start": 0,
+        "end": 66,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "ArtaraTherapeuticsInc_20200110_8-K_EX-10.5_11943350_EX-10.5_License Agreement",
+    "clause": "This Agreement may be terminated by ArTara upon thirty (30) days prior written notice to University. 8.2 Termination by Either Party.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "This Agreement may be terminated by ArTara upon thirty (30) days prior written notice to University.",
+        "start": 0,
+        "end": 100,
+        "cuad_category": "Termination For Convenience"
+      }
+    ],
+    "primary_category": "Termination For Convenience"
+  },
+  {
+    "contract": "ArtaraTherapeuticsInc_20200110_8-K_EX-10.5_11943350_EX-10.5_License Agreement",
+    "clause": "Either Party may terminate the Project and all commitments and obligations with respect thereto, subject to Section 8.3 herein, upon thirty (30) days written notice to the other Party. In the event of any termination of the Project by University, (a) University agrees to complete Phase I and II of the Project, and (b) ArTara will continue to provide annual funding until the completion of Phase II.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "Either Party may terminate the Project and all commitments and obligations with respect thereto, subject to Section 8.3 herein, upon thirty (30) days written notice to the other Party.",
+        "start": 0,
+        "end": 184,
+        "cuad_category": "Termination For Convenience"
+      }
+    ],
+    "primary_category": "Termination For Convenience"
+  },
+  {
+    "contract": "NlsPharmaceuticsLtd_20200228_F-1_EX-10.14_12029046_EX-10.14_Development Agreement",
+    "clause": "Exhibit 10.14 License and Development Agreement \"Agreement\" between NLS-1 Pharma AG Alter Postplatz 2 6370 Stans Switzerland \"Licensor\" / \"NLS\" and Eurofarma Laborat\u00f3rios S.A. Avenida Vereador Jos\u00e9 Diniz 3465 04603-003 S\u00e3o Paulo Brazil \"Licensee\" / \"Eurofarma\" (Licensor and Licensee each a \u02baParty\u02ba collectively the \u02baParties\u02ba) regarding Nolazol\u00ae (Mazindol CR) in ADHD - Latin America",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "(Licensor and Licensee each a \u02baParty\u02ba collectively the \u02baParties\u02ba)",
+        "start": 261,
+        "end": 326,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "\"Licensee\" / \"Eurofarma\"",
+        "start": 236,
+        "end": 260,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "NLS-1 Pharma AG",
+        "start": 68,
+        "end": 83,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Eurofarma Laborat\u00f3rios S.A.",
+        "start": 148,
+        "end": 175,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "\"Licensor\" / \"NLS\"",
+        "start": 125,
+        "end": 143,
+        "cuad_category": "Parties"
+      }
+    ],
+    "primary_category": "Parties"
+  },
+  {
+    "contract": "NlsPharmaceuticsLtd_20200228_F-1_EX-10.14_12029046_EX-10.14_Development Agreement",
+    "clause": "Term This Agreement will come into effect on the Effective Date and shall continue in full force for ten (10) years from the Launch (the \"Initial Term\"), or the date of expiry of the last valid patent of the Licensed Product, whichever comes later, subject to clauses 19.2, 19.3, 19.4 and 19.5 hereunder.",
+    "entities": [
+      {
+        "label": "expiration_date",
+        "text": "This Agreement will come into effect on the Effective Date and shall continue in full force for ten (10) years from the Launch (the \"Initial Term\"), or the date of expiry of the last valid patent of the Licensed Product, whichever comes later, subject to clauses 19.2, 19.3, 19.4 and 19.5 hereunder",
+        "start": 5,
+        "end": 303,
+        "cuad_category": "Expiration Date"
+      }
+    ],
+    "primary_category": "Expiration Date"
+  },
+  {
+    "contract": "NlsPharmaceuticsLtd_20200228_F-1_EX-10.14_12029046_EX-10.14_Development Agreement",
+    "clause": "Royalties For the Technology Transfer and as applicable for the License granted by NLS to Eurofarma under article 2.1(iii) hereabove, Eurofarma shall pay to NLS royalty payments (the \"Royalties\") on the annual Net Sales in the Territory according to the following table:\n\nAnnual Net Sales in the Territory in USD:\n\nRoyalty in Percent of Net Sales under 10 million 7% 10 million to < 20 million 8% 20 million to < 30 million 9% 30 million and above 10% Royalty payments shall be paid quarterly within thirty (45) days following the close of the calendar quarter.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "For the Technology Transfer and as applicable for the License granted by NLS to Eurofarma under article 2.1(iii) hereabove, Eurofarma shall pay to NLS royalty payments (the \"Royalties\") on the annual Net Sales in the Territory according to the following table:\n\nAnnual Net Sales in the Territory in USD:\n\nRoyalty in Percent of Net Sales under 10 million 7% 10 million to < 20 million 8% 20 million to < 30 million 9% 30 million and above 10%",
+        "start": 10,
+        "end": 451,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "NlsPharmaceuticsLtd_20200228_F-1_EX-10.14_12029046_EX-10.14_Development Agreement",
+    "clause": "Liability and Limitations Either Party shall only be liable for direct losses incurred by the other Party as a direct consequence of a negligent or intentional breach of this Agreement by such liable Party, and shall not be liable for any punitive or indirect damages, losses caused by business interruptions, loss of revenues, loss of profit, damages and loss of goodwill, or any reputational damages, and both Parties waive any claims to such losses.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Either Party shall only be liable for direct losses incurred by the other Party as a direct consequence of a negligent or intentional breach of this Agreement by such liable Party, and shall not be liable for any punitive or indirect damages, losses caused by business interruptions, loss of revenues, loss of profit, damages and loss of goodwill, or any reputational damages, and both Parties waive any claims to such losses.",
+        "start": 26,
+        "end": 452,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "TEARDROPGOLFCO_10_23_1996-EX-10.12-ENDORSEMENT AGREEMENT",
+    "clause": "In addition to the Retainer Fee, Tournament Bonuses and Money List Bonuses set forth in Paragraphs 8, 9 and 10 above, TPC agrees to pay Consolidated Artists on behalf of Ogle royalty compensation of ten percent (10%) of the net sales of all Endorsed Products distributed or sold during the Contract Period in or to the Countries of Australia and New Zealand (\"Royalty Compensation\"). \"Net sales\" shall mean the gross invoice price billed to customers, less customary trade/quantity discounts, rebates and returns actually credited, but with no deductions of any kind.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "In addition to the Retainer Fee, Tournament Bonuses and Money List Bonuses set forth in Paragraphs 8, 9 and 10 above, TPC agrees to pay Consolidated Artists on behalf of Ogle royalty compensation of ten percent (10%) of the net sales of all Endorsed Products distributed or sold during the Contract Period in or to the Countries of Australia and New Zealand (\"Royalty Compensation\").",
+        "start": 0,
+        "end": 383,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "TEARDROPGOLFCO_10_23_1996-EX-10.12-ENDORSEMENT AGREEMENT",
+    "clause": "TPC agrees to guarantee to Consolidated Artists on behalf of Ogle a minimum Royalty Compensation of Twenty Thousand U.S. Dollars ($20,000) payable in four (4) equal installments of Five Thousand U.S. Dollars ($5,000) and due simultaneously with the Retainer Fee on or before the first (1st) day of February, May, August and November in each Contract Year.\n\n    12.",
+    "entities": [
+      {
+        "label": "monetary_amount",
+        "text": "TPC agrees to guarantee to Consolidated Artists on behalf of Ogle a minimum Royalty Compensation of Twenty Thousand U.S. Dollars ($20,000) payable in four (4) equal installments of Five Thousand U.S. Dollars ($5,000) and due simultaneously with the Retainer Fee on or before the first (1st) day of February, May, August and November in each Contract Year.",
+        "start": 0,
+        "end": 355,
+        "cuad_category": "Minimum Commitment"
+      }
+    ],
+    "primary_category": "Minimum Commitment"
+  },
+  {
+    "contract": "VIRTUALSCOPICS,INC_11_12_2010-EX-10.1-STRATEGIC ALLIANCE AGREEMENT",
+    "clause": "This Agreement shall be construed in accordance with the laws of the State of Delaware without regard to its conflict of laws provisions.   18.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement shall be construed in accordance with the laws of the State of Delaware without regard to its conflict of laws provisions.",
+        "start": 0,
+        "end": 137,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "VIRTUALSCOPICS,INC_11_12_2010-EX-10.1-STRATEGIC ALLIANCE AGREEMENT",
+    "clause": "NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED IN THIS AGREEMENT, NEITHER PARTY SHALL BE LIABLE TO THE OTHER PARTY FOR INCIDENTAL, INDIRECT, CONSEQUENTIAL OR SPECIAL DAMAGES OR FOR ANY DAMAGES ARISING OUT OF OR IN CONNECTION WITH ANY LOSS OF PROFIT, INTERRUPTION OF SERVICE OR LOSS OF BUSINESS OR ANTICIPATORY PROFITS, EVEN IF A PARTY OR ITS AFFILIATES HAVE BEEN APPRISED OF THE LIKELIHOOD OF SUCH DAMAGES OCCURRING, IN EACH CASE ARISING IN CONNECTION WITH ANY DEFAULT OR BREACH OF OBLIGATIONS UNDER THIS AGREEMENT OR ANY ATTACHMENTS HERETO.   IN THE EVENT OF A BREACH OR DEFAULT BY VS UNDER THIS AGREEMENT OR ANY WORK ORDER, VS AGREES, AT PPD'S OPTION, TO EITHER REPEAT THE SERVICES AT ISSUE OR REFUND THE PORTION OF THE CONSIDERATION ATTRIBUTABLE THERETO.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED IN THIS AGREEMENT, NEITHER PARTY SHALL BE LIABLE TO THE OTHER PARTY FOR INCIDENTAL, INDIRECT, CONSEQUENTIAL OR SPECIAL DAMAGES OR FOR ANY DAMAGES ARISING OUT OF OR IN CONNECTION WITH ANY LOSS OF PROFIT, INTERRUPTION OF SERVICE OR LOSS OF BUSINESS OR ANTICIPATORY PROFITS, EVEN IF A PARTY OR ITS AFFILIATES HAVE BEEN APPRISED OF THE LIKELIHOOD OF SUCH DAMAGES OCCURRING, IN EACH CASE ARISING IN CONNECTION WITH ANY DEFAULT OR BREACH OF OBLIGATIONS UNDER THIS AGREEMENT OR ANY ATTACHMENTS HERETO.",
+        "start": 0,
+        "end": 545,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "BellringBrandsInc_20190920_S-1_EX-10.12_11817081_EX-10.12_Manufacturing Agreement1",
+    "clause": "If the vendor's minimum order quantity for a particular material exceeds a [***] supply, then Heritage shall obtain permission from Premier to order such quantity. If Premier grants permission to order the quantity greater than a [***] supply, then Heritage shall not be liable for the excess inventory of this particular material.",
+    "entities": [
+      {
+        "label": "monetary_amount",
+        "text": "If the vendor's minimum order quantity for a particular material exceeds a [***] supply, then Heritage shall obtain permission from Premier to order such quantity.",
+        "start": 0,
+        "end": 163,
+        "cuad_category": "Minimum Commitment"
+      }
+    ],
+    "primary_category": "Minimum Commitment"
+  },
+  {
+    "contract": "BLUEFLYINC_03_27_2002-EX-10.27-e-business Hosting Agreement",
+    "clause": "Regardless of the basis on which Customer is entitled to claim damages from IBM (including fundamental breach, negligence, misrepresentation, or other contract or tort claim), IBM is liable for no more than:\n\na.    indemnification payments as provided in Section 8.1;\n\nb.    damages for bodily injury (including death) and damage to real property       and tangible personal property; and\n\nc.    the amount of any other actual direct damages, up to the greater of       $100,000 or the charges paid by Customer to IBM for the Services in the       twelve (12) months immediately preceding the accrual of the first claim       related to the Services. The foregoing limit also applies to any of IBM's       Affiliates and Subcontractors.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Regardless of the basis on which Customer is entitled to claim damages from IBM (including fundamental breach, negligence, misrepresentation, or other contract or tort claim), IBM is liable for no more than:\n\na.    indemnification payments as provided in Section 8.1;\n\nb.    damages for bodily injury (including death) and damage to real property       and tangible personal property; and\n\nc.    the amount of any other actual direct damages, up to the greater of       $100,000 or the charges paid by Customer to IBM for the Services in the       twelve (12) months immediately preceding the accrual of the first claim       related to the Services.",
+        "start": 0,
+        "end": 650,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "BLUEFLYINC_03_27_2002-EX-10.27-e-business Hosting Agreement",
+    "clause": "Regardless of the basis on which IBM is entitled to claim damages from Customer (including fundamental breach, negligence, misrepresentation, or other contract or tort claim), Customer is liable for no more than:\n\na.    Indemnification payments as provided in Section 8.2;\n\nb.    damages for bodily injury (including death) and damage to real property       and tangible personal property; and\n\n(c) the amount of any other actual direct damages, up to the greater of $100,000 or the charges paid by Customer to IBM for the Services in the twelve (12) months immediately preceding the accrual of the first claim related to the Services. The foregoing limit also applies to any of Customer's Affiliates.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Regardless of the basis on which IBM is entitled to claim damages from Customer (including fundamental breach, negligence, misrepresentation, or other contract or tort claim), Customer is liable for no more than:\n\na.    Indemnification payments as provided in Section 8.2;\n\nb.    damages for bodily injury (including death) and damage to real property       and tangible personal property; and\n\n(c) the amount of any other actual direct damages, up to the greater of $100,000 or the charges paid by Customer to IBM for the Services in the twelve (12) months immediately preceding the accrual of the first claim related to the Services.",
+        "start": 0,
+        "end": 635,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "BLUEFLYINC_03_27_2002-EX-10.27-e-business Hosting Agreement",
+    "clause": "This is IBM's entire obligation       to Customer with regard to any claim of infringement. Notwithstanding the       foregoing, IBM is not responsible for third party claims based on:\n\n      1.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "This is IBM's entire obligation       to Customer with regard to any claim of infringement.",
+        "start": 0,
+        "end": 91,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "BLUEFLYINC_03_27_2002-EX-10.27-e-business Hosting Agreement",
+    "clause": "IBM will give       Customer a credit equal to the amount Customer paid IBM for the applicable       Materials or for use of the applicable Base Components up to a maximum of       twelve (12) months of applicable charges. This is IBM's entire obligation       to Customer with regard to any claim of infringement.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "This is IBM's entire obligation       to Customer with regard to any claim of infringement.",
+        "start": 223,
+        "end": 314,
+        "cuad_category": "Cap On Liability"
+      },
+      {
+        "label": "penalty_condition",
+        "text": "IBM will give       Customer a credit equal to the amount Customer paid IBM for the applicable       Materials or for use of the applicable Base Components up to a maximum of       twelve (12) months of applicable charges.",
+        "start": 0,
+        "end": 222,
+        "cuad_category": "Liquidated Damages"
+      }
+    ],
+    "primary_category": "Liquidated Damages"
+  },
+  {
+    "contract": "ASIANDRAGONGROUPINC_08_11_2005-EX-10.5-Reseller Agreement",
+    "clause": "TERM AND TERMINATION 10.1 Term of the Agreement The initial term of this Agreement will be for two (2) year(s) commencing on the Effective Date. Thereafter, this agreement will renew automatically from year to year unless cancelled in writing by either Party giving the other written notice of such cancellation a minimum of 60 days before the end of the then current term.",
+    "entities": [
+      {
+        "label": "expiration_date",
+        "text": "The initial term of this Agreement will be for two (2) year(s) commencing on the Effective Date.",
+        "start": 48,
+        "end": 144,
+        "cuad_category": "Expiration Date"
+      },
+      {
+        "label": "termination_clause",
+        "text": "Thereafter, this agreement will renew automatically from year to year unless cancelled in writing by either Party giving the other written notice of such cancellation a minimum of 60 days before the end of the then current term.",
+        "start": 145,
+        "end": 373,
+        "cuad_category": "Notice Period To Terminate Renewal"
+      }
+    ],
+    "primary_category": "Expiration Date"
+  },
+  {
+    "contract": "ASIANDRAGONGROUPINC_08_11_2005-EX-10.5-Reseller Agreement",
+    "clause": "1.6 Governing Law This Agreement shall be governed by and construed in accordance with the laws of the Province of British Columbia and the federal laws of Canada applicable therein, excluding its conflict-of-laws rules. The parties expressly disclaim the application of the United Nations' Uniform Convention for the Sale of Goods convention, to this Agreement.\n\n2.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement shall be governed by and construed in accordance with the laws of the Province of British Columbia and the federal laws of Canada applicable therein, excluding its conflict-of-laws rules.",
+        "start": 18,
+        "end": 220,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "ASIANDRAGONGROUPINC_08_11_2005-EX-10.5-Reseller Agreement",
+    "clause": "8.3 Liability Upon Termination of Agreement Neither Party shall be liable to the other for any damages or compensation in connection with termination of this Agreement including, without limitation, for loss of profits, loss of investment or expenditures made in reliance on this Agreement or loss of goodwill. 8.4 Force Majeure  Neither party will be liable to the other for any delay or failure to perform if that delay or failure results from a cause beyond its reasonable control.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Neither Party shall be liable to the other for any damages or compensation in connection with termination of this Agreement including, without limitation, for loss of profits, loss of investment or expenditures made in reliance on this Agreement or loss of goodwill.",
+        "start": 44,
+        "end": 310,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "LiquidmetalTechnologiesInc_20200205_8-K_EX-10.1_11968198_EX-10.1_Development Agreement",
+    "clause": "Exhibit 10.1 BUSINESS DEVELOPMENT AGREEMENT THIS BUSINESS DEVELOPMENT AGREEMENT (the \"Agreement\") is effective as of , 2020 (the \"Effective Date\"), by and between LIQUIDMETAL TECHNOLOGIES, INC., a Delaware corporation having its principal place of business at 20321 Valencia Circle, Lake Forest, California 92630 (\"Liquidmetal\"), and EUTECTIX, LLC, a Delaware limited liability company having an address of 323 Main Street, Chatham, New Jersey 07928 (\"Eutectix\").",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "LIQUIDMETAL TECHNOLOGIES, INC.",
+        "start": 163,
+        "end": 193,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "EUTECTIX, LLC",
+        "start": 334,
+        "end": 347,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Liquidmetal",
+        "start": 315,
+        "end": 326,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Eutectix",
+        "start": 452,
+        "end": 460,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "effective_date",
+        "text": ", 2020",
+        "start": 117,
+        "end": 123,
+        "cuad_category": "Agreement Date"
+      },
+      {
+        "label": "effective_date",
+        "text": ", 2020",
+        "start": 117,
+        "end": 123,
+        "cuad_category": "Effective Date"
+      }
+    ],
+    "primary_category": "Parties"
+  },
+  {
+    "contract": "LiquidmetalTechnologiesInc_20200205_8-K_EX-10.1_11968198_EX-10.1_Development Agreement",
+    "clause": "Either Party may terminate this Agreement for any reason upon providing 180 days prior written notice to the other Party prior to the expiration of the then-current term or unless sooner terminated in accordance with the terms of this Agreement. 11\n\nSource: LIQUIDMETAL TECHNOLOGIES INC, 8-K, 2/5/2020\n\n\n\n\n\n5.3 Termination by Operation of Law.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "Either Party may terminate this Agreement for any reason upon providing 180 days prior written notice to the other Party prior to the expiration of the then-current term or unless sooner terminated in accordance with the terms of this Agreement.",
+        "start": 0,
+        "end": 245,
+        "cuad_category": "Notice Period To Terminate Renewal"
+      },
+      {
+        "label": "termination_clause",
+        "text": "Either Party may terminate this Agreement for any reason upon providing 180 days prior written notice to the other Party prior to the expiration of the then-current term or unless sooner terminated in accordance with the terms of this Agreement.",
+        "start": 0,
+        "end": 245,
+        "cuad_category": "Termination For Convenience"
+      }
+    ],
+    "primary_category": "Notice Period To Terminate Renewal"
+  },
+  {
+    "contract": "LiquidmetalTechnologiesInc_20200205_8-K_EX-10.1_11968198_EX-10.1_Development Agreement",
+    "clause": "Upon the expiration of the Term, the Term shall automatically extend for successive 12-month periods until one Party terminates the Agreement by providing at least 180 days prior written notice to the other Party prior to the expiration of the then-current term or unless sooner terminated in accordance with the terms of this Agreement. 2.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "Upon the expiration of the Term, the Term shall automatically extend for successive 12-month periods until one Party terminates the Agreement by providing at least 180 days prior written notice to the other Party prior to the expiration of the then-current term or unless sooner terminated in accordance with the terms of this Agreement.",
+        "start": 0,
+        "end": 337,
+        "cuad_category": "Notice Period To Terminate Renewal"
+      }
+    ],
+    "primary_category": "Notice Period To Terminate Renewal"
+  },
+  {
+    "contract": "LiquidmetalTechnologiesInc_20200205_8-K_EX-10.1_11968198_EX-10.1_Development Agreement",
+    "clause": "This Agreement, the legal relations between the parties, and any action, whether contractual or non-contractual, instituted by any party with respect to matters arising under or growing out of or in connection with or in respect of this Agreement shall be governed by and construed in accordance with the internal laws of the State of Arizona (U.S.A.), excluding any choice of law rules that may direct the application of the laws of another jurisdiction, and except that questions affecting the construction and effect of any Patent shall be determined by the law of the country in which the Patent has been granted. The parties agree that the United Nations Convention on Contracts for the International Sale of Goods (1980) is specifically excluded from application to this Agreement.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement, the legal relations between the parties, and any action, whether contractual or non-contractual, instituted by any party with respect to matters arising under or growing out of or in connection with or in respect of this Agreement shall be governed by and construed in accordance with the internal laws of the State of Arizona (U.S.A.), excluding any choice of law rules that may direct the application of the laws of another jurisdiction, and except that questions affecting the construction and effect of any Patent shall be determined by the law of the country in which the Patent has been granted.",
+        "start": 0,
+        "end": 617,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "LiquidmetalTechnologiesInc_20200205_8-K_EX-10.1_11968198_EX-10.1_Development Agreement",
+    "clause": "New Process Technologies that have been developed by cooperation of the Parties shall be jointly and equally owned by the Parties, and any royalties for the use thereof by third parties shall be shared equitably between the Parties. The Parties shall work cooperatively toward the appropriate patent or other legal protection of such jointly and equally owned Intellectual Property.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "New Process Technologies that have been developed by cooperation of the Parties shall be jointly and equally owned by the Parties, and any royalties for the use thereof by third parties shall be shared equitably between the Parties.",
+        "start": 0,
+        "end": 232,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "LiquidmetalTechnologiesInc_20200205_8-K_EX-10.1_11968198_EX-10.1_Development Agreement",
+    "clause": "New Application Technologies that have been developed by cooperation of the Parties shall be jointly and equally owned by the Parties, and any royalties for the use thereof by third parties shall be shared equitably between the Parties. The Parties shall work cooperatively toward the appropriate patent or other legal protection of such jointly and equally owned Intellectual Property.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "New Application Technologies that have been developed by cooperation of the Parties shall be jointly and equally owned by the Parties, and any royalties for the use thereof by third parties shall be shared equitably between the Parties.",
+        "start": 0,
+        "end": 236,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "LiquidmetalTechnologiesInc_20200205_8-K_EX-10.1_11968198_EX-10.1_Development Agreement",
+    "clause": "The cash commission shall be an amount equal to six percent (6.0%) of the Net Sales Price of the invoice price of Licensed Products sold by Eutectix or its permitted sublicensees and for which payment was actually received by Eutectix (the \"Liquidmetal Commission\"). The Liquidmetal Commission shall be paid in U.S.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "The cash commission shall be an amount equal to six percent (6.0%) of the Net Sales Price of the invoice price of Licensed Products sold by Eutectix or its permitted sublicensees and for which payment was actually received by Eutectix (the \"Liquidmetal Commission\").",
+        "start": 0,
+        "end": 266,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "LiquidmetalTechnologiesInc_20200205_8-K_EX-10.1_11968198_EX-10.1_Development Agreement",
+    "clause": "In consideration of the license of Liquidmetal Technical Information and the Licensed Equipment granted by Liquidmetal, Eutectix agrees to pay Liquidmetal a cash royalty based on a percentage of the invoice price of any Licensed Products (but not including Liquidmetal Products) sold by Eutectix or its permitted sublicensees and for which payment was actually received by Eutectix. The cash royalty shall be an amount equal to six percent (6.0%) of the Net Sales Price of the invoice price of any Licensed Products and for which payment was actually received by Eutectix (the \"Liquidmetal Royalty\").",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "In consideration of the license of Liquidmetal Technical Information and the Licensed Equipment granted by Liquidmetal, Eutectix agrees to pay Liquidmetal a cash royalty based on a percentage of the invoice price of any Licensed Products (but not including Liquidmetal Products) sold by Eutectix or its permitted sublicensees and for which payment was actually received by Eutectix.",
+        "start": 0,
+        "end": 382,
+        "cuad_category": "Revenue/Profit Sharing"
+      },
+      {
+        "label": "penalty_rate",
+        "text": "The cash royalty shall be an amount equal to six percent (6.0%) of the Net Sales Price of the invoice price of any Licensed Products and for which payment was actually received by Eutectix (the \"Liquidmetal Royalty\").",
+        "start": 383,
+        "end": 600,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "LiquidmetalTechnologiesInc_20200205_8-K_EX-10.1_11968198_EX-10.1_Development Agreement",
+    "clause": "New Alloy Technologies that have been developed by cooperation of the Parties shall be jointly and equally owned by the Parties, and any royalties for the use thereof by third parties shall be shared equitably between the Parties. The Parties shall work cooperatively toward the appropriate patent or other legal protection of such jointly and equally owned Intellectual Property.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "New Alloy Technologies that have been developed by cooperation of the Parties shall be jointly and equally owned by the Parties, and any royalties for the use thereof by third parties shall be shared equitably between the Parties.",
+        "start": 0,
+        "end": 230,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "LiquidmetalTechnologiesInc_20200205_8-K_EX-10.1_11968198_EX-10.1_Development Agreement",
+    "clause": "The cash royalty shall be an amount equal to six percent (6.0%) of the Net Sales Price of the invoice price of any Licensed Products and for which payment was actually received by Eutectix (the \"Liquidmetal Royalty\"). \"Net Sales Price\" is defined as the gross invoice price actually received by Eutectix or its permitted sublicensees on the sale of Licensed Products, less returns or refunds, but before deduction of cash discounts.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "The cash royalty shall be an amount equal to six percent (6.0%) of the Net Sales Price of the invoice price of any Licensed Products and for which payment was actually received by Eutectix (the \"Liquidmetal Royalty\").",
+        "start": 0,
+        "end": 217,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "LiquidmetalTechnologiesInc_20200205_8-K_EX-10.1_11968198_EX-10.1_Development Agreement",
+    "clause": "NEITHER PARTY SHALL BE LIABLE TO OTHER PARTY FOR ANY LOST PROFITS, LOST REVENUES, OR ANY OTHER INCIDENTAL, INDIRECT, PUNITIVE, SPECIAL OR CONSEQUENTIAL DAMAGES WHATSOEVER ARISING OUT OF THIS AGREEMENT OR ANY ORDER, OR OUT OF THE PERFORMANCE OR BREACH OF THIS AGREEMENT OR ANY ORDER, EVEN IF THE PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. 14.",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "NEITHER PARTY SHALL BE LIABLE TO OTHER PARTY FOR ANY LOST PROFITS, LOST REVENUES, OR ANY OTHER INCIDENTAL, INDIRECT, PUNITIVE, SPECIAL OR CONSEQUENTIAL DAMAGES WHATSOEVER ARISING OUT OF THIS AGREEMENT OR ANY ORDER, OR OUT OF THE PERFORMANCE OR BREACH OF THIS AGREEMENT OR ANY ORDER, EVEN IF THE PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
+        "start": 0,
+        "end": 353,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  },
+  {
+    "contract": "ZtoExpressCaymanInc_20160930_F-1_EX-10.10_9752871_EX-10.10_Transportation Agreement",
+    "clause": "Exhibit 10.10   Road Transportation Agreement   Party A (Shipper): ZTO Express Co., Ltd. Address: Building 1, No.",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "Party A (Shipper): ZTO Express Co., Ltd.",
+        "start": 48,
+        "end": 88,
+        "cuad_category": "Parties"
+      }
+    ],
+    "primary_category": "Parties"
+  },
+  {
+    "contract": "ZtoExpressCaymanInc_20160930_F-1_EX-10.10_9752871_EX-10.10_Transportation Agreement",
+    "clause": "Period of transportation services: this Agreement is valid for an indefinite term. Subsequent contracts might be entered in case of special business.",
+    "entities": [
+      {
+        "label": "expiration_date",
+        "text": "Period of transportation services: this Agreement is valid for an indefinite term.",
+        "start": 0,
+        "end": 82,
+        "cuad_category": "Expiration Date"
+      }
+    ],
+    "primary_category": "Expiration Date"
+  },
+  {
+    "contract": "ZtoExpressCaymanInc_20160930_F-1_EX-10.10_9752871_EX-10.10_Transportation Agreement",
+    "clause": "Party B shall pay one-month freight as liquidated damages in case of termination of the Agreement without consent. Within the contract period, Party B shall not charge the freight difference if Party A rents same-level vehicles.",
+    "entities": [
+      {
+        "label": "penalty_condition",
+        "text": "Party B shall pay one-month freight as liquidated damages in case of termination of the Agreement without consent.",
+        "start": 0,
+        "end": 114,
+        "cuad_category": "Liquidated Damages"
+      }
+    ],
+    "primary_category": "Liquidated Damages"
+  },
+  {
+    "contract": "ZtoExpressCaymanInc_20160930_F-1_EX-10.10_9752871_EX-10.10_Transportation Agreement",
+    "clause": "Unless otherwise approved by Party A, in the event of parcel transfer due to Party B's vehicle delay, Party B shall pay liquidated damages to Party A at the standard rate of RMB500 per trip on the first working day, RMB1,000 per trip on the second working day and RMB2,000 per trip on the third working day (based on the time records on the parcel transfer documents) and such liquidated damages will be deducted from the current month's freight. In the special event of changes to route and time and severe weather (or other force majeure events), Party B shall be in touch with Party A in time and record such special event on the parcel transfer documents with Party A's approval.",
+    "entities": [
+      {
+        "label": "penalty_condition",
+        "text": "Unless otherwise approved by Party A, in the event of parcel transfer due to Party B's vehicle delay, Party B shall pay liquidated damages to Party A at the standard rate of RMB500 per trip on the first working day, RMB1,000 per trip on the second working day and RMB2,000 per trip on the third working day (based on the time records on the parcel transfer documents) and such liquidated damages will be deducted from the current month's freight.",
+        "start": 0,
+        "end": 446,
+        "cuad_category": "Liquidated Damages"
+      }
+    ],
+    "primary_category": "Liquidated Damages"
+  },
+  {
+    "contract": "LOOKSMARTLTD_07_20_2012-EX-99.(D)(I)-SPONSORSHIP AGREEMENT",
+    "clause": "SPONSORSHIP AGREEMENT     THIS SPONSORSHIP AGREEMENT (\"Agreement\") is entered into and effective as of the date first written above (\"Effective Date\") by  and among PEEK Investments LLC, a Delaware limited liability company (\"Purchaser\"), and each other party hereto identified on the signature  page(s) hereto (each, a \"Sponsor\").",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "Purchaser",
+        "start": 226,
+        "end": 235,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "PEEK Investments LLC",
+        "start": 165,
+        "end": 185,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "each other party hereto identified on the signature  page(s) hereto",
+        "start": 243,
+        "end": 310,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Sponsor",
+        "start": 321,
+        "end": 328,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "effective_date",
+        "text": "THIS SPONSORSHIP AGREEMENT (\"Agreement\") is entered into and effective as of the date first written above (\"Effective Date\") by  and among PEEK Investments LLC, a Delaware limited liability company (\"Purchaser\"), and each other party hereto identified on the signature  page(s) hereto (each, a \"Sponsor\").",
+        "start": 26,
+        "end": 331,
+        "cuad_category": "Effective Date"
+      }
+    ],
+    "primary_category": "Parties"
+  },
+  {
+    "contract": "LOOKSMARTLTD_07_20_2012-EX-99.(D)(I)-SPONSORSHIP AGREEMENT",
+    "clause": "SPONSORSHIP AGREEMENT     THIS SPONSORSHIP AGREEMENT (\"Agreement\") is entered into and effective as of the date first written above (\"Effective Date\") by  and among PEEK Investments LLC, a Delaware limited liability company (\"Purchaser\"), and each other party hereto identified on the signature  page(s) hereto (each, a \"Sponsor\"). Each term used and not otherwise defined herein shall have the meaning assigned to such term in the Offer.",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "Purchaser",
+        "start": 226,
+        "end": 235,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "PEEK Investments LLC",
+        "start": 165,
+        "end": 185,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "each other party hereto identified on the signature  page(s) hereto",
+        "start": 243,
+        "end": 310,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "contracting_party",
+        "text": "Sponsor",
+        "start": 321,
+        "end": 328,
+        "cuad_category": "Parties"
+      },
+      {
+        "label": "effective_date",
+        "text": "THIS SPONSORSHIP AGREEMENT (\"Agreement\") is entered into and effective as of the date first written above (\"Effective Date\") by  and among PEEK Investments LLC, a Delaware limited liability company (\"Purchaser\"), and each other party hereto identified on the signature  page(s) hereto (each, a \"Sponsor\").",
+        "start": 26,
+        "end": 331,
+        "cuad_category": "Effective Date"
+      }
+    ],
+    "primary_category": "Effective Date"
+  },
+  {
+    "contract": "MOELIS_CO_03_24_2014-EX-10.19-STRATEGIC ALLIANCE AGREEMENT",
+    "clause": "SMBC, Nikko, Moelis Holdings and Moelis General Partner are each referred to herein as a \"party\" and collectively referred to as the \"parties\".",
+    "entities": [
+      {
+        "label": "contracting_party",
+        "text": "SMBC, Nikko, Moelis Holdings and Moelis General Partner are each referred to herein as a \"party\" and collectively referred to as the \"parties",
+        "start": 0,
+        "end": 141,
+        "cuad_category": "Parties"
+      }
+    ],
+    "primary_category": "Parties"
+  },
+  {
+    "contract": "MOELIS_CO_03_24_2014-EX-10.19-STRATEGIC ALLIANCE AGREEMENT",
+    "clause": "This Agreement shall be effective as of January 1, 2012 (the \"Effective Date\"), provided, however, that, ARTICLE XII and ARTICLE XIII shall not be effective until after the Closing. The initial term of this Agreement shall begin on the Effective Date and continue for three (3) years, subject to the prior termination rights provided below.",
+    "entities": [
+      {
+        "label": "effective_date",
+        "text": "This Agreement shall be effective as of January 1, 2012 (the \"Effective Date\"), provided, however, that, ARTICLE XII and ARTICLE XIII shall not be effective until after the Closing.",
+        "start": 0,
+        "end": 181,
+        "cuad_category": "Effective Date"
+      },
+      {
+        "label": "expiration_date",
+        "text": "The initial term of this Agreement shall begin on the Effective Date and continue for three (3) years, subject to the prior termination rights provided below.",
+        "start": 182,
+        "end": 340,
+        "cuad_category": "Expiration Date"
+      }
+    ],
+    "primary_category": "Effective Date"
+  },
+  {
+    "contract": "MOELIS_CO_03_24_2014-EX-10.19-STRATEGIC ALLIANCE AGREEMENT",
+    "clause": "The initial term of this Agreement shall begin on the Effective Date and continue for three (3) years, subject to the prior termination rights provided below. At the end of such initial term, and any renewed term, as applicable, this Agreement shall automatically renew for an additional one (1) year term, unless a party provides written notice to the other parties at least six (6) months prior to the end of the   12",
+    "entities": [
+      {
+        "label": "expiration_date",
+        "text": "The initial term of this Agreement shall begin on the Effective Date and continue for three (3) years, subject to the prior termination rights provided below.",
+        "start": 0,
+        "end": 158,
+        "cuad_category": "Expiration Date"
+      },
+      {
+        "label": "termination_clause",
+        "text": "At the end of such initial term, and any renewed term, as applicable, this Agreement shall automatically renew for an additional one (1) year term, unless a party provides written notice to the other parties at least six (6) months prior to the end of the",
+        "start": 159,
+        "end": 414,
+        "cuad_category": "Notice Period To Terminate Renewal"
+      }
+    ],
+    "primary_category": "Expiration Date"
+  },
+  {
+    "contract": "MOELIS_CO_03_24_2014-EX-10.19-STRATEGIC ALLIANCE AGREEMENT",
+    "clause": "At the end of such initial term, and any renewed term, as applicable, this Agreement shall automatically renew for an additional one (1) year term, unless a party provides written notice to the other parties at least six (6) months prior to the end of the   12\n\n\n\n\n\n  initial term.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "initial term.",
+        "start": 268,
+        "end": 281,
+        "cuad_category": "Notice Period To Terminate Renewal"
+      },
+      {
+        "label": "termination_clause",
+        "text": "At the end of such initial term, and any renewed term, as applicable, this Agreement shall automatically renew for an additional one (1) year term, unless a party provides written notice to the other parties at least six (6) months prior to the end of the",
+        "start": 0,
+        "end": 255,
+        "cuad_category": "Notice Period To Terminate Renewal"
+      }
+    ],
+    "primary_category": "Notice Period To Terminate Renewal"
+  },
+  {
+    "contract": "MOELIS_CO_03_24_2014-EX-10.19-STRATEGIC ALLIANCE AGREEMENT",
+    "clause": "This Agreement shall be governed by, and construed in accordance with, the laws of the State of New York without regard to principles of conflict of laws. The parties irrevocably and unconditionally submit to the exclusive jurisdiction of any state or Federal court sitting in Manhattan, New York over any suit, action or proceeding arising out of or relating to this Agreement.",
+    "entities": [
+      {
+        "label": "governing_law",
+        "text": "This Agreement shall be governed by, and construed in accordance with, the laws of the State of New York without regard to principles of conflict of laws.",
+        "start": 0,
+        "end": 154,
+        "cuad_category": "Governing Law"
+      }
+    ],
+    "primary_category": "Governing Law"
+  },
+  {
+    "contract": "MOELIS_CO_03_24_2014-EX-10.19-STRATEGIC ALLIANCE AGREEMENT",
+    "clause": "At any time during a renewed term, this Agreement may be terminated by any party on six (6) months prior notice that it wishes to terminate the Agreement.   11.2 Termination.",
+    "entities": [
+      {
+        "label": "termination_clause",
+        "text": "At any time during a renewed term, this Agreement may be terminated by any party on six (6) months prior notice that it wishes to terminate the Agreement.",
+        "start": 0,
+        "end": 154,
+        "cuad_category": "Termination For Convenience"
+      }
+    ],
+    "primary_category": "Termination For Convenience"
+  },
+  {
+    "contract": "MOELIS_CO_03_24_2014-EX-10.19-STRATEGIC ALLIANCE AGREEMENT",
+    "clause": "The engagement letters will (unless otherwise agreed) provide that payments would be made to either SMBC/Nikko or Moelis Holdings and SMBC/Nikko and Moelis Holdings will split the fees pursuant to this Agreement.   10\n\n\n\n\n\n  8.2 Expenses.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "The engagement letters will (unless otherwise agreed) provide that payments would be made to either SMBC/Nikko or Moelis Holdings and SMBC/Nikko and Moelis Holdings will split the fees pursuant to this Agreement.",
+        "start": 0,
+        "end": 212,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "MOELIS_CO_03_24_2014-EX-10.19-STRATEGIC ALLIANCE AGREEMENT",
+    "clause": "The parties agree to share fees 50%/50% on assignments within the scope of this Agreement set forth in Section 3.1 where SMBC or Nikko, on the one hand, and Moelis Holdings, on the other hand, are jointly retained as co-advisors by a Client for such assignments, except as otherwise mutually agreed with respect to a specific matter by the parties. The parties agree that the parties will generally seek to be jointly retained as co-advisors by a Client on assignments within the scope of this Agreement.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "The parties agree to share fees 50%/50% on assignments within the scope of this Agreement set forth in Section 3.1 where SMBC or Nikko, on the one hand, and Moelis Holdings, on the other hand, are jointly retained as co-advisors by a Client for such assignments, except as otherwise mutually agreed with respect to a specific matter by the parties.",
+        "start": 0,
+        "end": 348,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "MOELIS_CO_03_24_2014-EX-10.19-STRATEGIC ALLIANCE AGREEMENT",
+    "clause": "The parties may mutually agree on a fee allocation different from the foregoing allocations in good faith based on, among other things, the following criteria:   (a) Whether one or both parties have an important relationship that is crucial to securing an assignment   (b) Resource contribution   (c) Product expertise   (d) Industry expertise   (e) Transaction size   (f) Resource constraints   ARTICLE V.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "The parties may mutually agree on a fee allocation different from the foregoing allocations in good faith based on, among other things, the following criteria:   (a) Whether one or both parties have an important relationship that is crucial to securing an assignment   (b) Resource contribution   (c) Product expertise   (d) Industry expertise   (e) Transaction size   (f) Resource constraints",
+        "start": 0,
+        "end": 393,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "MOELIS_CO_03_24_2014-EX-10.19-STRATEGIC ALLIANCE AGREEMENT",
+    "clause": "One or more senior representatives of Moelis Holdings or SMBC/Nikko, as the case may be, will consider on a case by case basis if requested by a senior representative of the other party, discretionary fee sharing when Moelis Holdings or SMBC/Nikko, as the case may be, provides demonstrable value.   4.5 Primary Fee Allocation Criteria.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "One or more senior representatives of Moelis Holdings or SMBC/Nikko, as the case may be, will consider on a case by case basis if requested by a senior representative of the other party, discretionary fee sharing when Moelis Holdings or SMBC/Nikko, as the case may be, provides demonstrable value.",
+        "start": 0,
+        "end": 297,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "MOELIS_CO_03_24_2014-EX-10.19-STRATEGIC ALLIANCE AGREEMENT",
+    "clause": "In the case of M&A sell-side assignments originated by Moelis Holdings within the scope of this Agreement set forth in Section 3.1 for which SMBC or Nikko does not serve (together with Moelis Holdings) as a co-advisor to the seller, if SMBC or Nikko introduces the actual buyer, and neither SMBC nor Nikko obtains a mandate to serve as an advisor to such buyer in connection with such acquisition, Moelis Holdings will pay SMBC/Nikko an introduction fee equal to 15% of the sale transaction fee paid to Moelis Holdings. There will be no other sharing of fees received from the seller between Moelis Holdings and SMB C/Nikko on any such assignments.",
+    "entities": [
+      {
+        "label": "penalty_rate",
+        "text": "In the case of M&A sell-side assignments originated by Moelis Holdings within the scope of this Agreement set forth in Section 3.1 for which SMBC or Nikko does not serve (together with Moelis Holdings) as a co-advisor to the seller, if SMBC or Nikko introduces the actual buyer, and neither SMBC nor Nikko obtains a mandate to serve as an advisor to such buyer in connection with such acquisition, Moelis Holdings will pay SMBC/Nikko an introduction fee equal to 15% of the sale transaction fee paid to Moelis Holdings.",
+        "start": 0,
+        "end": 519,
+        "cuad_category": "Revenue/Profit Sharing"
+      }
+    ],
+    "primary_category": "Revenue/Profit Sharing"
+  },
+  {
+    "contract": "MOELIS_CO_03_24_2014-EX-10.19-STRATEGIC ALLIANCE AGREEMENT",
+    "clause": "Notwithstanding the provisions of this Section 13.9(e), a SMBC Unit-Holder shall not be required to contribute, in the aggregate, any amount in excess of the amount by which the net proceeds received by such SMBC Unit-Holder from the sale of the Registrable Securities exceeds the amount of any damages which such SMBC Unit-Holder has otherwise been required to pay by reason of such untrue or alleged untrue statement or omission or alleged omission.   28",
+    "entities": [
+      {
+        "label": "liability_cap",
+        "text": "Notwithstanding the provisions of this Section 13.9(e), a SMBC Unit-Holder shall not be required to contribute, in the aggregate, any amount in excess of the amount by which the net proceeds received by such SMBC Unit-Holder from the sale of the Registrable Securities exceeds the amount of any damages which such SMBC Unit-Holder has otherwise been required to pay by reason of such untrue or alleged untrue statement or omission or alleged omission.",
+        "start": 0,
+        "end": 451,
+        "cuad_category": "Cap On Liability"
+      }
+    ],
+    "primary_category": "Cap On Liability"
+  }
+]

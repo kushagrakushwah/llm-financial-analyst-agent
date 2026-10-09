@@ -19,6 +19,7 @@ outputs/
 
 # Large raw dataset dumps (>10MB)
 data/cuad/
+data/internet_datasets/
 
 # Testing & Logs
 .pytest_cache/

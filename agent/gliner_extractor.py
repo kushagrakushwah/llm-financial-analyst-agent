@@ -12,6 +12,7 @@ from gliner import GLiNER
 
 from agent.label_taxonomy import TAXONOMY_REGISTRY, detect_document_type, get_taxonomy_for_type
 from agent.schemas import ChildEntity, ParentClause, HierarchicalExtractionResult
+from agent.dynamic_schema_inducer import DynamicSchemaInducer
 
 
 DEFAULT_FINANCIAL_LABELS = [
@@ -185,13 +186,16 @@ class FinancialEntityExtractor:
         doc_type: Optional[str] = None,
         threshold: float = 0.45,
         fallback_threshold: float = 0.35,
+        enable_dynamic_fallback: bool = True,
+        llm_pipeline: Any = None,
     ) -> HierarchicalExtractionResult:
         """
-        Two-pass hierarchical extraction pipeline.
+        Two-pass hierarchical extraction pipeline with Tier 2 AI Dynamic Induction.
         Pass 1: Segments the contract into parent clauses based on context taxonomy.
         Pass 2: Extracts fine-grained child entities within each parent clause,
                 stitching relative coordinates back to global document offsets.
-        Fallback: Identifies novel/unclassified clauses that do not meet standard classification.
+        Fallback / Tier 2: Dynamically induces bespoke schemas for novel or unclassified
+                clauses, mapping them to canonical types and closing the extraction loop.
         """
         start_time = time.perf_counter()
 
@@ -294,6 +298,23 @@ class FinancialEntityExtractor:
                     )
                 )
 
+        # 4. Tier 2: AI Dynamic Schema Induction for Unclassified Clauses
+        final_unclassified: List[ParentClause] = []
+        if enable_dynamic_fallback and unclassified_clauses:
+            inducer = DynamicSchemaInducer(llm_pipeline=llm_pipeline)
+            for idx, unclass in enumerate(unclassified_clauses):
+                if idx < 3 and 25 <= len(unclass.clause_text.strip()) <= 1200:
+                    resolved = inducer.resolve_unclassified_clause(
+                        unclass, self.model, threshold=fallback_threshold
+                    )
+                    if resolved.is_dynamically_induced:
+                        clauses.append(resolved)
+                        total_child_count += len(resolved.children)
+                        continue
+                final_unclassified.append(unclass)
+        else:
+            final_unclassified = unclassified_clauses
+
         exec_time = (time.perf_counter() - start_time) * 1000.0
 
         return HierarchicalExtractionResult(
@@ -302,7 +323,7 @@ class FinancialEntityExtractor:
             detected_child_count=total_child_count,
             execution_time_ms=exec_time,
             clauses=clauses,
-            unclassified_clauses=unclassified_clauses,
+            unclassified_clauses=final_unclassified,
         )
 
     def format_for_llm_prompt(self, entities: List[EntitySpan]) -> str:

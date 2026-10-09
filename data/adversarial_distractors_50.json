@@ -1,0 +1,302 @@
+[
+  {
+    "sample_id": "distractor_boilerplate_1",
+    "clause": "IN WITNESS WHEREOF, the parties hereto have executed this Agreement as of the date first written above by their duly authorized representatives.",
+    "distractor_type": "legal_boilerplate",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_boilerplate_2",
+    "clause": "This Agreement shall be binding upon and inure to the benefit of the parties hereto and their respective successors and permitted assigns.",
+    "distractor_type": "legal_boilerplate",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_boilerplate_3",
+    "clause": "The headings in this Agreement are inserted for convenience of reference only and shall not affect the interpretation or construction hereof.",
+    "distractor_type": "legal_boilerplate",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_boilerplate_4",
+    "clause": "This Agreement may be executed in one or more counterparts, each of which shall be deemed an original, but all of which together shall constitute one and the same instrument.",
+    "distractor_type": "legal_boilerplate",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_boilerplate_5",
+    "clause": "If any provision of this Agreement is held to be invalid or unenforceable, such provision shall be severed and the remaining provisions shall continue in full force and effect.",
+    "distractor_type": "legal_boilerplate",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_boilerplate_6",
+    "clause": "Neither party shall be liable for any failure or delay in performing its obligations hereunder if such failure or delay is caused by acts of God, war, riot, fire, or earthquake.",
+    "distractor_type": "legal_boilerplate",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_boilerplate_7",
+    "clause": "All notices, requests, demands and other communications hereunder shall be in writing and shall be deemed to have been duly given if delivered personally or mailed by certified mail.",
+    "distractor_type": "legal_boilerplate",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_boilerplate_8",
+    "clause": "This Agreement constitutes the entire agreement between the parties concerning the subject matter hereof and supersedes all prior agreements, understandings, negotiations, and discussions.",
+    "distractor_type": "legal_boilerplate",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_boilerplate_9",
+    "clause": "Nothing contained herein shall be deemed or construed to create an agency, joint venture, partnership, or fiduciary relationship between the parties.",
+    "distractor_type": "legal_boilerplate",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_boilerplate_10",
+    "clause": "The waiver by either party of a breach of any provision of this Agreement shall not operate or be construed as a waiver of any subsequent breach.",
+    "distractor_type": "legal_boilerplate",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_boilerplate_11",
+    "clause": "Any amendment or modification of this Agreement must be in writing and signed by an authorized representative of both parties.",
+    "distractor_type": "legal_boilerplate",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_boilerplate_12",
+    "clause": "The provisions of this Agreement which by their nature should survive termination shall survive any termination or expiration of this Agreement.",
+    "distractor_type": "legal_boilerplate",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_boilerplate_13",
+    "clause": "Each party represents and warrants that it has full corporate power and authority to enter into and perform its obligations under this Agreement.",
+    "distractor_type": "legal_boilerplate",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_boilerplate_14",
+    "clause": "The parties agree to cooperate reasonably with each other and execute any additional documents necessary to carry out the purposes of this Agreement.",
+    "distractor_type": "legal_boilerplate",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_boilerplate_15",
+    "clause": "No remedy made available to either party in this Agreement is intended to be exclusive of any other remedy, and each and every remedy shall be cumulative.",
+    "distractor_type": "legal_boilerplate",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_boilerplate_16",
+    "clause": "All schedules, exhibits, and attachments referred to herein are incorporated into and made an integral part of this Agreement.",
+    "distractor_type": "legal_boilerplate",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_boilerplate_17",
+    "clause": "The language used in this Agreement shall be deemed to be the language chosen by the parties to express their mutual intent.",
+    "distractor_type": "legal_boilerplate",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_boilerplate_18",
+    "clause": "Neither party may assign or transfer its rights or obligations under this Agreement without the prior written consent of the other party.",
+    "distractor_type": "legal_boilerplate",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_boilerplate_19",
+    "clause": "The failure of either party to enforce at any time any provision of this Agreement shall not be construed to be a waiver of such provision.",
+    "distractor_type": "legal_boilerplate",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_boilerplate_20",
+    "clause": "This Agreement is the product of negotiation between sophisticated parties and shall not be construed against either party as the drafter.",
+    "distractor_type": "legal_boilerplate",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_1",
+    "clause": "Please direct all technical inquiries to support at Extension 4022 or via facsimile to (555) 019-2831.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_2",
+    "clause": "The equipment shall operate within temperature tolerances of 15 to 35 degrees Celsius at relative humidity between 20% and 80%.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_3",
+    "clause": "Refer to Section 14.3(b)(iv) for procedural requirements regarding the submission of change orders under Schedule C.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_4",
+    "clause": "All shipments must be routed to Warehouse Dock 4 located at 1200 Industrial Parkway, Suite 300, Dallas, Texas 75201.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_5",
+    "clause": "Pursuant to Patent Application Serial No. 16/482,901 filed on docket reference 4920-A, inventor rights remain unassigned.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_6",
+    "clause": "The batch processing server configuration requires a minimum of 64 GB of RAM, 16 CPU cores, and 500 GB NVMe storage.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_7",
+    "clause": "Deliveries shall arrive no later than 08:30 AM Central Standard Time on Mondays through Thursdays.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_8",
+    "clause": "The software version 3.2.1-rc4 must pass regression test suite suites 101 through 115 before staging deployment.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_9",
+    "clause": "Notice must be dispatched with at least 5 business days prior written communication before initiating routine scheduled maintenance.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_10",
+    "clause": "The container capacity specifications shall adhere to ISO standard 14001:2015 clause 4.4 and section 7.2 requirements.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_11",
+    "clause": "The test samples shall be incubated for a period of 48 hours at a constant rotational speed of 250 RPM.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_12",
+    "clause": "Reference invoice number INV-98234-X in all email correspondence regarding purchase order PO-0048172.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_13",
+    "clause": "The API rate limit is restricted to 100 requests per minute per IP address with a burst allowance of 150 requests.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_14",
+    "clause": "Field inspections will occur at intervals of 90 days following initial equipment commissioning and handover.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_15",
+    "clause": "Serial numbers 100482 through 100599 are designated solely for internal quality assurance testing and evaluation.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_16",
+    "clause": "Please file copy 3 of Form 1099-MISC with the regional accounting department in Room 204.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_17",
+    "clause": "The protocol requires three consecutive trial runs with a minimum confidence coefficient of 0.95 across 1000 test cases.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_18",
+    "clause": "Employee ID numbers consist of an alphanumeric string containing 2 uppercase characters followed by 6 numerical digits.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_19",
+    "clause": "The vehicle fleet must maintain odometer readings below 120,000 miles throughout the operational lifecycle.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_20",
+    "clause": "Section 8.1(a) supersedes paragraphs 2 and 3 of Appendix B regarding documentation storage protocols.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_21",
+    "clause": "All customer calls will be recorded for quality monitoring purposes under compliance standard ISO-9001 section 8.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_22",
+    "clause": "A quorum of at least 5 directors present in person or via telephone conference shall be required for formal votes.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_23",
+    "clause": "The frequency spectrum allocation encompasses channels 36, 40, 44, and 48 within the 5.2 GHz operational band.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_24",
+    "clause": "Dispatch confirmation shall be logged via automated EDI transaction set 856 within 2 hours of shipment departure.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_25",
+    "clause": "The building permit reference number is BLD-2023-09812 registered in Precinct 7.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_26",
+    "clause": "Filter replacements are mandatory every 3,000 operating hours or 12 months, whichever occurs first.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_27",
+    "clause": "The standard test report consists of pages 1 through 18 with supplementary raw data tables in Appendix D.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_28",
+    "clause": "Submissions received after 5:00 PM local time shall be stamped as received on the following business day.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_29",
+    "clause": "The network latency between data center nodes must remain under 15 milliseconds round-trip time.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  },
+  {
+    "sample_id": "distractor_numeric_30",
+    "clause": "Authorized personnel badge holders must re-authenticate credentials every 180 calendar days at Terminal 6.",
+    "distractor_type": "non_financial_numeric",
+    "entities": []
+  }
+]
