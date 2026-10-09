@@ -26,6 +26,13 @@ from agent.gliner_extractor import (
     DEFAULT_FINANCIAL_LABELS,
 )
 from agent.risk_engine import get_risk_engine, AuditScorecard
+from agent.schemas import (
+    ChildEntity,
+    ParentClause,
+    HierarchicalExtractionResult,
+    HierarchicalExtractRequest,
+)
+from agent.label_taxonomy import TAXONOMY_REGISTRY, detect_document_type
 
 # Initialize FastAPI app with production metadata
 app = FastAPI(
@@ -238,6 +245,33 @@ def extract_entities(req: ExtractEntitiesRequest):
         labels_used=labels,
         model_source=extractor.model_name_or_path,
         document_length=len(req.text),
+    )
+
+
+@app.get("/api/taxonomy")
+def get_taxonomy():
+    """
+    Returns available contract document taxonomies, parent clauses, and child schemas.
+    """
+    return {
+        "document_types": list(TAXONOMY_REGISTRY.keys()),
+        "taxonomies": TAXONOMY_REGISTRY,
+    }
+
+
+@app.post("/api/extract-hierarchical", response_model=HierarchicalExtractionResult)
+def extract_hierarchical(req: HierarchicalExtractRequest):
+    """
+    Two-pass hierarchical extraction endpoint.
+    Automatically routes document type (or accepts manual override),
+    detects parent clauses, and extracts fine-grained child entities with global coordinates.
+    """
+    extractor = get_extractor()
+    return extractor.extract_hierarchical(
+        text=req.text,
+        doc_type=req.document_type,
+        threshold=req.threshold,
+        fallback_threshold=req.fallback_threshold,
     )
 
 

@@ -5,9 +5,13 @@ liability caps, penalty rates, and legal entities.
 """
 
 import os
+import time
 from typing import List, Dict, Any, Optional
 from dataclasses import dataclass
 from gliner import GLiNER
+
+from agent.label_taxonomy import TAXONOMY_REGISTRY, detect_document_type, get_taxonomy_for_type
+from agent.schemas import ChildEntity, ParentClause, HierarchicalExtractionResult
 
 
 DEFAULT_FINANCIAL_LABELS = [
@@ -174,6 +178,132 @@ class FinancialEntityExtractor:
             self.extract(t, labels=labels, threshold=threshold, flat_ner=flat_ner)
             for t in texts
         ]
+
+    def extract_hierarchical(
+        self,
+        text: str,
+        doc_type: Optional[str] = None,
+        threshold: float = 0.45,
+        fallback_threshold: float = 0.35,
+    ) -> HierarchicalExtractionResult:
+        """
+        Two-pass hierarchical extraction pipeline.
+        Pass 1: Segments the contract into parent clauses based on context taxonomy.
+        Pass 2: Extracts fine-grained child entities within each parent clause,
+                stitching relative coordinates back to global document offsets.
+        Fallback: Identifies novel/unclassified clauses that do not meet standard classification.
+        """
+        start_time = time.perf_counter()
+
+        if not text or not text.strip():
+            return HierarchicalExtractionResult(
+                document_type=doc_type or "unknown",
+                detected_parent_count=0,
+                detected_child_count=0,
+                execution_time_ms=0.0,
+                clauses=[],
+                unclassified_clauses=[],
+            )
+
+        # 1. Resolve Document Type & Taxonomy
+        resolved_type = doc_type if (doc_type and doc_type in TAXONOMY_REGISTRY) else detect_document_type(text)
+        taxonomy = get_taxonomy_for_type(resolved_type)
+        parent_labels = taxonomy["parent_clauses"]
+        child_label_map = taxonomy["child_labels"]
+
+        # 2. Pass 1: Extract Parent Clauses
+        parent_preds = self.model.predict_entities(
+            text, parent_labels, threshold=threshold, flat_ner=True
+        )
+
+        clauses: List[ParentClause] = []
+        unclassified_clauses: List[ParentClause] = []
+        covered_ranges: List[tuple] = []
+        total_child_count = 0
+
+        parent_preds_sorted = sorted(parent_preds, key=lambda x: int(x["start"]))
+
+        for p in parent_preds_sorted:
+            p_label = p["label"]
+            p_text = p["text"]
+            p_score = float(p["score"])
+            p_start = int(p["start"])
+            p_end = int(p["end"])
+
+            covered_ranges.append((p_start, p_end))
+
+            target_children = child_label_map.get(p_label, [])
+            children: List[ChildEntity] = []
+
+            if target_children and len(p_text.strip()) > 0:
+                child_preds = self.model.predict_entities(
+                    p_text, target_children, threshold=threshold, flat_ner=True
+                )
+                for c in child_preds:
+                    c_text = c["text"]
+                    c_score = float(c["score"])
+                    local_s = int(c["start"])
+                    local_e = int(c["end"])
+                    global_s = p_start + local_s
+                    global_e = p_start + local_e
+
+                    child_ent = ChildEntity(
+                        text=c_text,
+                        label=c["label"],
+                        score=c_score,
+                        local_start=local_s,
+                        local_end=local_e,
+                        global_start=global_s,
+                        global_end=global_e,
+                    )
+                    children.append(child_ent)
+                    total_child_count += 1
+
+            clauses.append(
+                ParentClause(
+                    parent_label=p_label,
+                    clause_text=p_text,
+                    score=p_score,
+                    global_start=p_start,
+                    global_end=p_end,
+                    is_unclassified=False,
+                    children=children,
+                )
+            )
+
+        # 3. Fallback / Novel Clause Detection (Suggestion 1)
+        marginal_preds = self.model.predict_entities(
+            text, parent_labels, threshold=fallback_threshold, flat_ner=True
+        )
+        for m in marginal_preds:
+            m_start = int(m["start"])
+            m_end = int(m["end"])
+            is_covered = any(
+                max(m_start, cs) < min(m_end, ce) for cs, ce in covered_ranges
+            )
+            if not is_covered and float(m["score"]) < threshold:
+                unclassified_clauses.append(
+                    ParentClause(
+                        parent_label=f"marginal_{m['label']}",
+                        clause_text=m["text"],
+                        score=float(m["score"]),
+                        global_start=m_start,
+                        global_end=m_end,
+                        is_unclassified=True,
+                        children=[],
+                    )
+                )
+
+        exec_time = (time.perf_counter() - start_time) * 1000.0
+
+        return HierarchicalExtractionResult(
+            document_type=resolved_type,
+            detected_parent_count=len(clauses),
+            detected_child_count=total_child_count,
+            execution_time_ms=exec_time,
+            clauses=clauses,
+            unclassified_clauses=unclassified_clauses,
+        )
 
     def format_for_llm_prompt(self, entities: List[EntitySpan]) -> str:
         """
